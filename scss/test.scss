@@ -1,0 +1,62 @@
+//
+//   test.scss
+//
+//   Test bed for Sass constructs
+
+// Variables
+$body-bg: #fff;
+$test-image: "../img/mainbanner-small.jpg";
+$default-banner-height: 360px;
+
+// Mixins and Extends
+
+@mixin page-banner($bannerimage: $test-image, $image-height: $default-banner-height) {
+	background-color: $body-bg;
+	background-image: url($bannerimage);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media (min-width: 38em)
+	{
+	  /*  Must give banners a height when on desktops  */
+	  height: $image-height;
+	}
+}
+
+
+
+
+
+
+// Sass that uses the above
+
+// Styles for the banner image on main landing page
+//
+.row--banner
+{
+	/*  Include with no parameters and see which image results  */
+	@include page-banner();
+}
+
+// Styles for the banner image on ourclub.html
+//
+.row--ourclub
+{
+	/*  Include with image parameter and see which image results  */
+	@include page-banner($bannerimage: "../img/clubhouse.jpg");
+}
+
+// Styles for the banner image on league.html
+//
+.row--league
+{
+	@include page-banner($bannerimage: "../img/first_team.jpg");
+}
+
+// Styles for the banner image on league.html
+//
+.row--aegon
+{
+	@include page-banner($bannerimage: "../img/aegon-team-tennis-banner.jpg", $image-height: 230px);
+}

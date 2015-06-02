@@ -1,0 +1,684 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/a03pl/Sites/GoogleMaps/Learnable Course/index.html",
+			"settings":
+			{
+				"buffer_size": 958,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/a03pl/Sites/GoogleMaps/Learnable Course/js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 4416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/a03pl/Sites/GoogleMaps/Learnable Course/css/styles.css",
+			"settings":
+			{
+				"buffer_size": 1214,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/a03pl/Sites/GoogleMaps/Learnable Course/js/airportdata.js",
+		"/Users/a03pl/Sites/GoogleMaps/Learnable Course/index.html",
+		"/Users/a03pl/Sites/GoogleMaps/Learnable Course/js/scripts.js",
+		"/Users/a03pl/Sites/GoogleMaps/Learnable Course/css/styles.css",
+		"/Users/a03pl/Sites/GoogleMaps/Learnable Course/js/mapstyle.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/members.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/awards.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/boxleagues.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/coachingday.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/coachingsetup.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/composite.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/directory.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/fixturesetup.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/friendlies.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/fullindex.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/galleryindex.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/hamptonforum.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/header.insert",
+		"/Users/a03pl/Sites/TennisClub/newtennis/league.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/leaguefixtures.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/leagueresults.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/login.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/members.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/otherclubs.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/ourclub.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/playing.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/renewlogin.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/renewpreferences.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/renewprofile.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/renewthankyou.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/sammy_template.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/templates/bannerpage.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/templates/nonbannerpage.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/tests/composite.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/tests/footer.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/tests/topbar.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/tournaments.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/googlemaps.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/otherclubs.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/sessions.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/show_tweets3.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/css/twitter-styles.css",
+		"/Users/a03pl/Sites/TennisClub/newtennis/css/oldtwitter.css",
+		"/Users/a03pl/Sites/TennisClub/newtennis/directions.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/fetchJSON.asp",
+		"/Users/a03pl/Sites/TennisClub/juniors/contact.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/jsonutils.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/googlemaps.json",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/coachingday.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emails/renewals2015-8.htm",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/tournaments.js",
+		"/Users/a03pl/Sites/TennisClub/juniors/tournaments.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/main.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/app.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/mypreferences.js",
+		"/Users/a03pl/Sites/TennisClub/juniors/index.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_foundation-icons.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/_config.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_variables.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/css/main.css",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_mixins.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_fonts.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/signout.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/signin.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_layout.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_modules.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_base.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_config.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/config.rb",
+		"/Users/a03pl/Sites/TennisClub/newtennis/scss/partials/_placeholders.scss",
+		"/Users/a03pl/Sites/TennisClub/newtennis/bower_components/foundation/scss/foundation/components/_top-bar.scss",
+		"/Users/a03pl/Sites/TennisClub/juniors/css/styles.css",
+		"/Users/a03pl/Sites/TennisClub/juniors/adult_coaching.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/reveal-modals.insert",
+		"/Users/a03pl/Sites/TennisClub/newtennis/test.css",
+		"/Users/a03pl/Sites/TennisClub/oldtennis/www/chklogin.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/login.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/fixturesetup.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/updatefixtures.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/fixtureobj.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/updatecoachinglessons.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/playing.asp",
+		"/Users/a03pl/Sites/TennisClub/juniors/coaching_schedule.html",
+		"/Users/a03pl/Sites/TennisClub/juniors/paying.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/datefuncs.asp",
+		"/Users/a03pl/Sites/TennisClub/juniors/coaching_schedule_daily.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/memberfuncs.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/eventfuncs.asp",
+		"/Users/a03pl/Sites/TennisClub/admin/js/admin.js",
+		"/Users/a03pl/Sites/TennisClub/admin/index.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/eventsfromcoaching.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/coachinglessonobj.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/coachinginserts.txt",
+		"/Users/a03pl/Sites/TennisClub/newtennis/myboxleagues.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/eventlist.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/mydetails.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emails/renewals2015-7.htm",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emails/renewals2015.htm",
+		"/Users/a03pl/Sites/TennisClub/newtennis/mycourtbookings.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/renewpreferences.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/renewprofile.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/coachdates.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/testmysql.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/lst_paid.asp",
+		"/Users/a03pl/Sites/TennisClub/juniors/newevent.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/coachingmondays.js",
+		"/Users/a03pl/Sites/TennisClub/oldtennis/www/layout.css",
+		"/Users/a03pl/Sites/TennisClub/newtennis/updatecoachdates.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/set_memb.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/new_memb.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emails/email547.htm",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/leagues.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/league.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emails/renewals2015-6.htm",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emails/renewals2015-5.htm",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emailfuncs.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/coachdates.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/transparent_box.html",
+		"/Users/a03pl/Sites/TennisClub/newtennis/coachdates.json",
+		"/Users/a03pl/Sites/TennisClub/newtennis/boxleaguesobj.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/boxleagues.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/league.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/lst_memb.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/lst_unpaid.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/emails/email546.htm",
+		"/Users/a03pl/Sites/TennisClub/newtennis/testboxleagues.asp",
+		"/Users/a03pl/Sites/TennisClub/newtennis/js/sammy-sample.js",
+		"/Users/a03pl/Sites/TennisClub/newtennis/leagueresults.asp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/a03pl/Sites/TennisClub/newtennis/",
+			"/Users/a03pl/Sites/TennisClub/newtennis/*.html",
+			"/Users/a03pl/Sites/TennisClub/newtennis/",
+			"/Users/a03pl/Sites/TennisClub/newtennis/*.asp",
+			"/Users/a03pl/Sites/TennisClub/newtennis/*.html",
+			"/Users/a03pl/Sites/TennisClub/newtennis/",
+			"/Users/a03pl/Sites/TennisClub/tennis/",
+			"/Users/a03pl/Sites/TennisClub/juniors/",
+			"/Users/a03pl/Sites/TennisClub/juniors/*.html",
+			"/Users/a03pl/Sites/TennisClub/juniors",
+			"/Users/a03pl/Sites/TennisClub/oldtennis/www",
+			"/Users/a03pl/Sites/TennisClub/oldtennis/www,*.asp",
+			"/Users/a03pl/Sites/TennisClub/oldtennis/www/*.asp",
+			"/Users/a03pl/Sites/lub/oldtennis/www/*.asp",
+			"/Users/a03pl/Sites/Arden9/*.html",
+			"<open folders>",
+			"",
+			"*.handlebars",
+			"<open files>",
+			"*.html, *.handlebars",
+			"faqs.html",
+			"*.html, *.handlebars",
+			"*.handlebars",
+			"*.html",
+			"",
+			"*.asp",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"\"http://hamptontennis.org.uk\"",
+			"index.asp",
+			"myaddress",
+			"checkbox",
+			"// ",
+			"topbar-link-padd",
+			"px",
+			"Myriad",
+			"Myr",
+			"MyriadPro",
+			"MyriadPro_Regular",
+			"Myriad",
+			"javascript",
+			"v_memberid",
+			"homeoraway = new String(\"00:00:00\")",
+			"fixturedate = new String(\"NEXT\")",
+			"Season",
+			"	opponents = new String(\"0\").toString();\n",
+			"lessons",
+			"lesson_id",
+			"group_code",
+			"lesson_text",
+			"end_time",
+			"start_time",
+			"lesson_day",
+			"schedule_role",
+			"lessondetail",
+			"group_code",
+			"coachingday",
+			"mystart",
+			"setDisplay",
+			"CoachingLessonObject(",
+			"_9",
+			"_8",
+			"_7",
+			"_6",
+			"_5",
+			"_1",
+			"_0",
+			"schedule_role",
+			"start_time",
+			"lesson_text",
+			"lessondetail.",
+			"coachingobject",
+			"_{{lesson_id}}",
+			"BoxLeagueObject",
+			"[lesson_text]",
+			"scale",
+			"mNew",
+			"sch",
+			"memberObj",
+			"curschedule",
+			"Response.Write",
+			"resultdata",
+			"Response.Write",
+			"league.html",
+			"index.asp",
+			"theiraccess",
+			"loginModal",
+			"signin.asp",
+			"RS(\"",
+			"JC 2014.",
+			"contact",
+			"loginModal",
+			"error",
+			"that",
+			"bokingref",
+			"inlist",
+			"../documents",
+			"flood",
+			"answer",
+			"JSON received",
+			"\"#\"",
+			"curry",
+			"542",
+			"m_eventtime",
+			"debug",
+			"feat",
+			"arden9",
+			"<ul",
+			"debuggi",
+			"h5 class=\"bodytext\"",
+			"ul type=\"disc\"",
+			"paidbox",
+			"paidform",
+			"Preferences",
+			"myprofile.html",
+			"facilities.html",
+			"page_template2.html",
+			"circulationtem",
+			"courtes",
+			"frmUserId",
+			"SQL1",
+			"debugg",
+			"ZZwim",
+			"objNew",
+			"startage",
+			"debugging",
+			"mAge",
+			"resulttext",
+			"updating",
+			"kount",
+			"SQLText",
+			"mUnique",
+			"memberknt",
+			"displaydate",
+			"resulttext",
+			"memberobj",
+			"mWeekend",
+			"mWeekday",
+			"arden9help",
+			"adminhelp",
+			"socialhelp",
+			"teamhelp",
+			"mVets55",
+			"mVets40",
+			"mVets55Partner",
+			"mVets40Partner",
+			"mMixed",
+			"forename1Partner",
+			"mMixedPartner",
+			"mMixedPlate",
+			"mDoubles",
+			"mSingles",
+			"unique",
+			"Summer",
+			"mPhotoConsent",
+			"memberobj."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"http://hamptontennis.org.uk/fullindex.html\"",
+			"fullindex.html",
+			"mypostcode",
+			"",
+			"// $black: #000;\n// $white: #fff;\n// $grey: lighten($black, 50%);\n// $dark-grey: lighten($black, 30%);\n// $medium-grey: darken($white, 50%);\n// $light-grey: darken($white, 10%);\n// $footer-toprow-color: #33353B;\n// $footer-bottomrow-color:  #26272B;\n// $topbar-bg-color: black;\n// $topbar-dropdown-bg: $medium-grey;\n",
+			"Neo-Sans-Pro-Bold",
+			"@font-face {\n  font-family: \"MyriadPro\";\n  src: url(\"fonts/MyriadPro_Regular.eot\");\n  src: url(\"fonts/MyriadPro_Regular.eot?#iefix\") format(\"embedded-opentype\"),\n       url(\"fonts/MyriadPro_Regular.woff\") format(\"woff\"),\n       url(\"fonts/MyriadPro_Regular.ttf\") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal;\n}",
+			"homeoraway = new String(\"H\")",
+			"fixturedate = new String(\"\")",
+			"	opponents = new String(\"NONE\").toString();\n",
+			"fixtures",
+			"opponents",
+			"teamname",
+			"fixturenote",
+			"homeoraway",
+			"fixtureyear",
+			"fixtureid",
+			"fixturedate",
+			"fixturedetail",
+			"venue",
+			"            <div class=\"large-3 medium-3 small-12 columns\">\n              <label for=\"group_code_{{@index}}\">Venue:</label>\n              <select name=\"group_code_{{@index}}\" id=\"group_code_{{@index}}\" tabindex=\"{{@index}}\" >\n                <option value=\"-\" {{#equalsTo group_code \"-\"}}selected{{/equalsTo}}>- Select -</option>\n                <option value=\"TOTS\" {{#equalsTo group_code \"TOTS\"}}selected{{/equalsTo}}>Tots Tennis</option>\n                <option value=\"RED\" {{#equalsTo group_code \"RED\"}}selected{{/equalsTo}}>Mini-Tennis Red</option>\n                <option value=\"ORANGE\" {{#equalsTo group_code \"ORANGE\"}}selected{{/equalsTo}}>Mini-Tennis Orange</option>\n                <option value=\"GREEN\" {{#equalsTo group_code \"GREEN\"}}selected{{/equalsTo}}>Mini-Tennis Green</option>\n                <option value=\"FULL BALL\" {{#equalsTo group_code \"FULL BALL\"}}selected{{/equalsTo}}>Full Ball</option>\n                <option value=\"UNDER 14\" {{#equalsTo group_code \"UNDER 14\"}}selected{{/equalsTo}}>Under 14</option>\n                <option value=\"UNDER 16\" {{#equalsTo group_code \"UNDER 16\"}}selected{{/equalsTo}}>Under 16</option>\n                <option value=\"UNDER 18\" {{#equalsTo group_code \"UNDER 18\"}}selected{{/equalsTo}}>Under 18</option>\n              </select>\n  ",
+			"fixturesetup",
+			"            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=SAT\">Ladies 1st</a></li>\n            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=SAT\">Ladies 2nd</a></li>\n            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=SAT\">Ladies 3rd</a></li>\n            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=MON\">Mens 1st</a></li>\n            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=TUE\">Mens 2nd</a></li>\n            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=WED\">Mens 3rd</a></li>\n            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=THU\">Mens 4th</a></li>\n            <li><a href=\"http://hamptontennis.org.uk/coachingday.html?day=FRI\">Mens 5th</a></li>\n",
+			"mydate",
+			"CoachingLessonObject(lesson_id,",
+			"_10",
+			"_9",
+			"_8",
+			"_7",
+			"_6",
+			"_5",
+			"_4",
+			"group_code = Trim(new String(Request.Form(\"group_code_1\")));\nif (group_code == \"\" || group_code ==\"null\" || group_code == \"undefined\")\n{\n	group_code = new String(\"\").toString();\n} \n\nstart_time = Trim(new String(Request.Form(\"start_time_1\")));\nif (start_time == \"\" || start_time ==\"null\" || start_time == \"undefined\")\n{\n	start_time = new String(\"00:00:00\").toString();\n} \n\nend_time = Trim(new String(Request.Form(\"end_time_1\")));\nif (end_time == \"\" || end_time ==\"null\" || end_time == \"undefined\")\n{\n	end_time = new String(\"00:00:00\").toString();\n} \n\nlesson_text = Trim(new String(Request.Form(\"lesson_text_1\")));\nif (lesson_text == \"\" || lesson_text ==\"null\" || lesson_text == \"undefined\")\n{\n	lesson_text = new String(\"\").toString();\n} \n\nlesson_id = Trim(new String(Request.Form(\"lesson_id_1\")));\nif (lesson_id == \"\" || lesson_id ==\"null\" || lesson_id == \"undefined\")\n{\n	lesson_id = new String(\"0\").toString();\n} ",
+			"_3",
+			"group_code = Trim(new String(Request.Form(\"group_code_1\")));\nif (group_code == \"\" || group_code ==\"null\" || group_code == \"undefined\")\n{\n	group_code = new String(\"\").toString();\n} \n\nstart_time = Trim(new String(Request.Form(\"start_time_1\")));\nif (start_time == \"\" || start_time ==\"null\" || start_time == \"undefined\")\n{\n	start_time = new String(\"00:00:00\").toString();\n} \n\nend_time = Trim(new String(Request.Form(\"end_time_1\")));\nif (end_time == \"\" || end_time ==\"null\" || end_time == \"undefined\")\n{\n	end_time = new String(\"00:00:00\").toString();\n} \n\nlesson_text = Trim(new String(Request.Form(\"lesson_text_1\")));\nif (lesson_text == \"\" || lesson_text ==\"null\" || lesson_text == \"undefined\")\n{\n	lesson_text = new String(\"\").toString();\n} \n\nlesson_id = Trim(new String(Request.Form(\"lesson_id_1\")));\nif (lesson_id == \"\" || lesson_id ==\"null\" || lesson_id == \"undefined\")\n{\n	lesson_id = new String(\"0\").toString();\n} ",
+			"_2",
+			"group_code = Trim(new String(Request.Form(\"group_code_1\")));\nif (group_code == \"\" || group_code ==\"null\" || group_code == \"undefined\")\n{\n	group_code = new String(\"\").toString();\n} \n\nstart_time = Trim(new String(Request.Form(\"start_time_1\")));\nif (start_time == \"\" || start_time ==\"null\" || start_time == \"undefined\")\n{\n	start_time = new String(\"00:00:00\").toString();\n} \n\nend_time = Trim(new String(Request.Form(\"end_time_1\")));\nif (end_time == \"\" || end_time ==\"null\" || end_time == \"undefined\")\n{\n	end_time = new String(\"00:00:00\").toString();\n} \n\nlesson_text = Trim(new String(Request.Form(\"lesson_text_1\")));\nif (lesson_text == \"\" || lesson_text ==\"null\" || lesson_text == \"undefined\")\n{\n	lesson_text = new String(\"\").toString();\n} \n\nlesson_id = Trim(new String(Request.Form(\"lesson_id_1\")));\nif (lesson_id == \"\" || lesson_id ==\"null\" || lesson_id == \"undefined\")\n{\n	lesson_id = new String(\"0\").toString();\n} \n\nlessondetail = new CoachingLessonObject(lesson_day,start_time,end_time,group_code);\nlessondetail.setLessonText(lesson_text);\n\nlessons.push(lessondetail);\n\n",
+			"_1",
+			"group_code = Trim(new String(Request.Form(\"group_code_0\")));\nif (group_code == \"\" || group_code ==\"null\" || group_code == \"undefined\")\n{\n	group_code = new String(\"\").toString();\n} \n\nstart_time = Trim(new String(Request.Form(\"start_time_0\")));\nif (start_time == \"\" || start_time ==\"null\" || start_time == \"undefined\")\n{\n	start_time = new String(\"00:00:00\").toString();\n} \n\nend_time = Trim(new String(Request.Form(\"end_time_0\")));\nif (end_time == \"\" || end_time ==\"null\" || end_time == \"undefined\")\n{\n	end_time = new String(\"00:00:00\").toString();\n} \n\nlesson_text = Trim(new String(Request.Form(\"lesson_text_0\")));\nif (lesson_text == \"\" || lesson_text ==\"null\" || lesson_text == \"undefined\")\n{\n	lesson_text = new String(\"\").toString();\n} \n\nlesson_id = Trim(new String(Request.Form(\"lesson_id_0\")));\nif (lesson_id == \"\" || lesson_id ==\"null\" || lesson_id == \"undefined\")\n{\n	lesson_id = new String(\"0\").toString();\n} ",
+			"lesson_id",
+			"schedule_role = Trim(new String(Request.Form(\"schedule_role\")));\nif (schedule_role == \"\" || schedule_role ==\"null\" || schedule_role == \"undefined\")\n{\n	schedule_role = new String(\"NEXT\").toString();\n} ",
+			"lesson_day",
+			"schedule_role = Trim(new String(Request.Form(\"schedule_role\")));\nif (schedule_role == \"\" || schedule_role ==\"null\" || schedule_role == \"undefined\")\n{\n	schedule_role = new String(\"NEXT\").toString();\n} ",
+			"schedule_role",
+			"start_time = Trim(new String(Request.Form(\"start_time_1\")));\nif (start_time == \"\" || start_time ==\"null\" || start_time == \"undefined\")\n{\n	start_time = new String(\"00:00:00\").toString();\n} ",
+			"group_code",
+			"lesson_text = Trim(new String(Request.Form(\"lesson_text_1\")));\nif (lesson_text == \"\" || lesson_text ==\"null\" || lesson_text == \"undefined\")\n{\n	lesson_text = new String(\"\").toString();\n} ",
+			"",
+			"lessondetail",
+			"_{{@index}}",
+			"            <div class=\"large-2 medium-2 small-12 columns\">\n              <label for=\"start_time_{{lesson_id}}\">Start Time:</label>\n              <input type=\"date\" name=\"start_time_{{lesson_id}}\" id=\"start_time_{{lesson_id}}\" size=\"10\" maxlength=\"10\" tabindex=\"1\" value=\"{{start_time}}\"  placeholder=\"HHmm\" autofocus/>\n            </div>\n            <div class=\"large-2 medium-2 small-12 columns\">\n              <label for=\"end_time_{{lesson_id}}\">Start Time:</label>\n              <input type=\"date\" name=\"end_time_{{lesson_id}}\" id=\"end_time_{{lesson_id}}\" size=\"8\" maxlength=\"8\" tabindex=\"2\" value=\"{{end_time}}\"  placeholder=\"HHmm\" />\n            </div>\n            <div class=\"large-6 medium-6 small-12 columns\">\n              <label for=\"lesson_text_{{lesson_id}}\">Lesson text:</label>\n              <input type=\"date\" name=\"lesson_text_{{lesson_id}}\" id=\"lesson_text_{{lesson_id}}\" size=\"10\" maxlength=\"10\" tabindex=\"3\" value=\"{{lesson_text}}\"  placeholder=\"dd/mm/yyyy\" />\n            </div>\n\n            <div class=\"large-2 medium-2 small-12 columns\">\n              <label for=\"group_code_{{lesson_id}}\">Group Code:</label>\n              <select name=\"group_code_{{lesson_id}}\" id=\"group_code_{{lesson_id}}\" tabindex=\"4\">\n                <option value=\"TOTS\" {{#equalsTo group_code \"TOTS\"}}selected{{/equalsTo}}>Tots Tennis</option>\n                <option value=\"RED\" {{#equalsTo group_code \"RED\"}}selected{{/equalsTo}}>Mini-Tennis Red</option>\n                <option value=\"ORANGE\" {{#equalsTo group_code \"ORANGE\"}}selected{{/equalsTo}}>Mini-Tennis Orange</option>\n                <option value=\"GREEN\" {{#equalsTo group_code \"GREEN\"}}selected{{/equalsTo}}>Mini-Tennis Green</option>\n                <option value=\"FULL BALL\" {{#equalsTo group_code \"FULL BALL\"}}selected{{/equalsTo}}>Full Ball</option>\n                <option value=\"UNDER 14\" {{#equalsTo group_code \"UNDER 14\"}}selected{{/equalsTo}}>Under 14</option>\n                <option value=\"UNDER 18\" {{#equalsTo group_code \"UNDER 18\"}}selected{{/equalsTo}}>Under 18</option>\n              </select>\n            </div>\n",
+			"CoachingLessonObject",
+			"[lesson_text], [group_code]",
+			"coachingobject",
+			"debugWrite",
+			"league.html",
+			"fullindex.html",
+			"#",
+			"			mySignIn.uniqueref = new String(allData.uniqueref\")).toString();\n			mySignIn.onlinebookingid = new String(\"onlinebookingid\").toString();\n			mySignIn.onlinebookingpin = new String(\"onlinebookingpin\").toString();\n			mySignIn.memberid = new String(allData.memberid\")).toString();\n			mySignIn.forename = new String(allData.forename1\")).toString();\n			mySignIn.acclevel = new String(allData.webaccess\")).toString();\n",
+			"allData.",
+			"			mySignIn.uniqueref = new String(RS(\"uniqueref\")).toString();\n			mySignIn.onlinebookingid = new String(\"onlinebookingid\").toString();\n			mySignIn.onlinebookingpin = new String(\"onlinebookingpin\").toString();\n			mySignIn.memberid = new String(RS(\"memberid\")).toString();\n			mySignIn.forename = new String(RS(\"forename1\")).toString();\n			mySignIn.acclevel = new String(RS(\"webaccess\")).toString();\n\n\n",
+			"JC 2015.",
+			"scheduleref",
+			"schedulelist",
+			"/documents",
+			"543",
+			"h5",
+			"ul type=\"none\"",
+			"tourbox",
+			"tourform",
+			"Choices",
+			"renewprofile.html",
+			"ourclub.html",
+			"fullindex.html",
+			"frmPassword",
+			"frmUserId = new String(Request.Form(\"frmUserId\")).toString();\nif (frmUserId == \"\" || frmUserId==\"null\" || frmUserId == \"undefined\")\n	frmUserId = new String(\"\").toString();\n",
+			"memberObj",
+			"Conn = Server.CreateObject(\"ADODB.Connection\");\nRS = Server.CreateObject(\"ADODB.RecordSet\");\nConn.Open(dbconnect);\nSQLstart = new String(\"UPDATE members \")\nSQLend = new String(\" WHERE uniqueref=\"+memberObj.uniqueref).toString();\nSQLmiddle = new String(\"SET \").toString();\nSQLmiddle += \" surname='\"+memberobj.surname+\"',\";\nSQLmiddle += \" forename1='\"+memberobj.forename1+\"',\";\nSQLmiddle += \" gender='\"+memberobj.gender+\"', \";\nSQLmiddle += \" address1='\"+memberobj.address1+\"',\";\nSQLmiddle += \" address2='\"+memberobj.address2+\"',\";\nSQLmiddle += \" address3='\"+memberobj.address3+\"',\";\nSQLmiddle += \" address4='\"+memberobj.address4+\"',\";\nSQLmiddle += \" postcode='\"+memberobj.postcode+\"',\";\nSQLmiddle += \" homephone='\"+memberobj.homephone+\"',\";\nSQLmiddle += \" mobilephone='\"+memberobj.mobile+\"',\";\nSQLmiddle += \" email='\"+memberobj.email+\"',\";\nSQLmiddle += \" britishtennisno='\"+memberobj.britishtennisno+\"',\";\nSQLmiddle += \" emergencyname='\"+memberobj.emergencyname+\"',\";\nSQLmiddle += \" emergencyphone='\"+memberobj.emergencyphone+\"',\";\nSQLmiddle += \" medicalinfo='\"+memberobj.medicalinfo+\"',\";\n",
+			"memberObj.medicalinfo",
+			"memberObj.emergencyphone",
+			"memberObj.emergencyname",
+			"memberObj.email",
+			"memberObj.mobilephone",
+			"memberObj.homephone",
+			"memberObj.address3",
+			"memberObj.address2",
+			"memberObj.postcode",
+			"memberObj.address4",
+			"memberObj.dob",
+			"britishtennisno",
+			"memberObj.address1",
+			"memberObj.gender",
+			"memberObj.forename1",
+			"memberObj.surname",
+			"Autumn",
+			"mSummerFinalsDay = Trim(new String(Request.Form(\"photoconsent\")));\nif (mSummerFinalsDay == \"\" || mSummerFinalsDay ==\"null\" || mSummerFinalsDay == \"undefined\")\n{\n	mSummerFinalsDay = new String(\"N\").toString();\n} else {\n	mSummerFinalsDay = new String(\"Y\").toString();\n}",
+			"mSummerFinalsDay",
+			"mPhotoConsent = Trim(new String(Request.Form(\"photoconsent\")));\nif (mPhotoConsent == \"\" || mPhotoConsent ==\"null\" || mPhotoConsent == \"undefined\")\n{\n	mPhotoConsent = new String(\"N\").toString();\n} else {\n	mPhotoConsent = new String(\"Y\").toString();\n}",
+			"",
+			"	Conn = Server.CreateObject(\"ADODB.Connection\");\n	RS = Server.CreateObject(\"ADODB.RecordSet\");\n	Conn.Open(dbconnect);\n	SQLstart = new String(\"UPDATE members \")\n	SQLend = new String(\" WHERE uniqueref=\"+memberobj.uniqueref).toString();\n	SQLmiddle = new String(\"SET \").toString();\n	SQLmiddle += \" singles='\"+memberobj.id+\"',\";\n	SQLmiddle += \" membergrade='\"+memberobj.grade+\"',\";\n	SQLmiddle += \" surname='\"+memberobj.surname+\"',\";\n	SQLmiddle += \" forename1='\"+memberobj.forename1+\"',\";\n	SQLmiddle += \" gender='\"+memberobj.gender+\"', \";\n	SQLmiddle += \" address1='\"+memberobj.address1+\"',\";\n	SQLmiddle += \" address2='\"+memberobj.address2+\"',\";\n	SQLmiddle += \" address3='\"+memberobj.address3+\"',\";\n	SQLmiddle += \" address4='\"+memberobj.address4+\"',\";\n	SQLmiddle += \" postcode='\"+memberobj.postcode+\"',\";\n	SQLmiddle += \" homephone='\"+memberobj.homephone+\"',\";\n	SQLmiddle += \" mobilephone='\"+memberobj.mobile+\"',\";\n	SQLmiddle += \" email='\"+memberobj.email+\"',\";\n	SQLmiddle += \" webpassword='\"+memberobj.webpassword+\"',\";\n	SQLmiddle += \" britishtennisno='\"+memberobj.britishtennisno+\"',\";\n	SQLmiddle += \" emergencyname='\"+memberobj.emergencyname+\"',\";\n	SQLmiddle += \" emergencyphone='\"+memberobj.emergencyphone+\"',\";\n	SQLmiddle += \" medicalinfo='\"+memberobj.medicalinfo+\"',\";\n	SQLmiddle += \" photoconsent='\"+memberobj.photoconsent+\"',\";\n	SQLmiddle += \" paid='\"+memberobj.paid+\"',\";\n	SQLmiddle += \" webaccess=\"+memberobj.webaccess+\",\";\n	if (memberobj.onlinebookingid != \"0\")\n		 SQLmiddle += \" onlinebookingid=\"+memberobj.onlinebookingid+\", \";\n\n	// Now do date fields. If null dont insert them as part of the update clause\n	//  Access doesnt like setting date fields to ''\n	if (! (memberobj.dob == \"\"))\n		SQLmiddle += \" dob='\"+memberobj.dob+\"',\";\n	else\n		SQLmiddle += \" dob=null,\";\n	if (! (memberobj.joined == \"\"))\n		SQLmiddle += \" joined='\"+memberobj.joined+\"',\";\n	else\n		SQLmiddle += \" joined=null,\";\n	if (! (memberobj.left == \"\"))\n		SQLmiddle += \" dateleft='\"+memberobj.left+\"',\";\n	else\n		SQLmiddle += \" dateleft=null,\";\n	SQLmiddle += \" mailing='\"+memberobj.mailing+\"', \";\n\n	// onlinebookingpin is the last column so no trailing comma	\n	SQLmiddle += \" onlinebookingpin='\"+memberobj.onlinebookingpin+\"' \";\n	// SQLmiddl",
+			"mPhotoConsent",
+			"mWeekend = Trim(new String(Request.Form(\"wimbledonweekend\")));\nif (mWeekend == \"\" || mWeekend ==\"null\" || mWeekend == \"undefined\")\n{\n	mWeekend = new String(\"N\").toString();\n} else {\n	mWeekend = new String(\"Y\").toString();\n}",
+			"55",
+			"mVets40Partner = Trim(new String(Request.Form(\"doublespartner\")));\nif (mVets40Partner == \"\" || mVets40Partner ==\"null\" || mVets40Partner == \"undefined\")\n{\n	mVets40Partner = new String(\"Not specified\").toString();\n} \n",
+			"mVets40Partner",
+			"mDoublesPartner = Trim(new String(Request.Form(\"doublespartner\")));\nif (mDoublesPartner == \"\" || mDoublesPartner ==\"null\" || mDoublesPartner == \"undefined\")\n{\n	mDoublesPartner = new String(\"Not specified\").toString();\n}",
+			"mWeekday",
+			"wimbledonweekday",
+			"teamhelp = Trim(new String(Request.Form(\"teamhelp\")));\nif (teamhelp == \"\" || teamhelp ==\"null\" || teamhelp == \"undefined\")\n{\n	teamhelp = new String(\"N\").toString();\n} else {\n	teamhelp = new String(\"Y\").toString();\n}\n",
+			"wimbledonweekday\nif (teamhelp == \"\" || teamhelp ==\"null\" || teamhelp == \"undefined\")\n{\n	teamhelp = new String(\"N\").toString();\n} else {\n	teamhelp = new String(\"Y\").toString();\n}\n",
+			"teamhelp = Trim(new String(Request.Form(\"teamhelp\")));\nif (teamhelp == \"\" || teamhelp ==\"null\" || teamhelp == \"undefined\")\n{\n	teamhelp = new String(\"N\").toString();\n} else {\n	teamhelp = new String(\"Y\").toString();\n}\n",
+			"arden9help",
+			"teamhelp = Trim(new String(Request.Form(\"teamhelp\")));\nif (teamhelp == \"\" || teamhelp ==\"null\" || teamhelp == \"undefined\")\n{\n	teamhelp = new String(\"N\").toString();\n} else {\n	teamhelp = new String(\"Y\").toString();\n}\n",
+			"adminhelp",
+			"teamhelp = Trim(new String(Request.Form(\"teamhelp\")));\nif (teamhelp == \"\" || teamhelp ==\"null\" || teamhelp == \"undefined\")\n{\n	teamhelp = new String(\"N\").toString();\n} else {\n	teamhelp = new String(\"Y\").toString();\n}\n",
+			"socialhelp",
+			"teamhelp = Trim(new String(Request.Form(\"teamhelp\")));\nif (teamhelp == \"\" || teamhelp ==\"null\" || teamhelp == \"undefined\")\n{\n	teamhelp = new String(\"N\").toString();\n} else {\n	teamhelp = new String(\"Y\").toString();\n}\n",
+			"teamhelp",
+			"mVets55 = Trim(new String(Request.Form(\"mixedplate\")));\nif (mVets55 == \"\" || mVets55 ==\"null\" || mVets55 == \"undefined\")\n{\n	mVets55 = new String(\"N\").toString();\n} else {\n	mVets55 = new String(\"Y\").toString();\n}",
+			"teamhelp",
+			"mVets55 = Trim(new String(Request.Form(\"mixedplate\")));\nif (mVets55 == \"\" || mVets55 ==\"null\" || mVets55 == \"undefined\")\n{\n	mVets55 = new String(\"N\").toString();\n} else {\n	mVets55 = new String(\"Y\").toString();\n}\n",
+			"55",
+			"mVets40 = Trim(new String(Request.Form(\"mixedplate\")));\nif (mVets40 == \"\" || mVets40 ==\"null\" || mVets40 == \"undefined\")\n{\n	mVets40 = new String(\"N\").toString();\n} else {\n	mVets40 = new String(\"Y\").toString();\n}",
+			"mVets40",
+			"mMixedPlate = Trim(new String(Request.Form(\"mixedplate\")));\nif (mMixedPlate == \"\" || mMixedPlate ==\"null\" || mMixedPlate == \"undefined\")\n{\n	mMixedPlate = new String(\"N\").toString();\n} else {\n	mMixedPlate = new String(\"Y\").toString();\n}",
+			"mDoublesPartner",
+			"mDoubles = Trim(new String(Request.Form(\"doubles\")));\nif (mDoubles == \"\" || mDoubles ==\"null\" || mDoubles == \"undefined\")\n{\n	mDoubles = new String(\"N\").toString();\n} else {\n	mDoubles = new String(\"Y\").toString();\n}",
+			"mMixedPlate"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/a03pl/Sites/GoogleMaps/Learnable Course/index.html",
+					"settings":
+					{
+						"buffer_size": 958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								845,
+								845
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/a03pl/Sites/GoogleMaps/Learnable Course/js/scripts.js",
+					"settings":
+					{
+						"buffer_size": 4416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2857,
+								2857
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 3.0,
+						"translation.y": 1369.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/a03pl/Sites/GoogleMaps/Learnable Course/css/styles.css",
+					"settings":
+					{
+						"buffer_size": 1214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true
+}

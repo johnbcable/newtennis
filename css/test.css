@@ -1,0 +1,65 @@
+/* line 36, ../scss/test.scss */
+.row--banner {
+  /*  Include with no parameters and see which image results  */
+  background-color: #fff;
+  background-image: url("../img/mainbanner-small.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 36, ../scss/test.scss */
+  .row--banner {
+    /*  Must give banners a height when on desktops  */
+    height: 360px;
+  }
+}
+
+/* line 44, ../scss/test.scss */
+.row--ourclub {
+  /*  Include with image parameter and see which image results  */
+  background-color: #fff;
+  background-image: url("../img/clubhouse.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 44, ../scss/test.scss */
+  .row--ourclub {
+    /*  Must give banners a height when on desktops  */
+    height: 360px;
+  }
+}
+
+/* line 52, ../scss/test.scss */
+.row--league {
+  background-color: #fff;
+  background-image: url("../img/first_team.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 52, ../scss/test.scss */
+  .row--league {
+    /*  Must give banners a height when on desktops  */
+    height: 360px;
+  }
+}
+
+/* line 59, ../scss/test.scss */
+.row--aegon {
+  background-color: #fff;
+  background-image: url("../img/aegon-team-tennis-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 59, ../scss/test.scss */
+  .row--aegon {
+    /*  Must give banners a height when on desktops  */
+    height: 230px;
+  }
+}
