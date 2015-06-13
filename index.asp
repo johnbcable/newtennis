@@ -56,6 +56,7 @@ if (debugging)
 .promobox {
 				 position: relative;
 				 margin: 20px auto;
+				 height: 100px;
 }
 .promobutton {
 					 position: relative;
@@ -135,6 +136,24 @@ if (debugging)
 		</div>
 
  --> 
+
+ 
+ 		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
+			<div>
+				<h3>Your web site is changing!</h3>
+				 <div class="promobutton">
+				 	<a href="http://hamptontennis.org.uk/fullindex.html">Preview &raquo;</a>
+				 </div>
+				<div class="promotext">
+					<p>
+				 		Your web site will soon change to a newer, fresher 
+				 		layout that works much better on your mobile devices. See it now - click on the Preview button.
+				 	</p>
+				</div>
+			</div>
+
+		</div>
+
 		<div id="awards2014" class="collage">
 			 <img alt="Coventry League awards night" src="img/Awards2014.jpg" width="601">
 			 <h2>Coventry League - Awards Night</h2>
@@ -144,7 +163,7 @@ if (debugging)
 			 <div class="promobutton">
 			 			<a href="coventryleagueawards.asp">More &raquo;</a>
 			 </div>
-			<div class="promotexttext">
+			<div class="promotext">
 				<p>
 			 	Culmination of another fantastic league season for the Hampton teams in 2014.
 			 	</p>
