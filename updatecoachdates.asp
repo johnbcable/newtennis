@@ -22,7 +22,7 @@ var uniqueref;
 var coachingobject = new Object();
 var today = new Date();
 
-var debugging = true;  // Production = false
+var debugging = false;  // Production = false
 
 // defaults for variables
 coachingobject.startdate = new String(ddmmyyyy(today));
