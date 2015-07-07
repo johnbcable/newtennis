@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Page for Accessing Social Media tweets and posts from hamptontennis</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/newtwitter.css" />
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+    
+
+    <div class="row">
+      <div class="large-1 medium-1 columns">
+        <img src="./img/small_logo.gif" style="vertical-align: middle;"/>
+      </div>
+      <div class="large-10 medium-10 columns">
+        <h1>Tweets By The Club  (max 5)</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-10 medium-10 large-pish-1 medium-push-1 columns">
+        <p>
+          Test display of tweets from hamptontennis
+        </p>
+      </div>
+    </div>
+
+    <div class="row seealso">
+
+      <div id="futureevents" class="large-8 medium-8 small-12 columns">
+        <h3>Upcoming events</h3>
+      </div>   <!-- /futureevents  -->
+
+      <div class="large-4 medium-4 small-12 columns">
+
+        <h3>Social Media</h3>
+
+        <div id="twitter-feed" class="large-12 medium-12 small-12 columns">
+          <!--  filled in dynamically by running the JS in maintitterfeed.js on document.ready() below   -->
+        </div>
+
+        <div id="blogposts" class="large-12 medium-12 small-12 columns blogposts">
+          <!--  filled in dynamically by running the JS in wordpress.js on document.ready() below   -->
+        </div>
+
+      </div>    <!--    /large-3    -->
+
+    </div> <!--   /row    -->   
+
+
+ 
+    <!--  Handlebars template definitions -->
+
+    <!--  myprofile-template              -->
+
+      <script id="tweet-template" type="x-handlebars-template">
+      {{#with tweets}}
+        {{#each tweets}}
+
+            <div class="twitter-article">                  
+            <div class="twitter-pic"><a href="{{../nameurl}}" ></div>
+            <div class="twitter-text"><p><span class="tweetprofilelink"><strong><a href="https://twitter.com/{{../name}}" >'{{../name}}'</a></strong> <a href="https://twitter.com/{{../name}}" >@{{../name}}</a></span><span class="tweet-time"><a href="https://twitter.com/'+tweetusername+'/status/'+tweetid+'">{{created_on}}</a></span><br/>{{tweet}}</p></div></div>
+
+        {{/each}}
+      {{else}}
+        <h3>No tweets found</h3>
+      {{/with}}
+    </script>
+
+    <!--  end of myprofile-template       -->
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="http://l2.io/ip.js?var=myip"></script>
+    <script src="/js/app.js"></script>    <!-- Foundation kicks in -->
+    <script src="/js/sessions.js"></script>
+    <script src="/js/newtwitter.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation - Test Page for My Preferences Data</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+    
+
+    <div class="row">
+      <div class="large-1 medium-1 panel columns">
+        <img src="./img/small_logo.gif" style="vertical-align: middle;"/>
+      </div>
+      <div class="large-10 medium-10 panel columns">
+        <h1>Your Preferences Held By The Club</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-10 medium-10 large-pish-1 medium-push-1 columns">
+        <p>
+          Please check over the preference settings that we hold about you (shown below) and update with any changes to ensure that these preferences are accurate.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div id="mypreferences" class="push-1 large-10 medium-10 small-11 columns"></div>
+    </div>
+
+ 
+    <!--  Handlebars template definitions -->
+
+    <!--  myprofile-template              -->
+
+      <script id="mypreferences-template" type="x-handlebars-template">
+      {{#if myPreferences}}
+      {{#each myPreferences}}
+      <form method="GET" action="/updatepreferences.asp">
+        <fieldset>
+          <legend>Your Tournament Entry Preferences</legend>
+          <div class="row">
+            <div class="large-8 medium-8 small-10 columns">
+              I will be entering the Singles Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="singles" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I will be entering the Doubles Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="doubles" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I will be entering the Mixed Doubles Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="mixeddoubles" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I will be entering the Mixed Doubles Plate Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="mixedplate" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I will be entering the Veterans Doubles (&gt;40) Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="vetsdoubles" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I will be entering the Veterans Doubles (&gt;55) Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="supervets" type="checkbox">
+            </div>
+          </div>
+        </fieldset>
+
+        <!--   The can-you-help area -->
+
+        <fieldset>
+          <legend>Can You Help Us Run The Club?</legend>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I can help organise teams or competitions
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="teams" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I can help organise social events
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="teams" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I can help us with club administration
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="teams" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I can help with the Arden 9 Road Race (Sunday June 21<sup>st</sup>)
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="teams" type="checkbox">
+            </div>
+          </div>
+        </fieldset>
+
+        <!--   The enter the club Wimbldeno draw area -->
+        
+        <fieldset>
+          <legend>The Draw for Wimbledon Tickets</legend>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I wish to be included in the weekday ticket draw
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="wimbledonweekday" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-8 medium-8 small-10 columns">
+              I wish to be included in the weekend ticket draw
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="wimbledonweekday" type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div class="push-1 large-10 medium-10 small-10 panel columns">
+              <hr />
+              <p>
+                Please note: You may only participate in the Wimbldeon ticket draw at the club:
+              </p>
+              <ul>
+                <li>
+                  If you are over 9 years of age, and 
+                </li>
+                <li>
+                  You have paid your membership fees to the club by the above draw date, an
+                </li>
+                <li>
+                  You have signed-in on the LTA web site and &quot;opted in&quot; for the Wimbldeon ballot specifiying Hampton as the place where you play your tennis.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="row" id="submitblock" align="right" style="margin-top: 10px;">
+              <input type="hidden" name="uniqueref" value="{{uniqueref}}">
+              <div class="large-12 medium-12 small-12 columns">
+                <p>
+                  <input align="center" class="large button" type="submit" value="I confirm that my personal details and preferences held by the club are correct" />
+                </p>
+              </div>
+        </div>
+
+      </form>
+      {{/each}}
+      {{else}}
+        <h3>No details on file</h3>
+      {{/if}}
+    </script>
+
+    <!--  end of myprofile-template       -->
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/foundation/js/foundation.min.js"></script>
+    <script src="../bower_components/handlebars/handlebars.js"></script>
+    <script src="http://l2.io/ip.js?var=myip"></script>
+    <script src="../js/app.js"></script>    <!-- Foundation kicks in -->
+    <script src="../js/sessions.js"></script>
+    <script src="../js/mypreferences.js"></script>
+
+  </body>
+</html>

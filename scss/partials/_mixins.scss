@@ -1,0 +1,145 @@
+// Mixin for box-sizing
+// ====================================================================
+
+@mixin bs($bs-type: $defined-bs-type) {
+	-webkit-box-sizing: $bs-type;
+	-moz-box-sizing: $bs-type;
+	box-sizing: $bs-type;
+}
+
+// Mixin for creating pill shaped buttons
+// ====================================================================
+
+@mixin button-links($button-base: darken($color11,10%),$button-hover: darken($color11,15%)) {
+	border: 1px solid darken($color11,16%);
+	padding: .3em .6em;
+	margin-left: .7em;
+	@include border-radius(8px);
+	@include text-shadow(0 1px 2px $color11);
+	color: lighten($color10,50%);
+	background-color: $button-base;
+	&:hover {
+		background-color: $button-hover;
+	}
+}
+
+// Media Query mixin
+@mixin MQ($canvas) {
+	@if $canvas == XS {
+		@media only screen and (min-width: $XS) and (max-width: $S - 1) { @content; }
+	}
+	@else if $canvas == S {
+		@media only screen and (min-width: $S) and (max-width: $M - 1) { @content; }
+	}
+	@else if $canvas == M {
+		@media only screen and (min-width: $M) and (max-width: $L - 1) { @content; }
+	}
+	@else if $canvas == L {
+		@media only screen and (min-width: $L) and (max-width: $XL - 1) { @content; }
+	}
+	@else if $canvas == XL {
+		@media only screen and (min-width: $XL) and (max-width: $XXL - 1) { @content; }
+	}
+	@else if $canvas == XSplus {
+		@media only screen and (min-width: $XS) { @content; }
+	}
+	@else if $canvas == Splus {
+		@media only screen and (min-width: $S) { @content; }
+	}
+	@else if $canvas == Mplus {
+		@media only screen and (min-width: $M) { @content; }
+	}
+	@else if $canvas == Lplus {
+		@media only screen and (min-width: $L) { @content; }
+	}
+	@else if $canvas == XLplus {
+		@media only screen and (min-width: $XL) { @content; }
+	}
+	@else if $canvas == XSneg {
+		@media only screen and (max-width: $XS) { @content; }
+	}
+	@else if $canvas == Sneg {
+		@media only screen and (max-width: $S) { @content; }
+	}
+	@else if $canvas == Mneg {
+		@media only screen and (max-width: $M) { @content; }
+	}
+	@else if $canvas == Lneg {
+		@media only screen and (max-width: $L) { @content; }
+	}
+	@else if $canvas == XLneg {
+		@media only screen and (max-width: $XL) { @content; }
+	}
+	@else if $canvas == StoL {
+		@media only screen and (min-width: $S) and (max-width: $L - 1) { @content; }
+	}
+}
+
+// Mixin for messages
+// ====================================================================
+
+@mixin message($color) {
+	@if type-of($color) == color {
+		@extend %message;
+		color: $color;
+		border-color: lighten($color, 20%);
+		background: lighten($color, 40%);		
+	}
+	@else {
+		@warn "#($color) is not a color for `message`.";
+	}
+}
+
+// Mixins from Dan Cederholm
+
+@mixin rounded($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin shadow($x, $y, $blur, $color) {
+	-webkit-box-shadow: $x $y $blur $color;
+	-moz-box-shadow: $x $y $blur $color;
+	-ms-box-shadow: $x $y $blur $color;
+	-o-box-shadow: $x $y $blur $color;
+	box-shadow: $x $y $blur $color;
+}
+@mixin shadow-inset($x, $y, $blur, $color) {
+	-webkit-box-shadow: inset $x $y $blur $color;
+	-moz-box-shadow: inset $x $y $blur $color;
+	-ms-box-shadow: inset $x $y $blur $color;
+	-o-box-shadow: inset $x $y $blur $color;
+	box-shadow: inset $x $y $blur $color;
+}
+@mixin transition($property) {
+	-webkit-transition: $property .2s ease;
+	-moz-transition: $property .2s ease;
+	-ms-transition: $property .2s ease;
+	-o-transition: $property .2s ease;
+	transition: $property .2s ease;
+}
+@mixin box-sizing($property: border-box) {
+	-webkit-box-sizing: $property;
+	-moz-box-sizing: $property;
+	-ms-box-sizing: $property;
+	-o-box-sizing: $property;
+	box-sizing: $property;
+}
+@mixin linear-gradient($from, $to) {
+	/*  Fallback fort sad browsers */
+	background-color: $to;
+	/*  Mozilla Firefoz  */
+	background-image: -moz-linear-gradient($from, $to);
+	/*  Opera  */
+	background-image: -o-linear-gradient($from, $to);
+	/*  Webkit   Chrome 11+  */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,$from) color-stop(1, $to));
+	/*  Webkit   Safrai 5.1+, Chrome 10+  */
+	background-image: -webkit-linear-gradient($from, $to);
+	/*  IE10+  */
+	background-image: -ms-linear-gradient($from, $to);
+	/*  W3C  */
+	background-image: linear-gradient($from, $to);
+}

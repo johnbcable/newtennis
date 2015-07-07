@@ -1,0 +1,181 @@
+/* line 126, ../scss/sasstest.scss */
+.row--banner {
+  /*  Include with no parameters and see which image results  */
+  background-color: #fff;
+  background-image: url("../img/mainbanner-small.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 126, ../scss/sasstest.scss */
+  .row--banner {
+    /*  Must give banners a height when on desktops  */
+    height: 360px;
+  }
+}
+
+/* line 134, ../scss/sasstest.scss */
+.row--ourclub {
+  /*  Include with image parameter and see which image results  */
+  background-color: #fff;
+  background-image: url("../img/clubhouse.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 134, ../scss/sasstest.scss */
+  .row--ourclub {
+    /*  Must give banners a height when on desktops  */
+    height: 360px;
+  }
+}
+
+/* line 142, ../scss/sasstest.scss */
+.row--league {
+  background-color: #fff;
+  background-image: url("../img/first_team.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 142, ../scss/sasstest.scss */
+  .row--league {
+    /*  Must give banners a height when on desktops  */
+    height: 360px;
+  }
+}
+
+/* line 149, ../scss/sasstest.scss */
+.row--aegon {
+  background-color: #fff;
+  background-image: url("../img/aegon-team-tennis-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 38em) {
+  /* line 149, ../scss/sasstest.scss */
+  .row--aegon {
+    /*  Must give banners a height when on desktops  */
+    height: 230px;
+  }
+}
+
+/* line 156, ../scss/sasstest.scss */
+.submit-button {
+  border: 1px solid #001933;
+  padding: .3em .6em;
+  margin-left: .7em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  text-shadow: 0 1px 2px #007FFF;
+  color: gray;
+  background-color: #0066cc;
+}
+/* line 113, ../scss/sasstest.scss */
+.submit-button:hover {
+  background-color: #003f80;
+}
+
+/* line 162, ../scss/sasstest.scss */
+time.icon {
+  font-size: 1em;
+  /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  margin: 0 auto 2em auto;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 10%;
+  transform-origin: 50% 10%;
+}
+
+/* line 180, ../scss/sasstest.scss */
+time.icon * {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+/* line 190, ../scss/sasstest.scss */
+time.icon strong {
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  border-bottom: 1px dashed #f37302;
+  box-shadow: 0 2px 0 #fd9f1b;
+}
+
+/* line 201, ../scss/sasstest.scss */
+time.icon em {
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+
+/* line 208, ../scss/sasstest.scss */
+time.icon span {
+  width: 100%;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+/* line 217, ../scss/sasstest.scss */
+time.icon:hover, time.icon:focus {
+  -webkit-animation: swing 0.6s ease-out;
+  animation: swing 0.6s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg) skewY(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(12deg) skewY(4deg);
+  }
+  60% {
+    -webkit-transform: rotate(-9deg) skewY(-3deg);
+  }
+  80% {
+    -webkit-transform: rotate(6deg) skewY(-2deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) skewY(0deg);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg) skewY(0deg);
+  }
+  20% {
+    transform: rotate(12deg) skewY(4deg);
+  }
+  60% {
+    transform: rotate(-9deg) skewY(-3deg);
+  }
+  80% {
+    transform: rotate(6deg) skewY(-2deg);
+  }
+  100% {
+    transform: rotate(0deg) skewY(0deg);
+  }
+}
