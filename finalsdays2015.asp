@@ -67,22 +67,29 @@ if (debugging)
 		<h1>Tournament:&nbsp;<b>Finals Days 2015</b></h1>
 
 		<div id="finalsday2012collage" class="collage">
-			 <img alt="Finals Days 2014" src="Images/finalsday2012_collage.jpg" width="700" height="200">
+			 <img alt="Finals Days 2015" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 		<p class="leader">
-			 AS in 2014, we will have two finals days. The first will be on Saturday 4<sup>th</sup> July (to conicied with the Village Festival) which covers the Box league play-offs and the Challenger Tournament finals. The second will take place on Sunday September 27<sup>th</sup> and this will covered the Mini-Tennis titles and the remainder of the adult tournament categories.
+			 As in 2014, we will have two finals days. The first will be on Saturday 4<sup>th</sup> July (to coincide with the Village Festival) which covers the Box league play-offs and the Challenger Tournament finals. The second will take place on Sunday September 27<sup>th</sup> and this will covered the Mini-Tennis titles and the remainder of the adult tournament categories.
+		</p>
+
+		<h2>Challenger Finals Day - July 4<sup>th</sup> 2015</h2>
+
+		<p class="matchreport">
+			A packed schedule of tennis matches ran concurrently with the daytime festivities at the Hampton in Arden Village Festival featuring both singels and doubles titles and box league winners/runners-up play-offs.
 		</p>
 
 		<p class="matchreport">
-			&nbsp;
+			Summary results can be displayed using the links below; 
 		</p>
 
-		<div id="main2014orderofplay">
+<!-- 
+		<div id="main2015orderofplay">
 			<p>
 				The scheduled order of play and the summary results for the finals days will be shown below. Names highlighted in yellow are the winners for that match.
 			</p>
 
-<!-- 			 <img alt="September Finals Day 2014 Results" src="Images/results2014.jpg" width="601" />
+			 <img alt="September Finals Day 2014 Results" src="Images/results2014.jpg" width="601" />
  -->
  <!--
  			 <p style="clear: both;">
@@ -95,7 +102,7 @@ if (debugging)
 			 	</ol>
 			 </p>
  -->
- 		</div>
+ 		
 <!-- 
 		<p class="matchreport" style="clear: both; padding-top: 10px; margin-top: 10px; border-top: 1px solid black;">
 			The weather for the main September finals day was again cool and overcast for much of the day, but luckily this did NOT turn to rain as it did in June! Once again, another great Finals Day with loads of specators (could be to do with the tea and cakes that were flowing!) and a great sporting and inclusive family atmosphere atmosphere everywhere while we were treated to some cliffhanger and exhibition tennis on show across all award areas. 
@@ -241,9 +248,10 @@ if (debugging)
 				<li><a href="tours.asp?season=2015">2015 Summary results</a></li>
 <!-- 				
 				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157648134437761/">September Finals Day Photos</a></li>
-				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157645428322765/">Challenger Finals Day photos</a></li>
  -->
- 				<li><a href="juniors/results.html?season=2015">Junior tournament results for 2015</a></li>
+ 				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157655547638422">Challenger Finals Day photos</a></li>
+
+ 				<li><a href="juniors/results.html?season=2015">Junior tournament results</a></li>
 			</ul>
 		</div>	
 	

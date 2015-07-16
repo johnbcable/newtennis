@@ -1,17 +1,37 @@
 
+//
+//  Variables
+//
+var jsonstring = new String("");
+var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp?id=14");
+
+var cursearch;   	// get the current value from the search term
+
+// Now create the required URL for the tournament results
+var searchurl;	// holds string for URL for tournament winners query
+
+//
+// Define utility functions first
+//
+function paramSetup() {
+
+	cursearch = $('#searchsurname').val();   // get the current value from the search term
+
+	// Now craete the URL's for the race details, the winners and then the runners
+	searchurl = new String(baseurl + "&p1="+encodeURIComponent(cursearch));
+
+/*	
+	alert('At end of paramSetup, winnersurl is now ['+winnersurl+']');
+*/
+}
 
 function displayDirectorySearchResults () {
 	var jsonstring = new String("");
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=14";
-
-	var searchsurname = $('#searchsurname').val();
-
-	url += "&p1="+searchsurname;
 
 	// console.log("Inside displayDirectorySearchResults, url = ["+url+"]");
 
 	// var eventsfound = false;
-	$.getJSON(url,function(data){
+	$.getJSON(searchurl,function(data){
 
 		var jsonstring = JSON.stringify(data);
 
@@ -37,7 +57,7 @@ function displayDirectorySearchResults () {
 		$("#directorysearchresults").append (theTemplate(searchdata)); 
 
 		// Change results heading
-		$('.resultsheading').html('Results - <small>surnames beginning with &quot;'+searchsurname+'&quot;</small>');
+		$('.resultsheading').html('Results - <small>surnames beginning with &quot;'+cursearch+'&quot;</small>');
 		
 		// jsonstring = JSON.stringify(data);
 		// $("#receivedjson").html('JSON received back from fetchJSON.asp?id=2 is <br /><br />'+jsonstring+'<br /><hr />');
@@ -49,9 +69,14 @@ $(document).ready(function() {
 
 	// Register onclick handlers for the searchbutton
 
-	$( "#runsearch" ).click(function() {
+	$('#runsearch' ).click( function (event) {
+
+		//  Prevent the default form submission
+		event.preventDefault();
 
 	  	// alert( "Handler for runsearch.click() called." );
+	  	
+	  	paramSetup();
 	  	
 	  	displayDirectorySearchResults();
 

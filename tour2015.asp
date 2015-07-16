@@ -85,7 +85,7 @@ td {
 			Below are the rules for the 2015 annual tournaments. As in 2014, there will be two finals days - 4<sup>th</sup> July and 27<sup>th</sup> September.  
 			Please make sure you all arrange and play your matches promptly to allow the draw to progress.
 		</p>
-		<h2>Tournament Draw</h2>
+		<h2>Challenger Tournament Draw</h2>
 		<p>
 			The draws for the first half of this year&apos;s tournaments are shown below as they become available. Any updates will be posted here as and when they occur.
 		</p>
@@ -121,6 +121,18 @@ td {
 				</li>
 			</ol>
 		</div>
+
+		<h2>Main Tournament Draw</h2>
+		<p>
+			The draws for the second half of this year&apos;s tournaments are shown below as they become available. Any updates will be posted here as and when they occur.
+		</p>
+
+		<div id="2015draw" class="centered">
+			<ul type="none">
+				<li><a href="/documents/singlesdraw2015.pdf">Main Singles draws &raquo;</a></li>
+			</ul>
+		</div>
+
 <!--
 		<div id="2010draw" class="centered">
 		
@@ -154,11 +166,20 @@ td {
 			<ul>
 				<li><a href="finalsdays2015.asp">Finals day roundups</a></li>
 				<li><a href="tours.asp?season=2015">Finals day results</a></li>
-				<li><a href="juniors/results.html?season=2015">Junior tournament results</a></li>	
-<!-- 						
-				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157645428322765/">Challenger Finals Day photos</a></li>
- -->			
+				<li><a href="juniors/results.html?season=2015">Junior tournament results</a></li>							
+ 				<li>
+ 					<a href="https://www.flickr.com/photos/103781054@N07/sets/72157655547638422">
+ 						Challenger Finals Day photos
+ 					</a>
+ 				</li>			
+<!--
+ 				<li>
+ 					<a href="https://www.flickr.com/photos/103781054@N07/sets/72157655547638422">
+ 						September Finals Day photos
+ 					</a>
+ 				</li>			
 			</ul>
+-->
 		</div>
 	</div>
 	
