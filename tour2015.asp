@@ -128,8 +128,13 @@ td {
 		</p>
 
 		<div id="2015draw" class="centered">
+<!-- 
 			<ul type="none">
 				<li><a href="/documents/singlesdraw2015.pdf">Main Singles draws &raquo;</a></li>
+			</ul>
+ -->
+			<ul type="none">
+				<li><a href="/documents/tourdraw2015.pdf">Main Singles &amp; Doubles draws &raquo;</a></li>
 			</ul>
 		</div>
 

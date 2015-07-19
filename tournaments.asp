@@ -75,7 +75,7 @@ if (debugging)
 			<p>
 				Finals have usually been held on a Saturday in July but have, in the past where circumstances warranted it, been held in the early autumn 
 				for example: the finals day for 2007 was held at the end of September!<br />
-				<span class="morelink"><a href="tours.asp?season=2011">More details .....</a></span>
+				<span class="morelink"><a href="tours.asp?season=2015">More details .....</a></span>
 			</p>
 			<h3>MAXI-Tennis</h3>
 			<p>

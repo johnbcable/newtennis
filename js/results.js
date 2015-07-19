@@ -4,7 +4,7 @@
 var jsonstring = new String("");
 var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp");
 
-var curseason;   	// get the current value from the year
+var curseason;  	// get the current value from the year
 
 // Now create the required URL for the tournament results
 var winnersurl;	// holds string for URL for tournament winners query
@@ -58,6 +58,14 @@ function getWinners(url) {
 
 }
 
+function displayWinners() {
+
+	paramSetup();
+
+	getWinners(winnersurl);
+
+}
+
 // Now do the document.ready stuff
 
 $(document).ready(function() {
@@ -66,6 +74,7 @@ $(document).ready(function() {
 
 	getWinners(winnersurl);  // Get winners on initial load
 
+/*
 	// Refresh all results if the Fetch button is pressed
 	$('#mysubmit').click( function (event) {
 
@@ -75,19 +84,11 @@ $(document).ready(function() {
 		// Now pick up values from displayed form
 		paramSetup();
 
-		// Now action these JSON retrievals in turn.
-		// race details first
-
-/*	alert('At end of paramSetup, raceurl is now ['+raceurl+']');
-	alert('At end of paramSetup, winnersurl is now ['+winnersurl+']');
-	alert('At end of paramSetup, runnersurl is now ['+runnersurl+']');
-*/
-
 		// Now get the winners results and populate the winners table
 		getWinners(winnersurl);
 
 	});    // end of mysubmit.click
-
+*/
 
 })  // end of document.ready
 
