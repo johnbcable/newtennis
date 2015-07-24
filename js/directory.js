@@ -74,8 +74,8 @@ $(document).ready(function() {
 		//  Prevent the default form submission
 		event.preventDefault();
 
-	  	// alert( "Handler for runsearch.click() called." );
-	  	
+  	// alert( "Handler for runsearch.click() called." );
+  	
 	  	paramSetup();
 	  	
 	  	displayDirectorySearchResults();
