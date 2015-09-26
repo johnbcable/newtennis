@@ -3,11 +3,18 @@
 // -
 // getUserID()
 // getUserCode()
+<<<<<<< HEAD
+=======
+// getOnlineID()
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 // getUserName();
 // getUserAccessLevel()
 // setUser(theid,thename,thelevel)
 // getSessionMode()
+<<<<<<< HEAD
 // current_debug_status()
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 //
 //==================================================
 function getUserID() {
@@ -60,6 +67,31 @@ connobj=null;
 return(result.valueOf());
 }
 //==================================================
+<<<<<<< HEAD
+=======
+function getOnlineID() {
+var zz, result;
+var dbconnect=Application("hamptonsportsdb"); 
+var connobj, RS, SQL1;
+zz=getUserCode();
+result=new Number(0);
+SQL1="select onlinebookingid from members where uniqueref = "+zz;
+connobj=Server.CreateObject("ADODB.Connection");
+RS=Server.CreateObject("ADODB.Recordset");
+connobj.Open(dbconnect);
+RS=connobj.Execute(SQL1);
+while(! RS.EOF)
+{
+	result=new Number(RS("onlinebookingid"));
+	RS.MoveNext();
+}
+RS=null;
+connobj.Close();
+connobj=null;
+return(result.valueOf());
+}
+//==================================================
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 function getUserName() {
 var zz, result;
 var dbconnect=Application("hamptonsportsdb"); 

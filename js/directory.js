@@ -18,7 +18,11 @@ function displayDirectorySearchResults () {
 		jsonstring = new String("{allMembers:"+jsonstring+"}");
 
 		// var eventdata = $.parseJSON(jsonstring);
+<<<<<<< HEAD
 		var eventdata = eval("(" + jsonstring + ")");
+=======
+		var searchdata = eval("(" + jsonstring + ")");
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 		// Set the boolean if we have data
 		// if (eventdata.length > 1)
@@ -30,7 +34,19 @@ function displayDirectorySearchResults () {
 	   //Compile the template
 	    var theTemplate = Handlebars.compile (theTemplateScript); 
 		// Handlebars.registerPartial("description", $("#shoe-description").html());    
+<<<<<<< HEAD
 		$("#directorysearchresults").append (theTemplate(eventdata)); 
+=======
+
+		// clear out existing content
+		$('#directorysearchresults').html('');
+
+		$("#directorysearchresults").append (theTemplate(searchdata)); 
+
+		// Change results heading
+		$('.resultsheading').html('Results - <small>surnames beginning with &quot;'+searchsurname+'&quot;</small>');
+		
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 		// jsonstring = JSON.stringify(data);
 		// $("#receivedjson").html('JSON received back from fetchJSON.asp?id=2 is <br /><br />'+jsonstring+'<br /><hr />');
 	});  // end of function(data)
@@ -42,8 +58,11 @@ $(document).ready(function() {
 	// Register onclick handlers for the searchbutton
 
 	$( "#runsearch" ).click(function() {
+<<<<<<< HEAD
 		// clear out existing content
 		$('#directorysearchresults').html('');
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	  	// alert( "Handler for runsearch.click() called." );
 	  	
@@ -52,6 +71,9 @@ $(document).ready(function() {
 	  	// alert("Should be search results of some sort below");
 	});	
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 })  // end of document.ready
 

@@ -1,0 +1,24 @@
+
+
+
+Tots class on a tue 3.45 
+
+Wed their 2 mini red classes 3.45-4.30 and 1 4.45-5.30 
+
+No green on a wed 4.30 it's wed 3.45 no green ball on thu at all 
+
+Fri 5.15-6 is green 
+
+Tue 3.45 their is 2 Red classes as well as a tots 
+
+And fir tots is now not pay as u play
+
+
+
+
+
+
+Response.Buffer = True
+Response.CacheControl = "no-cache"
+Response.AddHeader "Pragma", "no-cache"
+Response.Expires = -1

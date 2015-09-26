@@ -1,6 +1,7 @@
 // JQuery Twitter Feed. Coded by www.tom-elliott.net (2012) and modified from https://twitter.com/javascripts/blogger.js
 //UPDATED TO AUTHENTICATE TO API 1.1
 
+<<<<<<< HEAD
 // Utility functions
 
 function TwitterObject(name) {
@@ -37,6 +38,8 @@ function ddmmyyyy(d){
 var debugthis = true;   // set to false for production
 
 
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 $(document).ready(function () {
     var displaylimit = 3;
     var twitterprofile = "hamptontennis";
@@ -48,11 +51,14 @@ $(document).ready(function () {
 	
 	var headerHTML = '';
 	var loadingHTML = '';
+<<<<<<< HEAD
 
 	var myTweets = new TwitterObject(twitterprofile);
 	var created, tweetImage, tweetText, dummy;                // What we show from a tweet
 
 
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	headerHTML += '<a href="https://twitter.com/" ><img src="img/twitter-bird-light.png" width="34" height="28" style="float:left;padding:3px 12px 0px 6px" alt="twitter bird" /></a>';
 	headerHTML += '<span class="tweetprofilelink"><h5><a href="https://twitter.com/'+twitterprofile+'" >'+screenname+'</a></h5></span>'
 	loadingHTML += '<div id="loading-container"><img src="img/ajax-loader.gif" width="32" height="32" alt="tweet loader" /></div>';
@@ -101,6 +107,7 @@ $(document).ready(function () {
 						}
 									 
 						feedHTML += '<div class="row twitter-article">';    
+<<<<<<< HEAD
 						// feedHTML += '<div class="large-3 medium-3 columns hide-for-small twitter-pic"><a href="https://twitter.com/'+tweetusername+'" ><img src="'+profileimage+'"images/twitter-feed-icon.png" alt="twitter icon" /></a></div>';
 						// feedHTML += '<div class="large-9 medium-9 small-12 columns twitter-text"><p><span class="tweetprofilelink"><strong><a href="https://twitter.com/'+tweetusername+'" >'+tweetscreenname+'</a></strong> <a href="https://twitter.com/'+tweetusername+'" >@'+tweetusername+'</a></span><span class="tweet-time"><a href="https://twitter.com/'+tweetusername+'/status/'+tweetid+'">'+relative_time(feeds[i].created_at)+'</a></span><br/>'+status+'</p></div>';
 						feedHTML += '<div class="large-12 medium-12 small-12 columns twitter-text"><p><span class="tweet-time">Created on:&nbsp;<a href="https://twitter.com/'+tweetusername+'/status/'+tweetid+'">'+relative_time(feeds[i].created_at)+'</a></span></p><p class="tweet-text">'+status+'</p></div>';
@@ -111,16 +118,26 @@ $(document).ready(function () {
 
 						myTweets.addTweet(ddmmyyyy(dummy),profileimage,status);
 
+=======
+						feedHTML += '<div class="large-3 medium-3 columns hide-for-small twitter-pic"><a href="https://twitter.com/'+tweetusername+'" ><img src="'+profileimage+'"images/twitter-feed-icon.png" alt="twitter icon" /></a></div>';
+						// feedHTML += '<div class="large-9 medium-9 small-12 columns twitter-text"><p><span class="tweetprofilelink"><strong><a href="https://twitter.com/'+tweetusername+'" >'+tweetscreenname+'</a></strong> <a href="https://twitter.com/'+tweetusername+'" >@'+tweetusername+'</a></span><span class="tweet-time"><a href="https://twitter.com/'+tweetusername+'/status/'+tweetid+'">'+relative_time(feeds[i].created_at)+'</a></span><br/>'+status+'</p></div>';
+						feedHTML += '<div class="large-9 medium-9 small-12 columns twitter-text"><p><span class="tweet-time">Created on:&nbsp;<a href="https://twitter.com/'+tweetusername+'/status/'+tweetid+'">'+relative_time(feeds[i].created_at)+'</a></span></p><p class="tweet-text">'+status+'</p></div>';
+						feedHTML += '</div>';
+						displayCounter++;
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 					}   
 				 }
             }
              
             $('#twitter-feed').html(feedHTML);
+<<<<<<< HEAD
 
 			if (debugthis) {
 				console.log("Retrieved tweets: "+JSON.stringify(myTweets));
 			}
 
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
     });
          
     //Function modified from Stack Overflow

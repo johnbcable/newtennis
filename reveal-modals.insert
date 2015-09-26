@@ -20,7 +20,11 @@
           </label>
           <small class="error">Your PIN number must be a 4-digit number</small>
         </div>
+<<<<<<< HEAD
         <inout type="hidden" id="refurl" name="refurl" value="/members.html" />
+=======
+        <input type="hidden" id="refurl" name="refurl" value="/members.html" />
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
         <a href="javascript: logMeIn()" name="loginSubmit" id="loginSubmit" class="medium button">Sign-In</a>
       </form>   
       <p>

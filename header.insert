@@ -20,7 +20,11 @@
     <!-- Open Graph meta information -->
     <meta property="og:title" content="Hampton in Arden Tennis Club">
     <meta property="og:type" content="website">
+<<<<<<< HEAD
     <meta property="og:url" content="http://hamptontennis.org.uk">
+=======
+    <meta property="og:url" content="http://hamptontennis.org.uk/fullindex.html">
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
     <meta property="og:image" content="http://hamptontennis.org.uk/img/logos/logo.gif">
     <meta property="og:description" content="Your family-friendly tennis club in Solihull">
     <!-- Apple touch icon links -->

@@ -5,9 +5,12 @@
 <!--#include file="userfuncs.asp" -->
 <%
 
+<<<<<<< HEAD
 var myId = new String("0").toString();
 var realId = new String("0").toString();
 
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 function debugWrite(content) {
 	if (debugging)
 		Response.Write(content);
@@ -15,7 +18,11 @@ function debugWrite(content) {
 
 function getDoublesPartner(id) {
 
+<<<<<<< HEAD
 	var thepartner = new String("").toString();
+=======
+	var curpartner = new String("").toString();
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	// Now, get the partner details if this is a doubles league
 
@@ -23,11 +30,19 @@ function getDoublesPartner(id) {
 
 	RS2 = oConn.Execute(partnerqry);
 	if (! RS2.EOF) {
+<<<<<<< HEAD
 		thepartner = new String(RS2("first_name")+" "+RS2("last_name")).toString();
 	}
 	RS2.Close();
 
 	return (thepartner);
+=======
+		curpartner = new String(RS2("first_name")+" "+RS2("last_name")).toString();
+	}
+	RS2.Close();
+
+	return (curpartner);
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 }
 
 function getPlayerName(id) {
@@ -117,6 +132,10 @@ var db_name, db_username, db_userpassword;
 var db_server;
 var myId;    // onlinebookingid for this person
 var myForename, mySurname, myFullname;
+<<<<<<< HEAD
+=======
+var myId = new String("0").toString();
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 var SQL1, SQL2;
 var myleagues = new Array();
 var allboxleagues = new Array();
@@ -251,6 +270,7 @@ while (! RS.EOF)
 	curleague = new BoxLeagueObject(RS("name"), RS("boxstart"), RS("boxend"));
 	
 	// All leagues if on the database will have a set of players so no need to test 
+<<<<<<< HEAD
 	// if the database field has any content before unserialise-ing it
 
 	playerdata = new String(unserialize(RS("players"))).toString();
@@ -258,6 +278,28 @@ while (! RS.EOF)
 	// Check if I am a player in this league 
 	// or if I am a partner, we need to use the 
 	// otherr person listed.
+=======
+	// if the database field has any conetnt before unserialise-ing it
+
+	playerdata = new String(unserialize(RS("players"))).toString();
+
+	// Now, only unserialize RS("results") if it is non-null
+
+/*
+	if ( ! (RS("results") == "")) {
+
+			debugWrite("<br />Results = "+RS("results")+"<br />");
+
+		resultdata = unserialize(RS("results"));
+	} else {
+		resultdata = [];
+	}
+*/
+
+	// Check if I am a player in this league 
+	// or if I am a partner, we need to use the 
+	// person listed playerdata.
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	playersarray = playerdata.split(",");
 	playerslength = playersarray.length;
@@ -265,17 +307,29 @@ while (! RS.EOF)
 	var inthere = false;
 	myindex = -1;
 	var tmpplayer, tmpdoubles;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	for(var i=0; i<playersarray.length; i++) {
 		tmpplayer = playersarray[i];
         if (playersarray[i] == myId) {
         	myindex=i;
+<<<<<<< HEAD
         	realId = myId;
 	        inthere = true;
 	        break;
         } else {
         	// Check if I am the partner to this person
 
+=======
+	        inthere = true;
+        } else {
+        	// Check if I am the partner to this person
+
+			// debugWrite("Checking if "+myId+" is the partner of "+tmpplayer+"<br />");
+
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
         	tmpdoubles = getDoublesPartner(tmpplayer);
 
 			debugWrite("Doubles partner for "+tmpplayer+" is "+tmpdoubles+"<br />");
@@ -284,16 +338,23 @@ while (! RS.EOF)
 				if (tmpdoubles == myFullname) {
 					debugWrite(myId+" IS the partner of "+tmpplayer+"<br />");
 					myindex = i;
+<<<<<<< HEAD
 					realId = playersarray[i];
 					inthere = true;
 					break;
+=======
+					inthere = true;
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 				}
 			}
 
         }
     }
 
+<<<<<<< HEAD
     debugWrite("<br />From now on, "+realId+" is the player we will use to get results data<br />");
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
     if (inthere) {
 
@@ -302,20 +363,28 @@ while (! RS.EOF)
 
 		// Get my doubles partner if I have one
 
+<<<<<<< HEAD
 		if (realId == myId) {
 			curpartner = getDoublesPartner(myId);
 		} else {
 			curpartner = getPlayerName(realId);
 		}
 
+=======
+		curpartner = getDoublesPartner(myId);
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 		if (! (curpartner == "")) {
 			doublesleague = true;
 			curleague.setBoxPartner(curpartner);
 		}
 
+<<<<<<< HEAD
 		debugWrite("<br />Is this a doubles league?"+ (doublesleague ? "Yes" : "No") +" - partner: "+curpartner+"<br />" );
 
     	// Remove me (or partner if they are the main player) from the array
+=======
+    	// Remove me from the array - cant play myself!
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	   	playersarray.splice(myindex,1);
    	
@@ -351,21 +420,33 @@ while (! RS.EOF)
 				fullname += " and "+thepartner;
 			}
 
+<<<<<<< HEAD
 			debugWrite("My/our opponents are: "+fullname+"<br />");
 
 		    // Now we have to traverse resultdata scores relating to me
+=======
+		    // Now we have to traverse resultdata for my own scores
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 		    	debugWrite("<br />resultdata = "+JSON.stringify(resultdata)+"<br />");
 
 		    myopponent = parseInt(curplayer);
 
+<<<<<<< HEAD
 			myscore = getScore(RS("results"),realId,myopponent);
+=======
+			myscore = getScore(RS("results"),myId,myopponent);
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 		    debugWrite("<br />In main section, myscore against "+curplayer+" = "+myscore+"<br />");
 
 		    // Now need to get the score for myopponent
 
+<<<<<<< HEAD
 			theirscore = getScore(RS("results"),myopponent, realId);
+=======
+			theirscore = getScore(RS("results"),myopponent, myId);
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 		    debugWrite("<br />In main section, their score (for player "+curplayer+") against me = "+theirscore+"<br />");
 

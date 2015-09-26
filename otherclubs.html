@@ -2,9 +2,15 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
+<<<<<<< HEAD
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hampton-in-Arden Tennis Club - ????</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+=======
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hampton-in-Arden Tennis Club - Other Clubs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
@@ -45,6 +51,7 @@
     <meta name="msapplication-square150x150logo" content="/img/logos/icon150.png">
     <meta name="msapplication-square70x70logo" content="/img/logos/icon70.png">
     <!-- CSS links -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="bower_components/foundation/css/normalize.css" />
     <!-- <link rel="stylesheet" href="css/base.css" />  -->
     <link rel="stylesheet" href="css/main.css" />
@@ -54,6 +61,17 @@
         width: 100%;
         padding: 10px;
         height: 500px;
+=======
+    <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css" />
+    <!-- <link rel="stylesheet" href="css/base.css" />  -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--   Google maps stuff -->
+    <style>
+      #map {
+        width: 100%;
+        padding: 10px;
+        height: 700px;
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
         overflow: hidden;
         border: 2px solid black;
       }
@@ -63,12 +81,17 @@
       }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<<<<<<< HEAD
     <script>
       // google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
 
     <script src="bower_components/modernizr/modernizr.js"></script>
+=======
+
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
     <style type="text/css">
       .fullwidth {
         width: 90%;
@@ -88,6 +111,7 @@
         font-size: 0.9em;
         padding-left: 2em;
       }
+<<<<<<< HEAD
     </style>
   </head>
   <body>
@@ -116,6 +140,43 @@
     </section>
 
   </nav>
+=======
+      .centered {
+        text-align: center;
+        margin: 0 auto 1em auto;
+      }
+    </style>
+  </head>
+
+
+
+    <body>
+        
+        <nav class="top-bar" role="navigation" data-topbar>
+            <ul class="title-area">
+              <!-- Title Area -->
+              <li class="name">
+                <a href="fullindex.html"><img src="http://hamptontennis.org.uk/img/small_logo.gif" /></a><br />
+                <!-- <h1><a href="#">Hampton-in-Arden Tennis Club </a></h1>   -->
+              </li>
+              <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li><a href="/fullindex.html">Home</a></li>
+                <li><a href="javascript: routeMember()">Members</a></li>
+                <li><a href="ourclub.html">Our Club</a></li>
+                <li class="active"><a href="/playing.html">Playing</a>
+                <li><a href="/juniors/index.html">Juniors</a></li>
+                <li><a href="/search.html">Search &raquo;</a></li>
+              </ul>
+            </section>
+
+          </nav>
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 
   <!--     end of topbar navigation    -->
@@ -124,6 +185,7 @@
 
     <div class="row">
 
+<<<<<<< HEAD
       <div class="large-12 medium-12 small-12 columns">
 
         <div class="row">
@@ -185,13 +247,74 @@
 
   <!--    End of main content area    -->
  
+=======
+        <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
+
+            <div class="row">
+
+              <div class="large-1 medium-1 small-3 columns">
+
+                <img src="/images/directions.jpg" />
+
+              </div>
+
+              <div class="large-9 medium-9 small-9 columns">
+
+                <h3>Coventry and District Lawn Tennis League</h3>
+
+              </div>
+
+            </div>    <!--    /row    -->
+
+           <!--    Map area   -->
+
+            <div class="row">
+
+              <div class="large-12 medium-12 hide-for-small maparea columns">
+
+                <!-- Map Container -->
+                <a name="map-panel" id="map-panel">
+                <h4 class="map-title" class="noshow"></h4>
+                <div id="map" class="noshow">></div>
+
+              </div>
+
+            </div>
+
+            <!--    end of Overview Map    -->
+
+        </div>
+
+    </div>
+
+    <!--    Display the list of clubs    -->
+
+   <div class="row">
+
+      <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 panel columns">
+
+        <h3>List of clubs <small>- in alphabetical order</small></h3>
+
+        <div id="clublist"></div>
+
+      </div>
+
+    </div>
+
+
+
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   <!--   Define the footer area  -->
   
   <footer class="footer" role="contentinfo">
 
     <div class="row joinus">
       <div class="large-3 medium-3 small-12 columns">
+<<<<<<< HEAD
         <a class="large fullwidth button" href="/juniors/joinus.html">Join Us</a>
+=======
+        <a class="large fullwidth info button" href="/juniors/joinus.html">Join Us</a>
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
       </div>
       <div class="large-9 medium-9 small-12 columns">
         <p>
@@ -228,7 +351,10 @@
                 <li><a href="/tournaments.html" title="Tournaments">Tournaments</a></li>
                 <li><a href="/juniors/socialtennis.html" title="Provision for social tennis at our club">Social Tennis</a></li>
                 <li><a href="/juniors/coaching.html" title="Opportunities for coaching at our club whatever your age or ability">Coaching</a></li>
+<<<<<<< HEAD
                 <li><a href="/friendlies.html" title"Friendly matches organised against other clubs">Friendlies</a></li>
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
               </ul>
             </div>
             <div class="large-3 medium-3 small-12 columns">
@@ -284,6 +410,7 @@
   <script id="clublist-template" type="x-handlebars-template">
 
     {{#if allClubs}}
+<<<<<<< HEAD
      <table width="100%" class="responsive">
       <thead>
         <tr>
@@ -307,6 +434,70 @@
         {{/each}}
       </tbody>
     </table>
+=======
+    <div class="row">
+      <div class="large-12 medium-12 hide-for-small columns">
+       <table width="100%" class="responsive">
+        <thead>
+          <tr>
+            <th>Club Name<br />Address</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each allClubs}}
+            {{#if postcode}}
+          <tr>
+            <td><span class="clubname">{{clubname}}</span><br /><span class="clubaddress">{{address1}},&nbsp;{{address2}}</span></td>
+            <td><a href="javascript: showLocationMap('{{postcode}}','Location of {{clubname}}')" class="small fullwidth centered info button">Show Map &raquo;</a></td>
+          </tr>
+          {{else}}
+          <tr>
+            <td><span class="clubname">{{clubname}}</span><br /><span class="clubaddress">{{address1}}&nbsp;{{address2}}</span></td>
+            <td>&nbsp;</td>
+          </tr>
+          {{/if}}
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns show-for-small-only">
+       {{#each allClubs}}
+        <hr />
+        <h6>
+        {{clubname}}
+        </h6>
+        <p>
+        <small>
+        {{address1}}
+        {{#if address2}}
+        , {{address2}}
+        {{/if}}
+        {{#if address3}}
+        , {{address3}}
+        {{/if}}
+        , {{#if address4}}<br />
+        {{address4}}
+        {{/if}}
+        {{#if town}}
+        {{town}}
+        {{/if}}
+        {{#if county}}
+        , {{county}}
+        {{/if}}
+        {{#if postcode}}
+        &nbsp;&nbsp;&nbsp;{{postcode}}<br />
+        {{/if}}
+        {{#if telephone}}
+        Telephone: {{telephone}}<br />
+        {{/if}}
+        </small>
+      {{/each}}
+    </div>
+  </div>
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
     {{else}}
       <p>
         No other club details found to list
@@ -338,7 +529,11 @@
           </label>
           <small class="error">Your PIN number must be a 4-digit number</small>
         </div>
+<<<<<<< HEAD
         <inout type="hidden" id="refurl" name="refurl" value="/members.html" />
+=======
+        <input type="hidden" id="refurl" name="refurl" value="/members.html" />
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
         <a href="javascript: logMeIn()" name="loginSubmit" id="loginSubmit" class="medium button">Sign-In</a>
       </form>   
       <p>
@@ -402,6 +597,10 @@
     <script src="/js/eventlist.js"></script>
     <script src="/js/today.js"></script>
  -->
+<<<<<<< HEAD
 
   </body>
+=======
+    </body>
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 </html>
