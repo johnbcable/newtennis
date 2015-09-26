@@ -1,0 +1,135 @@
+<%@language="JScript" CODEPAGE="65001"%>
+<!--#include file="functions.asp" -->
+<!--#include file="strings.asp" -->
+<!--#include file="emailfuncs.asp" -->
+<%
+// First variables that need to be set for each page
+var strtime, strdate;
+var clubname = new String("Hampton-In-Arden Sports Club");
+var pagetitle = new String("MAXI-Tennis Fixture Result");
+// Now for any functions and variables local to this page
+function GetEveryThing(thefile)
+{
+	var fso, f;
+	var ForReading = 1, ForWriting = 2;
+	var fcontents;
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+	myfilename = Server.MapPath(thefile);
+	if (fso.FileExists(myfilename))
+	{
+		f = fso.OpenTextFile(myfilename, ForReading);
+		fcontents = new String(f.ReadAll()).toString();
+		f.Close();
+	}
+	else
+	{
+		fcontents = new String('<h2><span class="blueheading">Result file '+myfilename+' not found</span></h2>').toString();
+	}
+	return(fcontents);
+}
+var whichfile = new String(Request.QueryString("thefile")).toString();
+var sMessage;
+// Set up default greeting strings
+strdate = datestring();
+strtime = timestring();
+var displaydate = dateasstring(Date());
+var debugging=current_debug_status();
+if (whichfile == "null" || whichfile == "undefined" || whichfile == "")
+	Response.Redirect("maxitennis.asp");
+// Now read in contents of fixture result file
+sMessage = new String(GetEveryThing(whichfile));
+// End of page start up coding
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW, NOARCHIVE">
+	<title>Hampton-In-Arden Tennis Club - <%= pagetitle %></title>
+	<link rel="stylesheet" media="screen" type="text/css" href="layout.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="colours.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="typography.css" /> 
+	<link rel="stylesheet" media="print" type="text/css" href="print3col.css" /> 
+	<!-- Comment out the next style sheet if runniung in production -->
+<%
+if (debugging)
+{
+%>
+<link rel="stylesheet" media="screen" type="text/css" href="borders.css" />
+<%
+}
+%>
+	<script language="Javascript" src="datetimepicker.js"></script>
+	<script language="Javascript" src="minmax.js"></script>
+</head>
+<body>
+<!--   1.  Branding   -->
+<div id="branding">
+	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+	<h1>Hampton-In-Arden Sports Club</h1>
+	<h2>Tennis Section</h2>
+
+<!--   2.  Navigation   -->
+	<div id="nav_main">
+		<ul id="topmenu">
+			<li id="nav_ourclub"><a href="aboutus.asp">Our Club</a></li>
+			<li id="nav_coaching"><a href="juniors/coaching.html">Coaching</a></li>
+			<li id="nav_playing"><a href="playing.asp">Playing</a></li>
+			<li id="nav_links"><a href="juniors/index.html">Juniors</a></li>
+			<li id="nav_contact"><a href="juniors/contact.html">Contact</a></li>
+			<li id="nav_members"><a href="members.asp">Members</a></li>
+		</ul>
+		<p id="today">
+			<%= displaydate %>&nbsp;<%= strtime %>
+		</p>
+	</div>
+	
+</div>
+
+<div id="wrapper">
+
+<!--   3. Content    -->
+	<div id="content">
+		<h1>MAXI-Tennis <b>Fixture Result<b></h1>
+<table  width="100%" border="0" cellspacing="2" cellpadding="5" cols="100,*,120">
+  <tr>
+    <td width="650" align="left">
+    	<div align="center">
+    		<%= sMessage %>
+    	</div>
+    </td>
+  </tr>
+</table>
+	<div class="seealso">
+		<h3>See Also:</h3>
+		<ul>
+			<li><a href="maxirules.asp">Maxi-Tennis rules</a></li>
+			<li><a href="maxiresults2011.asp">Maxi-Tennis match results for current tournament</a></li>
+			<li><a href="maxileague2011.asp">Current Maxi-Tennis league table</a></li>
+			<li><a href="maxiscores.xls">Download blank score sheet (MS-Excel format)</a></li>
+		</ul>
+	</div>
+	</div>
+	
+<!--     4.      Supplementary navigation    -->
+	<div id="leftcolumn">
+		<!--#include file="home_nav.asp" -->
+		<!--#include file="memb_nav.asp" -->
+	</div>
+
+<!--    5.   Supplementary content     -->	
+	<div id="rightcolumn">
+		<!--#include file="searchpanel.asp" -->
+		<!--#include file="addresspanel.asp" -->
+		<!--#include file="newspanel.asp" -->
+		<!--#include file="emailpanel.asp" -->
+	</div>
+</div>
+
+<!--     6.    Site info     -->
+<!--#include file="footer.asp" -->
+
+</body>
+</html>
+<%
+%>

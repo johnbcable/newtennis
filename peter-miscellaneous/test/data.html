@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html style="height: 100%;" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+<title>test</title>
+
+<script type="text/javascript">
+
+function story(numberOfCards) {
+    // var player = window.parent.GetPlayer();
+	var numberToReturn = numberOfCards || 20;  // 20 is the default
+	var cards = new Array();   
+	var cardBase = new String("card").toString();
+
+	var debugthis = false;   // Set to true to trigger console logging
+
+	// Below you maintain the list of cards and their contents
+	// 
+	cards[1] = "Feedback is one of the most powerful influences on learning and achievement, but this impact can be either positive or negative. Hattie and Timperley (2007, p81)";
+
+	cards[2] = "Card 2 contents";
+	cards[3] = "Card 3 contents";
+	cards[4] = "Card 4 contents";
+	cards[5] = "Card 5 contents";
+	cards[6] = "Card 6 contents";
+	cards[7] = "Card 7 contents";
+	cards[8] = "Card 8 contents";
+	cards[9] = "Card 9 contents";
+	cards[10] = "Card 10 contents";
+	cards[11] = "Card 11 contents";
+	cards[12] = "Card 12 contents";
+	cards[13] = "Card 13 contents";
+	cards[14] = "Card 14 contents";
+	cards[15] = "Card 15 contents";
+
+	// Adjust numberToReturn if less than the number of cards defined
+	var cardListSize = cards.length - 1;  // How many cards have been set up
+
+	if (cardListSize < numberToReturn) {
+		numberToReturn = cardListSize;
+	}
+
+	// We now need to randomly pick numberToReturn cards and add them
+	// to the player object 
+
+	var cardname;			// Holds name of the current card in player object
+	var selectedCard = 0;	// Which one of the cards is currently selected
+
+	var cardsSelected = new Array();  // Cards already selected (blank to start with)
+
+	// Only create player object if not running in debug mode
+	// 
+	if (!debugthis) {
+		var player = window.parent.GetPlayer();
+	}
+
+	for (var i=1; i<(numberToReturn+1); i++) {
+
+		// Generate random number based on length of cards array
+		selectedCard = Math.floor(Math.random() * cardListSize) + 1;
+
+		// Keep regenerating if already in cardsSelected array
+		while(cardsSelected.indexOf(selectedCard) > -1) {
+			selectedCard = Math.floor(Math.random() * cardListSize) + 1;
+		}
+
+		// Now add selectedCard to cardsSelected array
+		cardsSelected.push(selectedCard);
+
+		// Assign to player object with new card name
+		cardname = new String(cardBase+i).toString();
+/*
+		if (debugthis) 
+		{
+			console.log('player.SetVar("+cardname+",'+cards[selectedCard]+')');
+		} 
+		else 
+		{
+			player.SetVar("+cardname+",cards[selectedCard]);
+		}
+*/
+	}
+
+	if (debugthis) {
+		console.log("After loop");
+		console.log("........ cardsSelected   = "+cardsSelected);
+		console.log("........ cardListSize    = "+cardListSize);
+		console.log("........ numberToReturn  = "+numberToReturn);
+	}
+
+	// Now load up the player object with the data from selected cards
+		
+	player.SetVar("card1",cardsSelected[1] ? cards[cardsSelected[1]] : "");
+	player.SetVar("card2",cardsSelected[2] ? cards[cardsSelected[2]] : "");
+	player.SetVar("card3",cardsSelected[3] ? cards[cardsSelected[3]] : "");
+	player.SetVar("card4",cardsSelected[4] ? cards[cardsSelected[4]] : "");
+	player.SetVar("card5",cardsSelected[5] ? cards[cardsSelected[5]] : "");
+	player.SetVar("card6",cardsSelected[6] ? cards[cardsSelected[6]] : "");
+	player.SetVar("card7",cardsSelected[7] ? cards[cardsSelected[7]] : "");
+	player.SetVar("card8",cardsSelected[8] ? cards[cardsSelected[8]] : "");
+	player.SetVar("card9",cardsSelected[9] ? cards[cardsSelected[9]] : "");
+	player.SetVar("card10",cardsSelected[10] ? cards[cardsSelected[10]] : "");
+	player.SetVar("card11",cardsSelected[11] ? cards[cardsSelected[11]] : "");
+	player.SetVar("card12",cardsSelected[12] ? cards[cardsSelected[12]] : "");
+	player.SetVar("card13",cardsSelected[13] ? cards[cardsSelected[13]] : "");
+	player.SetVar("card14",cardsSelected[14] ? cards[cardsSelected[14]] : "");
+	player.SetVar("card15",cardsSelected[15] ? cards[cardsSelected[15]] : "");
+
+
+var pass = "Pass worked";
+player.SetVar("pass",pass);
+}
+
+</script>
+<script SRC="story_content/user.js" TYPE="text/javascript"></script>
+<script src="story_content/story.js" type="text/javascript"></script>
+
+</head>
+
+<body style="height: 100%;">
+
+<button id="button2" class="hide_level" onclick="story();" >
+Default number
+</button>
+<br />
+<br />
+
+<button id="button2" class="hide_level" onclick="story(7);" >
+Returning 7
+</button>
+
+<br />
+<br />
+
+<button id="button2" class="hide_level" onclick="story(25);" >
+Attempt 25 - actual 15?
+</button>
+
+<button id="button2" class="hide_level" onclick="story();" >
+original button
+</button>
+
+</body>
+</html>

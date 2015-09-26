@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html style="height: 100%;" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+<title>test</title>
+
+<script type="text/javascript">
+function story(numberOfCards) {
+	var numberToReturn = numberOfCards || 20;  // 20 is the default
+	var cards = new Array();   
+	var cardBase = new String("card").toString();
+
+	var debugthis = true;   // Set to true to trigger console logging
+
+	// Below you maintain the list of cards and their contents
+	// 
+	cards[1] = "Feedback is one of the most powerful influences on learning and achievement, but this impact can be either positive or negative. Hattie and Timperley (2007, p81)";
+
+	cards[2] = "Card 2 contents";
+	cards[3] = "Card 3 contents";
+	cards[4] = "Card 4 contents";
+	cards[5] = "Card 5 contents";
+	cards[6] = "Card 6 contents";
+	cards[7] = "Card 7 contents";
+	cards[8] = "Card 8 contents";
+	cards[9] = "Card 9 contents";
+	cards[10] = "Card 10 contents";
+	cards[11] = "Card 11 contents";
+	cards[12] = "Card 12 contents";
+	cards[13] = "Card 13 contents";
+	cards[14] = "Card 14 contents";
+	cards[15] = "Card 15 contents";
+
+	// Adjust numberToReturn if less than the number of cards defined
+	var cardListSize = cards.length - 1;  // How many cards have been set up
+
+	if (cardListSize < numberToReturn) {
+		numberToReturn = cardListSize;
+	}
+
+	// We now need to randomly pick numberToReturn cards and add them
+	// to the player object 
+
+	var cardname;			// Holds name of the current card in player object
+	var selectedCard = 0;	// Which one of the cards is currently selected
+
+	var cardsSelected = new Array();  // Cards already selected (blank to start with)
+
+	// Only create player object if not running in debug mode
+	// 
+	if (!debugthis) {
+		var player = window.parent.GetPlayer();
+	}
+
+	for (var i=1; i<(numberToReturn+1); i++) {
+
+		// Generate random number based on length of cards array
+		selectedCard = Math.floor(Math.random() * cardListSize) + 1;
+
+		// Keep regenerating if already in cardsSelected array
+		while(cardsSelected.indexOf(selectedCard) > -1) {
+			selectedCard = Math.floor(Math.random() * cardListSize) + 1;
+		}
+
+		// Now add selectedCard to cardsSelected array
+		cardsSelected.push(selectedCard);
+
+		// Assign to player object with new card name
+		cardname = new String(cardBase+i).toString();
+
+		if (debugthis) 
+		{
+			console.log("player.SetVar("+cardname+","+cards[selectedCard]+")");
+		} 
+		else 
+		{
+			player.SetVar(cardname,cards[selectedCard]);
+		}
+	}
+
+	if (debugthis) {
+		console.log("After loop");
+		console.log("........ cardsSelected   = "+cardsSelected);
+		console.log("........ cardListSize    = "+cardListSize);
+		console.log("........ numberToReturn  = "+numberToReturn);
+	}
+
+
+/*	
+	player.SetVar("card1",card1);
+	player.SetVar("card2",card2);
+	player.SetVar("card3",card3);
+	player.SetVar("card4",card4);
+	player.SetVar("card5",card5);
+	player.SetVar("card6",card6);
+	player.SetVar("card7",card7);
+	player.SetVar("card8",card8);
+	player.SetVar("card9",card9);
+	player.SetVar("card10",card10);
+	player.SetVar("card11",card11);
+	player.SetVar("card12",card12);
+	player.SetVar("card13",card13);
+	player.SetVar("card14",card14);
+	player.SetVar("card15",card15);
+
+*/
+
+}
+
+</script>
+
+
+</head>
+
+<body style="height: 100%;">
+
+<button id="button2" class="hide_level" onclick="story();" >
+Default number
+</button>
+<br />
+<br />
+
+<button id="button2" class="hide_level" onclick="story(7);" >
+Returning 7
+</button>
+
+<br />
+<br />
+
+<button id="button2" class="hide_level" onclick="story(25);" >
+Attempt 25 - actual 15?
+</button>
+
+
+</body>
+</html>
