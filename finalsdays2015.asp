@@ -71,7 +71,7 @@ if (debugging)
 			 <img alt="Finals Days 2015" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 		<p class="leader">
-			 As in 2014, we will have two finals days. The first will be on Saturday 4<sup>th</sup> July (to coincide with the Village Festival) which covers the Box league play-offs and the Challenger Tournament finals. The second will take place on Sunday September 27<sup>th</sup> and this will covered the Mini-Tennis titles and the remainder of the adult tournament categories.
+			 In 2015, we held two finals days. The first was held on Saturday 4<sup>th</sup> July (to coincide with the Village Festival). This covered the Box league play-offs and the Challenger Tournament finals. The second took place on Sunday September 27<sup>th</sup> and this covered the Mini-Tennis titles and the remainder of the adult tournament categories.
 		</p>
 
 		<h2>Challenger Finals Day - July 4<sup>th</sup> 2015</h2>
@@ -84,14 +84,21 @@ if (debugging)
 			Summary results can be displayed using the links below; 
 		</p>
 
+		<h2>Autumn Finals Day - September 27<sup>th</sup> 2015</h2>
+
+		<p class="matchreport">
+			The weather was glorious to celebrate a packed schedule of tennis matches featuring both singles and doubles titles.
+		</p>
+
 
 		<div id="main2015orderofplay">
 			<p>
-				The scheduled order of play and the summary results for the finals days will be shown below. Names highlighted in yellow are the winners for that match.
+				The scheduled order of play and the summary results for the autumn finals day is shown below. Names highlighted in green are the winners for that match.
 			</p>
 
 			 <img alt="September Finals Day 2015 Order of Play" src="img/orderofplay2015.png" width="601" />
 
+<!--
  			 <p style="clear: both;">
 			 	Please note:
 			 	<ol type="number">
@@ -101,61 +108,86 @@ if (debugging)
 			 		<li>For the court-side scoreboards, first named player/pair above is the &quot;Home&quot; team.
 			 	</ol>
 			 </p>
+-->
  		</div>
- 		
-<!-- 
+
+
+
 		<p class="matchreport" style="clear: both; padding-top: 10px; margin-top: 10px; border-top: 1px solid black;">
-			The weather for the main September finals day was again cool and overcast for much of the day, but luckily this did NOT turn to rain as it did in June! Once again, another great Finals Day with loads of specators (could be to do with the tea and cakes that were flowing!) and a great sporting and inclusive family atmosphere atmosphere everywhere while we were treated to some cliffhanger and exhibition tennis on show across all award areas. 
+			The weather for the main September finals day was gloriously sunny all day! Once again, another great Finals Day with loads of specators and a great sporting and inclusive atmosphere everywhere while we were treated to some cliffhanger and exhibition tennis on show across all award areas. 
+		</p>
+
+<!--
 			<br /><br />
 			Finals Day was made all the sweeter for knowing that our Mens 1st Team had regained their Inter-District title (playing against the Birmingham league winners Streetly) on the previous night. Hampton have now won this title twice in the last 3 years - way to go!
 		</p>
- -->
-<!--
-		<div id="challenger2014orderofplay">
-			<p>
-				The scheduled order of play for the 28<sup>th</sup> June 2014 finals (along with summary results) is shown below. 
-			</p>
-
-			 <img alt="June Finals Day 2014 Order of Play" src="Images/orderofplay2013.jpg" width="601" />
-
-		</div>
-
-
-		<p class="matchreport" style="clear: both; padding-top: 10px; margin-top: 10px; border-top: 1px solid black;">
-			The weather for the June finals day was cool and overcast for much of the day, turning eventually to rain in the latter part of the afternoon, luckily after most of the matches had completed! Great atmosphere in the clubhouse and some good tennis on show across all award areas. 
-
-		</p>
 -->
+		<p class="team">
+			<span>Veterans Mens Doubles</span>Paul Thomas and Ted Frith vs Savio Gaspar and Mark Walker
+		</p>
+		<p class="matchreport">
+			Proceedings kicked off on Court 2 with this battle of the (slightly aging) giants. Betting on the club viewing area was evenly split and Mark and Savio took an early lead and the first set 6-2. Unfazed, and with original bets intact, the second set settled into the grind and one-mistake-is-all-you-need we&apos;ve come to expect from finals days and Paul and Ted eventually tying the match by taking the second set 7-5. Ted and Paul were now on a roll and Mark and Savio faltered under the onslaught in the third set eventually losing that set 6-1
+		</p>
+		<p class="result">
+			<span>Final score:  </span>2-6, 7-5, 6-1
+		</p>
+
+		<p class="team">
+			<span>Veterans Ladies Doubles</span>Terri Mason and Carol Grant vs Catherine Eley and Debbie Smart
+		</p>
+		<p class="matchreport">
+			Another 3-set&apos;er and Steve (Ray) and his court schedule were already in melt-down! An early first set lead for Terri and Carol disappeared in the turnabout of set two - one set all and everything to play for. Terri and Carol needed to step up to avoid going under now the momentum was with Catherine and Debbie ... which they did and turned things around in set three to finish the set 6-2 winners of set three and the match
+		</p>
+		<p class="result">
+			<span>Final score:  </span>6-2, 4-6, 6-2
+		</p>
+
+		<p class="team">
+			<span>Ladies Singles</span>Jane Hodge vs Louise Tomlin
+		</p>
+		<p class="matchreport">
+			And now for another schedule-busting, drama-ridden 3-set&apos;er! Once again, reigning champion Jane and her opponent Louise opted for Court 4 well away from any audience participation, despite Steve&apos;s entreaties about his schedule. This was a high quality match, as expected, with Louise edging into a one set lead at about 60-mins in (yes Steve - the schedule!). Set two was a tough slog for both Jane and Louise but Jane eventually won through 9-7 in the tie-break to take the set 7-6. This was a turning point in the match and Jane went on to win the third set 6-2 to claim the title yet again.
+		</p>
+		<p class="result">
+			<span>Final score:  </span>4-6, 7-6, 6-2
+		</p>
+
+		<p class="team">
+			<span>Mens Singles Plate</span>Rob Yates jnr vs Ted Frith
+		</p>
+		<p class="matchreport">
+			Ted was now playing in the second of three finals on the day and he was now up against last year's winner (albeit Rob is now appreciably taller and hitting the ball appreciably harder and more accurately). Would the voice of experience dampen the fire of youth ... not a bit of it: the winner was Rob Yates jnr. Great playing again Rob jnr! Ted then took a break to change ready for his third and final encounter later in the day.
+		</p>
+		<p class="result">
+			<span>Final score:  </span>6-2, 6-3
+		</p>
+
+
+		<p class="team">
+			<span>Veterans Mens Doubles (over 55&apos;s)</span>Joe Killeen and Phil Turpin vs Chris Barnes and Lorenzo DeFeo
+		</p>
+		<p class="matchreport">
+			And now on to a contest dear to my heart. New finalist Lorenzo cantered out onto centre court with old stager Chris to take on the team that had seen off last year&apos;s champions in the semi-finals, Joe and Phil. Joe and Phil took too long to get going and lost the first set in a time to cheer up Steve (schedule, remember?) and off into set two for more of the same until Joe and Phil looked as if they could rally but to no avail and Chris and Lorenzo took the title, with Lorenzo making the winning smash
+		</p>
+		<p class="result">
+			<span>Final score:  </span>2-6, 3-6
+		</p>
+
+ 		<p class="team">
+			<span>Ladies Singles Plate</span>Catherine Eley vs Alexa Goodyer 
+		</p>
+		<p class="matchreport">
+			Final number two for Catherine after her tough 3-set&apos;er and Alexa was not about to take that into account when a title was at stake! After a tense cat and mouse match, Alexa ran out the winner for her first title in the open tournament.
+		</p>
+		<p class="result">
+			<span>Final score:  </span>3-6, 4-6
+		</p>
+
 
 <!--
-		<p class="team">
-			<span>Ladies Singles Plate</span>Sally Leach vs Catherine Eley
-		</p>
-		<p class="matchreport">
-			What a long time on court! I thought the Mens Over-55 Veterans final would easily be the longest of the first 3 matches, but I was seriously wrong. Neither Sally nor Catherine were going to give up on this title, with one set apiece after 90-minutes or so. On into the third set and this was a grueller, once again with there being no quarter from either side. Sally was determined to retain her title from last year and eventually, after about two and a half hours on court, Sally did eventually succeed in breaking down Catherine&apos;s resolve and claim the title for a second year in a row.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>6-4, 1-6, 7-5
-		</p>
+
 -->
-<!-- 		<p class="team">
-			<span>Ladies Singles</span>Jane Hodge vs Louise Tomlin  
-		</p>
-		<p class="matchreport">
-			Jane and Louise have played together in the ladies league team this year but this title was about the individual and any previous team camaraderie was long gone! They set about each other with great basleine-slogging gusto from the word Go! It is great to watch a match being contested by two quality players. It all hinges on a knife-edge - one mistake being enough to sink you. Despite great rallying, Louise eventually succumbed to Jane&apos;s onslaught in both sets for Jane to retain the title.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>6-3, 6-4
-		</p>
-		<p class="team">
-			<span>Mens Singles Plate</span>Rob Yates vs Rob Yates (jnr)
-		</p>
-		<p class="matchreport">
-			... and the winner was: Rob Yates (junior that is)! Having thanked Rob Yates senior for seeing off Chester in an earlier round - no-one can forget (or want a repeat of) their epic mens singles finals day match in 2010 - Rob Yates (jnr) proved too much of a handful on the day and youth won out! Great playing Rob jnr.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>3-6, 3-6
-		</p>
+<!--
 		<p class="team">
 			<span>Mixed Doubles Plate</span>Paul Thomas and Jayne Barnes vs Steve Ray and Deborah Jones
 		</p>
@@ -164,25 +196,6 @@ if (debugging)
 		</p>
 		<p class="result">
 			<span>Final score:  </span>4-6, 6-3, 1-6
-		</p>
-		<p class="team">
-			<span>Veterans Ladies Doubles</span>Terri Mason and Carol Grant vs Alison Lowe and Kathy Hunt
-		</p>
-		<p class="matchreport">
-			Terri and Carol win the day against new club member Alison and Kathy, Alison displaying almost Mark Joannides-like annoyance with herself after one particular miss - very entertaining. I am sure Alison and Kathy will be back to challenge again next time around - dont get too comfortable on those laurels, Terri and Carol!
-		</p>
-		<p class="result">
-			<span>Final score:  </span>6-3, 6-0
-		</p>
-		<p class="team">
-			<span>Veterans Mens Doubles (over 55's)</span>Malcolm Brumwell and John Cable vs Chris Barnes and Ian Wasse
-		</p>
-		<p class="matchreport">
-			Otherwise known as the Salt 'n' Pepper doubles, 130 years old played 124 years old on this 
-			court! New boy Chris &quot;Sledger&quot; Barnes played some fine tennis including 3 (or was it 4?) aces against John [Ed. - all in the same place in the service box. Do try and learn next time John!] but his new boy dynamism was insufficent in the end to deny the old stagers from retaining their trophy after a long match that delayed every other match thereafter so that &quot;main event&quot; matches had to be played under floodlights late into the evening.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>4-6, 6-1, 6-2
 		</p>
 		<p class="team">
 			<span>Mens Singles</span>Daniel Eccleston vs Josh Crisp-Jones
@@ -212,16 +225,6 @@ if (debugging)
 		</p>
 		<p class="result">
 			<span>Final score:  </span>6-7, 6-4, 1-6
-		</p>
-
-		<p class="team">
-			<span>Veterans Mens Doubles</span>Steve Ray and Chris Barnes vs Paul Thomas and Grahgam Hollway
-		</p>
-		<p class="matchreport">
-			Long-standing solid doubles pairing, Chris &quot;sledger&quot;Barnes and Steve &quot;net chomper&quot; took on the might of Graham and Paul and were a little slow to get off the mark, sinking without a trace 6-0 in the first set. In the second set, Chris seemingly abandoned sledging and Steve likewiae abandoned chomping, and concentrated on tennis to take an intriguing 3-1 lead in the second set, with Paul and Graham now committing more unforced errors and looking decidedly under pressure. However, Graham and Paul gradually regained some of their momentum from the first set and ran out eventual winners in two straight sets.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>0-6, 5-7
 		</p>
 
 		<p class="team">
