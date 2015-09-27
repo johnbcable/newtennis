@@ -47,20 +47,72 @@ function displayClubList() {
 
 }
 
+<<<<<<< HEAD
+function closeMap() {
+	// Close the panel down that is displaying the map
+
+	$('.map-title').html('');
+
+	// $('#map-canvas').toggle('slow');  // Make current map area invisible
+	$('#map-canvas').addClass('noshow');  // Make current map area invisible
+}
+
+// Display coach list
+function showLocationMap(postcode,title) {
+
+	var mypostcode = postcode || "B92 0DQ";  // Default to Hampton Sports Club postcode
+	var mytitle = title || "Map of postcode "+mypostcode;
+	var topbanner = new String("").toString();
+
+	$('.map-title').html('');
+	// $('#map-canvas').toggle('slow');  // Make current map area invisible
+	$('#map-canvas').addClass('noshow');  // Make current map area invisible
+
+	if (debugthis) {
+		console.log("Inside showLocationMap and postcode = "+mypostcode);
+	}
+
+	// setLatitudeLongitude(mypostcode);  // Determine latitude and longitude of the postcode
+
+	displayMapUsingPostcode(mypostcode, 'map-canvas');
+
+	// Put default title on the map
+	topbanner = mytitle+'<span class="rhs"><a href="javascript: closeMap()">Close</a></span>';
+	$('.map-title').html(topbanner);
+
+	$('#map-canvas').removeClass('noshow'); // Show the rendered map
+	// $('#map-canvas').toggle('slow'); // Show the rendered map
+
+	// move page to show map
+    var new_position = $('#map-panel').offset();
+    window.scrollTo(new_position.left,new_position.top);
+	// window.location.hash="#map-panel";
+
+}
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 // --------------  End of helper/utility functions ---------------------------
 
 $(document).ready(function() {
 
+<<<<<<< HEAD
+=======
 	// Display overview map
 	displayOverviewMap();
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	// Show club list
 	displayClubList();
 
 	// Blank out any prior map title
+<<<<<<< HEAD
+	$('.map-title').html('');
+	$('#map-canvas').addClass('noshow');  // Make current map area invisible
+=======
 	// $('.map-title').html('');
 	// $('#map-canvas').addClass('noshow');  // Make current map area invisible
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 })  // end of document.ready
 

@@ -23,14 +23,36 @@ function SocialTennisObject(thedate) {
     case 6:    // Saturday
         this.start_time = new String("15:00:00").toString();
         this.end_time = new String("17:00:00").toString();
+<<<<<<< HEAD
+        this.socialtext = new String("Saturday afternoon family social tennis")
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
         break;
     case 0:   // Sunday
         this.start_time = new String("10:00:00").toString();
         this.end_time = new String("12:00:00").toString();
+<<<<<<< HEAD
+        this.socialtext = new String("Sunday morning social tennis")
+        break;
+    case 2:   // Tuesday
+        this.start_time = new String("20:00:00").toString();
+        this.end_time = new String("22:00:00").toString();
+        this.socialtext = new String("Tuesday evening social tennis")
+        break;
+    case 5:   // Friday
+        this.start_time = new String("20:00:00").toString();
+        this.end_time = new String("22:00:00").toString();
+        this.socialtext = new String("Friday evening social tennis")
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
         break;
     default:    // Tuesday and Friday
         this.start_time = new String("20:00:00").toString();
         this.end_time = new String("22:00:00").toString();
+<<<<<<< HEAD
+        this.socialtext = new String("UNKNOWN SESSION")
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	}
 
 };

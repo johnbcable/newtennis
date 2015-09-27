@@ -1,3 +1,4 @@
+
 <%@language="JScript" CODEPAGE="65001"%>
 <!--#include file="functions.asp" -->
 <!--#include file="strings.asp" -->
@@ -83,15 +84,14 @@ if (debugging)
 			Summary results can be displayed using the links below; 
 		</p>
 
-<!-- 
+
 		<div id="main2015orderofplay">
 			<p>
 				The scheduled order of play and the summary results for the finals days will be shown below. Names highlighted in yellow are the winners for that match.
 			</p>
 
-			 <img alt="September Finals Day 2014 Results" src="Images/results2014.jpg" width="601" />
- -->
- <!--
+			 <img alt="September Finals Day 2015 Order of Play" src="img/orderofplay2015.png" width="601" />
+
  			 <p style="clear: both;">
 			 	Please note:
 			 	<ol type="number">
@@ -101,7 +101,7 @@ if (debugging)
 			 		<li>For the court-side scoreboards, first named player/pair above is the &quot;Home&quot; team.
 			 	</ol>
 			 </p>
- -->
+ 		</div>
  		
 <!-- 
 		<p class="matchreport" style="clear: both; padding-top: 10px; margin-top: 10px; border-top: 1px solid black;">
@@ -279,5 +279,3 @@ if (debugging)
 </html>
 <%
 %>
-	
-	

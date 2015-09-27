@@ -63,11 +63,19 @@ var ConnObj, RS, StnObj;
 var ConnObj2, RS2, StnObj2;
 var RS, RS2, RS3;
 var SQL1, SQL2, SQL3;
+<<<<<<< HEAD
+var updatelog = true;
+var kount;
+var the_email;
+var strtoday;
+var htmlindex, doctypeindex, fullmessage, tMessage;
+=======
 var updatelog = false;
 var kount;
 var the_email;
 var strtoday;
 var htmlindex, doctypeindex, fullmessage, tMessngage;
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 var dummy;
 var emaildir = new String("emails").toString();
 var fullwhichfile = new String("").toString();
@@ -110,10 +118,13 @@ if (thequery == "null" || thequery == "undefined" || thequery == "")
 if (sOnBehalfOf == "null" || sOnBehalfOf == "undefined" || sOnBehalfOf == "")
 	sOnBehalfOf = new String("support@hamptontennis.org.uk");
 
+<<<<<<< HEAD
+=======
 // Now remove any remaining non-ASCII characters from the Subject
 
 sSubject = sSubject.replace(/[^\x00-\x7F]/g, "");
 
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 // After subject and before bulk replacements
 
 // Now check for age range
@@ -205,7 +216,11 @@ if (debugging)
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
+<<<<<<< HEAD
+	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+=======
 	<a href="fullindex.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	<a href="juniors/index.html"><img id="juniorlogo" src="images/Juniorlogo.gif" width="163" height="54" alt="Junior Logo" class="juniorlogo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>

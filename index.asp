@@ -1,3 +1,4 @@
+
 <%@language="JScript" CODEPAGE="65001"%>
 <!--#include file="functions.asp" -->
 <!--#include file="strings.asp" -->
@@ -130,14 +131,27 @@ if (debugging)
 <!--   3. Content    -->
 	<div id="content">
 		<h1>Welcome to <b>Hampton-in-Arden Tennis Club</b></h1>
-<!-- 
+
 		<div id="finalsday2012collage" class="collage">
-			 <img alt="Finals Day 2012" src="Images/finalsday2012_collage.jpg" width="700" height="200">
+			 <img alt="Finals Day 2015" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 
- --> 
+ 		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
+			<div>
+				<h3>Autumn Finals Day - Sunday 27<sup>th</sup> September</h3>
+				 <div class="promobutton">
+				 	<a href="http://hamptontennis.org.uk/finalsdays2015.asp">Order of Play &raquo;</a>
+				 </div>
+				<div class="promotext">
+					<p>
+				 		Finals day is here ... and the weather is looking good! Come along from 12:30 and watch our finalists strut their stuff. See who&apos;s on when &ndash; click on the Order of Play button
+				 	</p>
+				</div>
+			</div>
 
- 
+		</div>
+
+<!-- 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
 				<h3>Your web site is changing!</h3>
@@ -153,6 +167,7 @@ if (debugging)
 			</div>
 
 		</div>
+
 
 		<div id="awards2014" class="collage">
 			 <img alt="Coventry League awards night" src="img/Awards2014.jpg" width="601">
@@ -171,6 +186,7 @@ if (debugging)
 
 		</div>
 
+-->
 <!-- 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
@@ -258,3 +274,4 @@ if (debugging)
 </html>
 <%
 %>
+

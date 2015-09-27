@@ -4,7 +4,11 @@ function showTodaysMatches(domid) {
 	var jsonstring = new String("");
 	var mydomid = domid || "#whatcanisee";
 	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=22";
+<<<<<<< HEAD
+	var mytitle = "<h4>To watch at the club today</h4>";
+=======
 	var mytitle = "<h4>To watch or take part in today at the club</h4>";
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
@@ -29,6 +33,14 @@ function showTodaysMatches(domid) {
 		    var theTemplate = Handlebars.compile (theTemplateScript); 
 			// Handlebars.registerPartial("description", $("#shoe-description").html());  
 
+<<<<<<< HEAD
+			// Show the title
+			$("#watch-title").append(mytitle);
+
+			// Show list of todays matches  
+			$("#whatcanisee").append (theTemplate(todaysdata)); 
+			
+=======
 			// Show list of todays matches  
 			$("#whatcanisee").append (theTemplate(todaysdata)); 
 			
@@ -38,6 +50,7 @@ function showTodaysMatches(domid) {
 			// Re-display the info
 			$('.seeanddotoday').removeClass('noshow');
 
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 			// jsonstring = JSON.stringify(data);
 			// $("#receivedjson").html('JSON received back from fetchJSON.asp?id=2 is <br /><br />'+jsonstring+'<br /><hr />');
 		}

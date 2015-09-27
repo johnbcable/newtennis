@@ -10903,14 +10903,24 @@ a img {
 
 @font-face {
   font-family: "MyriadPro";
+<<<<<<< HEAD
+  src: url('fonts/MyriadPro_Regular.eot?1430138693');
+  src: url('fonts/MyriadPro_Regular.eot?&1430138693#iefix') format('embedded-opentype'), url('fonts/MyriadPro_Regular.ttf?1430138692') format('truetype'), url('fonts/MyriadPro_Regular.otf?1384461413') format('opentype'), url('fonts/MyriadPro_Regular.woff?1430138692') format('woff');
+=======
   src: url('fonts/MyriadPro_Regular.eot?1384462120');
   src: url('fonts/MyriadPro_Regular.eot?&1384462120#iefix') format('embedded-opentype'), url('fonts/MyriadPro_Regular.ttf?1384461643') format('truetype'), url('fonts/MyriadPro_Regular.otf?1384461413') format('opentype'), url('fonts/MyriadPro_Regular.woff?1384462086') format('woff');
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   font-weight: normal;
 }
 @font-face {
   font-family: "NeoSansProBold";
+<<<<<<< HEAD
+  src: url('fonts/Neo-Sans-Pro-Bold.eot?1430138692');
+  src: url('fonts/Neo-Sans-Pro-Bold.eot?&1430138692#iefix') format('embedded-opentype'), url('fonts/Neo-Sans-Pro-Bold.ttf?1430138691') format('truetype'), url('fonts/Neo-Sans-Pro-Bold.otf?1430138692') format('opentype'), url('fonts/Neo-Sans-Pro-Bold.woff?1430138691') format('woff');
+=======
   src: url('fonts/Neo-Sans-Pro-Bold.eot?1384462346');
   src: url('fonts/Neo-Sans-Pro-Bold.eot?&1384462346#iefix') format('embedded-opentype'), url('fonts/Neo-Sans-Pro-Bold.ttf?1384462332') format('truetype'), url('fonts/Neo-Sans-Pro-Bold.otf?1384462632') format('opentype'), url('fonts/Neo-Sans-Pro-Bold.woff?1384462507') format('woff');
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   font-weight: normal;
 }
 /* line 620, ../scss/main.scss */
@@ -10921,70 +10931,118 @@ a img {
   border: 1px solid;
 }
 
+<<<<<<< HEAD
+/* line 791, ../scss/main.scss */
+=======
 /* line 788, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 body {
   font-family: "MyriadPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #473016;
 }
 
+<<<<<<< HEAD
+/* line 796, ../scss/main.scss */
+=======
 /* line 793, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 h1, h2, h3, h4, h5, h6 {
   font-family: "NeoSansProBold", "OpenSans", Arial, sans-serif;
   font-weight: normal;
   color: #4d4d4d;
 }
 
+<<<<<<< HEAD
+/* line 806, ../scss/main.scss */
+=======
 /* line 803, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .noshow {
   display: none;
 }
 
 /* row-colors */
+<<<<<<< HEAD
+/* line 812, ../scss/main.scss */
+=======
 /* line 809, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--white {
   background: #fff;
 }
 
+<<<<<<< HEAD
+/* line 813, ../scss/main.scss */
+=======
 /* line 810, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--grey {
   background: #f8f8f8;
 }
 
+<<<<<<< HEAD
+/* line 814, ../scss/main.scss */
+=======
 /* line 811, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--blue {
   background: #b2e6ff;
 }
 
+<<<<<<< HEAD
+/* line 815, ../scss/main.scss */
+=======
 /* line 812, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--green {
   background-color: #e6fae6;
 }
 
+<<<<<<< HEAD
+/* line 817, ../scss/main.scss */
+=======
 /* line 814, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--dark-grey {
   color: #fff;
   background: #4d4d4d;
 }
 
+<<<<<<< HEAD
+/* line 822, ../scss/main.scss */
+=======
 /* line 819, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--medium-grey {
   background: gray;
 }
 
+<<<<<<< HEAD
+/* line 825, ../scss/main.scss */
+=======
 /* line 822, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--light-grey {
   background: #e6e6e6;
 }
 
 /* row-padding */
+<<<<<<< HEAD
+/* line 830, ../scss/main.scss */
+=======
 /* line 827, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--padding-medium {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   /* 24px/16px */
 }
 
+<<<<<<< HEAD
+/* line 837, ../scss/main.scss */
+=======
 /* line 834, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--padding-wide {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -10992,7 +11050,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* containers */
+<<<<<<< HEAD
+/* line 845, ../scss/main.scss */
+=======
 /* line 842, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .container-narrow,
 .container-medium,
 .container-wide {
@@ -11001,30 +11063,50 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 1.5em;
 }
 
+<<<<<<< HEAD
+/* line 854, ../scss/main.scss */
+=======
 /* line 851, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .container-narrow {
   max-width: 34em;
 }
 
+<<<<<<< HEAD
+/* line 855, ../scss/main.scss */
+=======
 /* line 852, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .container-medium {
   max-width: 52em;
 }
 
+<<<<<<< HEAD
+/* line 856, ../scss/main.scss */
+=======
 /* line 853, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .container-wide {
   max-width: 58em;
 }
 
 /* columns */
+<<<<<<< HEAD
+/* line 859, ../scss/main.scss */
+=======
 /* line 856, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .col-narrow,
 .col-narrow--right {
   margin-bottom: 1.5em;
 }
 
 /*  */
+<<<<<<< HEAD
+/* line 863, ../scss/main.scss */
+=======
 /* line 860, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .mid-grey {
   background: #000;
   opacity: 0.6;
@@ -11034,21 +11116,33 @@ h1, h2, h3, h4, h5, h6 {
 wide
 ---------------------------- */
 @media (min-width: 38em) {
+<<<<<<< HEAD
+  /* line 874, ../scss/main.scss */
+=======
   /* line 871, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .row--padding-medium {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     /* 36px/18px */
   }
 
+<<<<<<< HEAD
+  /* line 881, ../scss/main.scss */
+=======
   /* line 878, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .row--padding-wide {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     /* 36px/18px */
   }
 
+<<<<<<< HEAD
+  /* line 888, ../scss/main.scss */
+=======
   /* line 885, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .container-narrow,
   .container-medium,
   .container-wide {
@@ -11056,59 +11150,95 @@ wide
     padding-right: 2em;
   }
 
+<<<<<<< HEAD
+  /* line 896, ../scss/main.scss */
+=======
   /* line 893, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .col-narrow,
   .col-medium,
   .col-wide {
     float: left;
   }
 
+<<<<<<< HEAD
+  /* line 899, ../scss/main.scss */
+=======
   /* line 896, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .col-narrow--right,
   .col-wide--right {
     float: right;
   }
 
+<<<<<<< HEAD
+  /* line 902, ../scss/main.scss */
+=======
   /* line 899, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .col-wide,
   .col-wide--right {
     width: 61%;
   }
 
+<<<<<<< HEAD
+  /* line 905, ../scss/main.scss */
+=======
   /* line 902, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .col-medium {
     width: 50%;
   }
 
+<<<<<<< HEAD
+  /* line 907, ../scss/main.scss */
+=======
   /* line 904, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .col-narrow,
   .col-narrow--right {
     width: 25%;
     margin-bottom: 0;
   }
 }
+<<<<<<< HEAD
+/* line 930, ../scss/main.scss */
+=======
 /* line 927, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .message-error {
   color: #b94a48;
   border-color: #d59392;
   background: #f1dcdc;
 }
 
+<<<<<<< HEAD
+/* line 930, ../scss/main.scss */
+=======
 /* line 927, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .message-valid {
   color: #468847;
   border-color: #7aba7b;
   background: #bdddbd;
 }
 
+<<<<<<< HEAD
+/* line 930, ../scss/main.scss */
+=======
 /* line 927, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .message-warning {
   color: #c09853;
   border-color: #dbc59e;
   background: #f7f1e8;
 }
 
+<<<<<<< HEAD
+/* line 930, ../scss/main.scss */
+=======
 /* line 927, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .message-info {
   color: #3a87ad;
   border-color: #7ab5d3;
@@ -11118,7 +11248,11 @@ wide
 /* ----------------------------
 form elements
 ---------------------------- */
+<<<<<<< HEAD
+/* line 938, ../scss/main.scss */
+=======
 /* line 935, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 input[type=checkbox] {
   -ms-transform: scale(2);
   -moz-transform: scale(2);
@@ -11127,13 +11261,21 @@ input[type=checkbox] {
   padding: 10px;
 }
 
+<<<<<<< HEAD
+/* line 948, ../scss/main.scss */
+=======
 /* line 945, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 a, a:visited, a:focus, a:hover, a:active {
   color: #00a1d9;
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+/* line 953, ../scss/main.scss */
+=======
 /* line 950, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 a.bordered:hover {
   border: 2px solid white;
   -ms-border-radius: 10px;
@@ -11143,11 +11285,18 @@ a.bordered:hover {
   border-radius: 10px;
 }
 
+<<<<<<< HEAD
+/* line 962, ../scss/main.scss */
+=======
 /* line 959, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 a img {
   border: none;
 }
 
+<<<<<<< HEAD
+/* line 971, ../scss/main.scss */
+=======
 /* line 964, ../scss/main.scss */
 input[type=submit] {
   color: #fff;
@@ -11169,6 +11318,7 @@ input[type=submit]:hover {
 }
 
 /* line 990, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .top-bar .title-area img {
   position: relative;
   top: 0.3125em;
@@ -11176,7 +11326,11 @@ input[type=submit]:hover {
   overflow: auto;
   margin-bottom: 0.625em;
 }
+<<<<<<< HEAD
+/* line 979, ../scss/main.scss */
+=======
 /* line 998, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .top-bar .name
 h1 {
   font-family: "NeoSansProBold", "OpenSans", Arial, sans-serif;
@@ -11186,13 +11340,21 @@ h1 {
   margin-left: 0;
 }
 
+<<<<<<< HEAD
+/* line 991, ../scss/main.scss */
+=======
 /* line 1010, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .awardstext {
   text-align: center;
   padding: 0 10px;
 }
 
+<<<<<<< HEAD
+/* line 998, ../scss/main.scss */
+=======
 /* line 1017, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .welcomeimage {
   background-image: url(../img/smileyface-small.png);
   background-repeat: no-repeat;
@@ -11200,7 +11362,11 @@ h1 {
   background-size: cover;
 }
 
+<<<<<<< HEAD
+/* line 1009, ../scss/main.scss */
+=======
 /* line 1028, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .logopanel {
   background-image: url(../img/small_logo.gif);
   background-repeat: no-repeat;
@@ -11208,7 +11374,11 @@ h1 {
   background-size: contain;
 }
 
+<<<<<<< HEAD
+/* line 1019, ../scss/main.scss */
+=======
 /* line 1038, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--banner {
   background-color: #fff;
   background-image: url(../img/mainbanner-small.jpg);
@@ -11217,7 +11387,11 @@ h1 {
   background-size: cover;
 }
 
+<<<<<<< HEAD
+/* line 1030, ../scss/main.scss */
+=======
 /* line 1049, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--ourclub {
   background-color: #fff;
   background-image: url(../img/clubhouse.jpg);
@@ -11226,7 +11400,11 @@ h1 {
   background-size: cover;
 }
 
+<<<<<<< HEAD
+/* line 1041, ../scss/main.scss */
+=======
 /* line 1060, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--league {
   background-color: #fff;
   background-image: url(../img/first_team.jpg);
@@ -11235,7 +11413,11 @@ h1 {
   background-size: cover;
 }
 
+<<<<<<< HEAD
+/* line 1052, ../scss/main.scss */
+=======
 /* line 1071, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--aegon {
   background-color: #fff;
   background-image: url(../img/aegon-team-tennis-banner.jpg);
@@ -11244,6 +11426,9 @@ h1 {
   background-size: cover;
 }
 
+<<<<<<< HEAD
+/* line 1061, ../scss/main.scss */
+=======
 /* line 1082, ../scss/main.scss */
 .row--banner-sportsclub {
   background-color: #fff;
@@ -11254,18 +11439,26 @@ h1 {
 }
 
 /* line 1091, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--watching {
   background-color: white;
 }
 
 @media (min-width: 38em) {
   /*  Must give banners a height when on desktops  */
+<<<<<<< HEAD
+  /* line 1068, ../scss/main.scss */
+=======
   /* line 1098, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .row--banner {
     background-image: url(../img/mainbanner.jpg);
     height: 360px;
   }
 
+<<<<<<< HEAD
+  /* line 1072, ../scss/main.scss */
+=======
   /* line 1102, ../scss/main.scss */
   .row--banner-sportsclub {
     background-image: url(../img/clubhouse.jpg);
@@ -11273,18 +11466,27 @@ h1 {
   }
 
   /* line 1106, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .row--ourclub {
     background-image: url(../img/clubhouse.jpg);
     height: 360px;
   }
 
+<<<<<<< HEAD
+  /* line 1078, ../scss/main.scss */
+=======
   /* line 1112, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .row--league {
     background-image: url(../img/first_team.jpg);
     height: 360px;
   }
 
+<<<<<<< HEAD
+  /* line 1084, ../scss/main.scss */
+=======
   /* line 1118, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .row--aegon {
     background-image: url(../img/aegon-team-tennis-banner.jpg);
     height: 230px;
@@ -11293,6 +11495,28 @@ h1 {
 /* ----------------------------
 Welcome block styling on members.html
 ----------------------------- */
+<<<<<<< HEAD
+/* line 1096, ../scss/main.scss */
+.welcomeblock {
+  margin-top: 2em;
+  vertical-align: middle;
+}
+
+/* line 1101, ../scss/main.scss */
+.welcometext, #notme, #mylogout {
+  padding-top: 1.25em;
+  vertical-align: middle;
+}
+
+/* ----------------------------
+Running the club layout
+---------------------------- */
+/* line 1110, ../scss/main.scss */
+.helpheading {
+  text-align: center;
+}
+/* line 1113, ../scss/main.scss */
+=======
 /* line 1130, ../scss/main.scss */
 .welcomeblock {
   padding: 1em 0 1em 0;
@@ -11317,13 +11541,18 @@ Running the club layout
   text-align: center;
 }
 /* line 1150, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .helpheading img {
   margin: 1em auto;
   max-width: 100%;
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+/* line 1121, ../scss/main.scss */
+=======
 /* line 1158, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .helpdescription {
   margin-top: 1em;
 }
@@ -11331,26 +11560,42 @@ Running the club layout
 /* ----------------------------
 header
 ---------------------------- */
+<<<<<<< HEAD
+/* line 1130, ../scss/main.scss */
+=======
 /* line 1167, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header {
   padding: 1.25em 1em;
   /* 20px/16px - 16px/16px */
 }
 
+<<<<<<< HEAD
+/* line 1136, ../scss/main.scss */
+=======
 /* line 1173, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__logo {
   float: left;
   padding-top: 2.5em;
 }
 
+<<<<<<< HEAD
+/* line 1142, ../scss/main.scss */
+=======
 /* line 1179, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav {
   padding-top: 2.5em;
   float: right;
   width: 200px;
 }
 
+<<<<<<< HEAD
+/* line 1149, ../scss/main.scss */
+=======
 /* line 1186, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav ul {
   margin: 0;
   padding: 0;
@@ -11358,7 +11603,11 @@ header
   text-align: right;
 }
 
+<<<<<<< HEAD
+/* line 1157, ../scss/main.scss */
+=======
 /* line 1194, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav li {
   display: inline-block;
   margin: 0;
@@ -11369,7 +11618,11 @@ header
    */
 }
 
+<<<<<<< HEAD
+/* line 1168, ../scss/main.scss */
+=======
 /* line 1205, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav a {
   display: block;
   margin-right: .2em;
@@ -11383,47 +11636,79 @@ header
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+/* line 1182, ../scss/main.scss */
+=======
 /* line 1219, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav-contact a {
   margin-right: 0;
 }
 
+<<<<<<< HEAD
+/* line 1184, ../scss/main.scss */
+=======
 /* line 1221, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .current a {
   color: #fff;
   background: #56b880;
 }
 
+<<<<<<< HEAD
+/* line 1190, ../scss/main.scss */
+=======
 /* line 1227, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav a:focus {
   background: #000;
 }
 
+<<<<<<< HEAD
+/* line 1191, ../scss/main.scss */
+=======
 /* line 1228, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav a:hover {
   background: #3bb2d0;
   border: 2px solid white;
   border-radius: .5em;
 }
 
+<<<<<<< HEAD
+/* line 1197, ../scss/main.scss */
+=======
 /* line 1234, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .header__nav a:active {
   background: #af0000;
 }
 
 @media (min-width: 38em) {
+<<<<<<< HEAD
+  /* line 1201, ../scss/main.scss */
+=======
   /* line 1238, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .header {
     padding: 2.2222em 2em;
     /* 40px/18px - 36px/18px */
   }
 
+<<<<<<< HEAD
+  /* line 1207, ../scss/main.scss */
+=======
   /* line 1244, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .header__nav {
     width: 20em;
   }
 
+<<<<<<< HEAD
+  /* line 1209, ../scss/main.scss */
+=======
   /* line 1246, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .header__nav a {
     font-size: 0.8333em;
     /* 15px/18px */
@@ -11432,14 +11717,22 @@ header
 /* ----------------------------
 banner-content
 ---------------------------- */
+<<<<<<< HEAD
+/* line 1220, ../scss/main.scss */
+=======
 /* line 1257, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .banner-content {
   padding: 1.875em 1.5em 2.8125em;
   /* 30px/16px - 24px/16px - 45px/16px */
   text-align: center;
 }
 
+<<<<<<< HEAD
+/* line 1227, ../scss/main.scss */
+=======
 /* line 1264, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .banner-content__heading {
   margin: 1em 0 1.5em;
   /* 30px/16px */
@@ -11449,7 +11742,11 @@ banner-content
   font-weight: normal;
 }
 
+<<<<<<< HEAD
+/* line 1237, ../scss/main.scss */
+=======
 /* line 1274, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .banner-content__strapline {
   margin: 0 0 1.5em;
   /* 30px/16px */
@@ -11462,13 +11759,21 @@ banner-content
 }
 
 @media (min-width: 38em) {
+<<<<<<< HEAD
+  /* line 1250, ../scss/main.scss */
+=======
   /* line 1287, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .banner-content {
     padding: 7.5em 2em;
     /* 135px/18px - 36px/18px */
   }
 
+<<<<<<< HEAD
+  /* line 1256, ../scss/main.scss */
+=======
   /* line 1293, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .banner-content__heading {
     font-size: 2.5556em;
     /* 46px/18px */
@@ -11477,6 +11782,17 @@ banner-content
 /* ------------------------------------------------------------
  *        footer
  * ------------------------------------------------------------ */
+<<<<<<< HEAD
+/* line 1267, ../scss/main.scss */
+.footer {
+  margin-top: 1.5em;
+}
+/* line 1269, ../scss/main.scss */
+.footer a {
+  color: #473016;
+}
+/* line 1272, ../scss/main.scss */
+=======
 /* line 1304, ../scss/main.scss */
 .footer {
   margin-top: 1.5em;
@@ -11486,11 +11802,23 @@ banner-content
   color: #473016;
 }
 /* line 1309, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .footer .footermenuhead {
   margin-top: 1.25em;
   margin-left: 20%;
   color: gray;
 }
+<<<<<<< HEAD
+/* line 1277, ../scss/main.scss */
+.footer .toprow {
+  background-color: #33353B;
+}
+/* line 1280, ../scss/main.scss */
+.footer .toprow .bigfooter ul {
+  list-style-type: none;
+}
+/* line 1282, ../scss/main.scss */
+=======
 /* line 1314, ../scss/main.scss */
 .footer .toprow {
   background-color: #33353B;
@@ -11500,6 +11828,7 @@ banner-content
   list-style-type: none;
 }
 /* line 1319, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .footer .toprow .bigfooter ul li a {
   margin-left: 10%;
   font-size: 0.75em;
@@ -11507,25 +11836,52 @@ banner-content
   color: #e6e6e6;
   display: block;
 }
+<<<<<<< HEAD
+/* line 1288, ../scss/main.scss */
+=======
 /* line 1325, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .footer .toprow .bigfooter ul li a:hover {
   background: #e6e6e6;
   color: #4d4d4d;
 }
+<<<<<<< HEAD
+/* line 1295, ../scss/main.scss */
+.footer .toprow .clublogo {
+  text-align: center;
+}
+/* line 1297, ../scss/main.scss */
+=======
 /* line 1332, ../scss/main.scss */
 .footer .toprow .clublogo {
   text-align: center;
 }
 /* line 1334, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .footer .toprow .clublogo img {
   max-width: 50%;
   margin: 0 auto;
 }
+<<<<<<< HEAD
+/* line 1304, ../scss/main.scss */
+=======
 /* line 1341, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .footer .bottomrow {
   background-color: #26272B;
   color: gray;
 }
+<<<<<<< HEAD
+/* line 1307, ../scss/main.scss */
+.footer .bottomrow .contactsummary {
+  margin-top: 1em;
+}
+/* line 1313, ../scss/main.scss */
+.footer .footnav ul {
+  margin: 0.3125em 0 0 0;
+}
+/* line 1316, ../scss/main.scss */
+=======
 /* line 1344, ../scss/main.scss */
 .footer .bottomrow .contactsummary {
   margin-top: 1em;
@@ -11535,31 +11891,52 @@ banner-content
   margin: 0.3125em 0 0 0;
 }
 /* line 1353, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .footer .footnav li {
   margin-left: 0;
   margin-right: 0.9375em;
 }
+<<<<<<< HEAD
+/* line 1321, ../scss/main.scss */
+.footer .footnav a:hover {
+  text-decoration: underline;
+}
+/* line 1327, ../scss/main.scss */
+=======
 /* line 1358, ../scss/main.scss */
 .footer .footnav a:hover {
   text-decoration: underline;
 }
 /* line 1364, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .footer .joinus {
   padding: 20px;
   background-color: #e6e6e6;
   color: #4d4d4d;
 }
 
+<<<<<<< HEAD
+/* line 1338, ../scss/main.scss */
+=======
 /* line 1375, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .social h3 {
   margin-top: 1.25em;
   color: gray;
 }
+<<<<<<< HEAD
+/* line 1342, ../scss/main.scss */
+.social ul {
+  float: left;
+}
+/* line 1346, ../scss/main.scss */
+=======
 /* line 1379, ../scss/main.scss */
 .social ul {
   float: left;
 }
 /* line 1383, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .social li a {
   display: inline-block;
   height: 32px;
@@ -11570,7 +11947,11 @@ banner-content
   overflow: hidden;
   */
 }
+<<<<<<< HEAD
+/* line 1356, ../scss/main.scss */
+=======
 /* line 1393, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .social li.facebook a {
   background-position: 0 -32px;
 }
@@ -11578,11 +11959,19 @@ banner-content
 .social li.facebook a:hover, .social li.facebook a.facebook-hover {
   background-position: 0 0;
 }
+<<<<<<< HEAD
+/* line 1358, ../scss/main.scss */
+.social li.facebook a:hover {
+  background-position: 0 0;
+}
+/* line 1362, ../scss/main.scss */
+=======
 /* line 1395, ../scss/main.scss */
 .social li.facebook a:hover {
   background-position: 0 0;
 }
 /* line 1399, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .social li.twitter a {
   background-position: 0 -160px;
 }
@@ -11590,11 +11979,19 @@ banner-content
 .social li.twitter a:hover, .social li.twitter a.twitter-hover {
   background-position: 0 -128px;
 }
+<<<<<<< HEAD
+/* line 1364, ../scss/main.scss */
+.social li.twitter a:hover {
+  background-position: 0 -128px;
+}
+/* line 1368, ../scss/main.scss */
+=======
 /* line 1401, ../scss/main.scss */
 .social li.twitter a:hover {
   background-position: 0 -128px;
 }
 /* line 1405, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .social li.wordpress a {
   background-position: 0 -224px;
 }
@@ -11602,11 +11999,19 @@ banner-content
 .social li.wordpress a:hover, .social li.wordpress a.wordpress-hover {
   background-position: 0 -192px;
 }
+<<<<<<< HEAD
+/* line 1370, ../scss/main.scss */
+.social li.wordpress a:hover {
+  background-position: 0 -192px;
+}
+/* line 1374, ../scss/main.scss */
+=======
 /* line 1407, ../scss/main.scss */
 .social li.wordpress a:hover {
   background-position: 0 -192px;
 }
 /* line 1411, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .social li.flickr a {
   background-position: 0 -96px;
 }
@@ -11614,12 +12019,20 @@ banner-content
 .social li.flickr a:hover, .social li.flickr a.flickr-hover {
   background-position: 0 -64px;
 }
+<<<<<<< HEAD
+/* line 1376, ../scss/main.scss */
+=======
 /* line 1413, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .social li.flickr a:hover {
   background-position: 0 -64px;
 }
 
+<<<<<<< HEAD
+/* line 1383, ../scss/main.scss */
+=======
 /* line 1420, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .whaticansee {
   padding: 0;
   -webkit-border-radius: 10px;
@@ -11634,47 +12047,81 @@ banner-content
 /* ------------------------------------------------------------
  *        features row
  * ------------------------------------------------------------ */
+<<<<<<< HEAD
+/* line 1398, ../scss/main.scss */
+=======
 /* line 1435, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .feature-grid {
   text-align: center;
 }
 
+<<<<<<< HEAD
+/* line 1402, ../scss/main.scss */
+.feature-image {
+=======
 /* line 1439, ../scss/main.scss */
 .feature-image {
   border-style: solid;
   border-width: 10px;
   border-color: transparent;
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+<<<<<<< HEAD
+  border: 10px solid #fff;
+}
+
+/* line 1411, ../scss/main.scss */
+.feature-image:hover {
+  border: 10px solid #ADADAD;
+=======
 }
 
 /* line 1450, ../scss/main.scss */
 .feature-image:hover {
   border-color: #ADADAD;
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 }
 
 /* ------------------------------------------------------------
  *        involved row
  * ------------------------------------------------------------ */
+<<<<<<< HEAD
+/* line 1419, ../scss/main.scss */
+=======
 /* line 1458, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .involve {
   background-color: #fff;
 }
 
+<<<<<<< HEAD
+/* line 1423, ../scss/main.scss */
+=======
 /* line 1462, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .involved-grid {
   text-align: center;
 }
 
+<<<<<<< HEAD
+/* line 1427, ../scss/main.scss */
+=======
 /* line 1466, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .involved-image {
   height: 100px;
 }
 
+<<<<<<< HEAD
+/* line 1431, ../scss/main.scss */
+=======
 /* line 1470, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .involvedheading {
   text-align: center;
   padding: 0 10px;
@@ -11683,22 +12130,38 @@ banner-content
 /* ------------------------------------------------------------
  *        playing row
  * ------------------------------------------------------------ */
+<<<<<<< HEAD
+/* line 1440, ../scss/main.scss */
+=======
 /* line 1479, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .playing {
   background-color: #fff;
 }
 
+<<<<<<< HEAD
+/* line 1444, ../scss/main.scss */
+=======
 /* line 1483, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .playing-grid {
   text-align: center;
 }
 
+<<<<<<< HEAD
+/* line 1448, ../scss/main.scss */
+=======
 /* line 1487, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .playing-image {
   height: 100px;
 }
 
+<<<<<<< HEAD
+/* line 1452, ../scss/main.scss */
+=======
 /* line 1491, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .playingheading {
   text-align: center;
   padding: 0 10px;
@@ -11707,22 +12170,38 @@ banner-content
 /* ------------------------------------------------------------
  *        other sports row
  * ------------------------------------------------------------ */
+<<<<<<< HEAD
+/* line 1461, ../scss/main.scss */
+=======
 /* line 1500, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .othersports {
   background-color: #e6fae6;
 }
 
+<<<<<<< HEAD
+/* line 1465, ../scss/main.scss */
+=======
 /* line 1504, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .othersports-grid {
   text-align: center;
 }
 
+<<<<<<< HEAD
+/* line 1469, ../scss/main.scss */
+=======
 /* line 1508, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .othersports-image {
   height: 100px;
 }
 
+<<<<<<< HEAD
+/* line 1473, ../scss/main.scss */
+=======
 /* line 1512, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .othersportsheading {
   text-align: center;
   padding: 0 10px;
@@ -11731,17 +12210,29 @@ banner-content
 /* ------------------------------------------------------------
  *        Twitter styling
  * ------------------------------------------------------------ */
+<<<<<<< HEAD
+/* line 1483, ../scss/main.scss */
+=======
 /* line 1522, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #twitter-feed #loading-container {
   text-align: center;
   padding: 1em 0px;
 }
+<<<<<<< HEAD
+/* line 1487, ../scss/main.scss */
+=======
 /* line 1526, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #twitter-feed .twitter-article {
   border-bottom: 1px dotted #e6e6e6;
   padding: 0.3125em 0 0.3125em 0.9375em;
 }
+<<<<<<< HEAD
+/* line 1492, ../scss/main.scss */
+=======
 /* line 1531, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #twitter-feed .twitter-article .twitter-pic img {
   display: inline-block;
   max-width: 80%;
@@ -11750,23 +12241,39 @@ banner-content
   -webkit-border-radius: 7px;
   border-radius: 7px;
 }
+<<<<<<< HEAD
+/* line 1500, ../scss/main.scss */
+=======
 /* line 1539, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #twitter-feed .twitter-article .twitter-text .tweet-text {
   font-size: 0.75em;
   line-height: 1.36em;
   color: #4d4d4d;
 }
+<<<<<<< HEAD
+/* line 1505, ../scss/main.scss */
+#twitter-feed .twitter-article .twitter-text:hover {
+  background: #e6e6e6;
+}
+/* line 1508, ../scss/main.scss */
+=======
 /* line 1544, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text:hover {
   background: #e6e6e6;
 }
 /* line 1547, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #twitter-feed .twitter-article .twitter-text p {
   margin: 0;
   padding: 0;
   position: relative;
 }
+<<<<<<< HEAD
+/* line 1512, ../scss/main.scss */
+=======
 /* line 1551, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #twitter-feed .twitter-article .twitter-text p .tweet-time {
   font-size: 0.625em;
   color: #878787;
@@ -11774,11 +12281,19 @@ banner-content
   top: 0;
   right: 0;
 }
+<<<<<<< HEAD
+/* line 1519, ../scss/main.scss */
+#twitter-feed .twitter-article .twitter-text p .tweetprofilelink a {
+  color: #444;
+}
+/* line 1521, ../scss/main.scss */
+=======
 /* line 1558, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text p .tweetprofilelink a {
   color: #444;
 }
 /* line 1560, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #twitter-feed .twitter-article .twitter-text p .tweetprofilelink a:hover {
   color: #444;
 }
@@ -11786,12 +12301,20 @@ banner-content
 /* ------------------------------------------------------------
  *        Wordpress styling
  * ------------------------------------------------------------ */
+<<<<<<< HEAD
+/* line 1534, ../scss/main.scss */
+=======
 /* line 1573, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #blogposts {
   border-top: 1px dotted #e6e6e6;
   margin-top: 0.625em;
 }
+<<<<<<< HEAD
+/* line 1535, ../scss/main.scss */
+=======
 /* line 1574, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 #blogposts img {
   position: relative;
   top: 0.3125em;
@@ -11803,12 +12326,20 @@ banner-content
   overflow: auto;
 }
 
+<<<<<<< HEAD
+/* line 1550, ../scss/main.scss */
+=======
 /* line 1589, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .blogitem {
   padding: 0.5em 0 0.5em 0.9375em;
 }
 
+<<<<<<< HEAD
+/* line 1554, ../scss/main.scss */
+=======
 /* line 1593, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .blogitemtext {
   font-size: 0.75em;
   color: #4d4d4d;
@@ -11821,7 +12352,11 @@ banner-content
 	font-weight: bold;
 }
 */
+<<<<<<< HEAD
+/* line 1566, ../scss/main.scss */
+=======
 /* line 1605, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .blogpostdate {
   color: #878787;
   font-size: 0.625em;
@@ -11831,7 +12366,11 @@ banner-content
   line-height: 0.75em;
 }
 
+<<<<<<< HEAD
+/* line 1575, ../scss/main.scss */
+=======
 /* line 1614, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .blogitem:hover {
   background: #e6e6e6;
 }
@@ -11839,7 +12378,11 @@ banner-content
 /* ----------------------------
 form elements
 ---------------------------- */
+<<<<<<< HEAD
+/* line 1583, ../scss/main.scss */
+=======
 /* line 1622, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 input[type=checkbox] {
   /* Double-sized Checkboxes */
   -ms-transform: scale(2);
@@ -11853,6 +12396,11 @@ input[type=checkbox] {
   padding: 10px;
 }
 
+<<<<<<< HEAD
+@media print {
+  /* All your print styles go here */
+  /* line 1600, ../scss/main.scss */
+=======
 /* ----------------------------
 Calendar icon styling
 ---------------------------- */
@@ -11955,11 +12503,16 @@ time.icon:hover, time.icon:focus {
 @media print {
   /* All your print styles go here */
   /* line 1720, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   #header, #footer, #nav {
     display: none !important;
   }
 
+<<<<<<< HEAD
+  /* line 1602, ../scss/main.scss */
+=======
   /* line 1722, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .notprint {
     display: none !important;
   }
@@ -11968,25 +12521,46 @@ time.icon:hover, time.icon:focus {
  *    Area for media query styles 
  ********************************************/
 @media screen and (max-width: 500px) {
+<<<<<<< HEAD
+  /* line 1615, ../scss/main.scss */
+=======
   /* line 1735, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .button {
     width: 90%;
     margin: 0.625em auto 0.625em auto;
   }
 
+<<<<<<< HEAD
+  /* line 1620, ../scss/main.scss */
+=======
   /* line 1740, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .fullwidth {
     width: 90%;
     margin: 0.625em auto;
   }
 
+<<<<<<< HEAD
+  /* line 1626, ../scss/main.scss */
+=======
   /* line 1746, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .footer .footermenuhead {
     text-align: center;
     padding: 0;
     margin: 0 auto;
     max-width: 90%;
   }
+<<<<<<< HEAD
+  /* line 1634, ../scss/main.scss */
+  .footer .toprow ul li {
+    margin: 0;
+    padding: auto 0;
+  }
+  /* line 1637, ../scss/main.scss */
+  .footer .toprow ul li a {
+=======
   /* line 1755, ../scss/main.scss */
   .footer .toprow .bigfooter ul li {
     margin: 0.25em 0 0 0;
@@ -11995,6 +12569,7 @@ time.icon:hover, time.icon:focus {
   /* line 1758, ../scss/main.scss */
   .footer .toprow .bigfooter ul li a {
     margin: 0;
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
     display: block;
     text-align: center;
     line-height: 3.75em;
@@ -12007,6 +12582,18 @@ time.icon:hover, time.icon:focus {
     margin: 0 auto;
     padding: 0;
   }
+<<<<<<< HEAD
+  /* line 1649, ../scss/main.scss */
+  .footer .toprow ul li a:hover {
+    background: #e6e6e6;
+    color: #4d4d4d;
+  }
+  /* line 1656, ../scss/main.scss */
+  .footer .toprow .clublogo {
+    text-align: center;
+  }
+  /* line 1658, ../scss/main.scss */
+=======
   /* line 1771, ../scss/main.scss */
   .footer .toprow .bigfooter ul li a:hover {
     background: #e6e6e6;
@@ -12017,12 +12604,17 @@ time.icon:hover, time.icon:focus {
     text-align: center;
   }
   /* line 1781, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .footer .toprow .clublogo img {
     max-width: 50%;
     margin: 0 auto;
   }
 
+<<<<<<< HEAD
+  /* line 1669, ../scss/main.scss */
+=======
   /* line 1792, ../scss/main.scss */
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
   .top-bar .title-area img {
     position: relative;
     top: 0.3125em;

@@ -3,11 +3,18 @@
 // -
 // getUserID()
 // getUserCode()
+<<<<<<< HEAD
+=======
 // getOnlineID()
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 // getUserName();
 // getUserAccessLevel()
 // setUser(theid,thename,thelevel)
 // getSessionMode()
+<<<<<<< HEAD
+// current_debug_status()
+=======
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 //
 //==================================================
 function getUserID() {
@@ -60,6 +67,8 @@ connobj=null;
 return(result.valueOf());
 }
 //==================================================
+<<<<<<< HEAD
+=======
 function getOnlineID() {
 var zz, result;
 var dbconnect=Application("hamptonsportsdb"); 
@@ -82,6 +91,7 @@ connobj=null;
 return(result.valueOf());
 }
 //==================================================
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 function getUserName() {
 var zz, result;
 var dbconnect=Application("hamptonsportsdb"); 
