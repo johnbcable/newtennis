@@ -183,60 +183,72 @@ if (debugging)
 			<span>Final score:  </span>3-6, 4-6
 		</p>
 
+		<p class="team">
+			<span>Ladies Super Veterans Doubles</span>Jenny Roberts and Kathy Hunt vs Pauline Morris and Chris Durbin
+		</p>
+		<p class="matchreport">
+			A great 2-set encounter (which kept the scheduler happy) which, despite some serious pre-match liquid training, went the way of Jenny Roberts and partner Kathy Hunt. There was quite a bit of giggling on court ..
+		</p>
+		<p class="result">
+			<span>Final score:  </span>6-4, 6-4
+		</p>
+
+		<p class="team">
+			<span>Mens Singles</span>Tony Eccleston vs Rich Westman
+		</p>
+		<p class="matchreport">
+			It really is great to see tennis at this level within the club. Manfully trying to recover after his sister&apos;s wedding and BBQ duties for all and sundry the previous day, Tont got off to a slow start against Richard ... and couldnt seem to make any impression against the barrage of shots from the other side of the court, leaving Richard to run out a worthy two sets to nil winner
+		</p>
+		<p class="result">
+			<span>Final score:  </span>0-6, 0-6
+		</p>
+
+
+		<p class="team">
+			<span>Mixed Doubles</span>Emma Shalley and Mark Joannides vs Sophie Cable and Jonny hunt
+		</p>
+		<p class="matchreport">
+			Seasoned mixed doubles pairing Mark and Emma were pitted against the "no silverware" first-time pairing of Sophie Cable and Jonny Hunt. Both pairs had played well in the run-up to finals day, dismissing prior winners and other fancied pairings with ease so all eyes were focussed on how this one was going to pan out. Against the initial betting odds, Sophie and Jonny took a 3-1 lead in the first set. This obviously riled Emma and Mark who came back at them to take the first set 6-4 - percentage bets were looking safe. Unfortunately for Emma and Mark, finals day "newbies" Sophie and Jonny didnt know that this was supposed to be their cue to put their heads down and just stormed out of the blocks to take the second set 3-6. After Mark had given his racket the first (and second) of a few good talkings to, we were off into set number 3 with the schedule police nervously viewing their watches. They neednt have worried: Sophie and Jonny took a commanding 5-1 lead in the final set, let it slip back to 5-2 but then made sure and finished the match in fine style taking the third set 2-6 ... and Mark's racquet took another beating! A good-natured and tactical contest resulting in two new names to be added to the trophy! Well done Sophie and Jonny.
+		</p>
+		<p class="result">
+			<span>Final score:  </span>6-4, 3-6, 2-6
+		</p>
+
+		<p class="team">
+			<span>Mens Doubles</span>Andy Frith and Ted Frith vs Josh Crisp-Jones and Rich Westman  
+		</p>
+		<p class="matchreport">
+			Into the last set of matches fore the day, and Ted canters back onto the court after going for a quick change after his second match fo the day (against Rib Yates jnr) to partner his son SAndy against two giants of the Mens Doublesd at Hampton - Josh and Richard. As with most matches invoplving first team players, the "good hands" work around the net was as important or more so than the ability to rally from the back of the court. And so our first team pairing lead la famille Frith a merry dance on court two for an engaging two-ste match, eventuall;y running out winners. And the scheduler was pleased.
+		</p>
+		<p class="result">
+			<span>Final score:  </span>3-6, 0-6
+		</p>
+
+		<p class="team">
+			<span>Mixed Doubles Plate</span>Paul Thomas and Jayne Barnes vs Steve Ray and Deborah Jones
+		</p>
+		<p class="matchreport">
+			Meanwhile on court 1, we had the finals of the mixed doubles plate where the likjes of old-stager Savio partnered Bonita (Bryant) against experienced finalist Karen (Vithanage) and James (Straw). An engaging mixed bag of tennis and quirks - did you really need 4 extra racquets James after your string broke? - but again the scheduler was a happy bunny as Savio and Bonita completed their conquest in two straiught sets.
+		</p>
+		<p class="result">
+			<span>Final score:  </span>3-6, 4-6
+		</p>
+		
+		<p class="team">
+			<span>Ladies Doubles</span>Louise Tomlin and Debbie Smart vs Wendy Jones and Catherine Eley
+		</p>
+		<p class="matchreport">
+			Last up (and unfortunately on court 4 in the fading light so we all had to guess the scores), Louise and Debbie who had each played separately in earlier matches now worked together to take on a fresh-as-a-daisy Wendy and a slightly more weary Catherine (who had played 5 sets already today). Was this one going to be over quickly or would it go the distance? Sadly for the scheduling (but great for the competitors and the uadience) we had another 3 set&apos;er to close proceedings on Finals Day. Wendy and Catherine took the first set 3-6 and then Louise and Debbie immediately replied in kind, taking the sceond set 6-3. All down to the last set, but Louise and Debbie were in their element now and Wendy and Catherine had no answer for them, with Louise and Debbie taking the final set 6-2
+		</p>
+		<p class="result">
+			<span>Final score:  </span>3-6, 6-3, 6-2
+		</p>
+
 
 <!--
 
 -->
 <!--
-		<p class="team">
-			<span>Mixed Doubles Plate</span>Paul Thomas and Jayne Barnes vs Steve Ray and Deborah Jones
-		</p>
-		<p class="matchreport">
-			Steve and Deborah see off the challenge from first-time finalist Jayne and partner Paul. The real stars of this encounter were Jayne and Deborah who managed to hold things together when their partners drifted at times between greatness and the other sort of tennis. Steve&apos;s competitiveness eventually gave he and Deborah the edge to convincingly take the final (3rd) set and seal the title.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>4-6, 6-3, 1-6
-		</p>
-		<p class="team">
-			<span>Mens Singles</span>Daniel Eccleston vs Josh Crisp-Jones
-		</p>
-		<p class="matchreport">
-			Once again a fantastic, exhibition-style match to watch on centre court. Last year&apso;s winner Josh (who had only slept since 6am I think before having to play his semi-final against Richard Westman earlier in the afternoon) was thoroughly warmed up by the time Daniel arrived for his match. After the usual, courteous knock-up period, Daniel signalled his intention very early on to regain his title, closing out the first set with a fantastic display of accurate, power tennis. Even the sound as proper tennis players hit the ball is quite different, dont you think? On into the second set, and it became very clear that Josh was not going to roll over and oblige Daniel in his quest for the title without a fight, and the second set went to Josh. At this time, they were playing under floodlights and both elected to play a Chamionship Tie-Break rather than a full 3rd set. Again this was a closely fought affair with the audience up by the clubhouse unwilling to leave for their dinners as the tennis was so good, but Daniel did eventually edge it 10-7 to reclaim his singles title from 2011. Well played both - great to watch.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>6-1, 3-6, 10-7 (CTB)
-		</p>
-		
-		<p class="team">
-			<span>Ladies Doubles</span>Terri Mason and Wendy Jones vs Jane Hodge and Carol Grant
-		</p>
-		<p class="matchreport">
-			Tight 3-set'er but eventually a very tired pairing of Jane and Carol ran out worthy winners. the match has to go down as having the &quot;mis-hit of the finals&quot; point where a stylish skywards mishit shot from Wendy (I think) kerplunked just over the net right down into the tramlines much to the dismay of Jane and Carol, who tried in vain to get it back and keep it in play thereafter - you had to see it to believe it!
-		</p>
-		<p class="result">
-			<span>Final score:  </span>3-6, 7-6, 3-6
-		</p>
-
-		<p class="team">
-			<span>Mixed Doubles</span>Paul Thomas and Carol Grant vs Terri Mason and Savio Gaspar
-		</p>
-		<p class="matchreport">
-			Yet another competitive 3-set match where Savio (the freshest competitor on the court at this stage!) and Terri grasped an early one set lead after a tense first set tie-break. Paul and Carol rallied during the second set to tie the match at one set each. Savio and Terri were having none of this and stormed back out into the third set taking it convincingly 6-1 to win the title.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>6-7, 6-4, 1-6
-		</p>
-
-		<p class="team">
-			<span>Mens Doubles</span>Daniel Eccleston and Richard Allen vs Josh Crisp-Jones and Tony Eccleston  
-		</p>
-		<p class="matchreport">
-			The last match of the day, this was played totally under floodlights and, as you would expect with such a raft of Mens 1st Team talent on display, was a very tight first set with Daniel and Richard just edging it from Tony and Josh. The lads must have been getting hungry or something during the second set and duly obliged the crowd with a high-speed run-through of how to play tennis with Daniel and Richard running out eventual winners in straight sets.
-		</p>
-		<p class="result">
-			<span>Final score:  </span>7-5, 6-2
-		</p>
-
 
  		<p class="matchreport" style="padding-top: 10px; margin-top: 10px; border-top: 1px solid black;">
 			The weather for the September finals day was cool and overcast for much of the day, turning eventually to rain in the latter part of the afternoon, luckily after most of the matches had completed! Great atmosphere in the clubhouse and some good tennis on show across all award areas. 
@@ -249,9 +261,9 @@ if (debugging)
 			<h2>See Also:</h2>
 			<ul>
 				<li><a href="tours.asp?season=2015">2015 Summary results</a></li>
-<!-- 				
-				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157648134437761/">September Finals Day Photos</a></li>
- -->
+				
+				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157659137091796">September Finals Day Photos</a></li>
+
  				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157655547638422">Challenger Finals Day photos</a></li>
 
  				<li><a href="juniors/results.html?season=2015">Junior tournament results</a></li>

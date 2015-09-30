@@ -151,7 +151,6 @@ if (debugging)
 
 		</div>
 
-<!-- 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
 				<h3>Your web site is changing!</h3>
@@ -168,6 +167,7 @@ if (debugging)
 
 		</div>
 
+<!-- 
 
 		<div id="awards2014" class="collage">
 			 <img alt="Coventry League awards night" src="img/Awards2014.jpg" width="601">
