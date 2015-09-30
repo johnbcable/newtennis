@@ -159,7 +159,7 @@ if (debugging)
 			Ted was now playing in the second of three finals on the day and he was now up against last year's winner (albeit Rob is now appreciably taller and hitting the ball appreciably harder and more accurately). Would the voice of experience dampen the fire of youth ... not a bit of it: the winner was Rob Yates jnr. Great playing again Rob jnr! Ted then took a break to change ready for his third and final encounter later in the day.
 		</p>
 		<p class="result">
-			<span>Final score:  </span>6-2, 6-3
+			<span>Final score:  </span>6-3, 6-2
 		</p>
 
 
@@ -218,17 +218,17 @@ if (debugging)
 			<span>Mens Doubles</span>Andy Frith and Ted Frith vs Josh Crisp-Jones and Rich Westman  
 		</p>
 		<p class="matchreport">
-			Into the last set of matches fore the day, and Ted canters back onto the court after going for a quick change after his second match fo the day (against Rib Yates jnr) to partner his son SAndy against two giants of the Mens Doublesd at Hampton - Josh and Richard. As with most matches invoplving first team players, the "good hands" work around the net was as important or more so than the ability to rally from the back of the court. And so our first team pairing lead la famille Frith a merry dance on court two for an engaging two-ste match, eventuall;y running out winners. And the scheduler was pleased.
+			Into the last set of matches fore the day, and Ted canters back onto the court after going for a quick change after his second match of the day (against Rob Yates jnr) to partner his son Andy against two giants of the Mens Doubles at Hampton - Josh and Richard. As with most matches involving first team players, the "good hands" work around the net was as important or more so than the ability to rally from the back of the court. And so our first team pairing lead &quot;la famille Frith&quot; a merry dance on court two for an engaging two-set match, eventually running out winners. And the scheduler was pleased.
 		</p>
 		<p class="result">
 			<span>Final score:  </span>3-6, 0-6
 		</p>
 
 		<p class="team">
-			<span>Mixed Doubles Plate</span>Paul Thomas and Jayne Barnes vs Steve Ray and Deborah Jones
+			<span>Mixed Doubles Plate</span>James Straw and Karen Vithanage vs Savio Gaspar and Bonita Bryant
 		</p>
 		<p class="matchreport">
-			Meanwhile on court 1, we had the finals of the mixed doubles plate where the likjes of old-stager Savio partnered Bonita (Bryant) against experienced finalist Karen (Vithanage) and James (Straw). An engaging mixed bag of tennis and quirks - did you really need 4 extra racquets James after your string broke? - but again the scheduler was a happy bunny as Savio and Bonita completed their conquest in two straiught sets.
+			Meanwhile on court 1, we had the finals of the mixed doubles plate where the likjes of old-stager Savio partnered Bonita (Bryant) against experienced finalist Karen (Vithanage) and James (Straw). An engaging mixed bag of tennis and quirks - did you really need 4 extra racquets James after your string broke? - but again the scheduler was a happy bunny as Savio and Bonita completed their conquest in two straight sets.
 		</p>
 		<p class="result">
 			<span>Final score:  </span>3-6, 4-6
@@ -238,7 +238,7 @@ if (debugging)
 			<span>Ladies Doubles</span>Louise Tomlin and Debbie Smart vs Wendy Jones and Catherine Eley
 		</p>
 		<p class="matchreport">
-			Last up (and unfortunately on court 4 in the fading light so we all had to guess the scores), Louise and Debbie who had each played separately in earlier matches now worked together to take on a fresh-as-a-daisy Wendy and a slightly more weary Catherine (who had played 5 sets already today). Was this one going to be over quickly or would it go the distance? Sadly for the scheduling (but great for the competitors and the uadience) we had another 3 set&apos;er to close proceedings on Finals Day. Wendy and Catherine took the first set 3-6 and then Louise and Debbie immediately replied in kind, taking the sceond set 6-3. All down to the last set, but Louise and Debbie were in their element now and Wendy and Catherine had no answer for them, with Louise and Debbie taking the final set 6-2
+			Last up (and unfortunately on court 4 in the fading light so we all had to guess the scores), Louise and Debbie who had each played separately in earlier matches, now worked together to take on a fresh-as-a-daisy Wendy and a slightly more weary Catherine (who had played 5 sets already today). Was this one going to be over quickly or would it go the distance? Sadly for the scheduling (but great for the competitors and the audience) we had another 3 set&apos;er to close proceedings on Finals Day. Wendy and Catherine took the first set 3-6 and then Louise and Debbie immediately replied in kind, taking the sceond set 6-3. All down to the last set, but Louise and Debbie were in their element now and Wendy and Catherine had no answer for them, with Louise and Debbie taking the final set 6-2
 		</p>
 		<p class="result">
 			<span>Final score:  </span>3-6, 6-3, 6-2
