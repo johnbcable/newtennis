@@ -136,6 +136,8 @@ if (debugging)
 			 <img alt="Finals Day 2015" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 
+<!--     Finals Day
+
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
 				<h3>Autumn Finals Day - Sunday 27<sup>th</sup> September</h3>
@@ -150,6 +152,7 @@ if (debugging)
 			</div>
 
 		</div>
+-->
 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
