@@ -136,6 +136,8 @@ if (debugging)
 			 <img alt="Finals Day 2015" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 
+<!--     Finals Day
+
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
 				<h3>Autumn Finals Day - Sunday 27<sup>th</sup> September</h3>
@@ -150,17 +152,17 @@ if (debugging)
 			</div>
 
 		</div>
+-->
 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
-				<h3>Your web site is changing!</h3>
+				<h3>Your web site will soon change!</h3>
 				 <div class="promobutton">
 				 	<a href="http://hamptontennis.org.uk/fullindex.html">Preview &raquo;</a>
 				 </div>
 				<div class="promotext">
 					<p>
-				 		Your web site will soon change to a newer, fresher 
-				 		layout that works much better on your mobile devices. See it now - click on the Preview button.
+				 		Your newer, fresher club web site layout that works much better on your mobile devices will be here shortly. In the meantime, click on the Preview button to see what&apos;s coming..
 				 	</p>
 				</div>
 			</div>
