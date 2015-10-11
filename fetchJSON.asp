@@ -124,11 +124,7 @@ If queryref > -1 Then
 	querylist(19) = "SELECT * FROM coaching_lessons WHERE lesson_day = '{{p1}}' ORDER BY lesson_id, group_display_order, start_time, end_time;"
 	querylist(20) = "SELECT Format(fixturedate,'YYYY-mm-dd') AS fixturedate, homeoraway, fixtureid, opponents, hamptonresult, opponentresult, fixtureyear, teamname, pair1, pair2, fixturenote, matchreport FROM tennisfixtures WHERE teamname = '{{p1}}' AND fixtureyear = {{p2}} ORDER BY fixturedate;"
 	querylist(21) = "SELECT * FROM otherclubs ORDER BY clubname;"
-<<<<<<< HEAD
-	querylist(22) = "SELECT * FROM futureevents WHERE eventtype in('SOCIAL','MATCH','SOCIALTENNIS')  AND eventdate = Date() ORDER BY eventtime ASC;"
-=======
 	querylist(22) = "SELECT eventdate, Format(eventtime,'HH:mm') as eventtime, Format(endtime,'HH:mm') as endtime, eventnote, eventreport FROM futureevents WHERE eventtype in('SOCIAL','MATCH','SOCIALTENNIS')  AND eventdate = Date() ORDER BY eventtime ASC;"
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	querylist(23) = "SELECT * FROM winners WHERE [year] = {{p1}} ORDER BY [displayorder] ASC;"
 	querylist(24) = "SELECT * from news where visible = 'Y' order by newspriority asc, newsid desc"
 

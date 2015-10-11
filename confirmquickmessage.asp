@@ -153,8 +153,6 @@ sSubject = replaceAll(sSubject,"\u00e2\u20ac\u201c", "&ndash;");
 sSubject = replaceAll(sSubject,'"', "&quot;");
 sSubject = replaceAll(sSubject,"\u002d", "&ndash;");
 
-<<<<<<< HEAD
-=======
 // Now remove any remaining non-ASCII characters from the 
 // details, lead and Subject
 
@@ -162,7 +160,6 @@ sSubject = sSubject.replace(/[^\x00-\x7F]/g, "");
 sDetails = sDetails.replace(/[^\x00-\x7F]/g, "");
 sLeadParagraph = sLeadParagraph.replace(/[^\x00-\x7F]/g, "");
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 //
 // set up sender
 sender = new String(sFrom+"@hamptontennis.org.uk").toString();
@@ -194,11 +191,7 @@ if (debugging)
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
-<<<<<<< HEAD
-	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
-=======
-	<a href="fullindex.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
+	<a href="index.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>
 

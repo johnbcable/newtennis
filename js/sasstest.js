@@ -12,7 +12,6 @@ Handlebars.registerHelper('equalsTo', function(v1, v2, options) {
 });
 
 
-<<<<<<< HEAD
 function displayTodaysEvents() {
 	
 	var jsonstring = new String("");
@@ -60,8 +59,6 @@ function displayTodaysEvents() {
 	});  // end of function(data)
 
 }
-=======
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 
 $(document).ready(function() {
@@ -70,11 +67,7 @@ $(document).ready(function() {
 	// display the loginModal if not
 
 	// Display calendar icon + todays events
-<<<<<<< HEAD
 	displayTodaysEvents();
-=======
-	// displayTodaysEvents();
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 
 

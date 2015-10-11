@@ -79,8 +79,6 @@ function displayMyBoxleagues() {
 
 }
 
-<<<<<<< HEAD
-=======
 function displayTodaysEvents() {
 	
 	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=1";
@@ -146,8 +144,6 @@ function displayTodaysEvents() {
 	});  // end of function(data)
 
 }
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
-
 
 
 $(document).ready(function() {
@@ -155,11 +151,8 @@ $(document).ready(function() {
 	// Need to check if this person is signed-in and
 	// display the loginModal if not
 
-<<<<<<< HEAD
-=======
 	// Display todays events
 	displayTodaysEvents();
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	// Show my upcoming court bookings in the My Club area
 	displayMyCourtBookings();

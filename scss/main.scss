@@ -637,19 +637,6 @@ $header-font-color: $dark-grey;
 // Mixin for creating pill shaped buttons
 // ====================================================================
 
-<<<<<<< HEAD
-@mixin button-links($button-base: darken($color11,10%), $button-hover: darken($color11,15%)) {
-	border: 1px solid darken($color11,16%);
-	padding: .3em .6em;
-	margin-left: .7em;
-	@include border-radius(8px);
-	@include text-shadow(0 1px 2px $color11);
-	color: lighten($color10,50%);
-	background-color: $button-base;
-	&:hover {
-		background-color: $button-hover;
-	}
-=======
 @mixin bordered-image() {
   border-color: transparent;
   border-width: 10px;
@@ -658,7 +645,6 @@ $header-font-color: $dark-grey;
     border-color: #00a1d9;
     /* border-color: #ADADAD;  */
   }
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 }
 
 // Media Query mixin
@@ -974,8 +960,6 @@ a img {
 	border: none;
 }
 
-<<<<<<< HEAD
-=======
 // Styles for submit buttons
 input[type=submit] {
   color: #fff;
@@ -998,7 +982,6 @@ input[type=submit] {
 }
 
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 // Styles for the top navigation bar
 //
@@ -1094,8 +1077,6 @@ input[type=submit] {
   background-size: cover;
 }
 
-<<<<<<< HEAD
-=======
 // Styles for banner on sports club landing page
 //
 .row--banner-sportsclub
@@ -1107,7 +1088,6 @@ input[type=submit] {
   background-size: cover;
 }
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 .row--watching {
   background-color: lighten($sage-green,20%);
 }
@@ -1119,13 +1099,10 @@ input[type=submit] {
 		background-image: url(../img/mainbanner.jpg);
 		height: 360px;
 	}
-<<<<<<< HEAD
-=======
   .row--banner-sportsclub {
     background-image: url(../img/clubhouse.jpg);
     height: 360px;
   }
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	.row--ourclub
 	{
 		background-image: url(../img/clubhouse.jpg);
@@ -1151,17 +1128,6 @@ Welcome block styling on members.html
 ----------------------------- */
 
 .welcomeblock {
-<<<<<<< HEAD
-  margin-top: 2em;
-  vertical-align: middle;
-}
-
-.welcometext, #notme, #mylogout {
-  padding-top: emCalc(20px);
-  vertical-align: middle;
-}
-
-=======
   padding: 1em 0 1em 0;
   vertical-align: middle;
 }
@@ -1174,7 +1140,6 @@ p#welcometext, #notme, #mylogout {
   text-aligbn: center;
 }
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 /* ----------------------------
 Running the club layout
 ---------------------------- */
@@ -1472,29 +1437,18 @@ banner-content
 }
 
 .feature-image {
-<<<<<<< HEAD
-=======
   border-style: solid;
   border-width: 10px;
   border-color: transparent;
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	-ms-border-radius: 50%;
 	border-radius: 50%;
-<<<<<<< HEAD
-  border: 10px solid $body-bg;
-}
-
-.feature-image:hover {
-  border: 10px solid #ADADAD;
-=======
 }
 
 .feature-image:hover {
   border-color: #ADADAD;
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 }
 
 /* ------------------------------------------------------------
@@ -1675,8 +1629,6 @@ input[type=checkbox]
   padding: 10px;
 }
 
-<<<<<<< HEAD
-=======
 /* ----------------------------
 Calendar icon styling
 ---------------------------- */
@@ -1758,7 +1710,6 @@ time.icon:hover, time.icon:focus
   100% { transform: rotate(0deg)  skewY(0deg); }
 }
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 // ----------------  end of modules  ----------------------
 
 // --------------------------------------------------------
@@ -1798,31 +1749,6 @@ time.icon:hover, time.icon:focus
       margin: 0 auto;
       max-width: 90%;
 		}
-<<<<<<< HEAD
-		.toprow {
-			ul {
-				li {
-					margin: 0;
-					padding: auto 0;
-					a {
-						display: block;
-						text-align: center;
-            line-height: emCalc(60px);
-						background: $dark-grey;
-						color: $light-grey;
-						/* height: emCalc(40px);  */
-						font-size: emCalc(20px);
-						vertical-align: middle;
-            max-width: 90%;
-						margin: 0 auto;
-						padding: 0;
-						&:hover {
-							background: $light-grey;
-							color: $dark-grey;
-						}
-					}
-				}
-=======
 		.toprow { 
       .bigfooter {
         ul {
@@ -1849,7 +1775,6 @@ time.icon:hover, time.icon:focus
             }
           }
         }
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 			}
 			.clublogo {
 				text-align: center;

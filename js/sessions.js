@@ -2,11 +2,7 @@
 // Set up global variables to be available to each page
 
 var signedin = new String("N").toString();  // Default to N - updated by setSignedIn()
-<<<<<<< HEAD
-var debugthis = true;      // set to true to get console output
-=======
 var debugthis = false;      // set to true to get console output
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 var myMemberID = new String("").toString();         // set to memberid of petrson who has signed in
 var mySignIn = new Object();
 var myName = new String("").toString();
@@ -271,16 +267,10 @@ $(document).ready(function() {
 
 	if (signedin == "Y") {
 		var welcomemessage = "Hi "+myName+" - welcome back";
-<<<<<<< HEAD
 		$('.welcometext').html('<h4>'+welcomemessage+'</h4>');
 		$('.welcomeblock').css('display','');
 		$('#notme').html("Not "+myName+"?");
 		$('#mylogout').html("Log out");
-=======
-		$('#welcometext').html(welcomemessage);
-		$('#notme').html("Not "+myName+"?");
-		$('.welcomeblock').css('display','');
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	}
 
 	$( '#loginmenu' ).click(function() {
@@ -294,11 +284,8 @@ $(document).ready(function() {
 	$('#logout').click(function(){
 		logMeOut();
 	});
-<<<<<<< HEAD
 
-=======
 /*
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	$('#mylogout').click(function(){
 		logMeOut();
 	});
@@ -306,11 +293,7 @@ $(document).ready(function() {
 	$('#notme').click(function(){
 		logMeOut();
 	});
-<<<<<<< HEAD
-
-=======
 */
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	$(document).on('opened', '[data-reveal]', function () {
 	    $("#frmUserId:visible").focus();
 	});	

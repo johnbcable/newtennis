@@ -8,7 +8,7 @@ if (signedin())
 		<li><a href="members.asp">Overview</a></li>
 		<li><a href="profile.asp">My Details</a></li>
 		<li><a href="chk_memb.asp">Directory</a></li>
-		<li><a href="galleryfullindex.html">Galleries</a></li>
+		<li><a href="galleryindex.html">Galleries</a></li>
 		<li><a href="reports.asp">Reports</a></li>
 		<li><a href="forms.asp">Forms</a></li>
 		<li><a href="logout.asp">Sign-Out</a></li>

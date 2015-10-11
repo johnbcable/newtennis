@@ -20,11 +20,7 @@
     <!-- Open Graph meta information -->
     <meta property="og:title" content="Hampton in Arden Tennis Club">
     <meta property="og:type" content="website">
-<<<<<<< HEAD
-    <meta property="og:url" content="http://hamptontennis.org.uk">
-=======
-    <meta property="og:url" content="http://hamptontennis.org.uk/fullindex.html">
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
+    <meta property="og:url" content="http://hamptontennis.org.uk/index.html">
     <meta property="og:image" content="http://hamptontennis.org.uk/img/logos/logo.gif">
     <meta property="og:description" content="Your family-friendly tennis club in Solihull">
     <!-- Apple touch icon links -->
@@ -47,8 +43,8 @@
     <meta name="msapplication-square150x150logo" content="/img/logos/icon150.png">
     <meta name="msapplication-square70x70logo" content="/img/logos/icon70.png">
     <!-- CSS links -->
-    <link rel="stylesheet" href="bower_components/foundation/css/normalize.css" />
-    <!-- <link rel="stylesheet" href="css/base.css" />  -->
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css" />
+    <!-- <link rel="stylesheet" href="/css/base.css" />  -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/bower_components/modernizr/modernizr.js"></script>
   </head>

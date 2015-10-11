@@ -108,11 +108,7 @@ if (debugging)
 <!--#include file="dateval.asp" -->
 <!--   1.  Branding   -->
 <div id="branding">
-<<<<<<< HEAD
-	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
-=======
-	<a href="fullindex.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
+	<a href="index.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>
 

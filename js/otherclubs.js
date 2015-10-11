@@ -47,7 +47,6 @@ function displayClubList() {
 
 }
 
-<<<<<<< HEAD
 function closeMap() {
 	// Close the panel down that is displaying the map
 
@@ -89,30 +88,19 @@ function showLocationMap(postcode,title) {
 	// window.location.hash="#map-panel";
 
 }
-=======
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 // --------------  End of helper/utility functions ---------------------------
 
 $(document).ready(function() {
 
-<<<<<<< HEAD
-=======
 	// Display overview map
 	displayOverviewMap();
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	// Show club list
 	displayClubList();
 
-	// Blank out any prior map title
-<<<<<<< HEAD
-	$('.map-title').html('');
-	$('#map-canvas').addClass('noshow');  // Make current map area invisible
-=======
 	// $('.map-title').html('');
 	// $('#map-canvas').addClass('noshow');  // Make current map area invisible
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 })  // end of document.ready
 

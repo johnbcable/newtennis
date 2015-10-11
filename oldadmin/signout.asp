@@ -19,7 +19,7 @@ var refurl, onwardurl, frmUserId, frmPassword;
 var debugging = false;    // Set to false for production
 
 //defaults
-onwardurl = new String("/fullindex.html").toString();
+onwardurl = new String("/index.html").toString();
 
 myusername = new String(Request.ServerVariables("REMOTE_USER")).toString();
 myaddress = new String(Request.ServerVariables("REMOTE_ADDR")).toString();
@@ -78,6 +78,6 @@ if (! (v_memberid == "NONE"))
 }
 if (! debugging)
 {
-	Response.Redirect("/fullindex.html");
+	Response.Redirect("/index.html");
 }
 %>

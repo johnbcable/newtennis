@@ -71,7 +71,7 @@ if (debugging)
 }
 </style>
 
-<script src="js/jquery-1.9.1.min.js"></script>
+<script src="/js/jquery-1.9.1.min.js"></script>
 <script>
 	$(document).ready(function() {
 		$('span.pq').each(function() {

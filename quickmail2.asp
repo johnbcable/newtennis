@@ -39,7 +39,7 @@ strtime = timestring();
 
 // if (!isSupport()) {
 if (!isCommittee()) {
-	Response.Redirect("fullindex.html")
+	Response.Redirect("index.html")
 }
 
 // Now, pull in sent-in data from POST or GET
@@ -185,7 +185,7 @@ if( ! (errmess == "")) {
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
-	<a href="fullindex.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+	<a href="index.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>
 

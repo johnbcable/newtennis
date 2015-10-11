@@ -166,8 +166,6 @@ sSubject = replaceAll(sSubject,"\u00e2\u20ac\u201c", "&ndash;");
 sSubject = replaceAll(sSubject,'"', "&quot;");
 sSubject = replaceAll(sSubject,"\u002d", "&ndash;");
 
-<<<<<<< HEAD
-=======
 // Now remove any remaining non-ASCII characters from the 
 // details, lead and Subject
 
@@ -175,7 +173,6 @@ sSubject = sSubject.replace(/[^\x00-\x7F]/g, "");
 sDetails = sDetails.replace(/[^\x00-\x7F]/g, "");
 sLeadParagraph = sLeadParagraph.replace(/[^\x00-\x7F]/g, "");
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 // Now read in contents of HTML request template 
 if (emaildir == "")
 {
@@ -204,13 +201,8 @@ sMessage = new String(sMessage.replace("ZZleadparagraphZZ",sLeadParagraph)).toSt
 //
 var displaydate = dateasstring(Date());
 var debugging=current_debug_status();
-<<<<<<< HEAD
-debugging = true;
-willcirculate = false;
-=======
 debugging = false;
 willcirculate = true;
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 // End of page start up coding
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -235,11 +227,7 @@ if (debugging)
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
-<<<<<<< HEAD
-	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
-=======
-	<a href="fullindex.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
+	<a href="index.html" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>
 

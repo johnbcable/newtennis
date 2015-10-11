@@ -81,14 +81,9 @@ function displayMyBoxleagues() {
 
 function displayTodaysEvents() {
 	
-<<<<<<< HEAD
-	var jsonstring = new String("");
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=1";
-=======
 	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=1";
 	var willdebug = true;
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -105,8 +100,6 @@ function displayTodaysEvents() {
 		var strMonth = new String(months[myMonth]).toString();
 		var strDay = new String(days[myDay]).toString();
 
-<<<<<<< HEAD
-=======
 		if (willdebug) {
 			console.log("Inside getJSON in displayTodyasEvents .....");
 			console.log("...... myToday = "+myToday);
@@ -122,7 +115,6 @@ function displayTodaysEvents() {
 			console.log("End of logging");
 		}
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 		jsonstring = new String("{allToday:"+jsonstring+"}");
 
 		// var eventdata = $.parseJSON(jsonstring);
@@ -132,15 +124,6 @@ function displayTodaysEvents() {
 		// if (eventdata.length > 1)
 		//	eventsfound = true;
 
-<<<<<<< HEAD
-		// Make sure and set the correct information for the calendar icon display
-		$('time.icon').attr("datetime",myDateTime);
-		$('time.icon em').text(strDay);
-		$('time.icon strong').text(strMonth);
-		$('time.icon span').text(myDate);
-
-=======
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 		//Get the HTML from the template   in the script tag
 	    var theTemplateScript = $("#todaysevents-template").html(); 
 
@@ -148,17 +131,6 @@ function displayTodaysEvents() {
 	    var theTemplate = Handlebars.compile (theTemplateScript); 
 		// Handlebars.registerPartial("description", $("#shoe-description").html());    
 		$("#todaysevents").append (theTemplate(eventdata)); 
-<<<<<<< HEAD
-=======
-
-		// Make sure and set the correct information for the calendar icon display
-		$('time.icon').attr("datetime",myDateTime);
-		$('time.icon em').text(strDay);
-		$('time.icon strong').text(strMonth);
-		$('time.icon span').text(myDate);
-
-		
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 		// jsonstring = JSON.stringify(data);
 		// $("#receivedjson").html('JSON received back from fetchJSON.asp?id=2 is <br /><br />'+jsonstring+'<br /><hr />');
 	});  // end of function(data)
@@ -174,11 +146,7 @@ $(document).ready(function() {
 
 	// Display todays events
 	displayTodaysEvents();
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	// Show my upcoming court bookings in the My Club area
 	displayMyCourtBookings();
 

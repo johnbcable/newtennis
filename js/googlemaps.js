@@ -1,24 +1,6 @@
 //
 //		googlemaps.js
 //
-<<<<<<< HEAD
-//		Using Handlebars and plugin code 
-//
-var debugthis = true;   // set to false for production
-
-var curLatitude = 0;
-var curLongitude = 0;
-
-// Utility functions
-
-// Register Handlebars helpers
-
-function displayMapUsingPostcode(postcode,domid) {
-
-  	var map;
-	var address = postcode || "B92 0DQ";
-  	var domnode = domid || 'map-canvas';
-=======
 
 //Global map variable
 var map;
@@ -271,7 +253,6 @@ function displayMapUsingPostcode(postcode,domid) {
   	//   var map;
 	var address = postcode || "B92 0DQ";
   	var domnode = domid || 'map';
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	var mypostcode;
   	var lat;
   	var lng;
@@ -281,14 +262,10 @@ function displayMapUsingPostcode(postcode,domid) {
 	curLatitude = 0;
 	curLongitude = 0;
 
-<<<<<<< HEAD
-	mypostcode = address.replace(' ','');
-=======
 	// Clear out the specified DOM node ready for new map
 	$('#'+domnode).empty().html();
 
 	mypostcode = address.replace(' ','');  // Remove any embedded spaces
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 
 	var url = "http://maps.googleapis.com/maps/api/geocode/json?address="+mypostcode+"&amp;sensor=false";
 
@@ -336,8 +313,6 @@ function displayMapUsingPostcode(postcode,domid) {
 		map = new google.maps.Map(document.getElementById(domnode),
 		    mapOptions);
 
-<<<<<<< HEAD
-=======
 	    //Create the marker on the map for the club's coordinates    
 	    var marker = new google.maps.Marker({
 	          
@@ -370,7 +345,6 @@ function displayMapUsingPostcode(postcode,domid) {
 	        title: new String("Club").toString()
 	                               
 	    });
->>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
 	});
 
 }
