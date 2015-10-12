@@ -208,7 +208,6 @@ else
 <!--    5.   Supplementary content     -->	
 	<div id="rightcolumn">
 		<!--#include file="searchpanel.asp" -->
-		<!--#include file="addresspanel.asp" -->
 		<!--#include file="newspanel.asp" -->
 		<!--#include file="emailpanel.asp" -->
 	</div>

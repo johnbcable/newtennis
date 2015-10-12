@@ -1,0 +1,185 @@
+
+html {
+	 background-color:  #f1efe2; 
+}
+
+body {
+	color: #333;
+	background-color: #dce6cf;
+}
+#content h1, h2, h3
+{
+	color: #88a308;
+}
+
+div#wrapper {
+	background-color: #dce6cf;
+}
+
+div#branding, div#site_info, div#leftcolumn, div#rightcolumn, div#content {
+	background-color: #dce6cf;
+}
+
+div#nav_main {
+	background-color: #686397;
+}
+
+div#nav_main p#today {
+	color: #fff;
+}
+
+div#rightcolumn, div#leftcolumn {
+	background-color: #3A3C2D;
+	color: #fff;
+}
+
+div#rightcolumn ol li form {
+	background-color: #686397;
+	color: #fff;
+}
+	
+div#rightcolumn ol, div#rightcolumn ul {
+	background-color: #3A3C2D;
+}
+
+div#rightcolumn ol li h4, div#rightcolumn ul li h4{
+	background-color: #3A3C2D;
+	color: #fff;
+}
+
+div#rightcolumn ol li p, div#rightcolumn ul li p {
+	background-color: #3A3C2D;
+	color: #fff;
+}
+
+div#rightcolumn div#newsheader, div#rightcolumn div#emailheader, 
+div#rightcolumn div#contactheader, div#rightcolumn div#localweather,
+div#rightcolumn div#qmessageheader, div#rightcolumn div#bookingheader {
+	background-color: #686397;
+	color: #fff;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div#leftcolumn ol div {
+	background-color: #686397;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div#leftcolumn ol, div#leftcolumn ul {
+	background-color: #3A3C2D;
+}
+
+div#leftcolumn ol h3, div#leftcolumn ul h3 {
+	background-color: #686397;
+	color: #fff;
+}
+
+div#leftcolumn ol li h4, div#leftcolumn ul li h4{
+	background-color: #3A3C2D;
+	color: #fff;
+}
+
+div#leftcolumn ol li, div#leftcolumn ul li {
+	background-color: #3A3C2D;
+	color: #D4EC84;
+}
+
+div#rightcolumn a, div#leftcolumn a  {
+	text-decoration: none;
+	color: #D4EC84;
+}
+
+div#leftcolumn a:hover, div#rightcolumn a:hover {
+	color: #fff;
+}
+
+div#leftcolumn a:active {
+	color: #fff;
+}
+
+.event {font-weight: bold; color: green; background-color: inherit;}
+.social {font-weight: bold; color: blue; background-color: inherit; }
+.match {background-color: inherit; }
+
+#site_info li {
+	border-right:1px solid; /* creates the vertical line to the right of each list items */
+	color:#C60; /* sets the color of the vertical lines  - links colored below */
+	background-color: inherit;
+}
+#site_info a.last{
+	border-right:0;
+} /* removes the right border of the last list item - IDWIMIE */
+#site_info ul li a {
+	text-decoration:none; /* removes the underlining off the links */
+ 	color:#C60; /* the color of the links */
+	background-color: inherit;
+}
+#site_info ul li a:hover {
+	text-decoration:underline; 
+	color:#960;
+	background-color: inherit;
+} /* underlines the links when hovered */
+
+#site_info ul li#site_info_webguide {
+	border-right: 0;
+}
+
+table {
+	background-color: #fffff; 
+	color: #000;
+}
+th {
+	background-color: #686397; 
+	color: #FFFFFF; 
+}
+td {
+	background-color: #ffffff; 
+	border: 1px #686397 solid; 
+}
+/*  td.resulted {background-color: #aed2ac;}   */
+thead {
+	background-color: #686397;
+    border-top: 1px solid #686397;
+	border-bottom: 1px solid #686397;
+}
+thead tr td {
+	background-color: inherit;
+    border-top: 1px solid #686397;
+	border-bottom: 1px solid #686397;
+	color: #FFFFFF; 
+}
+tfoot {
+	background-color: #686397;
+    border-top: 1px solid #686397;
+	border-bottom: 1px solid #686397;
+}
+tfoot tr td {
+	background-color: inherit;
+    border-top: 1px solid #686397;
+	border-bottom: 1px solid #686397;
+	color: inherit; 
+}
+tfoot tr td a {
+	color: #D4EC84; 
+}
+tfoot tr td a:hover {
+	color: #FFFFFF;
+}
+tbody tr:nth-child(even) {
+	background-color: #C5B2F0;
+	color: #000;
+}
+tbody tr.odd, tbody tr.odd td {
+  background-color:#dbdbdb;
+}
+tbody td {
+	border: 0;
+	padding: 10px 10px 10px 0;
+	border-bottom: 1px solid black;
+}
+
+/*  ----  end of table styles   ------------- */

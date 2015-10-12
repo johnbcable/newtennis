@@ -14,7 +14,7 @@ var bc=0x9cacc1;
 if(typeof(frames)=="undefined"){var frames=0;}
 
 startMainMenu("navbar_left.gif",22,1,2,0,0)
-mainMenuItem("navbar_b1",".gif",22,108,loc+"index.asp","","All about our club and how to join it",2,2,"navbar_plain");
+mainMenuItem("navbar_b1",".gif",22,108,loc+"oldwayin.asp","","All about our club and how to join it",2,2,"navbar_plain");
 mainMenuItem("navbar_b2",".gif",22,108,loc+"news.asp","","News",2,2,"navbar_plain");
 mainMenuItem("navbar_b3",".gif",22,108,loc+"juniors.asp","","Junior section home page",2,2,"navbar_plain");
 mainMenuItem("navbar_b4",".gif",22,108,loc+"fixtures.asp","","Fixtures for the Hampton Tennis Teams",2,2,"navbar_plain");

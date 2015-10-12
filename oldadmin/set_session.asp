@@ -77,7 +77,7 @@ if (debugging)
 }
 else
 {
-Response.Redirect("index.asp");
+Response.Redirect("oldwayin.asp");
 }
 %>
 		</div> 

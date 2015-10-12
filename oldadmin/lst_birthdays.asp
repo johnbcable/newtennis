@@ -48,7 +48,7 @@ ebookingpin = 0;
 if (!signedin())
 	Response.Redirect("login.asp");
 if (!isCommittee())
-	Response.Redirect("index.asp");
+	Response.Redirect("oldwayin.asp");
 // Establish online user Id and PIN if signed in
 if (signedin) {
 	var myUnique = getUserCode();
@@ -151,7 +151,7 @@ td.maillink a:hover {
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
-	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+	<a href="oldwayin.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>
 

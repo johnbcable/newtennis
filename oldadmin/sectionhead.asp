@@ -17,7 +17,7 @@
 <body>
 <div id="container">
 	<div id="masthead">
-		<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+		<a href="oldwayin.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 		<h2>Hampton-In-Arden Sports Club</h2>
 		<h3>Tennis Section</h3>
 	</div>

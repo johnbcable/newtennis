@@ -17,9 +17,9 @@ theid = new String(Request.Querystring("id"));
 if (!signedin())
 	Response.Redirect("login.asp");
 if (! isAdministrator())
-	Response.Redirect("index.asp");
+	Response.Redirect("oldwayin.asp");
 if (theid=="null" || theid=="undefined")
-	Response.Redirect("index.asp");
+	Response.Redirect("oldwayin.asp");
 ConnObj=Server.CreateObject("ADODB.Connection");
 RstObj=Server.CreateObject("ADODB.Recordset");
 ConnObj.Open(dbconnect);

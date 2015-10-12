@@ -45,7 +45,7 @@ var pagetitle = new String("League Fixtures");
 					&nbsp;
 				</td>
 				<td nowrap>
-					<a id="home" href="index.asp">
+					<a id="home" href="oldwayin.asp">
 						Home
 					</a>
 				</td>
@@ -106,7 +106,7 @@ else
 				            
 				<td class="tdfont" width="130" nowrap valign="TOP" align="LEFT">
 					            
-					<a href="index.asp" onMouseOver="document.home.src='images/home2.jpg'" onMouseOut="document.home.src='images/home.jpg'">
+					<a href="oldwayin.asp" onMouseOver="document.home.src='images/home2.jpg'" onMouseOut="document.home.src='images/home.jpg'">
 						<img name="home" src="images/home.jpg" width="126" height="35" alt="Our Home Page" border="0">
 					</a>
 					<br>
@@ -206,7 +206,7 @@ else
 					<br>
 					<br>
 					
-					<A href="index.asp">
+					<A href="oldwayin.asp">
 						[Home]
 					</A>
 					&nbsp;

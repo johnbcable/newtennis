@@ -63,7 +63,7 @@ if (debugging)
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
-	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+	<a href="oldwayin.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>
 
@@ -88,7 +88,7 @@ if (debugging)
 
 <!--   3. Content    -->
 	<div id="content">
-		<h1><a href="galleryindex.asp">Photo Galleries</a> &raquo; <b><a href="thumbnails.asp?gallery=<%= thegallery %>"><%= galleryname %></a></b></h1>
+		<h1><a href="galleryoldwayin.asp">Photo Galleries</a> &raquo; <b><a href="thumbnails.asp?gallery=<%= thegallery %>"><%= galleryname %></a></b></h1>
 		<h2><%= thetopcaption %></h2>
 		<div id="displayedphoto">
 			<img src="images/<%= thephoto %>" alt="<%= thealtcaption %>" title="<%= thealtcaption %>" />

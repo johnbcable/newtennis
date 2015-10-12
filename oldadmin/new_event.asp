@@ -45,7 +45,7 @@ if (debugging)
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
-	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-in-Arden Tennis Club logo" /></a>
+	<a href="oldwayin.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-in-Arden Tennis Club logo" /></a>
 	<a href="juniors/index.html"><img id="juniorlogo" src="images/Juniorlogo.gif" width="163" height="54" alt="Junior Logo" class="juniorlogo" /></a>
 	<h1>Hampton-in-Arden Tennis Club</h1>
 	<h2>Tennis Section</h2>

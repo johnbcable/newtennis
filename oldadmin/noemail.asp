@@ -37,7 +37,7 @@ if (debugging)
 <body>
 <!--   1.  Branding   -->
 <div id="branding">
-	<a href="index.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
+	<a href="oldwayin.asp" id="homelink"><img id="clublogo" src="images/logo.gif" alt="Hampton-In-Arden Sports Club logo" /></a>
 	<h1>Hampton-In-Arden Sports Club</h1>
 	<h2>Tennis Section</h2>
 
@@ -83,7 +83,7 @@ if (signedin())
 else
 {
 %>
-			<li><a href="index.asp">Home page for Hampton Tennis Club</a></li>
+			<li><a href="oldwayin.asp">Home page for Hampton Tennis Club</a></li>
 			<li><a href="login.asp">Sign-in to members area</a></li>
 <%
 }

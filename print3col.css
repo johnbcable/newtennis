@@ -1,0 +1,99 @@
+body {
+  font: 10pt "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+a img {
+	border: 0;
+}
+div#mainimage {
+	height: 170px;
+}
+div#mainimage img {
+	float: left;
+	margin: 1em 1em 0 0;
+}
+div#mainimage p {
+	font-size:10pt; 
+	margin:0; 
+	color:#C60;
+}
+#homepagetopbox #overlayboxquote {
+	border: 1px solid #000;
+	float: right;
+}
+#content .notprint, #leftcolumn, #rightcolumn, #listmenu, #admin, #seealso, #overlayboxquote, #navigation, li.morelink , div.seealso,  div.admin, div#assistantcoachimage p, div#headcoachimage p , #printlinks, div#site_info, div#nav_main {
+	display: none;
+}
+
+#footer p, #footer ul {
+	display: none;
+}
+
+div#masthead , div#branding {
+	height:80px; 
+	border-bottom: 1px solid #000; 
+	border-top: 10px #000 solid;
+}
+div#masthead h1, div#branding h1  {
+	text-align: center;
+	margin: -4em 0 0.25em;
+}
+div#masthead h2, div#branding h2  {
+	text-align: center;
+	margin: -2em 0 0.25em;
+}
+div#masthead h3, div#branding h3 {
+	text-align: center;
+	margin: -0.25em 0 0;
+}
+#masthead img#juniorlogo, #branding img#juniorlogo {
+	float: right;
+	margin: -4em 2px 0 5px;
+}
+h1, h2, h3, h4 {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 16pt;
+}
+#mainContent {
+	margin: 0 5%;
+}
+#mainContent #headcoach {
+	float: left;
+	margin: 0 0.25em 0.25em 0;
+}
+#mainContent #assistantcoach {
+	float: right;
+	margin: 0 0 0.25em 0.25em;
+}
+
+#covleague {
+	padding: 0;
+	border: 1px solid #000;
+}
+#covleague img {
+	margin: auto 5px auto 0;
+}
+
+#homepagetopblock #overlayboxquote {
+	float: right;
+}
+
+#footer, #site_info {
+	border-top: 1px solid #000;
+	margin-top: 2em;
+	font-size: smaller;
+	text-align: center;
+}
+
+#coachingscheduletable tr  td {
+	border: 1px solid #000;
+}
+#coachingscheduletable caption, #coachingscheduletable thead, #coachingscheduletable thead th {
+	display:none;
+}
+
+#coachingfees th {
+							color: #000000;
+}
