@@ -4,5 +4,5 @@
 <!--#include file="emailfuncs.asp" -->
 <!--#include file="memberfuncs.asp" -->
 <%
-Response.Write("loaded OK after functions.asp");
+Response.Write("loaded OK after top includes");
 %>
