@@ -38,7 +38,7 @@ if (refurl == "" || refurl=="null" || refurl == "undefined")
 	refurl = new String("").toString();
 onwardurl = new String(refurl).toString();
 if (onwardurl == "")
-	onwardurl = new String("members.asp").toString();
+	onwardurl = new String("oldwayin.asp").toString();
 myusername = new String(Request.ServerVariables("REMOTE_USER")).toString();
 myaddress = new String(Request.ServerVariables("REMOTE_ADDR")).toString();
 if (myusername == "" || myusername=="null" || myusername == "undefined")
@@ -224,7 +224,7 @@ if (!badSignIn)
 	RS=null;
 	ConnObj.Close();
 	ConnObj=null;
-	onwardurl = new String("viewmemb.asp?code="+v_uniqueref).toString();
+	onwardurl = new String("oldwayin.asp").toString();
 }
 %>
 	</div>

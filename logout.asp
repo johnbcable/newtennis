@@ -110,7 +110,7 @@ Response.Redirect("oldwayin.asp");
 <!--#include file="memb_nav.asp" -->	
 	</div>
 	<div id="footer">
-<!--#include file="textnav.asp" -->
+<!--#include file="footer.asp" -->
 	</div>
 </div>
 </body>
