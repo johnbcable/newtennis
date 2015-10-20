@@ -14,7 +14,7 @@ strdate = datestring();
 strtime = timestring();
 theid = new String(Request.Querystring("id"));
 if (!signedin())
-	Response.Redirect("login.asp");
+	Response.Redirect("oldwayin.asp");
 if (! isAdministrator())
 	Response.Redirect("members.asp");
 if (theid=="null" || theid=="undefined")
