@@ -15,7 +15,7 @@ var v_acclevel;
 var v_uniqueref;
 var dbconnect=Application("hamptonsportsdb"); 
 var ConnObj, RS, sqlString, SQL1, SQL2, SQL3, SQL4;
-var message1, message2, message3, message4;
+var message1, message2, message3, message4, message5;
 var badSignIn=true;
 var errMess;
 var myusername, myaddress;
@@ -28,21 +28,37 @@ strtime = timestring();
 v_memberid=new String("");
 v_membername=new String("");
 v_acclevel=0;
+//
+// Major changes following release of new site//
+// Now only allow people to sign-in who are designated 
+// administrators. Can still login with online booking
+// ID and PIN or previously released useranme/password
+//
+// Adjust login process to check this
+//
 message1=new String("signin with SQL1 not tried");
 message2=new String("signin with SQL2 not tried");
 message3=new String("signin with SQL3 not tried");
 message4=new String("signin with SQL4 not tried");
+message5=new String("access level too low");
 // End of page start up coding
+
+// Set up onward route after signin check has succeeded
+
 refurl = new String(Request.Form("refurl")).toString();
 if (refurl == "" || refurl=="null" || refurl == "undefined")
 	refurl = new String("").toString();
 onwardurl = new String(refurl).toString();
 if (onwardurl == "")
 	onwardurl = new String("oldwayin.asp").toString();
+
+// Get details for audit logging
+
 myusername = new String(Request.ServerVariables("REMOTE_USER")).toString();
 myaddress = new String(Request.ServerVariables("REMOTE_ADDR")).toString();
 if (myusername == "" || myusername=="null" || myusername == "undefined")
 	myusername = new String(myaddress).toString();
+
 errMess = new String("")
 displaydate = dateasstring(Date());
 // debugging = true;
@@ -98,17 +114,19 @@ if (debugging)
 <%
 ConnObj = Server.CreateObject("ADODB.connection");
 ConnObj.Open(dbconnect);
-// SQL1=new String("delete from user_sessions where loggedindate < Date()").toString();
-// RS=ConnObj.Execute(SQL1);
+
+// Set up sign-in SQL queries
+
 sqlString=new String("delete from user_sessions where remoteaddress = '"+myaddress+"' or remoteuser = '"+myusername+"' or memberid = '"+v_memberid+"'").toString();
 RS=ConnObj.Execute(sqlString);
 SQL1 = new String("Select uniqueref, memberid, forename1, webaccess from members where memberid = '" + Request.Form("frmUserId") + "' and webpassword = '" + Request.Form("frmPassword") + "'");
 SQL2 = new String("Select uniqueref, memberid, forename1, webaccess from members where onlinebookingid = " + Request.Form("frmUserId") + " and onlinebookingpin = '" + Request.Form("frmPassword") + "'");
 SQL3 = new String("Select uniqueref, memberid, forename1, webaccess from members where email = '" + Request.Form("frmUserId") + "' and webpassword = '" + Request.Form("frmPassword") + "'");
 SQL4 = new String("Select uniqueref, memberid, forename1, webaccess from members where email = '" + Request.Form("frmUserId") + "' and onlinebookingpin = '" + Request.Form("frmPassword") + "'");
+
 // Now try each in turn until success
+
 RS = ConnObj.Execute(SQL1);
-// Now check if sign in was OK - memberid and webpassword (strings)
 message1=new String("trying signin with SQL1 ...");
 while (! RS.EOF)
 {
@@ -201,7 +219,7 @@ if (debugging)
 if (badSignIn)
 {
 	// Bad user name detected
-	errMess+=new String("Incorrect user name and/or password supplied.");
+	errMess+=new String("Incorrect admin user name and/or password supplied.");
 %>	
 			<h1>Administration:<b>&nbsp;Login Problem</b></h1>
 			<div id="loginerror" align="center">
@@ -209,7 +227,7 @@ if (badSignIn)
 				<%= errMess %><br />
 				<br />
 				<p>
-					Click <a href="login.asp">here</a> to return to the sign-in page, or<br>
+					Click <a href="oldwayin.asp">here</a> to return to sign-in again, or<br>
 					click on a menu choice on the left to go elsewhere in the site.
 				</p>
 			</div>
@@ -217,14 +235,34 @@ if (badSignIn)
 }
 if (!badSignIn)
 {
-	setUser(v_uniqueref,v_memberid,v_membername,v_acclevel);  // Session record - not permanent
-//	SQL1 = new String("insert into member_audits([memberid],[action]) values ('"+v_memberid+"','LOGIN')");
-//	Response.Write("["+SQL1+"]");
-	RS = ConnObj.Execute(SQL1);
-	RS=null;
-	ConnObj.Close();
-	ConnObj=null;
-	onwardurl = new String("oldwayin.asp").toString();
+	// Username/password OK
+	/// Now check access level
+	if (v_acclevel < "50") {
+	
+		errMess+=new String("You do not have administration access");
+%>	
+			<h1>Administration:<b>&nbsp;Login Problem</b></h1>
+			<div id="loginerror" align="center">
+				<u>Administration Sign-In Problem - Access Denied</u><br /><br />
+				<%= errMess %><br />
+				<br />
+				<p>
+					Click <a href="oldwayin.asp">here</a> to return to sign-in again, or<br>
+					click on a menu choice on the left to go elsewhere in the site.
+				</p>
+			</div>
+<%
+	}
+	else {
+		setUser(v_uniqueref,v_memberid,v_membername,v_acclevel);  // Session record - not permanent
+	//	SQL1 = new String("insert into member_audits([memberid],[action]) values ('"+v_memberid+"','LOGIN')");
+	//	Response.Write("["+SQL1+"]");
+		RS = ConnObj.Execute(SQL1);
+		RS=null;
+		ConnObj.Close();
+		ConnObj=null;
+		onwardurl = new String("oldwayin.asp").toString();
+	}
 }
 %>
 	</div>

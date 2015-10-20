@@ -10,7 +10,7 @@ Dim rsDB		   'Holds the recordset for the records in the database
 Dim strSQL         'Holds the SQL query to query the database	
 Dim dataSource	   'Holds the name of the data source from the Application object
 Dim dataResults    'Holds results from the JSON query
-Dim querylist(30)  'Array of queries
+Dim querylist(40)  'Array of queries
 Dim queryref       'Reference to query in querylist (default to 1)
 Dim p1, p2, p3     'Parameters (text)
 Dim paramknt       'Count of the number of parameters
@@ -126,8 +126,9 @@ If queryref > -1 Then
 	querylist(21) = "SELECT * FROM otherclubs ORDER BY clubname;"
 	querylist(22) = "SELECT eventdate, Format(eventtime,'HH:mm') as eventtime, Format(endtime,'HH:mm') as endtime, eventnote, eventreport FROM futureevents WHERE eventtype in('SOCIAL','MATCH','SOCIALTENNIS')  AND eventdate = Date() ORDER BY eventtime ASC;"
 	querylist(23) = "SELECT * FROM winners WHERE [year] = {{p1}} ORDER BY [displayorder] ASC;"
-	querylist(24) = "SELECT * from news where visible = 'Y' order by newspriority asc, newsid desc"
+	querylist(24) = "SELECT * from news where visible = 'Y' order by newspriority asc, newsid desc;"
 
+	querylist(27) = "SELECT webaccess, count(*) AS kount FROM members GROUP BY webaccess;"
 	querylist(28) = "SELECT wimbledonweekday, membergrade, detailscorrect, count(*) AS kount FROM members WHERE detailscorrectdate IS NOT null GROUP BY wimbledonweekday, membergrade, detailscorrect;"
 	querylist(29) = "SELECT gender, membergrade, count(*) AS kount FROM members WHERE {{p1}} LIKE 'Y' GROUP BY gender, membergrade;"
 
@@ -164,7 +165,7 @@ If debugging Then
 	Response.Write("testing = [" & testing & "]<br />")
 	Response.Write("origSQL = [" & origSQL & "]<br />")
 	Response.Write("strSQL = [" & strSQL & "]<br />")
-	Response.End
+	Response.End 
 End If
 
 dataResults = QueryToJSON(adoCon, strSQL).Flush
