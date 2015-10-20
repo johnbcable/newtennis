@@ -37,23 +37,3 @@ ConnObj = null;
 Response.Redirect("lst_news.asp");
 // End of page start up coding
 %>
-<!--#include file="pagehead.asp" -->
-<table  width=650 border=0 cellspacing=0 cellpadding=0 cols="100,*,120">
-  <tr>
-    <comment>Column 1 reserved for navigation menu</comment>
-    
-    <td>
-    <comment>Content for each page placed into middle column</comment>
-			<h3>The visbility of the requested fixture has been modified</h3>
-			<br><br>
-    </td>
-    <comment>Column 3 reserved for internal and external advertising</comment>
-    <!--#include file="adverts.asp" -->
-  </tr>
-</table>
-<br>
-<!--#include file="textnav.asp" -->
-</body>
-</html>
-<%
-%>
