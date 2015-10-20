@@ -227,7 +227,7 @@ if (badSignIn)
 				<%= errMess %><br />
 				<br />
 				<p>
-					Click <a href="login.asp">here</a> to return to the sign-in page, or<br>
+					Click <a href="oldwayin.asp">here</a> to return to sign-in again, or<br>
 					click on a menu choice on the left to go elsewhere in the site.
 				</p>
 			</div>

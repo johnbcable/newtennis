@@ -165,7 +165,7 @@ If debugging Then
 	Response.Write("testing = [" & testing & "]<br />")
 	Response.Write("origSQL = [" & origSQL & "]<br />")
 	Response.Write("strSQL = [" & strSQL & "]<br />")
-	Response.End
+	Response.End 
 End If
 
 dataResults = QueryToJSON(adoCon, strSQL).Flush
