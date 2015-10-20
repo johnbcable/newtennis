@@ -119,15 +119,15 @@ if (debugging)
 			Singles Box Leagues were first introduced for 2013 to encourage more members to play more tennis. Catering for a variety of playing standards over 8 leagues, these leagues generally run over a period of 2 months - the current one runs from <span style="font-weight: bold;">15 <sup>th</sup>June to 13<sup>th</sup> September 2015</span>.
 		</p>
 		<p>
-			Additionally, the new daytime doubles box league (started in the autumn of 2014) will also be in progress. This runs over the same period as the above singles box leagues. Enjoy!
+			Additionally, the new daytime doubles box league (started in the autumn of 2014) will also run over the same period as the above singles box leagues. Enjoy!
 		</p>
 		<p>
-			The draw for the current singles box league is available below. Each league generally consists of 6 or 7 players which means 5 or 6 matches to play over the next two months. Each match should take about one hour. If you are not in either of the <span style="font-weight: bold;">15 <sup>th</sup>June to 13<sup>th</sup> September 2015</span> box leagues and want to be included in subsequent box leagues, just write your name on the appropriate sheet in the clubhouse before the end of this league. Please don't forget that all playing standards are welcome and encouraged to enter so we will try to put new players into the leagues at the right ability level.
+			The draws for the current box leagues are available below. Each league generally consists of 6 or 7 players/pairs which means 5 or 6 matches to play over the next two months. Each match should take about one hour. If you are not in either of the current box leagues and want to be included in subsequent ones, just write your name on the appropriate sheet in the clubhouse before the end of this league. Please don't forget that all playing standards are welcome and encouraged to enter so we will try to put new players into the leagues at the right ability level.
 		</p>
 		<P>
 			<span style="font-weight:bold;">Recording Results</span>: All scores for singles or doubles box leagues are to be recorded via the <span style="font-weight: bold;">Leagues</span> option of the Online Booking System (that you use to book courts). Please do NOT write your results onto the paper copy of the leagues shown in the clubhouse - results recorded here will NOT be entered into the online system.
 		<p>
-			<span style="font-weight:bold;">Rules</span>: Each match consists of 12 games. So, for example, if the score is 10-2, the score to record online would be 10-2 (the online system adds the additrional 2 points per player so you dont have to). Please record your score online next to your name in your opponent's column and vice versa. At the end of this league (13<up>th</sup> September 2015) we will add up the total scores to determine a ranking for each league. The two highest ranked players will move up a league, and the two lowest ranked players down a league and the next set of box leagues will then be set up.
+			<span style="font-weight:bold;">Rules</span>: Each match consists of 12 games. So, for example, if the score is 10-2, the score to record online would be 10-2 (the online system adds the additional 2 points per player so you dont have to). Please record your score online next to your name in your opponent's column and vice versa. At the end of each league we add up the total scores to determine a ranking for each division in a league. The two highest ranked players/pairs in a division will move up a league, and the two lowest ranked players down a league and the next set of box leagues will then be set up.
 		</p>
 		<p>
 			<span style="font-weight:bold;">Telephone Numbers</span>: 
@@ -177,10 +177,12 @@ if ( signedin())
 		<div class="seealso">
 			<h3>See Also:</h3>
 			<ul>
-				<li><a href="./documents/currentsinglesboxleague.pdf">Current singles box leagues</a></li>
-<!-- 
-				<li><a href="DoublesBoxLeagueAprMay2015.pdf">Current daytime doubles box leagues</a></li>
+				<li><a href="/documents/currentsinglesboxleague.pdf">Current singles box leagues</a></li>
 
+				<li><a class="medium info button fullwidth" href="/documents/currentdoublesboxleague.pdf">
+            Doubles</a>
+				</li>
+<!--
 				<li><a href="JuniorBoxLeagueSpring2015.pdf">Current junior box leagues</a></li>
  -->
 			</ul>
