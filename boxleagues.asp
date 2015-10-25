@@ -116,7 +116,7 @@ if (debugging)
 			<img id="singlesboxleague" class="floatleft" src="images/SinglesBoxLeagueIcon.gif" border="0" width="100" height="100" ALT="Get playing! Singles and Doubles Box Leagues now in operation." />
 			</a>
 		<p>
-			Singles Box Leagues were first introduced for 2013 to encourage more members to play more tennis. Catering for a variety of playing standards over 8 leagues, these leagues generally run over a period of 2 months - the current one runs from <span style="font-weight: bold;">15 <sup>th</sup>June to 13<sup>th</sup> September 2015</span>.
+			Singles Box Leagues were first introduced for 2013 to encourage more members to play more tennis. Catering for a variety of playing standards over 8 leagues, these leagues generally run over a period of 2 months - the current one runs from <span style="font-weight: bold;">14 <sup>th</sup>October to 20<sup>th</sup> December 2015</span>.
 		</p>
 		<p>
 			Additionally, the new daytime doubles box league (started in the autumn of 2014) will also run over the same period as the above singles box leagues. Enjoy!
@@ -179,9 +179,7 @@ if ( signedin())
 			<ul>
 				<li><a href="/documents/currentsinglesboxleague.pdf">Current singles box leagues</a></li>
 
-				<li><a class="medium info button fullwidth" href="/documents/currentdoublesboxleague.pdf">
-            Doubles</a>
-				</li>
+				<li><a href="/documents/currentdoublesboxleague.pdf">Current doubles box leagues</a></li>
 <!--
 				<li><a href="JuniorBoxLeagueSpring2015.pdf">Current junior box leagues</a></li>
  -->
