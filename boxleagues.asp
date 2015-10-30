@@ -180,9 +180,9 @@ if ( signedin())
 				<li><a href="/documents/currentsinglesboxleague.pdf">Current singles box leagues</a></li>
 
 				<li><a href="/documents/currentdoublesboxleague.pdf">Current doubles box leagues</a></li>
-<!--
-				<li><a href="JuniorBoxLeagueSpring2015.pdf">Current junior box leagues</a></li>
- -->
+
+				<li><a href="/documents/currentjuniorboxleague.pdf">Current junior box leagues</a></li>
+
 			</ul>
 		</div>		
 	</div>
