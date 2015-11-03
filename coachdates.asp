@@ -8,6 +8,7 @@
 Response.AddHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 Response.AddHeader("Pragma", "no-cache");
 Response.AddHeader("Expires", 0);
+Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
 
 var startdate, enddate, excludestart, escludeend;
 var fees60, fees45, fees30;
@@ -32,6 +33,8 @@ coachingresults.push(coachingobject);
 if (! debugging) {
 
 	Response.ContentType = "application/json";
+	Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+	Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 	Response.Write(JSON.stringify(coachingresults));
 
 	Response.End();

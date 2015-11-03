@@ -12,6 +12,8 @@
 Response.AddHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 Response.AddHeader("Pragma", "no-cache");
 Response.AddHeader("Expires", 0);
+Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 
 var strtime, strdate, title2;
 var clubname = new String("Hampton-In-Arden Sports Club");

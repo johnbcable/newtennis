@@ -58,6 +58,8 @@ End If
 dataResults = QueryToJSON(adoCon, strSQL).Flush
 
 Response.ContentType = "application/json"
-Response.Write(dataResults)
+Response.AddHeader "Access-Control-Allow-Origin", "http://hamptontennis.org.uk"
+Response.AddHeader "Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk"
+esponse.Write(dataResults)
 Response.End
 %>

@@ -47,6 +47,8 @@ league2.addBoxMatch("Diane DAVIS and Louise BUSBY",11,1);
 allboxleagues.push(league2);
 
 Response.ContentType = "application/json";
+Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 Response.Write(JSON.stringify(allboxleagues));
 
 Response.End();

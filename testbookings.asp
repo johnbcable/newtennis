@@ -19,6 +19,8 @@ myBookings.addBooking("15/04/2015","19:00", 3, players2);
 
 
 Response.ContentType = "application/json";
+Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 Response.Write(JSON.stringify(myBookings));
 
 Response.End();

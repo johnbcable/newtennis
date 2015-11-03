@@ -19,6 +19,8 @@ myTweets.addTweet("15/04/2015","https://pbs.twimg.com/profile_images/1877871403/
 
 
 Response.ContentType = "application/json";
+Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 Response.Write(JSON.stringify(myTweets));
 
 Response.End();

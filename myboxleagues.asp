@@ -391,6 +391,8 @@ RS.Close();
 if (! debugging) {
 
 	Response.ContentType = "application/json";
+	Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+	Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 	Response.Write(JSON.stringify(allboxleagues));
 
 	Response.End();
