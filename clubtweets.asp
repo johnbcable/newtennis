@@ -1,4 +1,7 @@
 <%@language="JScript" CODEPAGE="65001" %>
+<%
+Response.AddHeader("Access-Control-Allow-Origin", "*");
+%>
 <!--#include file="json2.js.asp" -->
 <!--#include file="twitterobj.asp" -->
 <!--#include file="userfuncs.asp" -->
@@ -58,8 +61,6 @@ if (mydebug == "Y") {
 
 if (! debugging) {
 	Response.ContentType = "application/json";
-	Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
-	Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 	Response.Write(JSON.stringify(mytweets));
 
 	Response.End();

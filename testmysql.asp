@@ -1,5 +1,8 @@
 
 <%@language="JScript" CODEPAGE="65001" %>
+<%
+Response.AddHeader("Access-Control-Allow-Origin", "*");
+%>
 <!--#include file="unserialize.js.asp" -->
 <!--#include file="json2.js.asp" -->
 <!--#include file="boxleaguesobj.asp" -->
@@ -359,8 +362,6 @@ debugWrite("Results:<br /><br />"+JSON.stringify(allboxleagues)+"<br />");
 
 if (! debugging) {
 	Response.ContentType = "application/json";
-	Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
-	Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 	Response.Write(JSON.stringify(allboxleagues));
 
 	Response.End();
