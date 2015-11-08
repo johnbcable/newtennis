@@ -143,9 +143,9 @@ else
 		Response.Write("Call to setUser is setUser("+mySignIn.uniqueref+","+mySignIn.memberid+","+mySignIn.forename+","+mySignIn.acclevel+")<br />");
 	}
 	setUser(mySignIn.uniqueref,mySignIn.memberid,mySignIn.forename,mySignIn.acclevel);  // Session record - not permanent
-//	SQL1 = new String("insert into member_audits([memberid],[action]) values ('"+v_memberid+"','LOGIN')");
+	SQL1 = new String("insert into member_audits([memberid],[action]) values ('"+mySignIn.onlinebookingid+"','LOGIN')");
 //	Response.Write("["+SQL1+"]");
-//	RS = ConnObj.Execute(SQL1);
+	RS = ConnObj.Execute(SQL1);
 	RS=null;
 	ConnObj.Close();
 	ConnObj=null;

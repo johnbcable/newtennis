@@ -19,7 +19,8 @@ function getDoublesPartner(id) {
 
 	// Now, get the partner details if this is a doubles league
 
-	partnerqry = new String("SELECT ep.partner, m.first_name, m.last_name FROM entrant_partner ep, members m WHERE ep.membership_number = "+id+" AND ep.league_id = "+RS("league_id") + " AND ep.partner = m.membership_number");
+
+	partnerqry = new String("SELECT ep.partner AS partner, m.first_name, m.last_name FROM entrant_partner ep, members m WHERE ep.membership_number = "+id+" AND ep.league_id = "+RS("league_id") + " AND ep.partner = m.membership_number UNION SELECT ep.membership_number AS partner, m.first_name, m.last_name FROM entrant_partner ep, members m WHERE ep.partner = "+id+" AND ep.league_id = "+RS("league_id") + " AND ep.membership_number = m.membership_number");
 
 	RS2 = oConn.Execute(partnerqry);
 	if (! RS2.EOF) {
@@ -131,6 +132,11 @@ var divinsert;
 var myindex = 0;
 var doublespartner = new String("").toString();
 var myscore, theirscore, myopponent;
+var iamapartner = false;   // default to me being first named in doubles partnership
+
+// in a doubles league, this is the id you need to get the results
+// i.e. the first named in the doubles pair
+var mainid = new String("0") .toString();   
 
 db_server = new String("bu2.ebookingonline.net").toString();
 db_name = new String("bookingdb29").toString();
@@ -146,7 +152,7 @@ partnerqry = new String("").toString();
 
 // Get QueryString parameters
 
-myId= getOnlineID();   // Retrieve the signed-in mambers online booking id
+myId= getOnlineID();   // Retrieve the signed-in members online booking id
 
 // TODO: What to do if not signed-in?
 
@@ -171,9 +177,7 @@ var RS3 = Server.CreateObject("ADODB.Recordset");
 oConn.Open(connectstr);
 
 // My details ========================================================='
-if (debugging) {
-	debugWrite("First, get details of me:<br /><br/>");
-}
+debugWrite("First, get details of me:<br /><br/>");
 
 qry = "SELECT * FROM members WHERE membership_number = " + myId;
 
@@ -199,7 +203,7 @@ RS.Close();
 
 // List of all leagues ======================================================
 
-	debugWrite("<h4>Second, get list of all leagues involving player " + myFullname + ":</h4>");
+debugWrite("<h4>Second, get list of all leagues involving player " + myFullname + ":</h4>");
 
 qry = new String("SELECT league_id, name FROM leagues WHERE league_id IN (SELECT DISTINCT(league_id) FROM entrants WHERE membership_number = " + myId + " UNION SELECT DISTINCT(league_id) FROM entrant_partner WHERE partner = " + myId + ") ORDER BY league_id DESC").toString();
 
@@ -227,15 +231,13 @@ inclause = new String("("+myleagues.toString()+")").toString();
 	
 // List of all schedules that are active ======================================
 
-	debugWrite("<h4>Third, get schedules from all leagues that are currently active and involve player " + myFullname +  ":</h4>");
+debugWrite("<h4>Third, get schedules from all leagues that are currently active and involve player " + myFullname +  ":</h4>");
 
 var playermatch = new String("%"+myId+"%").toString();
 
-// qry = "SELECT l.name, ls.league_id, ls.schedule_id, ls.division_number, DATE_FORMAT(ls.start, '%d/%m/%Y') AS boxstart, DATE_FORMAT(ls.finish, '%d/%m/%Y') AS boxend, ls.players, ls.results FROM league_schedule ls, leagues l WHERE l.league_id = ls.league_id AND ls.league_id IN " + inclause + " AND ls.active = 1 AND ls.players LIKE '"+playermatch+"'"; 
-
 qry = "SELECT l.name, ls.league_id, ls.schedule_id, ls.division_number, DATE_FORMAT(ls.start, '%d/%m/%Y') AS boxstart, DATE_FORMAT(ls.finish, '%d/%m/%Y') AS boxend, ls.players, ls.results FROM league_schedule ls, leagues l WHERE l.league_id = ls.league_id AND ls.league_id IN " + inclause + " AND ls.active = 1"; 
 
-	debugWrite("<p>Query is:<br />"+qry+"</p>");
+debugWrite("<p>Query is:<br />"+qry+"</p>");
 
 RS = oConn.Execute(qry);
 
@@ -243,15 +245,15 @@ while (! RS.EOF)
 {
 	myleagueid = new String(RS("league_id")).toString();
 
-		debugWrite("<p>Processing league "+myleagueid+", division = "+RS("division_number")+"</p>");
-		debugWrite("<br />Players list =  "+RS("players")+"<br /><br />");
+	debugWrite("<p>Processing league "+myleagueid+", division = "+RS("division_number")+"</p>");
+	debugWrite("<br />Players list =  "+RS("players")+"<br /><br />");
 
 	// Set up a new BoxLeague object to hold JSON for this league
 
 	curleague = new BoxLeagueObject(RS("name"), RS("boxstart"), RS("boxend"));
 	
 	// All leagues if on the database will have a set of players so no need to test 
-	// if the database field has any conetnt before unserialise-ing it
+	// if the database field has any content before unserialise-ing it
 
 	playerdata = new String(unserialize(RS("players"))).toString();
 
@@ -283,11 +285,12 @@ while (! RS.EOF)
 		tmpplayer = playersarray[i];
         if (playersarray[i] == myId) {
         	myindex=i;
+        	mainid = myId;
 	        inthere = true;
         } else {
         	// Check if I am the partner to this person
 
-			// debugWrite("Checking if "+myId+" is the partner of "+tmpplayer+"<br />");
+			debugWrite("Checking if "+myId+" is the partner of "+tmpplayer+"<br />");
 
         	tmpdoubles = getDoublesPartner(tmpplayer);
 
@@ -296,7 +299,9 @@ while (! RS.EOF)
 			if (! (tmpdoubles == "")) {
 				if (tmpdoubles == myFullname) {
 					debugWrite(myId+" IS the partner of "+tmpplayer+"<br />");
+					iamapartner = true;   // I am listed as the partner not the main person
 					myindex = i;
+					mainid = tmpplayer;
 					inthere = true;
 				}
 			}
@@ -324,8 +329,8 @@ while (! RS.EOF)
    	
     	playerlist = new String(playersarray.toString());
 
-			debugWrite("league_id: " + RS("league_id") + " start: " + RS("boxstart") + ", finish: " + RS("boxend") + ", division: " + RS("division_number") + "<br />Players: " + playerdata + ", <br />Results: "  + RS("results") + "<br>");
-		    debugWrite("<br />Players array now is: "+playerlist+"<br />");
+		debugWrite("league_id: " + RS("league_id") + " start: " + RS("boxstart") + ", finish: " + RS("boxend") + ", division: " + RS("division_number") + "<br />Players: " + playerdata + ", <br />Results: "  + RS("results") + "<br>");
+		debugWrite("<br />Players array now is: "+playerlist+"<br />");
 	    
 	    // Get all the names for the players in the playersarray
 	    // Must do it in correct order, therefore multiple retrievals
@@ -356,17 +361,19 @@ while (! RS.EOF)
 
 		    // Now we have to traverse resultdata for my own scores
 
-		    	debugWrite("<br />resultdata = "+JSON.stringify(resultdata)+"<br />");
+		    debugWrite("<br />resultdata = "+JSON.stringify(resultdata)+"<br />");
 
 		    myopponent = parseInt(curplayer);
 
-			myscore = getScore(RS("results"),myId,myopponent);
+			myscore = getScore(RS("results"),mainid,myopponent);
 
 		    debugWrite("<br />In main section, myscore against "+curplayer+" = "+myscore+"<br />");
 
 		    // Now need to get the score for myopponent
 
-			theirscore = getScore(RS("results"),myopponent, myId);
+			// Changed to use mainid as the key to get results not myId
+			// theirscore = getScore(RS("results"),myopponent, myId);
+			theirscore = getScore(RS("results"),myopponent, mainid);
 
 		    debugWrite("<br />In main section, their score (for player "+curplayer+") against me = "+theirscore+"<br />");
 

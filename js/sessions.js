@@ -62,7 +62,6 @@ function showMenus() {
 
 	if (debugthis) {
 		console.log("Value of signedin is ["+signedin+"]");
-		console.log("Value of myip is ["+myip+"]");
 	}
 
 	if (signedin == "N") {
@@ -220,7 +219,6 @@ function routeMember(destinationurl) {
 
 	if (debugthis) {
 		console.log("Value of signedin in routeMember is ["+signedin+"]");
-		console.log("Value of myip in routeMember is ["+myip+"]");
 		console.log("Value of destinationurl in routeMember is ["+destinationurl+"]");
 		console.log("Value of myurl in routeMember is ["+myurl+"]");
 	}
