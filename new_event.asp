@@ -10,7 +10,7 @@ var pagetitle = new String("<<pagetitle >>");
 // Now for any variables local to this page
 var debugging=false;
 var ConnObj, RS, RS2, SQL1, SQL2, SQL3;
-var eventtypelist = new Array("EVENT","JUNIOR","MATCH","SOCIAL");
+var eventtypelist = new Array("EVENT","JUNIOR","MATCH","SOCIAL","TOURNAMENT");
 var defType = new String("EVENT").toString();            // default event type
 var myname, displaydate;
 // Set up default greeting strings
@@ -94,7 +94,7 @@ if (debugging)
 					<label for="eventtype">Type of Event</label>
 					<select name="eventtype" id="eventtype" tabindex="4">
 <%
-for (i=0; i<4; i++)
+for (i=0; i<5; i++)
 {
 	if (eventtypelist[i]==defType)
 		Response.Write("<option selected>"+eventtypelist[i]);
