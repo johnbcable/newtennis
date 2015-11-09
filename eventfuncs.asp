@@ -22,7 +22,7 @@ function getFutureEvents(howmanylimit)
 	// Need to query last 5 Events sent and return as string
 	// title<hr><br>event1<br>event2<br> .... eventN<hr>
 	// Ring fence displayed events to exclude COACHING, HOLIDAYCLBS
-	SQL1 = new String("SELECT * from futureevents WHERE eventtype in ('EVENT','SOCIAL','MATCH','JUNIOR')").toString();
+	SQL1 = new String("SELECT * from futureevents WHERE eventtype in ('EVENT','SOCIAL','MATCH','JUNIOR','TOURNAMENT')").toString();
 	Eventlist += '<div id="futureevents"><ol>';
 	RS = Conn.Execute(SQL1);
 	Eventknt = 0;
