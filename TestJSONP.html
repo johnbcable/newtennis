@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<htmL>
+	<head>
+		<title>JSONP Call Testing</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+// var url = 'http://www.jquery4u.com/scripts/jquery4u-sites.json?callback=?';
+
+var url = 'http://hamptontennis.org.uk/fetchJSON.asp?id=13&p1=coaches';
+$.ajax({
+   type: 'GET',
+    url: url,
+    async: false,
+    contentType: "application/json",
+    // dataType: 'jsonp',
+    success: function(data) {
+       console.dir(data);
+    },
+    error: function(e) {
+       console.log(e.message);
+    }
+});
+		});
+		</script>
+	</head>
+	<body>
+		<h2>JSONP call to Hamptontennis</h2>
+		<p>JSONP call to the Hamptontennis web site</p>
+</htmL>

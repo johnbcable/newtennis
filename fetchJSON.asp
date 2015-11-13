@@ -1,4 +1,7 @@
 <%@language="VBScript"%>
+<%
+Response.AddHeader "Access-Control-Allow-Origin", "http://hamptontennis.org.uk"
+%>
 <!--#include file="JSON_2.0.4.asp" -->
 <!--#include file="JSON_UTIL_0.1.1.asp" -->
 <%
@@ -171,8 +174,7 @@ End If
 dataResults = QueryToJSON(adoCon, strSQL).Flush
 
 Response.ContentType = "application/json"
-Response.AddHeader "Access-Control-Allow-Origin", "http://hamptontennis.org.uk"
-Response.AddHeader "Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk"
+
 Response.Write(dataResults)
 Response.End
 %>
