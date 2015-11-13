@@ -1,5 +1,11 @@
 
 <%@language="JScript" CODEPAGE="65001"%>
+<%
+Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+Response.AddHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+Response.AddHeader("Pragma", "no-cache");
+Response.AddHeader("Expires", 0);
+%>
 <!--#include file="functions.asp" -->
 <!--#include file="strings.asp" -->
 <!--#include file="emailfuncs.asp" -->
@@ -108,7 +114,7 @@ td {
 				<li>
 					<p>
 					2) <strong>Booking courts</strong>.  Court booking can be made by clicking on the "Book a Court" link at 
-					www.hamptontennis.org.uk using your User ID and PIN.  Matches must not be booked during Tuesday/Friday 
+					http://hamptontennis.org.uk using your User ID and PIN.  Matches must not be booked during Tuesday/Friday 
 					social tennis except in the week before finals day when court 4 may be booked if essential.  Court 4 
 					(but not 1,2 or 3) may be booked during any Sunday morning social tennis.  			
 					</p>

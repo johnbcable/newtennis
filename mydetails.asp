@@ -1,4 +1,10 @@
 <%@language="VBScript"%>
+<%
+Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+Response.AddHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+Response.AddHeader("Pragma", "no-cache");
+Response.AddHeader("Expires", 0);
+%>
 <!--#include file="JSON_2.0.4.asp" -->
 <!--#include file="JSON_UTIL_0.1.1.asp" -->
 <!--#include file="userfuncs.asp" -->
@@ -58,8 +64,6 @@ End If
 dataResults = QueryToJSON(adoCon, strSQL).Flush
 
 Response.ContentType = "application/json"
-Response.AddHeader "Access-Control-Allow-Origin", "http://hamptontennis.org.uk"
-Response.AddHeader "Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk"
-esponse.Write(dataResults)
+Response.Write(dataResults)
 Response.End
 %>
