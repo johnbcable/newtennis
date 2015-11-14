@@ -52,7 +52,7 @@ if (! (v_memberid == "NONE"))
 	// Clear out any old sign-in record for this theref or theid
 	SQL2=new String("delete from user_sessions where remoteaddress = '"+myaddress+"' or remoteuser = '"+myusername+"'").toString();
 	RS=connobj.Execute(SQL2);
-	SQL3 = new String("insert into member_audits([memberid],[action]) values ('"+v_memberid+"','LOGOUT')");
+	SQL3 = new String("insert into member_audits([memberid],[action]) values ('"+v_memberid+"','SIGNOUT')");
 	RS = connobj.Execute(SQL3);
 	RS=null;
 	connobj.Close();

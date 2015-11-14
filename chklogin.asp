@@ -255,7 +255,7 @@ if (!badSignIn)
 	}
 	else {
 		setUser(v_uniqueref,v_memberid,v_membername,v_acclevel);  // Session record - not permanent
-	//	SQL1 = new String("insert into member_audits([memberid],[action]) values ('"+v_memberid+"','LOGIN')");
+		SQL1 = new String("insert into member_audits([memberid],[action]) values ('"+v_memberid+"','LOGIN')");
 	//	Response.Write("["+SQL1+"]");
 		RS = ConnObj.Execute(SQL1);
 		RS=null;
