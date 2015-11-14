@@ -103,7 +103,7 @@ function logMeIn() {
 	myUserId = new String("").toString(); 
 
 	if (debugthis) {
-		console.log(url);
+	console.log(url);
 	}
 
 	$.getJSON(url,function(allData) {
