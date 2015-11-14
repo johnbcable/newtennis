@@ -114,7 +114,7 @@ td {
 				<li>
 					<p>
 					2) <strong>Booking courts</strong>.  Court booking can be made by clicking on the "Book a Court" link at 
-					http://hamptontennis.org.uk using your User ID and PIN.  Matches must not be booked during Tuesday/Friday 
+					http://d ..hamptontennis.org.uk using your User ID and PIN.  Matches must not be booked during Tuesday/Friday 
 					social tennis except in the week before finals day when court 4 may be booked if essential.  Court 4 
 					(but not 1,2 or 3) may be booked during any Sunday morning social tennis.  			
 					</p>
