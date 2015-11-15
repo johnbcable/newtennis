@@ -173,23 +173,24 @@ Else
 
 End If
 
+dataResults = QueryToJSON(adoCon, strSQL).Flush
+
+'dataResults is a JSON object
+'Need to stringify it and add callback wrapper before return
+' callbackstring = JSON.stringify(dataResults)
+callbackstring = callbackfunc & "(" & dataResults & ")"
+
 If debugging Then
-	Response.Write("p1 = [" & p1 & "]<br />")
+	Response.Write("<br /><br />p1 = [" & p1 & "]<br />")
 	Response.Write("p2 = [" & p2 & "]<br />")
 	Response.Write("p3 = [" & p3 & "]<br />")
 	Response.Write("testing = [" & testing & "]<br />")
 	Response.Write("origSQL = [" & origSQL & "]<br />")
 	Response.Write("strSQL = [" & strSQL & "]<br />")
 	Response.Write("callback = [" & callbackfunc & "]<br />")
-	' Response.Write "callbackstring = " & callbackstring  & "<br />"
+	Response.Write "callbackstring = " & callbackstring  & "<br />"
 	Response.End 
 End If
-
-dataResults = QueryToJSON(adoCon, strSQL).Flush
-
-'dataResults is a JSON object
-'Need to stringify it and add callback wrapper before return
-callbackstring = callbackfunc & "(" & dataResults & ")"
 
 
 Response.ContentType = "application/json"
