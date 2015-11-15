@@ -7,17 +7,27 @@
 		$(document).ready(function() {
 // var url = 'http://www.jquery4u.com/scripts/jquery4u-sites.json?callback=?';
 
-var url = 'http://hamptontennis.org.uk/fetchJSON.asp?id=13&p1=coaches';
+var url = 'http://hamptontennis.org.uk/fetchJSON.asp?id=13&p1=coaches&callback=?';
+
+function processData (data) {
+	console.log("From processData");
+	console.log(data);
+}
+
 $.ajax({
    type: 'GET',
     url: url,
     async: false,
     contentType: "application/json",
-    // dataType: 'jsonp',
+    dataType: 'jsonp',
+    async: false,
+    jsonpCallback: 'processData',
     success: function(data) {
-       console.dir(data);
+    	console.log("From success function");
+       console.log(data);
     },
     error: function(e) {
+    	console.log("From error function");
        console.log(e.message);
     }
 });
