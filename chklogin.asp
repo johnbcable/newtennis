@@ -237,9 +237,9 @@ if (!badSignIn)
 {
 	// Username/password OK
 	/// Now check access level
-	if (v_acclevel < "50") {
+	if (v_acclevel < "10") {
 	
-		errMess+=new String("You do not have administration access");
+		errMess+=new String("You do not have access to the web site via this route");
 %>	
 			<h1>Administration:<b>&nbsp;Login Problem</b></h1>
 			<div id="loginerror" align="center">

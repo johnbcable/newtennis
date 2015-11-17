@@ -131,10 +131,14 @@ If queryref > -1 Then
 	querylist(23) = "SELECT * FROM winners WHERE [year] = {{p1}} ORDER BY [displayorder] ASC;"
 	querylist(24) = "SELECT * from news where visible = 'Y' order by newspriority asc, newsid desc;"
 	querylist(25) = "SELECT * from member_audits where action in ('SIGNIN','SIGNOUT','LOGIN','LOGOUT') order by action_date desc, action_time desc;"
+''	querylist(26) = "SELECT m.forename1, m.surname, m.onlinebookingid FROM members m WHERE m.onlinebookingid IN ({{p1}});"
+
+	querylist(26) = "SELECT m.forename1, m.surname, m.onlinebookingid FROM members m WHERE CStr(m.onlinebookingid) IN (SELECT DISTINCT(memberid) FROM member_audits WHERE action IN ('SIGNIN','SIGNOUT','LOGIN','LOGOUT'));"
 
 	querylist(27) = "SELECT webaccess, count(*) AS kount FROM members GROUP BY webaccess;"
 	querylist(28) = "SELECT wimbledonweekday, membergrade, detailscorrect, count(*) AS kount FROM members WHERE detailscorrectdate IS NOT null GROUP BY wimbledonweekday, membergrade, detailscorrect;"
 	querylist(29) = "SELECT gender, membergrade, count(*) AS kount FROM members WHERE {{p1}} LIKE 'Y' GROUP BY gender, membergrade;"
+	querylist(30) = "SELECT DISTINCT([memberid]) FROM member_audits WHERE action IN ('SIGNIN','SIGNOUT')"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
