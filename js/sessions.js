@@ -103,7 +103,7 @@ function logMeIn() {
 	myUserId = new String("").toString(); 
 
 	if (debugthis) {
-	console.log(url);
+		console.log(url);
 	}
 
 	$.getJSON(url,function(allData) {
@@ -245,7 +245,7 @@ $(document).ready(function() {
 	// Blank out welcome block to start off with
 	$('.welcomeblock').css('display','none');
 
-	setSignedIn();   // This should reset the signed0-in status and global variables
+	setSignedIn();   // This should reset the signed-in status and global variables
     
 	// Set option text on home page banner image
 	if (signedin == "Y") {
