@@ -1,7 +1,7 @@
 
 <%@language="JScript" CODEPAGE="65001"%>
 <%
-Response.AddHeader("Access-Control-Allow-Origin", "http://hamptontennis.org.uk");
+Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
 Response.AddHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 Response.AddHeader("Pragma", "no-cache");
 Response.AddHeader("Expires", 0);

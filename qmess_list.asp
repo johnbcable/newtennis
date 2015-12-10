@@ -98,14 +98,14 @@ if (debugging)
 <!--   3. Content    -->
 	<div id="content">
 		<h1>Tennis Club - List of Quick Messages</h1>
-		<form name="frmJump" action="email_list.asp" method="GET">
+		<form name="frmJump" action="qmess_list.asp" method="GET">
 			<div id="eventform">
 				<p>
 					Quick messages sent out by the club are listed below, most recent first<br />Click on a message subject to show the full text of the message<br />
 				</p>
 				<p class="bordertop">
 					Choose number of messages to display:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<select name="emails">
+					<select name="messages">
 <%
 i=1;
 while (i <= 50)
