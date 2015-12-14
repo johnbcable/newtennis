@@ -119,7 +119,7 @@ If queryref > -1 Then
 	querylist(11) = "SELECT * FROM members WHERE onlinebookingid = {{p1}} AND onlinebookingpin = '{{p2}}';"
 	querylist(12) = "SELECT * FROM members WHERE uniqueref = {{p1}}"
 	querylist(13) = "SELECT * FROM {{p1}}"
-	querylist(14) = "SELECT * FROM members WHERE surname LIKE UCase('{{p1}}%') ORDER BY surname, address1, forename1"
+	querylist(14) = "SELECT * FROM members WHERE surname LIKE UCase('{{p1}}%') AND membergrade in ('Adult','18-25s','SOCIAL') ORDER BY surname, address1, forename1"
 	querylist(15) = "SELECT * FROM clubcommunications WHERE datesent > (Date()-20) ORDER BY datesent DESC;"
 	querylist(16) = "SELECT gender, membergrade, count(*) AS kount FROM members WHERE detailscorrectdate IS NOT null GROUP BY gender, membergrade;"
 	querylist(17) = "SELECT * FROM tennisteams WHERE teamcategory = 'ADULT' AND teamid NOT IN (42) ORDER BY teamname, teamid;"
