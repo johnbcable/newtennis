@@ -286,6 +286,9 @@ function processPersonalMergeFields(message,personid)
 	sMessage = replaceAll(sMessage, "ZZbtmnumberZZ", oMember.britishtennisno);
 	sMessage = replaceAll(sMessage, "ZZwimbledonweekdayZZ", oMember.wimbledonweekday);
 	sMessage = replaceAll(sMessage, "ZZwimbledonweekendZZ", oMember.wimbledonweekend);
+	sMessage = replaceAll(sMessage, "ZZbritishtennisnoZZ", oMember.britishtennisno);
+
+
 	dummy = new String(oMember.onlinebookingpin).toString();
 	if (dummy.length > 4)
 		sMessage = replaceAll(sMessage, "ZZonlinebookingpinZZ","Already allocated and changed by member");
