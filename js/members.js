@@ -155,10 +155,10 @@ $(document).ready(function() {
 	displayTodaysEvents();
 
 	// Show my upcoming court bookings in the My Club area
-	displayMyCourtBookings();
+	// displayMyCourtBookings();
 
 	// Show my box league involvements in the My Club area
-	displayMyBoxleagues();
+	// displayMyBoxleagues();
 
 
 
