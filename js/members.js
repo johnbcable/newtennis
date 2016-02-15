@@ -101,7 +101,7 @@ function displayTodaysEvents() {
 		var strDay = new String(days[myDay]).toString();
 
 		if (willdebug) {
-			console.log("Inside getJSON in displayTodyasEvents .....");
+			console.log("Inside getJSON in displayTodaysEvents .....");
 			console.log("...... myToday = "+myToday);
 			console.log("...... days = "+days);
 			console.log("...... months = "+months);
