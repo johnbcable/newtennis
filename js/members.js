@@ -101,7 +101,7 @@ function displayTodaysEvents() {
 		var strDay = new String(days[myDay]).toString();
 
 		if (willdebug) {
-			console.log("Inside getJSON in displayTodyasEvents .....");
+			console.log("Inside getJSON in displayTodaysEvents .....");
 			console.log("...... myToday = "+myToday);
 			console.log("...... days = "+days);
 			console.log("...... months = "+months);
@@ -155,10 +155,10 @@ $(document).ready(function() {
 	displayTodaysEvents();
 
 	// Show my upcoming court bookings in the My Club area
-	displayMyCourtBookings();
+	// displayMyCourtBookings();
 
 	// Show my box league involvements in the My Club area
-	displayMyBoxleagues();
+	// displayMyBoxleagues();
 
 
 
