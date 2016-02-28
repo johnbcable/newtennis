@@ -130,7 +130,7 @@ If queryref > -1 Then
 	querylist(22) = "SELECT eventdate, Format(eventtime,'HH:mm') as eventtime, Format(endtime,'HH:mm') as endtime, eventnote, eventreport FROM futureevents WHERE eventtype in('SOCIAL','MATCH','SOCIALTENNIS')  AND eventdate = Date() ORDER BY eventtime ASC;"
 	querylist(23) = "SELECT * FROM winners WHERE [year] = {{p1}} ORDER BY [displayorder] ASC;"
 	querylist(24) = "SELECT * from news where visible = 'Y' order by newspriority asc, newsid desc;"
-	querylist(25) = "SELECT * from member_audits where action in ('SIGNIN','SIGNOUT','LOGIN','LOGOUT') order by action_date desc, action_time desc;"
+	querylist(25) = "SELECT * from member_audits where action in ('LOGIN','LOGOUT') order by action_date desc, action_time desc;"
 ''	querylist(26) = "SELECT m.forename1, m.surname, m.onlinebookingid FROM members m WHERE m.onlinebookingid IN ({{p1}});"
 
 	querylist(26) = "SELECT m.forename1, m.surname, m.onlinebookingid FROM members m, member_audits a WHERE a.action IN ('SIGNIN','SIGNOUT','LOGIN','LOGOUT') AND a.memberid = m.memberid;"
