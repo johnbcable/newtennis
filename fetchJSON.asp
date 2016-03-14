@@ -139,6 +139,7 @@ If queryref > -1 Then
 	querylist(28) = "SELECT wimbledonweekday, membergrade, detailscorrect, count(*) AS kount FROM members WHERE detailscorrectdate IS NOT null GROUP BY wimbledonweekday, membergrade, detailscorrect;"
 	querylist(29) = "SELECT gender, membergrade, count(*) AS kount FROM members WHERE {{p1}} LIKE 'Y' GROUP BY gender, membergrade;"
 	querylist(30) = "SELECT DISTINCT([memberid]) FROM member_audits WHERE action IN ('SIGNIN','SIGNOUT')"
+	querylist(31) = "SELECT * FROM events WHERE eventtype = '{{p1}}' ORDER BY eventdate DESC"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
