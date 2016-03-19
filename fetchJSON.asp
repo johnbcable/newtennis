@@ -140,6 +140,7 @@ If queryref > -1 Then
 	querylist(29) = "SELECT gender, membergrade, count(*) AS kount FROM members WHERE {{p1}} LIKE 'Y' GROUP BY gender, membergrade;"
 	querylist(30) = "SELECT DISTINCT([memberid]) FROM member_audits WHERE action IN ('SIGNIN','SIGNOUT')"
 	querylist(31) = "SELECT * FROM events WHERE eventtype = '{{p1}}' ORDER BY eventdate DESC"
+	querylist(32) = "SELECT * FROM events WHERE eventid = {{p1}}"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
