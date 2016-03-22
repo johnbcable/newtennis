@@ -28,12 +28,15 @@ var resultObj = new Object();
 var uniqueref;
 var mSingles, mDoubles, mMixed, mMixedPlate;
 var mDoublesPartner, mMixedPartner;
-var mVets40Partner, mVets55Partner;
-var mVets40, mVets55;
+var mVets40PlusPartner, mVets50PlusPartner, mVets60PlusPartner;
+var mVets40, mVets50, mVets60;
 var teamhelp, socialhelp, adminhelp, arden9help;
+var teamHelpText, socialHelpText, adminHelpText;
 var mWeekday, mWeekend, mPhotoConsent;
 var mSummerFinalsDay, mAutumnFinalsDay;
 var singlesBoxLeague, doublesBoxLeague;
+var vets40Plus, vets50Plus, vets60Plus;
+var vets40PlusPartner, vets50PlusPartner, vets60PlusPartner;
 var detailscorrect = new String("Y").toString();
 var mydebug = false;  // Default for production use.
 var sendboxleagueemail = false;
@@ -54,9 +57,11 @@ mMixedPlate = new String("N").toString();
 mDoublesPartner = new String("Not specified").toString();
 mMixedPartner = new String("Not specified").toString();
 mVets40 = new String("N").toString();
-mVets55 = new String("N").toString();
-mVets40Partner = new String("Not specified").toString();
-mVets55Partner = new String("Not specified").toString();
+mVets50 = new String("N").toString();
+mVets60 = new String("N").toString();
+mVets40PlusPartner = new String("Not specified").toString();
+mVets50PlusPartner = new String("Not specified").toString();
+mVets60PlusPartner = new String("Not specified").toString();
 teamhelp = new String("N").toString();
 socialhelp = new String("N").toString();
 adminhelp = new String("N").toString();
@@ -68,6 +73,9 @@ mSummerFinalsDay = new String("Y").toString();
 mAutumnFinalsDay = new String("Y").toString();
 singlesBoxLeague = new String("N").toString();
 doublesBoxLeague = new String("N").toString();
+teamHelpText = new String("").toString();
+socialHelpText = new String("N").toString();
+adminHelpText = new String("N").toString();
 
 // Retrieve POST'ed data
 
@@ -136,7 +144,7 @@ if (mMixedPlate == "" || mMixedPlate =="null" || mMixedPlate == "undefined")
 	mMixedPlate = new String("Y").toString();
 }
 
-mVets40 = Trim(new String(Request.Form("vetsdoubles")));
+mVets40 = Trim(new String(Request.Form("vets40plus")));
 if (mVets40 == "" || mVets40 =="null" || mVets40 == "undefined")
 {
 	mVets40 = new String("N").toString();
@@ -144,24 +152,38 @@ if (mVets40 == "" || mVets40 =="null" || mVets40 == "undefined")
 	mVets40 = new String("Y").toString();
 }
 
-mVets40Partner = Trim(new String(Request.Form("vetspartner")));
-if (mVets40Partner == "" || mVets40Partner =="null" || mVets40Partner == "undefined")
+mVets40PlusPartner = Trim(new String(Request.Form("vets40pluspartner")));
+if (mVets40PlusPartner == "" || mVets40PlusPartner =="null" || mVets40PlusPartner == "undefined")
 {
-	mVets40Partner = new String("Not specified").toString();
+	mVets40PlusPartner = new String("Not specified").toString();
 } 
 
-mVets55 = Trim(new String(Request.Form("supervetsdoubles")));
-if (mVets55 == "" || mVets55 =="null" || mVets55 == "undefined")
+mVets50 = Trim(new String(Request.Form("vets50plus")));
+if (mVets50 == "" || mVets50 =="null" || mVets50 == "undefined")
 {
-	mVets55 = new String("N").toString();
+	mVets50 = new String("N").toString();
 } else {
-	mVets55 = new String("Y").toString();
+	mVets50 = new String("Y").toString();
 }
 
-mVets55Partner = Trim(new String(Request.Form("supervetspartner")));
-if (mVets55Partner == "" || mVets55Partner =="null" || mVets55Partner == "undefined")
+mVets50PlusPartner = Trim(new String(Request.Form("vets50pluspartner")));
+if (mVets50PlusPartner == "" || mVets50PlusPartner =="null" || mVets50PlusPartner == "undefined")
 {
-	mVets55Partner = new String("Not specified").toString();
+	mVets50PlusPartner = new String("Not specified").toString();
+} 
+
+mVets60 = Trim(new String(Request.Form("vets60plus")));
+if (mVets60 == "" || mVets60 =="null" || mVets60 == "undefined")
+{
+	mVets60 = new String("N").toString();
+} else {
+	mVets60 = new String("Y").toString();
+}
+
+mVets60PlusPartner = Trim(new String(Request.Form("vets60pluspartner")));
+if (mVets60PlusPartner == "" || mVets60PlusPartner =="null" || mVets60PlusPartner == "undefined")
+{
+	mVets60PlusPartner = new String("Not specified").toString();
 } 
 
 teamhelp = Trim(new String(Request.Form("teamhelp")));
@@ -172,6 +194,12 @@ if (teamhelp == "" || teamhelp =="null" || teamhelp == "undefined")
 	teamhelp = new String("Y").toString();
 }
 
+teamHelpText = Trim(new String(Request.Form("teamhelptext")));
+if (teamHelpText == "" || teamHelpText =="null" || teamHelpText == "undefined")
+{
+	teamHelpText = new String("").toString();
+} 
+
 socialhelp = Trim(new String(Request.Form("socialhelp")));
 if (socialhelp == "" || socialhelp =="null" || socialhelp == "undefined")
 {
@@ -180,6 +208,12 @@ if (socialhelp == "" || socialhelp =="null" || socialhelp == "undefined")
 	socialhelp = new String("Y").toString();
 }
 
+socialHelpText = Trim(new String(Request.Form("socialhelptext")));
+if (socialHelpText == "" || socialHelpText =="null" || socialHelpText == "undefined")
+{
+	socialHelpText = new String("").toString();
+} 
+
 adminhelp = Trim(new String(Request.Form("adminhelp")));
 if (adminhelp == "" || adminhelp =="null" || adminhelp == "undefined")
 {
@@ -187,6 +221,12 @@ if (adminhelp == "" || adminhelp =="null" || adminhelp == "undefined")
 } else {
 	adminhelp = new String("Y").toString();
 }
+
+adminHelpText = Trim(new String(Request.Form("adminhelptext")));
+if (adminHelpText == "" || adminHelpText =="null" || adminHelpText == "undefined")
+{
+	adminHelpText = new String("").toString();
+} 
 
 arden9help = Trim(new String(Request.Form("arden9help")));
 if (arden9help == "" || arden9help =="null" || arden9help == "undefined")
@@ -265,8 +305,9 @@ SQLmiddle += " singles='"+mSingles+"',";
 SQLmiddle += " doubles='"+mDoubles+"',";
 SQLmiddle += " mixeddoubles='"+mMixed+"',";
 SQLmiddle += " mixedplate='"+mMixedPlate+"',";
-SQLmiddle += " vetsdoubles='"+mVets40+"', ";
-SQLmiddle += " supervetsdoubles='"+mVets55+"',";
+SQLmiddle += " vets40plus='"+mVets40+"',"
+SQLmiddle += " vets50plus='"+mVets50+"',"
+SQLmiddle += " vets60plus='"+mVets60+"',"
 SQLmiddle += " doublespartner='"+mDoublesPartner+"',";
 SQLmiddle += " mixedpartner='"+mMixedPartner+"',";
 SQLmiddle += " summerfinalsday='"+mSummerFinalsDay+"',";
@@ -277,13 +318,18 @@ SQLmiddle += " adminhelp='"+adminhelp+"',";
 SQLmiddle += " arden9help='"+arden9help+"',";
 SQLmiddle += " detailscorrect='"+detailscorrect+"',";
 SQLmiddle += " detailscorrectdate='"+today()+"',";
-SQLmiddle += " vetspartner='"+mVets40Partner+"',";
-SQLmiddle += " supervetspartner='"+mVets55Partner+"', ";
+SQLmiddle += " vets40pluspartner='"+mVets40PlusPartner+"',"
+SQLmiddle += " vets50pluspartner='"+mVets50PlusPartner+"',"
+SQLmiddle += " vets60pluspartner='"+mVets60PlusPartner+"',"
 SQLmiddle += " wimbledonweekday='"+mWeekday+"', ";
 SQLmiddle += " wimbledonweekend='"+mWeekend+"', ";
 
 SQLmiddle += " singlesboxleague='"+singlesBoxLeague+"',";
 SQLmiddle += " doublesboxleague='"+doublesBoxLeague+"',";
+
+SQLmiddle +=" teamhelptext='"+teamHelpText+"',"
+SQLmiddle +=" socialhelptext='"+socialHelpText+"',"
+SQLmiddle +=" adminhelptext='"+adminHelpText+"',"
 
 SQLmiddle += " photoconsent='"+mPhotoConsent+"' ";
 
@@ -350,12 +396,17 @@ if (debugging) {
 	Response.Write("<tr><td>Mixed Doubles partner</td><td>"+mMixedPartner+"</td></tr>");
 	Response.Write("<tr><td>Mixed Doubles Plate decoded</td><td>"+mMixedPlate+"</td></tr>");
 	Response.Write("<tr><td>Vets &gt; 40</td><td>"+mVets40+"</td></tr>");
-	Response.Write("<tr><td>Vets &gt; 40 partner</td><td>"+mVets40Partner+"</td></tr>");
-	Response.Write("<tr><td>Vets &gt; 55</td><td>"+mVets55+"</td></tr>");
-	Response.Write("<tr><td>Vets &gt; 55 partner</td><td>"+mVets55Partner+"</td></tr>");
+	Response.Write("<tr><td>Vets &gt; 40 partner</td><td>"+mVets40PlusPartner+"</td></tr>");
+	Response.Write("<tr><td>Vets &gt; 50</td><td>"+mVets50+"</td></tr>");
+	Response.Write("<tr><td>Vets &gt; 50 partner</td><td>"+mVets50PlusPartner+"</td></tr>");
+	Response.Write("<tr><td>Vets &gt; 60</td><td>"+mVets60+"</td></tr>");
+	Response.Write("<tr><td>Vets &gt; 60 partner</td><td>"+mVets60PlusPartner+"</td></tr>");
 	Response.Write("<tr><td>Team help decoded</td><td>"+teamhelp+"</td></tr>");
+	Response.Write("<tr><td>Team help text</td><td>"+teamHelpText+"</td></tr>");
 	Response.Write("<tr><td>Social help decoded</td><td>"+socialhelp+"</td></tr>");
+	Response.Write("<tr><td>Social help text</td><td>"+socialHelpText+"</td></tr>");
 	Response.Write("<tr><td>Admin help decoded</td><td>"+adminhelp+"</td></tr>");
+	Response.Write("<tr><td>Admin help text</td><td>"+adminHelpText+"</td></tr>");
 	Response.Write("<tr><td>Arden-9 help decoded</td><td>"+arden9help+"</td></tr>");
 	Response.Write("<tr><td>Wimbledon weekday decoded</td><td>"+mWeekday+"</td></tr>");
 	Response.Write("<tr><td>Wimbledon weekend decoded</td><td>"+mWeekend+"</td></tr>");

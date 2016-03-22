@@ -58,8 +58,9 @@ function getMember(memberid)
 		themember.doubles = Trim(new String(RS("doubles")).toString());
 		themember.mixeddoubles = Trim(new String(RS("mixeddoubles")).toString());
 		themember.mixedplate = Trim(new String(RS("mixedplate")).toString());
-		themember.vetsdoubles = Trim(new String(RS("vetsdoubles")).toString());
-		themember.supervetsdoubles = Trim(new String(RS("supervetsdoubles")).toString());
+		themember.vets40plus = Trim(new String(RS("vets40plus")).toString());
+		themember.vets50plus = Trim(new String(RS("vets50plus")).toString());
+		themember.vets60plus = Trim(new String(RS("vets60plus")).toString());
 		themember.doublespartner = Trim(new String(RS("doublespartner")).toString());
 		themember.mixedpartner = Trim(new String(RS("mixedpartner")).toString());
 		themember.summerfinalsday = Trim(new String(RS("summerfinalsday")).toString());
@@ -69,8 +70,9 @@ function getMember(memberid)
 		themember.adminhelp = Trim(new String(RS("adminhelp")).toString());
 		themember.arden9help = Trim(new String(RS("arden9help")).toString());
 		themember.detailscorrect = Trim(new String(RS("detailscorrect")).toString());
-		themember.vetspartner = Trim(new String(RS("vetspartner")).toString());
-		themember.supervetspartner = Trim(new String(RS("supervetspartner")).toString());
+		themember.vets40pluspartner = Trim(new String(RS("vets40pluspartner")).toString());
+		themember.vets50pluspartner = Trim(new String(RS("vets50pluspartner")).toString());
+		themember.vets60pluspartner = Trim(new String(RS("vets60pluspartner")).toString());
 		themember.teamhelptext = Trim(new String(RS("teamhelptext")).toString());
 		themember.socialhelptext = Trim(new String(RS("socialhelptext")).toString());
 		themember.adminhelptext = Trim(new String(RS("adminhelptext")).toString());
@@ -180,10 +182,12 @@ function getMember(memberid)
 		themember.mixeddoubles="N";
 	if (themember.mixedplate=="null" || themember.mixedplate=="undefined")
 		themember.mixedplate="N";
-	if (themember.vetsdoubles=="null" || themember.vetsdoubles=="undefined")
-		themember.vetsdoubles="N";
-	if (themember.supervetsdoubles=="null" || themember.supervetsdoubles=="undefined")
-		themember.supervetsdoubles="N";
+	if (themember.vets40plus=="null" || themember.vets40plus=="undefined")
+		themember.vets40plus="N";
+	if (themember.vets50plus=="null" || themember.vets50plus=="undefined")
+		themember.vets50plus="N";
+	if (themember.vets60plus=="null" || themember.vets60plus=="undefined")
+		themember.vets60plus="N";
 	if (themember.summerfinalsday=="null" || themember.summerfinalsday=="undefined")
 		themember.summerfinalsday="N";
 	if (themember.autumnfinalsday=="null" || themember.autumnfinalsday=="undefined")
@@ -192,10 +196,12 @@ function getMember(memberid)
 		themember.doublespartner="Not specified";
 	if (themember.mixedpartner=="null" || themember.mixedpartner=="undefined")
 		themember.mixedpartner="Not specified";
-	if (themember.vetspartner=="null" || themember.vetspartner=="undefined")
-		themember.vetspartner="Not specified";
-	if (themember.supervetspartner=="null" || themember.supervetspartner=="undefined")
-		themember.supervetspartner="Not specified";
+	if (themember.vets40pluspartner=="null" || themember.vets40pluspartner=="undefined")
+		themember.vets40pluspartner="Not specified";
+	if (themember.vets50pluspartner=="null" || themember.vets50pluspartner=="undefined")
+		themember.vets50pluspartner="Not specified";
+	if (themember.vets60pluspartner=="null" || themember.vets60pluspartner=="undefined")
+		themember.vets60pluspartner="Not specified";
 	
 	// Help run the club
 	if (themember.teamhelp=="null" || themember.teamhelp=="undefined")
@@ -291,6 +297,67 @@ function setMember(memberobj)
 			memberobj.joined = "";	
 	if (memberobj.gender=="null" || memberobj.gender =="undefined" || memberobj.gender=="")
 			memberobj.gender = "";	
+
+	// Now for the preferences area
+
+	// Wimbledon ticket draw
+	if (memberobj.wimbledonweekday=="null" || memberobj.wimbledonweekday=="undefined")
+		memberobj.wimbledonweekday="N";
+	if (memberobj.wimbledonweekend=="null" || memberobj.wimbledonweekend=="undefined")
+		memberobj.wimbledonweekend="N";
+	
+	// Tournament entry preferences
+	if (memberobj.singles=="null" || memberobj.singles=="undefined")
+		memberobj.singles="N";
+	if (memberobj.doubles=="null" || memberobj.doubles=="undefined")
+		memberobj.doubles="N";
+	if (memberobj.mixeddoubles=="null" || memberobj.mixeddoubles=="undefined")
+		memberobj.mixeddoubles="N";
+	if (memberobj.mixedplate=="null" || memberobj.mixedplate=="undefined")
+		memberobj.mixedplate="N";
+	if (memberobj.vets40plus=="null" || memberobj.vets40plus=="undefined")
+		memberobj.vets40plus="N";
+	if (memberobj.vets50plus=="null" || memberobj.vets50plus=="undefined")
+		memberobj.vets50plus="N";
+	if (memberobj.vets60plus=="null" || memberobj.vets60plus=="undefined")
+		memberobj.vets60plus="N";
+	if (memberobj.summerfinalsday=="null" || memberobj.summerfinalsday=="undefined")
+		memberobj.summerfinalsday="N";
+	if (memberobj.autumnfinalsday=="null" || memberobj.autumnfinalsday=="undefined")
+		memberobj.autumnfinalsday="N";
+	if (memberobj.doublespartner=="null" || memberobj.doublespartner=="undefined")
+		memberobj.doublespartner="Not specified";
+	if (memberobj.mixedpartner=="null" || memberobj.mixedpartner=="undefined")
+		memberobj.mixedpartner="Not specified";
+	if (memberobj.vets40pluspartner=="null" || memberobj.vets40pluspartner=="undefined")
+		memberobj.vets40pluspartner="Not specified";
+	if (memberobj.vets50pluspartner=="null" || memberobj.vets50pluspartner=="undefined")
+		memberobj.vets50pluspartner="Not specified";
+	if (memberobj.vets60pluspartner=="null" || memberobj.vets60pluspartner=="undefined")
+		memberobj.vets60pluspartner="Not specified";
+	
+	// Help run the club
+	if (memberobj.teamhelp=="null" || memberobj.teamhelp=="undefined")
+		memberobj.teamhelp="N";
+	if (memberobj.socialhelp=="null" || memberobj.socialhelp=="undefined")
+		memberobj.socialhelp="N";
+	if (memberobj.adminhelp=="null" || memberobj.adminhelp=="undefined")
+		memberobj.adminhelp="N";
+	if (memberobj.arden9help=="null" || memberobj.arden9help=="undefined")
+		memberobj.arden9help="N";
+	if (memberobj.teamhelptext=="null" || memberobj.teamhelptext=="undefined")
+		memberobj.teamhelptext="";
+	if (memberobj.socialhelptext=="null" || memberobj.socialhelptext=="undefined")
+		memberobj.socialhelptext="";
+	if (memberobj.adminhelptext=="null" || memberobj.adminhelptext=="undefined")
+		memberobj.adminhelptext="Not specified";
+
+	if (memberobj.singlesboxleague=="null" || memberobj.singlesboxleague=="undefined")
+		memberobj.singlesboxleague="N";
+	if (memberobj.doublesboxleague=="null" || memberobj.doublesboxleague=="undefined")
+		memberobj.doublesboxleague="N";
+
+
 	
 	var dbconnect=Application("hamptonsportsdb"); 
 	Conn = Server.CreateObject("ADODB.Connection");
@@ -322,6 +389,34 @@ function setMember(memberobj)
 	SQLmiddle += " webaccess="+memberobj.webaccess+",";
 	if (memberobj.onlinebookingid != "0")
 		 SQLmiddle += " onlinebookingid="+memberobj.onlinebookingid+", ";
+
+	// Now do preferences data
+
+	SQLmiddle +=" wimbledonweekday='"+memberobj.wimbledonweekday+"',"
+	SQLmiddle +=" wimbledonweekend='"+memberobj.wimbledonweekend+"',"
+	SQLmiddle +=" singles='"+memberobj.singles+"',"
+	SQLmiddle +=" doubles='"+memberobj.doubles+"',"
+	SQLmiddle +=" mixedplate='"+memberobj.mixedplate+"',"
+	SQLmiddle +=" mixeddoubles='"+memberobj.mixeddoubles+"',"
+	SQLmiddle +=" vets40plus='"+memberobj.vets40plus+"',"
+	SQLmiddle +=" vets50plus='"+memberobj.vets50plus+"',"
+	SQLmiddle +=" vets60plus='"+memberobj.vets60plus+"',"
+	SQLmiddle +=" summerfinalsday='"+memberobj.summerfinalsday+"',"
+	SQLmiddle +=" autumnfinalsday='"+memberobj.autumnfinalsday+"',"
+	SQLmiddle +=" doublespartner='"+memberobj.doublespartner+"',"
+	SQLmiddle +=" mixedpartner='"+memberobj.mixedpartner+"',"
+	SQLmiddle +=" vets40pluspartner='"+memberobj.vets40pluspartner+"',"
+	SQLmiddle +=" vets50pluspartner='"+memberobj.vets50pluspartner+"',"
+	SQLmiddle +=" vets60pluspartner='"+memberobj.vets60pluspartner+"',"
+	SQLmiddle +=" teamhelp='"+memberobj.teamhelp+"',"
+	SQLmiddle +=" socialhelp='"+memberobj.socialhelp+"',"
+	SQLmiddle +=" adminhelp='"+memberobj.adminhelp+"',"
+	SQLmiddle +=" arden9help='"+memberobj.arden9help+"',"
+	SQLmiddle +=" teamhelptext='"+memberobj.teamhelptext+"',"
+	SQLmiddle +=" socialhelptext='"+memberobj.socialhelptext+"',"
+	SQLmiddle +=" adminhelptext='"+memberobj.adminhelptext+"',"
+	SQLmiddle +=" singlesboxleague='"+memberobj.singlesboxleague+"',"
+	SQLmiddle +=" doublesboxleague='"+memberobj.doublesboxleague+"',"
 
 	// Now do date fields. If null dont insert them as part of the update clause
 	//  Access doesnt like setting date fields to ''
@@ -395,9 +490,12 @@ function printMember(memberobj)
 		sReport += memberobj.doublespartner +"<br />";
 		sReport += memberobj.mixedpartner +"<br />";
 		sReport += memberobj.wimbledonweekday +"<br />";
-		sReport += memberobj.vetsdoubles +"<br />";
-		sReport += memberobj.vetspartner +"<br />";
-		sReport += memberobj.supervetspartner +"<br />";
+		sReport += memberobj.vets40plus +"<br />";
+		sReport += memberobj.vets40pluspartner +"<br />";
+		sReport += memberobj.vets50plus +"<br />";
+		sReport += memberobj.vets50pluspartner +"<br />";
+		sReport += memberobj.vets60plus +"<br />";
+		sReport += memberobj.vets60pluspartner +"<br />";
 		sReport += memberobj.mixedpartner +"<br />";
 		sReport += memberobj.wimbledonweekday +"<br />";
 		sReport += memberobj.summerfinalsday +"<br />";

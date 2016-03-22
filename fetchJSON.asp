@@ -116,7 +116,7 @@ If queryref > -1 Then
 	querylist(8) = "SELECT * FROM tennisfixtures where fixtureyear = {{p1}} and homeoraway in ({{p2}}) {{p3}} ORDER BY teamname,fixturedate;"
 	querylist(9) = "SELECT memberid FROM User_Sessions where remoteaddress = '{{p1}}' ORDER BY [loggedindate] ASC, [loggedintime] ASC"
 	querylist(10) = "SELECT * FROM User_Sessions where memberid = '{{p1}}'"
-	querylist(11) = "SELECT * FROM members WHERE onlinebookingid = {{p1}} AND onlinebookingpin = '{{p2}}';"
+	querylist(11) = "SELECT * FROM allmembers WHERE onlinebookingid = {{p1}} AND onlinebookingpin = '{{p2}}';"
 	querylist(12) = "SELECT * FROM members WHERE uniqueref = {{p1}}"
 	querylist(13) = "SELECT * FROM {{p1}}"
 	querylist(14) = "SELECT * FROM members WHERE surname LIKE UCase('{{p1}}%') AND membergrade in ('Adult','18-25s','SOCIAL') ORDER BY surname, address1, forename1"

@@ -272,10 +272,12 @@ function processPersonalMergeFields(message,personid)
 	sMessage = replaceAll(sMessage, "ZZmixedZZ",oMember.mixeddoubles);
 	sMessage = replaceAll(sMessage, "ZZmixedpartnerZZ",oMember.mixedpartner);
 	sMessage = replaceAll(sMessage, "ZZmixedplateZZ",oMember.mixedplate);
-	sMessage = replaceAll(sMessage, "ZZvets40ZZ",oMember.vetsdoubles);
-	sMessage = replaceAll(sMessage, "ZZvets40partnerZZ",oMember.vetspartner);
-	sMessage = replaceAll(sMessage, "ZZvets55ZZ",oMember.supervetsdoubles);
-	sMessage = replaceAll(sMessage, "ZZvets55partnerZZ",oMember.supervetspartner);
+	sMessage = replaceAll(sMessage, "ZZvets40ZZ",oMember.vets40plus);
+	sMessage = replaceAll(sMessage, "ZZvets40partnerZZ",oMember.vets40pluspartner);
+	sMessage = replaceAll(sMessage, "ZZvets50ZZ",oMember.vets50plus);
+	sMessage = replaceAll(sMessage, "ZZvets50partnerZZ",oMember.vets50pluspartner);
+	sMessage = replaceAll(sMessage, "ZZvets60ZZ",oMember.vets60plus);
+	sMessage = replaceAll(sMessage, "ZZvets60partnerZZ",oMember.vets60pluspartner);
 	sMessage = replaceAll(sMessage, "ZZsummerfinalsZZ",oMember.summerfinalsday);
 	sMessage = replaceAll(sMessage, "ZZautumnfinalsZZ",oMember.autumnfinalsday);
 	sMessage = replaceAll(sMessage, "ZZteamhelpZZ",oMember.teamhelp);

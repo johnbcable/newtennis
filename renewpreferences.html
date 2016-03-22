@@ -128,7 +128,7 @@
       {{#if myPreferences}}
       {{#each myPreferences}}
       <form method="POST" action="/renewpreferences.asp">
-        <fieldset class="completed">
+        <fieldset>
           <legend>Your Tournament Entry Preferences</legend>
 
           <div class="row">
@@ -197,30 +197,47 @@
               the Veterans Doubles (&gt;40) Tournament
             </div>
             <div class="large-1 medium-1 small-1 columns">
-              <input id="vetsdoubles" name="vetsdoubles" type="checkbox" {{#equalsTo vetsdoubles "Y"}}checked{{/equalsTo}}>
+              <input id="vets40plus" name="vets40plus" type="checkbox" {{#equalsTo vets40plus "Y"}}checked{{/equalsTo}}>
             </div>
             <div class="large-5 medium-4 small-12 columns">
-              <input type="text" name="vetspartner" id="vetspartner" value="{{vetspartner}}" placeholder="Preferred veterans &gt;40 partner" title="The name of your preferred veterans &gt;40 partner" />
+              <input type="text" name="vets40pluspartner" id="vets40pluspartner" value="{{vets40pluspartner}}" placeholder="Preferred veterans &gt;40 partner" title="The name of your preferred veterans &gt;40 partner" />
             </div>
           </div>
 
           <div class="row">
             <div class="large-6 medium-7 small-10 columns">
-              the Veterans Doubles (&gt;55) Tournament
+              the Veterans Doubles (&gt;50) Tournament
             </div>
             <div class="large-1 medium-1 small-1 columns">
-              <input id="supervetsdoubles" name="supervetsdoubles" type="checkbox" {{#equalsTo supervetsdoubles "Y"}}checked{{/equalsTo}}>
+              <input id="vets50plus" name="vets50plus" type="checkbox" {{#equalsTo vets50plus "Y"}}checked{{/equalsTo}}>
             </div>
             <div class="large-5 medium-4 small-12 columns">
-              <input type="text" name="supervetspartner" id="supervetspartner" value="{{supervetspartner}}" placeholder="Preferred veterans &gt;55 partner" title="The name of your preferred veterans &gt;55 partner" />
+              <input type="text" name="vets50pluspartner" id="vets50pluspartner" value="{{vets50pluspartner}}" placeholder="Preferred veterans &gt;50 partner" title="The name of your preferred veterans &gt;50 partner" />
             </div>
           </div>
 
-          <div class="large-12 medium-12 small-12 columns">
+          <div class="row">
+            <div class="large-6 medium-7 small-10 columns">
+              the Veterans Doubles (&gt;60) Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="vets60plus" name="vets60plus" type="checkbox" {{#equalsTo vets60plus "Y"}}checked{{/equalsTo}}>
+            </div>
+            <div class="large-5 medium-4 small-12 columns">
+              <input type="text" name="vets60pluspartner" id="vets60pluspartner" value="{{vets50pluspartner}}" placeholder="Preferred veterans &gt;60 partner" title="The name of your preferred veterans &gt;60 partner" />
+            </div>
+          </div>
+
+            <div class="large-10 medium-10 small-10 large-offset-1 medium-offset-1 small-offset-1 panel columns">
               <p class="closedmessage noshow">
                 Your tournament entry choices (above) are now locked in ready for the draw.<br />
                 The above options may not be changed at this time.
               </p>
+
+              <p>
+                Please ensure that if you enter more than one doubles competition that you select a different partner for each competition.
+              </p>
+
           </div>
 <!--
            <hr />
@@ -368,7 +385,7 @@
 
         <!--   The enter the club Wimbledon draw area -->
         
-        <fieldset class="completed">
+        <fieldset>
           <legend>The Draw for Wimbledon Tickets</legend>
 
           <div class="row">
@@ -399,7 +416,7 @@
             <div class="large-10 medium-10 small-10 large-offset-1 medium-offset-1 small-offset-1 panel columns">
               <hr />
               <p>
-                Please note: You may only participate in the Wimbldeon ticket draw on April 10<sup>th</sup>:
+                Please note: You may only participate in the Wimbldeon ticket draw on Tuesday April 12<sup>th</sup>:
               </p>
               <ul>
                 <li>
@@ -409,7 +426,7 @@
                   If you have paid your membership fees to the club at least 2 days before the above draw date, and
                 </li>
                 <li>
-                  You have signed-in on the LTA web site and &quot;opted in&quot; for the Wimbldeon ballot specifiying Hampton as the place where you play your tennis.
+                  If you have signed-in on the LTA web site and &quot;opted in&quot; for the Wimbldeon ballot specifiying Hampton as the place where you play your tennis before the February 19<sup>th</sup> deadline.
                 </li>
               </ul>
               <p class="closedmessage noshow">
