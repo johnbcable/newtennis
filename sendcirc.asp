@@ -82,7 +82,7 @@ if (debugging)
 					<legend>Email Details</legend>
 						<div>
 							<label for="subject">Subject:</label>
-							<input type="text" name="subject" id="subject" size="40" maxlength="60" tabindex="1">
+							<input type="text" name="subject" id="subject" size="40" maxlength="120" tabindex="1">
 						</div>
 						<div>
 							<label for="thefile">Pre-prepared email file:</label>
