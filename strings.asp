@@ -10,6 +10,7 @@ toPropercase(string) : Returns a copy of the string with a leading capital lette
 asUTF16(string)  :  Returns supplied string as Unicode-escaped string
 Left(string, n) : Returns n characters from the left-hand end of string
 Right(string, n) : Returns n characters from the right-hand end of string
+defaultString(string, default)
 
 ==================================================================
 LTrim(string) : Returns a copy of a string without leading spaces.
@@ -233,4 +234,23 @@ function Right(str, n){
        return String(str).substring(iLen, iLen - n);
     }
 }
+/*
+==================================================================
+defaultString(string, default) : Returns string or default if
+string is undefined or null
+==================================================================
+*/
+function defaultString(str, def){
+  var defstr = def || "N";
+  var retval = new String(str).toString();
+  var undef = new String("undefined").toString();
+  var nulldef = new String("null").toString();
+
+  if (retval === undef || retval === nulldef) {
+    retval = new String(def).toString();
+  }
+
+  return ( retval );
+}
+
 </SCRIPT>

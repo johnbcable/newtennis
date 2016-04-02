@@ -1,6 +1,7 @@
 <%@language="JScript" CODEPAGE="65001"%>
 <!--#include file="functions.asp" -->
 <!--#include file="strings.asp" -->
+<!--#include file="memberfuncs.asp" -->
 <%
 // First variables that need to be set for each page
 var strtime, strdate;

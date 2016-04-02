@@ -52,6 +52,11 @@ if (mNew == "" || mNew == "null" || mNew == "undefined") {
 	mNew = new String ("N");
 }
 mNew = mNew.toUpperCase();
+
+mUnique = Trim(new String(Request.Form("Uniqueref"))).toString();
+
+memberObj = getMember(mUnique);
+
 // End of page start up coding
 
 // Initialise update variables from prior form
@@ -78,22 +83,17 @@ memberObj.email = Trim(new String(Request.Form("MemberEmail"))).toString();
 memberObj.webpassword = Trim(new String(Request.Form("MemberPassword"))).toString();
 memberObj.webaccess = Trim(new String(Request.Form("MemberWebAccess"))).toString();
 memberObj.mailing = Trim(new String(Request.Form("MemberMailing"))).toString();
-// memberObj.internalleague = Trim(new String(Request.Form("InternalLeague"))).toString();
 memberObj.onlinebookingid = Trim(new String(Request.Form("OnlineBookingID"))).toString();
 memberObj.onlinebookingpin = Trim(new String(Request.Form("OnlineBookingPIN"))).toString();
 memberObj.joined = Trim(new String(Request.Form("MemberJoined"))).toString();
 memberObj.left = Trim(new String(Request.Form("MemberLeft"))).toString();
 memberObj.dob = Trim(new String(Request.Form("MemberDOB"))).toString();
-// memberObj.pool = Trim(new String(Request.Form("MemberPool"))).toString();
-// memberObj.maxitennis = Trim(new String(Request.Form("MemberMaxiTennis"))).toString();
 memberObj.britishtennisno = Trim(new String(Request.Form("BritishTennisNumber"))).toString();
 memberObj.photoconsent = Trim(new String(Request.Form("PhotoConsent"))).toString();
 memberObj.emergencyname = Trim(new String(Request.Form("EmergencyName"))).toString();
-// memberObj.adultrelationship = Trim(new String(Request.Form("AdultRelationship"))).toString();
-// memberObj.adultphone = Trim(new String(Request.Form("AdultPhone"))).toString();
 memberObj.emergencyphone = Trim(new String(Request.Form("EmergencyPhone"))).toString();
 memberObj.medicalinfo = Trim(new String(Request.Form("MedicalInfo"))).toString();
-// memberObj.iscoach = Trim(new String(Request.Form("IsCoach"))).toString();
+
 
 // MUST set surname to upper case otherwise searching will NOT work
 memberObj.surname = memberObj.surname.toUpperCase();
