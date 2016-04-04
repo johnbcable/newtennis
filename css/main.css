@@ -10960,31 +10960,36 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e6fae6;
 }
 
-/* line 814, ../scss/main.scss */
+/* line 813, ../scss/main.scss */
+.row--beige {
+  background-color: #f7eaad;
+}
+
+/* line 815, ../scss/main.scss */
 .row--dark-grey {
   color: #fff;
   background: #4d4d4d;
 }
 
-/* line 819, ../scss/main.scss */
+/* line 820, ../scss/main.scss */
 .row--medium-grey {
   background: gray;
 }
 
-/* line 822, ../scss/main.scss */
+/* line 823, ../scss/main.scss */
 .row--light-grey {
   background: #e6e6e6;
 }
 
 /* row-padding */
-/* line 827, ../scss/main.scss */
+/* line 828, ../scss/main.scss */
 .row--padding-medium {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   /* 24px/16px */
 }
 
-/* line 834, ../scss/main.scss */
+/* line 835, ../scss/main.scss */
 .row--padding-wide {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -10992,7 +10997,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* containers */
-/* line 842, ../scss/main.scss */
+/* line 843, ../scss/main.scss */
 .container-narrow,
 .container-medium,
 .container-wide {
@@ -11001,30 +11006,30 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 1.5em;
 }
 
-/* line 851, ../scss/main.scss */
+/* line 852, ../scss/main.scss */
 .container-narrow {
   max-width: 34em;
 }
 
-/* line 852, ../scss/main.scss */
+/* line 853, ../scss/main.scss */
 .container-medium {
   max-width: 52em;
 }
 
-/* line 853, ../scss/main.scss */
+/* line 854, ../scss/main.scss */
 .container-wide {
   max-width: 58em;
 }
 
 /* columns */
-/* line 856, ../scss/main.scss */
+/* line 857, ../scss/main.scss */
 .col-narrow,
 .col-narrow--right {
   margin-bottom: 1.5em;
 }
 
 /*  */
-/* line 860, ../scss/main.scss */
+/* line 861, ../scss/main.scss */
 .mid-grey {
   background: #000;
   opacity: 0.6;
@@ -11034,21 +11039,21 @@ h1, h2, h3, h4, h5, h6 {
 wide
 ---------------------------- */
 @media (min-width: 38em) {
-  /* line 871, ../scss/main.scss */
+  /* line 872, ../scss/main.scss */
   .row--padding-medium {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     /* 36px/18px */
   }
 
-  /* line 878, ../scss/main.scss */
+  /* line 879, ../scss/main.scss */
   .row--padding-wide {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     /* 36px/18px */
   }
 
-  /* line 885, ../scss/main.scss */
+  /* line 886, ../scss/main.scss */
   .container-narrow,
   .container-medium,
   .container-wide {
@@ -11056,59 +11061,59 @@ wide
     padding-right: 2em;
   }
 
-  /* line 893, ../scss/main.scss */
+  /* line 894, ../scss/main.scss */
   .col-narrow,
   .col-medium,
   .col-wide {
     float: left;
   }
 
-  /* line 896, ../scss/main.scss */
+  /* line 897, ../scss/main.scss */
   .col-narrow--right,
   .col-wide--right {
     float: right;
   }
 
-  /* line 899, ../scss/main.scss */
+  /* line 900, ../scss/main.scss */
   .col-wide,
   .col-wide--right {
     width: 61%;
   }
 
-  /* line 902, ../scss/main.scss */
+  /* line 903, ../scss/main.scss */
   .col-medium {
     width: 50%;
   }
 
-  /* line 904, ../scss/main.scss */
+  /* line 905, ../scss/main.scss */
   .col-narrow,
   .col-narrow--right {
     width: 25%;
     margin-bottom: 0;
   }
 }
-/* line 927, ../scss/main.scss */
+/* line 928, ../scss/main.scss */
 .message-error {
   color: #b94a48;
   border-color: #d59392;
   background: #f1dcdc;
 }
 
-/* line 927, ../scss/main.scss */
+/* line 928, ../scss/main.scss */
 .message-valid {
   color: #468847;
   border-color: #7aba7b;
   background: #bdddbd;
 }
 
-/* line 927, ../scss/main.scss */
+/* line 928, ../scss/main.scss */
 .message-warning {
   color: #c09853;
   border-color: #dbc59e;
   background: #f7f1e8;
 }
 
-/* line 927, ../scss/main.scss */
+/* line 928, ../scss/main.scss */
 .message-info {
   color: #3a87ad;
   border-color: #7ab5d3;
@@ -11118,7 +11123,7 @@ wide
 /* ----------------------------
 form elements
 ---------------------------- */
-/* line 935, ../scss/main.scss */
+/* line 936, ../scss/main.scss */
 input[type=checkbox] {
   -ms-transform: scale(2);
   -moz-transform: scale(2);
@@ -11127,13 +11132,13 @@ input[type=checkbox] {
   padding: 10px;
 }
 
-/* line 945, ../scss/main.scss */
+/* line 946, ../scss/main.scss */
 a, a:visited, a:focus, a:hover, a:active {
   color: #00a1d9;
   text-decoration: none;
 }
 
-/* line 950, ../scss/main.scss */
+/* line 951, ../scss/main.scss */
 a.bordered:hover {
   border: 2px solid white;
   -ms-border-radius: 10px;
@@ -11143,12 +11148,12 @@ a.bordered:hover {
   border-radius: 10px;
 }
 
-/* line 959, ../scss/main.scss */
+/* line 960, ../scss/main.scss */
 a img {
   border: none;
 }
 
-/* line 964, ../scss/main.scss */
+/* line 965, ../scss/main.scss */
 input[type=submit] {
   color: #fff;
   max-width: 90%;
@@ -11162,13 +11167,13 @@ input[type=submit] {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 978, ../scss/main.scss */
+/* line 979, ../scss/main.scss */
 input[type=submit]:hover {
   color: #fff;
   background-color: #005573;
 }
 
-/* line 990, ../scss/main.scss */
+/* line 991, ../scss/main.scss */
 .top-bar .title-area img {
   position: relative;
   top: 0.3125em;
@@ -11176,7 +11181,7 @@ input[type=submit]:hover {
   overflow: auto;
   margin-bottom: 0.625em;
 }
-/* line 998, ../scss/main.scss */
+/* line 999, ../scss/main.scss */
 .top-bar .name
 h1 {
   font-family: "NeoSansProBold", "OpenSans", Arial, sans-serif;
@@ -11186,13 +11191,13 @@ h1 {
   margin-left: 0;
 }
 
-/* line 1010, ../scss/main.scss */
+/* line 1011, ../scss/main.scss */
 .awardstext {
   text-align: center;
   padding: 0 10px;
 }
 
-/* line 1017, ../scss/main.scss */
+/* line 1018, ../scss/main.scss */
 .welcomeimage {
   background-image: url(../img/smileyface-small.png);
   background-repeat: no-repeat;
@@ -11200,7 +11205,7 @@ h1 {
   background-size: cover;
 }
 
-/* line 1028, ../scss/main.scss */
+/* line 1029, ../scss/main.scss */
 .logopanel {
   background-image: url(../img/small_logo.gif);
   background-repeat: no-repeat;
@@ -11208,7 +11213,7 @@ h1 {
   background-size: contain;
 }
 
-/* line 1038, ../scss/main.scss */
+/* line 1039, ../scss/main.scss */
 .row--banner {
   background-color: #fff;
   background-image: url(../img/mainbanner-small.jpg);
@@ -11217,7 +11222,7 @@ h1 {
   background-size: cover;
 }
 
-/* line 1049, ../scss/main.scss */
+/* line 1050, ../scss/main.scss */
 .row--ourclub {
   background-color: #fff;
   background-image: url(../img/clubhouse.jpg);
@@ -11226,7 +11231,7 @@ h1 {
   background-size: cover;
 }
 
-/* line 1060, ../scss/main.scss */
+/* line 1061, ../scss/main.scss */
 .row--league {
   background-color: #fff;
   background-image: url(../img/first_team.jpg);
@@ -11235,7 +11240,7 @@ h1 {
   background-size: cover;
 }
 
-/* line 1071, ../scss/main.scss */
+/* line 1072, ../scss/main.scss */
 .row--aegon {
   background-color: #fff;
   background-image: url(../img/aegon-team-tennis-banner.jpg);
@@ -11244,7 +11249,7 @@ h1 {
   background-size: cover;
 }
 
-/* line 1082, ../scss/main.scss */
+/* line 1083, ../scss/main.scss */
 .row--banner-sportsclub {
   background-color: #fff;
   background-image: url(../img/clubhouse.jpg);
@@ -11253,38 +11258,52 @@ h1 {
   background-size: cover;
 }
 
-/* line 1091, ../scss/main.scss */
+/* line 1092, ../scss/main.scss */
 .row--watching {
   background-color: white;
 }
 
+/* line 1096, ../scss/main.scss */
+.promobox {
+  padding: 1.5em;
+  webkit-border-radius: 10px;
+  moz-border-radius: 10px;
+  ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 1107, ../scss/main.scss */
+.vilagefestival {
+  padding: 20px;
+}
+
 @media (min-width: 38em) {
   /*  Must give banners a height when on desktops  */
-  /* line 1098, ../scss/main.scss */
+  /* line 1114, ../scss/main.scss */
   .row--banner {
     background-image: url(../img/mainbanner.jpg);
     height: 360px;
   }
 
-  /* line 1102, ../scss/main.scss */
+  /* line 1118, ../scss/main.scss */
   .row--banner-sportsclub {
     background-image: url(../img/clubhouse.jpg);
     height: 360px;
   }
 
-  /* line 1106, ../scss/main.scss */
+  /* line 1122, ../scss/main.scss */
   .row--ourclub {
     background-image: url(../img/clubhouse.jpg);
     height: 360px;
   }
 
-  /* line 1112, ../scss/main.scss */
+  /* line 1128, ../scss/main.scss */
   .row--league {
     background-image: url(../img/first_team.jpg);
     height: 360px;
   }
 
-  /* line 1118, ../scss/main.scss */
+  /* line 1134, ../scss/main.scss */
   .row--aegon {
     background-image: url(../img/aegon-team-tennis-banner.jpg);
     height: 230px;
@@ -11293,18 +11312,18 @@ h1 {
 /* ----------------------------
 Welcome block styling on members.html
 ----------------------------- */
-/* line 1130, ../scss/main.scss */
+/* line 1146, ../scss/main.scss */
 .welcomeblock {
   padding: 1em 0 1em 0;
   vertical-align: middle;
 }
 
-/* line 1135, ../scss/main.scss */
+/* line 1151, ../scss/main.scss */
 p#welcometext, #notme, #mylogout {
   vertical-align: middle;
 }
 
-/* line 1139, ../scss/main.scss */
+/* line 1155, ../scss/main.scss */
 #notme, #mylogout {
   text-aligbn: center;
 }
@@ -11312,18 +11331,18 @@ p#welcometext, #notme, #mylogout {
 /* ----------------------------
 Running the club layout
 ---------------------------- */
-/* line 1147, ../scss/main.scss */
+/* line 1163, ../scss/main.scss */
 .helpheading {
   text-align: center;
 }
-/* line 1150, ../scss/main.scss */
+/* line 1166, ../scss/main.scss */
 .helpheading img {
   margin: 1em auto;
   max-width: 100%;
   overflow: hidden;
 }
 
-/* line 1158, ../scss/main.scss */
+/* line 1174, ../scss/main.scss */
 .helpdescription {
   margin-top: 1em;
 }
@@ -11331,26 +11350,26 @@ Running the club layout
 /* ----------------------------
 header
 ---------------------------- */
-/* line 1167, ../scss/main.scss */
+/* line 1183, ../scss/main.scss */
 .header {
   padding: 1.25em 1em;
   /* 20px/16px - 16px/16px */
 }
 
-/* line 1173, ../scss/main.scss */
+/* line 1189, ../scss/main.scss */
 .header__logo {
   float: left;
   padding-top: 2.5em;
 }
 
-/* line 1179, ../scss/main.scss */
+/* line 1195, ../scss/main.scss */
 .header__nav {
   padding-top: 2.5em;
   float: right;
   width: 200px;
 }
 
-/* line 1186, ../scss/main.scss */
+/* line 1202, ../scss/main.scss */
 .header__nav ul {
   margin: 0;
   padding: 0;
@@ -11358,11 +11377,10 @@ header
   text-align: right;
 }
 
-/* line 1194, ../scss/main.scss */
+/* line 1210, ../scss/main.scss */
 .header__nav li {
   display: inline-block;
   margin: 0;
-  font-size: 1.4em;
   /* 	
   	background: #fff;
       opacity: 0.3;
@@ -11370,7 +11388,7 @@ header
    */
 }
 
-/* line 1205, ../scss/main.scss */
+/* line 1221, ../scss/main.scss */
 .header__nav a {
   display: block;
   margin-right: .2em;
@@ -11378,52 +11396,53 @@ header
   border-radius: .3em;
   color: #fff;
   background: none;
+  font-size: 0.8125em;
   /* 13px/16px */
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 1219, ../scss/main.scss */
+/* line 1235, ../scss/main.scss */
 .header__nav-contact a {
   margin-right: 0;
 }
 
-/* line 1221, ../scss/main.scss */
+/* line 1237, ../scss/main.scss */
 .current a {
   color: #fff;
   background: #56b880;
 }
 
-/* line 1227, ../scss/main.scss */
+/* line 1243, ../scss/main.scss */
 .header__nav a:focus {
   background: #000;
 }
 
-/* line 1228, ../scss/main.scss */
+/* line 1244, ../scss/main.scss */
 .header__nav a:hover {
   background: #3bb2d0;
   border: 2px solid white;
   border-radius: .5em;
 }
 
-/* line 1234, ../scss/main.scss */
+/* line 1250, ../scss/main.scss */
 .header__nav a:active {
   background: #af0000;
 }
 
 @media (min-width: 38em) {
-  /* line 1238, ../scss/main.scss */
+  /* line 1254, ../scss/main.scss */
   .header {
     padding: 2.2222em 2em;
     /* 40px/18px - 36px/18px */
   }
 
-  /* line 1244, ../scss/main.scss */
+  /* line 1260, ../scss/main.scss */
   .header__nav {
     width: 20em;
   }
 
-  /* line 1246, ../scss/main.scss */
+  /* line 1262, ../scss/main.scss */
   .header__nav a {
     font-size: 0.8333em;
     /* 15px/18px */
@@ -11432,14 +11451,14 @@ header
 /* ----------------------------
 banner-content
 ---------------------------- */
-/* line 1257, ../scss/main.scss */
+/* line 1273, ../scss/main.scss */
 .banner-content {
   padding: 1.875em 1.5em 2.8125em;
   /* 30px/16px - 24px/16px - 45px/16px */
   text-align: center;
 }
 
-/* line 1264, ../scss/main.scss */
+/* line 1280, ../scss/main.scss */
 .banner-content__heading {
   margin: 1em 0 1.5em;
   /* 30px/16px */
@@ -11449,7 +11468,7 @@ banner-content
   font-weight: normal;
 }
 
-/* line 1274, ../scss/main.scss */
+/* line 1290, ../scss/main.scss */
 .banner-content__strapline {
   margin: 0 0 1.5em;
   /* 30px/16px */
@@ -11462,44 +11481,110 @@ banner-content
 }
 
 @media (min-width: 38em) {
-  /* line 1287, ../scss/main.scss */
+  /* line 1303, ../scss/main.scss */
   .banner-content {
     padding: 7.5em 2em;
     /* 135px/18px - 36px/18px */
   }
 
-  /* line 1293, ../scss/main.scss */
+  /* line 1309, ../scss/main.scss */
   .banner-content__heading {
     font-size: 2.5556em;
     /* 46px/18px */
   }
 }
+/* ----------------------------
+50 years banner
+---------------------------- */
+/* line 1320, ../scss/main.scss */
+.banner50-content {
+  padding: 1.875em 1.5em 2.8125em;
+  /* 30px/16px - 24px/16px - 45px/16px */
+  text-align: center;
+}
+
+/* line 1327, ../scss/main.scss */
+.banner50-content__heading {
+  margin: 1em 0 1.5em;
+  /* 30px/16px */
+  color: #fff;
+  font-size: 1.3em;
+  /* 24px/16px */
+  font-weight: normal;
+}
+
+/* line 1337, ../scss/main.scss */
+.banner50-content__strapline {
+  margin: 0 0 1.5em;
+  /* 30px/16px */
+  color: #fff;
+  font-size: 1.1em;
+  /* 24px/16px */
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (min-width: 38em) {
+  /* line 1350, ../scss/main.scss */
+  .banner50-content {
+    padding: 7.5em 2em;
+    /* 135px/18px - 36px/18px */
+  }
+
+  /* line 1356, ../scss/main.scss */
+  .banner50-content__heading {
+    font-size: 2.0em;
+    /* 46px/18px */
+  }
+}
+/* ------------------------------------------------------------
+ *        dynamic pricning table (buy50.html)
+ * ------------------------------------------------------------ */
+/* line 1368, ../scss/main.scss */
+.active-tb {
+  position: relative;
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+  transform: scale(1);
+  border: 0;
+  transition: 0.4s ease;
+  z-index: 13;
+}
+/* line 1375, ../scss/main.scss */
+.active-tb:hover {
+  position: relative;
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+  transform: scale(1.25);
+  border: 0;
+  z-index: 15;
+}
+
 /* ------------------------------------------------------------
  *        footer
  * ------------------------------------------------------------ */
-/* line 1304, ../scss/main.scss */
+/* line 1389, ../scss/main.scss */
 .footer {
   margin-top: 1.5em;
 }
-/* line 1306, ../scss/main.scss */
+/* line 1391, ../scss/main.scss */
 .footer a {
   color: #473016;
 }
-/* line 1309, ../scss/main.scss */
+/* line 1394, ../scss/main.scss */
 .footer .footermenuhead {
   margin-top: 1.25em;
   margin-left: 20%;
   color: gray;
 }
-/* line 1314, ../scss/main.scss */
+/* line 1399, ../scss/main.scss */
 .footer .toprow {
   background-color: #33353B;
 }
-/* line 1317, ../scss/main.scss */
+/* line 1402, ../scss/main.scss */
 .footer .toprow .bigfooter ul {
   list-style-type: none;
 }
-/* line 1319, ../scss/main.scss */
+/* line 1404, ../scss/main.scss */
 .footer .toprow .bigfooter ul li a {
   margin-left: 10%;
   font-size: 0.75em;
@@ -11507,59 +11592,59 @@ banner-content
   color: #e6e6e6;
   display: block;
 }
-/* line 1325, ../scss/main.scss */
+/* line 1410, ../scss/main.scss */
 .footer .toprow .bigfooter ul li a:hover {
   background: #e6e6e6;
   color: #4d4d4d;
 }
-/* line 1332, ../scss/main.scss */
+/* line 1417, ../scss/main.scss */
 .footer .toprow .clublogo {
   text-align: center;
 }
-/* line 1334, ../scss/main.scss */
+/* line 1419, ../scss/main.scss */
 .footer .toprow .clublogo img {
   max-width: 50%;
   margin: 0 auto;
 }
-/* line 1341, ../scss/main.scss */
+/* line 1426, ../scss/main.scss */
 .footer .bottomrow {
   background-color: #26272B;
   color: gray;
 }
-/* line 1344, ../scss/main.scss */
+/* line 1429, ../scss/main.scss */
 .footer .bottomrow .contactsummary {
   margin-top: 1em;
 }
-/* line 1350, ../scss/main.scss */
+/* line 1435, ../scss/main.scss */
 .footer .footnav ul {
   margin: 0.3125em 0 0 0;
 }
-/* line 1353, ../scss/main.scss */
+/* line 1438, ../scss/main.scss */
 .footer .footnav li {
   margin-left: 0;
   margin-right: 0.9375em;
 }
-/* line 1358, ../scss/main.scss */
+/* line 1443, ../scss/main.scss */
 .footer .footnav a:hover {
   text-decoration: underline;
 }
-/* line 1364, ../scss/main.scss */
+/* line 1449, ../scss/main.scss */
 .footer .joinus {
   padding: 20px;
   background-color: #e6e6e6;
   color: #4d4d4d;
 }
 
-/* line 1375, ../scss/main.scss */
+/* line 1460, ../scss/main.scss */
 .social h3 {
   margin-top: 1.25em;
   color: gray;
 }
-/* line 1379, ../scss/main.scss */
+/* line 1464, ../scss/main.scss */
 .social ul {
   float: left;
 }
-/* line 1383, ../scss/main.scss */
+/* line 1468, ../scss/main.scss */
 .social li a {
   display: inline-block;
   height: 32px;
@@ -11570,7 +11655,7 @@ banner-content
   overflow: hidden;
   */
 }
-/* line 1393, ../scss/main.scss */
+/* line 1478, ../scss/main.scss */
 .social li.facebook a {
   background-position: 0 -32px;
 }
@@ -11578,11 +11663,11 @@ banner-content
 .social li.facebook a:hover, .social li.facebook a.facebook-hover {
   background-position: 0 0;
 }
-/* line 1395, ../scss/main.scss */
+/* line 1480, ../scss/main.scss */
 .social li.facebook a:hover {
   background-position: 0 0;
 }
-/* line 1399, ../scss/main.scss */
+/* line 1484, ../scss/main.scss */
 .social li.twitter a {
   background-position: 0 -160px;
 }
@@ -11590,11 +11675,11 @@ banner-content
 .social li.twitter a:hover, .social li.twitter a.twitter-hover {
   background-position: 0 -128px;
 }
-/* line 1401, ../scss/main.scss */
+/* line 1486, ../scss/main.scss */
 .social li.twitter a:hover {
   background-position: 0 -128px;
 }
-/* line 1405, ../scss/main.scss */
+/* line 1490, ../scss/main.scss */
 .social li.wordpress a {
   background-position: 0 -224px;
 }
@@ -11602,11 +11687,11 @@ banner-content
 .social li.wordpress a:hover, .social li.wordpress a.wordpress-hover {
   background-position: 0 -192px;
 }
-/* line 1407, ../scss/main.scss */
+/* line 1492, ../scss/main.scss */
 .social li.wordpress a:hover {
   background-position: 0 -192px;
 }
-/* line 1411, ../scss/main.scss */
+/* line 1496, ../scss/main.scss */
 .social li.flickr a {
   background-position: 0 -96px;
 }
@@ -11614,12 +11699,12 @@ banner-content
 .social li.flickr a:hover, .social li.flickr a.flickr-hover {
   background-position: 0 -64px;
 }
-/* line 1413, ../scss/main.scss */
+/* line 1498, ../scss/main.scss */
 .social li.flickr a:hover {
   background-position: 0 -64px;
 }
 
-/* line 1420, ../scss/main.scss */
+/* line 1505, ../scss/main.scss */
 .whaticansee {
   padding: 0;
   -webkit-border-radius: 10px;
@@ -11634,12 +11719,12 @@ banner-content
 /* ------------------------------------------------------------
  *        features row
  * ------------------------------------------------------------ */
-/* line 1435, ../scss/main.scss */
+/* line 1520, ../scss/main.scss */
 .feature-grid {
   text-align: center;
 }
 
-/* line 1439, ../scss/main.scss */
+/* line 1524, ../scss/main.scss */
 .feature-image {
   border-style: solid;
   border-width: 10px;
@@ -11651,7 +11736,7 @@ banner-content
   border-radius: 50%;
 }
 
-/* line 1450, ../scss/main.scss */
+/* line 1535, ../scss/main.scss */
 .feature-image:hover {
   border-color: #ADADAD;
 }
@@ -11659,22 +11744,22 @@ banner-content
 /* ------------------------------------------------------------
  *        involved row
  * ------------------------------------------------------------ */
-/* line 1458, ../scss/main.scss */
+/* line 1543, ../scss/main.scss */
 .involve {
   background-color: #fff;
 }
 
-/* line 1462, ../scss/main.scss */
+/* line 1547, ../scss/main.scss */
 .involved-grid {
   text-align: center;
 }
 
-/* line 1466, ../scss/main.scss */
+/* line 1551, ../scss/main.scss */
 .involved-image {
   height: 100px;
 }
 
-/* line 1470, ../scss/main.scss */
+/* line 1555, ../scss/main.scss */
 .involvedheading {
   text-align: center;
   padding: 0 10px;
@@ -11683,22 +11768,22 @@ banner-content
 /* ------------------------------------------------------------
  *        playing row
  * ------------------------------------------------------------ */
-/* line 1479, ../scss/main.scss */
+/* line 1564, ../scss/main.scss */
 .playing {
   background-color: #fff;
 }
 
-/* line 1483, ../scss/main.scss */
+/* line 1568, ../scss/main.scss */
 .playing-grid {
   text-align: center;
 }
 
-/* line 1487, ../scss/main.scss */
+/* line 1572, ../scss/main.scss */
 .playing-image {
   height: 100px;
 }
 
-/* line 1491, ../scss/main.scss */
+/* line 1576, ../scss/main.scss */
 .playingheading {
   text-align: center;
   padding: 0 10px;
@@ -11707,22 +11792,22 @@ banner-content
 /* ------------------------------------------------------------
  *        other sports row
  * ------------------------------------------------------------ */
-/* line 1500, ../scss/main.scss */
+/* line 1585, ../scss/main.scss */
 .othersports {
   background-color: #e6fae6;
 }
 
-/* line 1504, ../scss/main.scss */
+/* line 1589, ../scss/main.scss */
 .othersports-grid {
   text-align: center;
 }
 
-/* line 1508, ../scss/main.scss */
+/* line 1593, ../scss/main.scss */
 .othersports-image {
   height: 100px;
 }
 
-/* line 1512, ../scss/main.scss */
+/* line 1597, ../scss/main.scss */
 .othersportsheading {
   text-align: center;
   padding: 0 10px;
@@ -11731,17 +11816,17 @@ banner-content
 /* ------------------------------------------------------------
  *        Twitter styling
  * ------------------------------------------------------------ */
-/* line 1522, ../scss/main.scss */
+/* line 1607, ../scss/main.scss */
 #twitter-feed #loading-container {
   text-align: center;
   padding: 1em 0px;
 }
-/* line 1526, ../scss/main.scss */
+/* line 1611, ../scss/main.scss */
 #twitter-feed .twitter-article {
   border-bottom: 1px dotted #e6e6e6;
   padding: 0.3125em 0 0.3125em 0.9375em;
 }
-/* line 1531, ../scss/main.scss */
+/* line 1616, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-pic img {
   display: inline-block;
   max-width: 80%;
@@ -11750,23 +11835,23 @@ banner-content
   -webkit-border-radius: 7px;
   border-radius: 7px;
 }
-/* line 1539, ../scss/main.scss */
+/* line 1624, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text .tweet-text {
   font-size: 0.75em;
   line-height: 1.36em;
   color: #4d4d4d;
 }
-/* line 1544, ../scss/main.scss */
+/* line 1629, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text:hover {
   background: #e6e6e6;
 }
-/* line 1547, ../scss/main.scss */
+/* line 1632, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text p {
   margin: 0;
   padding: 0;
   position: relative;
 }
-/* line 1551, ../scss/main.scss */
+/* line 1636, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text p .tweet-time {
   font-size: 0.625em;
   color: #878787;
@@ -11774,24 +11859,86 @@ banner-content
   top: 0;
   right: 0;
 }
-/* line 1558, ../scss/main.scss */
+/* line 1643, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text p .tweetprofilelink a {
   color: #444;
 }
-/* line 1560, ../scss/main.scss */
+/* line 1645, ../scss/main.scss */
 #twitter-feed .twitter-article .twitter-text p .tweetprofilelink a:hover {
   color: #444;
 }
 
 /* ------------------------------------------------------------
+ *        Slideshow styling
+ * ------------------------------------------------------------ */
+/* line 1658, ../scss/main.scss */
+.content {
+  margin-top: 1.25em;
+  /* slideshow    */
+}
+/* line 1660, ../scss/main.scss */
+.content .orbit-container {
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y3ZjdmNyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -moz-radial-gradient(#ffffff, #f7f7f7);
+  background: -webkit-radial-gradient(#ffffff, #f7f7f7);
+  background: radial-gradient(#ffffff, #f7f7f7);
+}
+/* line 1662, ../scss/main.scss */
+.content .orbit-container li {
+  padding: 1.25em 2.5em;
+}
+/* line 1664, ../scss/main.scss */
+.content .orbit-container li:nth-child(1) {
+  background: url('../img/../img/Logo50Banner.png?1459268004') no-repeat right bottom;
+}
+/* line 1667, ../scss/main.scss */
+.content .orbit-container li:nth-child(2) {
+  background: url('../img/../img/Merchandise50.png?1459268016') no-repeat right bottom;
+}
+/* line 1670, ../scss/main.scss */
+.content .orbit-container li:nth-child(3) {
+  background: url('../img/../img/Ball50Banner.png?1459268010') no-repeat right bottom;
+}
+/* line 1673, ../scss/main.scss */
+.content .orbit-container li:nth-child(4) {
+  background: url('../img/../img/Activity50Banner.png?1459268022') no-repeat right bottom;
+}
+/* line 1677, ../scss/main.scss */
+.content .orbit-container a.orbit-prev, .content .orbit-container a.orbit-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 400ms 0.2s ease;
+  -moz-transition: opacity 400ms 0.2s ease;
+  -ms-transition: opacity 400ms 0.2s ease;
+  -o-transition: opacity 400ms 0.2s ease;
+  transition: opacity 400ms 0.2s ease;
+}
+/* line 1682, ../scss/main.scss */
+.content .orbit-container:hover a.orbit-prev, .content .orbit-container:hover a.orbit-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 1687, ../scss/main.scss */
+.content .orbit-container h3 {
+  padding: 0.625em;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 1690, ../scss/main.scss */
+.content .orbit-container h3 + p {
+  padding: 0.625em;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+/* ------------------------------------------------------------
  *        Wordpress styling
  * ------------------------------------------------------------ */
-/* line 1573, ../scss/main.scss */
+/* line 1704, ../scss/main.scss */
 #blogposts {
   border-top: 1px dotted #e6e6e6;
   margin-top: 0.625em;
 }
-/* line 1574, ../scss/main.scss */
+/* line 1705, ../scss/main.scss */
 #blogposts img {
   position: relative;
   top: 0.3125em;
@@ -11803,12 +11950,12 @@ banner-content
   overflow: auto;
 }
 
-/* line 1589, ../scss/main.scss */
+/* line 1720, ../scss/main.scss */
 .blogitem {
   padding: 0.5em 0 0.5em 0.9375em;
 }
 
-/* line 1593, ../scss/main.scss */
+/* line 1724, ../scss/main.scss */
 .blogitemtext {
   font-size: 0.75em;
   color: #4d4d4d;
@@ -11821,7 +11968,7 @@ banner-content
 	font-weight: bold;
 }
 */
-/* line 1605, ../scss/main.scss */
+/* line 1736, ../scss/main.scss */
 .blogpostdate {
   color: #878787;
   font-size: 0.625em;
@@ -11831,7 +11978,7 @@ banner-content
   line-height: 0.75em;
 }
 
-/* line 1614, ../scss/main.scss */
+/* line 1745, ../scss/main.scss */
 .blogitem:hover {
   background: #e6e6e6;
 }
@@ -11839,7 +11986,7 @@ banner-content
 /* ----------------------------
 form elements
 ---------------------------- */
-/* line 1622, ../scss/main.scss */
+/* line 1753, ../scss/main.scss */
 input[type=checkbox] {
   /* Double-sized Checkboxes */
   -ms-transform: scale(2);
@@ -11856,7 +12003,7 @@ input[type=checkbox] {
 /* ----------------------------
 Calendar icon styling
 ---------------------------- */
-/* line 1636, ../scss/main.scss */
+/* line 1767, ../scss/main.scss */
 time.icon {
   font-size: 1em;
   /* change icon size */
@@ -11875,7 +12022,7 @@ time.icon {
   transform-origin: 50% 10%;
 }
 
-/* line 1654, ../scss/main.scss */
+/* line 1785, ../scss/main.scss */
 time.icon * {
   display: block;
   width: 100%;
@@ -11885,7 +12032,7 @@ time.icon * {
   text-align: center;
 }
 
-/* line 1664, ../scss/main.scss */
+/* line 1795, ../scss/main.scss */
 time.icon strong {
   position: absolute;
   top: 0;
@@ -11896,14 +12043,14 @@ time.icon strong {
   box-shadow: 0 2px 0 #fd9f1b;
 }
 
-/* line 1675, ../scss/main.scss */
+/* line 1806, ../scss/main.scss */
 time.icon em {
   position: absolute;
   bottom: 0.3em;
   color: #fd9f1b;
 }
 
-/* line 1682, ../scss/main.scss */
+/* line 1813, ../scss/main.scss */
 time.icon span {
   width: 100%;
   font-size: 2.8em;
@@ -11912,7 +12059,7 @@ time.icon span {
   color: #2f2f2f;
 }
 
-/* line 1691, ../scss/main.scss */
+/* line 1822, ../scss/main.scss */
 time.icon:hover, time.icon:focus {
   -webkit-animation: swing 0.6s ease-out;
   animation: swing 0.6s ease-out;
@@ -11954,12 +12101,12 @@ time.icon:hover, time.icon:focus {
 }
 @media print {
   /* All your print styles go here */
-  /* line 1720, ../scss/main.scss */
+  /* line 1851, ../scss/main.scss */
   #header, #footer, #nav {
     display: none !important;
   }
 
-  /* line 1722, ../scss/main.scss */
+  /* line 1853, ../scss/main.scss */
   .notprint {
     display: none !important;
   }
@@ -11968,31 +12115,31 @@ time.icon:hover, time.icon:focus {
  *    Area for media query styles 
  ********************************************/
 @media screen and (max-width: 500px) {
-  /* line 1735, ../scss/main.scss */
+  /* line 1866, ../scss/main.scss */
   .button {
     width: 90%;
     margin: 0.625em auto 0.625em auto;
   }
 
-  /* line 1740, ../scss/main.scss */
+  /* line 1871, ../scss/main.scss */
   .fullwidth {
     width: 90%;
     margin: 0.625em auto;
   }
 
-  /* line 1746, ../scss/main.scss */
+  /* line 1877, ../scss/main.scss */
   .footer .footermenuhead {
     text-align: center;
     padding: 0;
     margin: 0 auto;
     max-width: 90%;
   }
-  /* line 1755, ../scss/main.scss */
+  /* line 1886, ../scss/main.scss */
   .footer .toprow .bigfooter ul li {
     margin: 0.25em 0 0 0;
     padding: auto 0;
   }
-  /* line 1758, ../scss/main.scss */
+  /* line 1889, ../scss/main.scss */
   .footer .toprow .bigfooter ul li a {
     margin: 0;
     display: block;
@@ -12007,22 +12154,22 @@ time.icon:hover, time.icon:focus {
     margin: 0 auto;
     padding: 0;
   }
-  /* line 1771, ../scss/main.scss */
+  /* line 1902, ../scss/main.scss */
   .footer .toprow .bigfooter ul li a:hover {
     background: #e6e6e6;
     color: #4d4d4d;
   }
-  /* line 1779, ../scss/main.scss */
+  /* line 1910, ../scss/main.scss */
   .footer .toprow .clublogo {
     text-align: center;
   }
-  /* line 1781, ../scss/main.scss */
+  /* line 1912, ../scss/main.scss */
   .footer .toprow .clublogo img {
     max-width: 50%;
     margin: 0 auto;
   }
 
-  /* line 1792, ../scss/main.scss */
+  /* line 1923, ../scss/main.scss */
   .top-bar .title-area img {
     position: relative;
     top: 0.3125em;
