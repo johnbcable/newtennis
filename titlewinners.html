@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Tournament Results</title>
+    <title>Hampton-in-Arden Tennis Club - Title Winners</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
@@ -107,77 +107,22 @@
 
       <div id="resultsform" class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
 
-        <form id="TournamentResultsForm">
+        <form id="TitlesResultsForm">
 
           <h5>Which results do you want to see</h5>
 
-          <div class="row">
+          <div id="titleslist" class="large-4 medium-4 small-6 columns"></div>
 
-            <div class="large-4 medium-4 small-6 columns">
-              <label for="year">Tennis Season:&nbsp;</label>
-              <select id="year" name="year">
-                <option selected value="2015">2015</option>
-                <option value="2014">2014</option>
-                <option value="2013">2013</option>
-                <option value="2012">2012</option>
-                <option value="2011">2011</option>
-                <option value="2010">2010</option>
-                <option value="2009">2009</option>
-                <option value="2008">2008</option>
-                <option value="2007">2007</option>
-                <option value="2006">2006</option>
-                <option value="2005">2005</option>
-                <option value="2004">2004</option>
-                <option value="2003">2003</option>
-                <option value="2002">2002</option>
-                <option value="2001">2001</option>
-                <option value="2000">2000</option>
-                <option value="1999">1999</option>
-                <option value="1998">1998</option>
-                <option value="1997">1997</option>
-                <option value="1996">1996</option>
-                <option value="1995">1995</option>
-                <option value="1994">1994</option>
-                <option value="1993">1993</option>
-                <option value="1992">1992</option>
-                <option value="1991">1991</option>
-                <option value="1990">1990</option>
-                <option value="1989">1989</option>
-                <option value="1988">1988</option>
-                <option value="1987">1987</option>
-                <option value="1986">1986</option>
-                <option value="1985">1985</option>
-                <option value="1984">1984</option>
-                <option value="1983">1983</option>
-                <option value="1982">1982</option>
-                <option value="1981">1981</option>
-                <option value="1980">1980</option>
-                <option value="1979">1979</option>
-                <option value="1978">1978</option>
-                <option value="1977">1977</option>
-                <option value="1976">1976</option>
-                <option value="1975">1975</option>
-                <option value="1974">1974</option>
-                <option value="1973">1973</option>
-                <option value="1972">1972</option>
-                <option value="1971">1971</option>
-                <option value="1970">1970</option>
-                <option value="1969">1969</option>
-              </select>
-            </div>
+          <div class="large-4 medium-4 small-12 columns">
 
-            <div class="large-4 medium-4 small-12 columns">
-
-              <p>
+            <p>
 <!-- 
-                <button id="mysubmit" name="mysubmit" class="small button fetchresults">Fetch</button>
- -->
-                <input type="submit" class="medium submit-button fetchresults" id="mysubmit" name="mysubmit" value="Fetch Results" />
-              </p>
+              <button id="mysubmit" name="mysubmit" class="small button fetchresults">Fetch</button>
+-->
+              <input type="submit" class="medium submit-button fetchresults" id="mysubmit" name="mysubmit" value="Fetch Title Winners" />
+            </p>
 
-            </div>
-
-          </div>    <!--    /row    -->
+          </div>
 
         </form>
 
@@ -189,11 +134,11 @@
 
     <div class="row content">
     
-        <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-2 columns">
+        <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
 
-          <p>The winners of each tournament title for the above tennis season were as follows:</p>
+          <p>The winners in each season for the above tennis title were as follows:</p>
 
-          <div id="winnerstable"></div>    <!--    /winnerstable    -->
+          <div id="titlewinnerstable"></div>    <!--    /winnerstable    -->
           
         </div>   <!-- /large-10 -->
 
@@ -297,23 +242,32 @@
 
   <!--  Handlebars templates      -->
 
-          <script id="winners-template" type="x-handlebars-template">
+          <script id="titlewinners-template" type="x-handlebars-template">
           <table width="90%" align="center">
             <thead>
-              <th>Category</th>
+              <th>Year</th>
               <th>Winners(s)</th>
               <th>Runner(s)-Up</th>
             </thead>
             <tbody>
              {{#each allWinners}}
               <tr>
-                <td>{{title}}</td>
+                <td>{{year}}</td>
                 <td>{{winners}}</td>
                 <td>{{runnerup}}</td>
               </tr>
               {{/each}}
             </tbody>
           </table>    
+          </script>
+
+          <script id="titleslist-template" type="x-handlebars-template">
+              <label for="title">For title:&nbsp;</label>
+              <select id="title" name="title">
+               {{#each allTitles}}
+                <option value="{{title}}">{{title}}</option>
+                {{/each}}
+              </select>
           </script>
 
   <!--    End of Handlebars templates    -->
@@ -394,15 +348,8 @@
     <!-- <script src="http://l2.io/ip.js?var=myip"></script> -->
     <script src="/js/sessions.js"></script>
     <script src="/bower_components/handlebars/handlebars.js"></script>
-    <script src="/js/results.js"></script>
+    <script src="/js/titlewinners.js"></script>
 
-<!--     
-    <script src="/js/members.js"></script>
-    <script src="/js/maintwitterfeed.js"></script>
-    <script src="/js/wordpress.js"></script>
-    <script src="/js/eventlist.js"></script>
-    <script src="/js/today.js"></script>
- -->
 
       <!--    Google Analytics    -->
 

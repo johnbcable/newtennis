@@ -141,6 +141,8 @@ If queryref > -1 Then
 	querylist(30) = "SELECT DISTINCT([memberid]) FROM member_audits WHERE action IN ('SIGNIN','SIGNOUT')"
 	querylist(31) = "SELECT * FROM events WHERE eventtype = '{{p1}}' ORDER BY eventdate DESC"
 	querylist(32) = "SELECT * FROM events WHERE eventid = {{p1}}"
+	querylist(33) = "SELECT * FROM winners WHERE [title] = '{{p1}}' ORDER BY [year] DESC;"
+	querylist(34) = "SELECT DISTINCT([title]) FROM winners ORDER BY [title] ASC;"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
