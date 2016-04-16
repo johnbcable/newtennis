@@ -818,6 +818,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: $dark-grey;
 }
 .row--medium-grey {
+  color: #fff;   // Cant use black text on this background
   background: $medium-grey;
 }
 .row--light-grey {
