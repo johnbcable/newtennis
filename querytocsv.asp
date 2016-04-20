@@ -3,6 +3,39 @@
 <!--#include file="strings.asp" -->
 <%
 // This page sends back CSV from a specified query as a downloaded file
+
+// Define local functions
+function GetDatabaseData(){ //saves all rows of desired DataBase tables in sqlArr
+  var adOpenDynamic=2;
+  var adLockOptimistic=3;
+  sqlArr=new Array();
+  try{
+    var rs = new ActiveXObject("ADODB.Recordset");
+    rs.open(query, conn, adOpenDynamic, adLockOptimistic);
+    var j=0;var tArr=[];
+    if(!rs.bof){rs.MoveFirst();}
+    for(var i=0;i<rs.fields.count;++i){tArr[i]=rs.fields(i).name;}
+    sqlArr[j]=tArr;j++;
+    if(!rs.eof){rs.MoveNext();}
+    while(!rs.eof){
+      tArr=[];
+      for(var i=0;i<rs.fields.count;++i){
+        tArr[i]=rs.fields(i).value;
+        if(tArr[i]!=tArr[i]+''){tArr[i]='<object>';}
+        if(tArr[i]=='null'){tArr[i]='-';}
+      }
+      sqlArr[j]=tArr;j++;
+      rs.MoveNext();
+    }
+    rs.close();//record set
+  }
+  catch(err01){
+    conn.close();
+    conn=null;// leave DB
+    // Some error handling...
+  }
+}
+
 // First variables that need to be set for each page
 var strtime, strdate;
 var clubname = new String("Hampton-In-Arden Sports Club");
@@ -20,8 +53,8 @@ strdate = datestring();
 strtime = timestring();
 
 
-'Now retrieve query details from submitting form or querystring
-'and initialise the strSQL variable with an SQL statement to query the database
+// Now retrieve query details from submitting form or querystring
+// and initialise the strSQL variable with an SQL statement to query the database
 thequery = Request.Form("query");
 if (thequery == "" || thequery == "null" || thequery = "undefined") {
 	thequery = Request.QueryString("query");
@@ -70,17 +103,23 @@ if (debugging) {
 	Response.Write("debug = [" + (debug ? "TRUE" : "FALSE") + "]<br />");
 	Response.End(); 
 } else {
+	Response.AddHeader("Content-Disposition: attachment; filename='results.csv'"); 
+	Response.ContentType("application/csv");
 	RS = ConnObj.Execute(SQLStmt);
+	var fieldrow = new String("").toString();
+	var i = 0;
+	while (RS.Fields) {
+		fieldrow += RS.Fields[i].Name+",";
+		RS.MoveNext()
+	}
+	Response.Write(fieldrow+"\r\n");
 	while (! RS.EOF)
 	{
-		Response.ContentType("application/json");
-		Response.ContentDisposition
+
+		RS.MoveNext();
 
 }
 
-dataResults = QueryToJSON(adoCon, strSQL).Flush
-
-Response.ContentType = "application/csv"
 
 Response.Write(dataResults)
 Response.End
