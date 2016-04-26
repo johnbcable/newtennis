@@ -41,7 +41,7 @@ function debugWrite(message) {
 Conn = Server.CreateObject("ADODB.Connection");
 RS = Server.CreateObject("ADODB.RecordSet");
 Conn.Open(dbconnect);
-SQLstart = new String("UPDATE tennisfixtures ")
+SQLstart = new String("UPDATE fixturesetup ")
 
 // Retrieve POST'ed data
 
