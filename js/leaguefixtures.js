@@ -1,8 +1,92 @@
 //
-//		leagues.js
+//		leaguefixtures.js
 //
 //		Using, Sammy, Handlebars and plugin code 
 //
+//
+//  Variables
+//
+var jsonstring = new String("");
+var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp");
+
+var curseason;  	// get the current value from the year
+
+// Now create the required URLs for the team and its fixtures
+var fixturesurl;	// holds string for URL for fixtures query
+var teamurl;		// holds information about team
+
+// Now set up local debugging flag
+var debugthis = true;    	// Set to false for normal production use
+//
+// Define utility functions first
+//
+//==================================================
+function currentYear()
+{
+	var today = new Date();
+	var s = new String("").toString();
+	s += today.getFullYear();
+	return(s);
+}
+//==================================================
+function currentMonth()
+{
+	var today = new Date();
+	var month;
+	var s = 0;
+	month = today.getMonth()+1;
+	if (month < 10)
+		s+= "0";
+	s += month;
+	return(s);
+}
+//==================================================
+function currentMonthAsString()
+{
+	var today = new Date();
+	var month;
+	var s = new String("").toString();
+	month = today.getMonth()+1;
+	if (month < 10)
+		s+= "0";
+	s += month;
+	return(s);
+}
+//==================================================
+function currentDate()
+{
+	var today = new Date();
+	var day;
+	var s = new String("").toString();
+	day = today.getDate();
+	if (day < 10)
+		s += "0";
+	s += day;
+	return(s);
+}
+//==================================================
+function currentSeason()
+{
+	var thisyear = currentYear();
+	var thismonth = currentMonth();
+	if (thismonth < 5)
+		thisyear = thisyear - 1;
+	return(thisyear);
+}
+//==================================================
+function paramSetup() {
+
+	curteam = $('#teamname');      // get the team name from form
+	curseason = currentSeason();   // get the current value from the todays date
+
+	// Now create the URL's for the team and its fixtures
+	teamurl = new String(baseurl + "?id=")
+	fixturesurl = new String(baseurl + "?id=20&p1="+encodeURIComponent(curseason)+"&p2="+encodeURIComponent(curteam));
+
+	if (debugthis) {
+		console.log('At end of paramSetup, fixturesurl is now ['+fixturesurl+']');
+	}
+}
 
 // Utility functions
 
@@ -17,9 +101,8 @@ Handlebars.registerHelper('equalsTo', function(v1, v2, options) {
 
 function displayTeamFixtures(teamid, season) {
 
-	var url = "http://hamptontennis.org.uk/admin/fetchJSON.asp?id=0";
 	// var eventsfound = false;
-	$.getJSON(url,function(data){
+	$.getJSON(fixturesurl,function(data){
 
 		// console.log(url);
 
@@ -39,8 +122,10 @@ function displayTeamFixtures(teamid, season) {
 
 	   //Compile the template
 	    var theTemplate = Handlebars.compile (theTemplateScript); 
-		// Handlebars.registerPartial("description", $("#shoe-description").html());    
+		// Handlebars.registerPartial("description", $("#shoe-description").html()); 
+		// $("#main").empty();   
 		$("#main").append (theTemplate(fixturedata)); 
+
 
 	});  // end of function(data)
 
