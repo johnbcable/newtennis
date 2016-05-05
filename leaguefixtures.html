@@ -101,22 +101,21 @@
 
     <div class="row">
 
-      <div class="large-10 medum-10 small-12 large-offset-1 medium-offset-1 columns">
+      <div id="fixturesform" class="large-10 medum-10 small-12 large-offset-1 medium-offset-1 columns">
 
         <h3>League Tennis Fixtures for the Current Season</h3>
 
-        <div class="row">
-            // Teamname selection box
-      <div id="resultsform" class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
-
         <form id="TournamentResultsForm">
-
-          <h5>Select your team</h5>
 
           <div class="row">
 
             <div class="large-4 medium-4 small-6 columns">
-              <label for="year">Team:&nbsp;</label>
+                <p style="text-align: right; margin-right: 10px; vertical-align: middle;">
+                  Select Your Team
+                </p>
+            </div>
+
+            <div class="large-4 medium-4 small-6 columns">
               <select id="teamname" name="teamname">
                 <option value="Ladies 1st Team">Ladies 1st Team</option>
                 <option value="Ladies 2nd Team">Ladies 2nd Team</option>
@@ -134,9 +133,10 @@
               <p>
 <!-- 
                 <button id="mysubmit" name="mysubmit" class="small button fetchresults">Fetch</button>
+
+                <input type="submit" class="small submit-button fetchfixtures" id="mysubmit" name="mysubmit" value="Fetch &raquo;" />
  -->
-                <input type="submit" class="medium submit-button fetchfixtures" id="mysubmit" name="mysubmit" value="Fetch Results" />
-              </p>
+               </p>
 
             </div>
 
@@ -148,37 +148,44 @@
 
       </div>
 
-        </div>
+    </div>
 
-        // display header info for the currently selected team
-        <div class="row" id="teamheader"></div>   
+<!--
+         display header info for the currently selected team
+ -->
+    <div class="row row--padding-wide" id="teamheader"></div>   
 
-        // display the listed fixtures for the current sesson for this team
-        <div class="row" id="main"></main>
+<!--
+         display the listed fixtures for the current sesson for this team
+ -->
+    <div class="row" id="main"></div>
 
+<!--
+         display the summary table for the current sesson for this team
+ -->
+    <div class="row" id="summary"></div>
 
+    <div class="row">
 
-        <div class="row row--padding-medium">
- 
-          <div class="large-8 medium-8 hide-for-small large-offset-2 medium-offset-2 columns">
-            <a href="/leagueresults.html" class="medium info button radius fullwidth">
-              Up-to-date Coventry League results &raquo;
-            </a><br />
-          </div>
+      <div class="large-6 medium-6 hide-for-small large-offset-3 medium-offset-3 columns">
+        <a href="/leagueresults.html" class="medium info button radius fullwidth">
+          Up-to-date Coventry League results &raquo;
+        </a><br />
+      </div>
 
-        </div>
+    </div>
 
-        <div class="panel">
-          <h3>Notes</h3>
-          <ul>
-            <li>
-              <p>
-              If you are unsure of the address of another club that we play against, don't get
-              lost! Why not check our list of <a href="/otherclubs.html"> club addresses</a>.
-              </p>
-            </li>
-          </ul>
-        </div>
+    <div class="panel">
+      <h3>Notes</h3>
+      <ul>
+        <li>
+          <p>
+          If you are unsure of the address of another club that we play against, don't get
+          lost! Why not check our list of <a href="/otherclubs.html"> club addresses</a>.
+          </p>
+        </li>
+      </ul>
+    </div>
 
       </div>    <!--   /large-10    -->
 
@@ -283,42 +290,62 @@
 
   <script id="teamheader-template" type="x-handlebars-template">
 
-    {{#if teamDetails }}
-    {{else}}
-      <p>
-        Couldnt retrieve team details
-      </p>
-    {{/if}}
+    <div class="row">
+      <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 panel columns">
+        {{#if teamDetails }}
+          {{#each teamDetails}}
+          <h4>{{teamname}}  <small>{{division}}</small></h4>
+          <p>
+            Captain: <strong>{{teamcaptain}}</strong>,&nbsp;&nbsp;&nbsp;{{teamnote}} 
+          </p>
+          {{/each}}
+        {{else}}
+          <p>
+            Couldnt retrieve team details
+          </p>
+        {{/if}}
+      </div>
+    </div>
   </script>   
 
-  <script id="leaguefixturelist-template" type="x-handlebars-template">
+  <script id="fixturelist-template" type="x-handlebars-template">
 
-    {{#if allFixtures }}
-     <table width="100%" class="responsive">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Opponents<br /><small>Our team</small></th>
-          <th>Our<br />Score</th>
-          <th>Their<br />Score</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each allFixtures}}
-        <tr>
-          <td>{{fixturedate}}</td>
-          <td>{{opponents}}<br /><small>{{pair1}}, {{pair2}}</small></td>
-          <td>{{hamptonresult}}</td>
-          <td>{{opponentresult}}</td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-    {{else}}
-      <p>
-        No league tennis fixtures found to list
-      </p>
-    {{/if}}
+    <div class="row">
+      <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
+
+      {{#if allFixtures }}
+       <table width="100%" class="responsive">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Opponents<br /><small>Our team</small></th>
+            <th>Our<br />Score</th>
+            <th>Their<br />Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each allFixtures}}
+          <tr>
+            <td>{{fixturedate}}</td>
+            <td>{{opponents}}
+            {{#if pair1}}
+              <br /><small>{{pair1}}, {{pair2}}</small>
+            {{/if}}
+            </td>
+            <td>{{hamptonresult}}</td>
+            <td>{{opponentresult}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      {{else}}
+        <p>
+          No league tennis fixtures found to list
+        </p>
+      {{/if}}
+
+      </div>
+    </div>
   </script>   
 
 

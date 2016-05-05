@@ -1,7 +1,7 @@
 //
 //		leaguefixtures.js
 //
-//		Using, Sammy, Handlebars and plugin code 
+//		Using Handlebars 
 //
 //
 //  Variables
@@ -9,11 +9,11 @@
 var jsonstring = new String("");
 var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp");
 
-var curseason;  	// get the current value from the year
+var curseason = 2016;  	// get the current value from the year
 
 // Now create the required URLs for the team and its fixtures
-var fixturesurl;	// holds string for URL for fixtures query
-var teamurl;		// holds information about team
+var fixturesurl = new String("").toString();	// holds string for URL for fixtures query
+var teamurl = new String("").toString();		// holds information about team
 
 // Now set up local debugging flag
 var debugthis = true;    	// Set to false for normal production use
@@ -76,16 +76,13 @@ function currentSeason()
 //==================================================
 function paramSetup() {
 
-	curteam = $('#teamname');      // get the team name from form
-	curseason = currentSeason();   // get the current value from the todays date
+	curteam = $('#teamname').val();     // get the team name from form
+	curseason = currentSeason();   		// get the current value from todays date
 
 	// Now create the URL's for the team and its fixtures
-	teamurl = new String(baseurl + "?id=")
+	teamurl = new String(baseurl + "?id=36&p1="+encodeURIComponent(curteam));
 	fixturesurl = new String(baseurl + "?id=20&p1="+encodeURIComponent(curseason)+"&p2="+encodeURIComponent(curteam));
 
-	if (debugthis) {
-		console.log('At end of paramSetup, fixturesurl is now ['+fixturesurl+']');
-	}
 }
 
 // Utility functions
@@ -101,8 +98,21 @@ Handlebars.registerHelper('equalsTo', function(v1, v2, options) {
 
 function displayTeamFixtures(teamid, season) {
 
+	var summarydata = new Object();
+
+	// initialise summarydata
+	summarydata.won = 0;
+	summarydata.lost = 0;
+	summarydata.drawn = 0;
+	summarydata.points = 0;
+	summarydata.notplayed = 0;
+
 	// var eventsfound = false;
 	$.getJSON(fixturesurl,function(data){
+
+		// Need to accumulate summary data object here 
+		// by looping through returned data
+
 
 		// console.log(url);
 
@@ -117,143 +127,139 @@ function displayTeamFixtures(teamid, season) {
 		// if (eventdata.length > 1)
 		//	eventsfound = true;
 
+
 		//Get the HTML from the template   in the script tag
 	    var theTemplateScript = $("#fixturelist-template").html(); 
 
 	   //Compile the template
 	    var theTemplate = Handlebars.compile (theTemplateScript); 
 		// Handlebars.registerPartial("description", $("#shoe-description").html()); 
-		// $("#main").empty();   
+		$("#main").empty();   
 		$("#main").append (theTemplate(fixturedata)); 
+
+		// Now need to display the summary data
+		//Get the HTML from the template   in the script tag
+	    var summaryTemplateScript = $("#summary-template").html(); 
+
+	   //Compile the template
+	    var summaryTemplate = Handlebars.compile (summaryTemplateScript); 
+		// Handlebars.registerPartial("description", $("#shoe-description").html()); 
+		$("#summary").empty();   
+		$("#summary").append (summaryTemplate(summarydata)); 
 
 
 	});  // end of function(data)
 
 }
 
+// Display fixture list for a given team and season
+
+function displayTeamHeader(teamname) {
+
+	// var eventsfound = false;
+	$.getJSON(teamurl,function(data){
+
+		// console.log(url);
+
+		var jsonstring = JSON.stringify(data);
+
+		jsonstring = new String("{teamDetails:"+jsonstring+"}");
+
+		// var eventdata = $.parseJSON(jsonstring);
+		var teamdata = eval("(" + jsonstring + ")");
+
+		if (debugthis) {
+			console.log('Before inside displayTeamHeader ........................');
+			console.log('teamname is '+teamname);
+			console.log('teamurl is '+teamurl);
+			console.log('teamDetails.captain is '+teamdata.teamcaptain);
+			console.log('teamDetails.division is '+teamdata.division);
+		}
+
+		// Set the boolean if we have data
+		// if (eventdata.length > 1)
+		//	eventsfound = true;
+
+		//Get the HTML from the template   in the script tag
+	    var theTemplateScript = $("#teamheader-template").html(); 
+
+	   //Compile the template
+	    var theTemplate = Handlebars.compile (theTemplateScript); 
+		// Handlebars.registerPartial("description", $("#shoe-description").html()); 
+		$("#teamheader").empty();   
+		$("#teamheader").append (theTemplate(teamdata)); 
+
+
+	});  // end of function(data)
+
+}
 
 // --------------  End of helper/utility functions ---------------------------
 
-// Main Sammy area
-(function($) {
+// Now do the document.ready stuff
 
-	// Set element main as where the action will be
-	var app = $.sammy('#main', function() {
+$(document).ready(function() {
+	
+	// display Ladies 1st Team on initial load
+	
+	paramSetup();
+	displayTeamHeader(curteam);
+	displayTeamFixtures(curteam, curseason);
+	
+	$('#teamname').change( function(event) {
+		event.preventDefault();
+		if (debugthis) {
+			console.log('Before paramSetup ........................');
+			console.log('fixturesurl is '+fixturesurl);
+			console.log('teamurl is '+teamurl);
+			console.log('baseurl is '+baseurl);
+			console.log('curseason is '+curseason);
+		}
 
-	// this.element_selector = '#main';
+		paramSetup();
 
-	// Define all the required routes
+		if (debugthis) {
+			console.log('After paramSetup .........................');
+			console.log('fixturesurl is '+fixturesurl);
+			console.log('teamurl is '+teamurl);
+			console.log('baseurl is '+baseurl);
+			console.log('curseason is '+curseason);
+		}
 
-	// Home or start page   ----------------------------
+		displayTeamHeader(curteam);
+		displayTeamFixtures(curteam, curseason);
 
-	this.get('#/', function(context) { 
-		// context.app.swap('');   // clears HTML content
-		// Redisplay admin home page - blank with buttons
-		context.app.swap('');
+	});
 
-	});   // end get
+	// Refresh all results if the Fetch button is pressed
+	$('#mysubmit').click( function (event) {
 
-	// Mens 1st team  -----------------------------
+		//  Prevent the default form submission
+		event.preventDefault();
+		if (debugthis) {
+			console.log('Before paramSetup ........................');
+			console.log('fixturesurl is '+fixturesurl);
+			console.log('teamurl is '+teamurl);
+			console.log('baseurl is '+baseurl);
+			console.log('curseason is '+curseason);
+		}
 
-	this.get('#/Mens/1/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(1,context.params['year']);
+		paramSetup();
 
+		if (debugthis) {
+			console.log('After paramSetup .........................');
+			console.log('fixturesurl is '+fixturesurl);
+			console.log('teamurl is '+teamurl);
+			console.log('baseurl is '+baseurl);
+			console.log('curseason is '+curseason);
+		}
 
-	});   // end get
+		displayTeamHeader(curteam);
+		displayTeamFixtures(curteam, curseason);
 
-	// Mens 2nd team  -----------------------------
+	});    // end of mysubmit.click
 
-	this.get('#/Mens/2/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(2,context.params['year']);
+})  // end of document.ready
 
-
-	});   // end get
-
-	// Mens 3rd team  -----------------------------
-
-	this.get('#/Mens/3/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(3,context.params['year']);
-
-
-	});   // end get
-
-	// Mens 4th team  -----------------------------
-
-	this.get('#/Mens/4/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(39,context.params['year']);
-
-
-	});   // end get
-
-	// Mens 5th team  -----------------------------
-
-	this.get('#/Mens/5/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(43,context.params['year']);
-
-
-	});   // end get
-
-	// -------------  End of Mens league teams  -------------------
-
-	// -------------  Ladies league teams       -------------------
-
-	// Ladies 1st team  -----------------------------
-
-	this.get('#/Ladies/1/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(4,context.params['year']);
-
-
-	});   // end get
-
-	// Ladies 2nd team  -----------------------------
-
-	this.get('#/Ladies/2/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(5,context.params['year']);
-
-
-	});   // end get
-
-	// Ladies 3rd team  -----------------------------
-
-	this.get('#/Ladies/3/:year', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Display mens 1st team fixtures
-		displayTeamFixtures(17,context.params['year']);
-
-
-	});   // end get
-
-
-
-});
-
-
-	// End of route definition
-
-$(function() { 
-
-	// Set signed-in status
-	// setSignedIn();
-	// already done in sessions.js
-
-	// Now run the main Sammy route
-	app.run('#/');
-}); 
-
-})(jQuery);
 
 
