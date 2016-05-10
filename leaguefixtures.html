@@ -50,6 +50,10 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <style type="text/css">
     <style type="text/css">
+      .ourteam {
+        color: #666;
+        font-weight: bold;
+      }
       .fullwidth {
         width: 90%;
         margin: 0 auto;
@@ -158,7 +162,7 @@
 <!--
          display the listed fixtures for the current sesson for this team
  -->
-    <div class="row" id="main"></div>
+    <div class="row row--padding-wide" id="main"></div>
 
 <!--
          display the summary table for the current sesson for this team
@@ -310,42 +314,56 @@
 
   <script id="fixturelist-template" type="x-handlebars-template">
 
-    <div class="row">
+      {{#if allFixtures }}
+    <div class="row hide-for-small">
       <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
 
-      {{#if allFixtures }}
-       <table width="100%" class="responsive">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Opponents<br /><small>Our team</small></th>
-            <th>Our<br />Score</th>
-            <th>Their<br />Score</th>
-          </tr>
-        </thead>
-        <tbody>
+        <div class="row">
+          <div class="large-2 medium-2 centeredcolumns">
+            Date 
+          </div>
+          <div class="large-6 medium-6 columns">
+            Opponents<br /><span class="ourteam">Our Team</span> 
+          </div>
+          <div class="large-2 medium-2 centered columns">
+            Our Score 
+          </div>
+          <div class="large-2 medium-2 columns">
+            Their Score 
+          </div>
+        </div>
           {{#each allFixtures}}
-          <tr>
-            <td>{{fixturedate}}</td>
-            <td>{{opponents}}
+        <div class="row">
+          <div class="large-2 medium-2 centered columns">
+            {{fixturedate}} 
+          </div>
+          <div class="large-6 medium-6 columns">
+            {{opponents}}
             {{#if pair1}}
-              <br /><small>{{pair1}}, {{pair2}}</small>
+              <br /><span class="ourteam">{{pair1}}, {{pair2}}</span>
             {{/if}}
-            </td>
-            <td>{{hamptonresult}}</td>
-            <td>{{opponentresult}}</td>
-          </tr>
+          </div>
+          <div class="large-2 medium-2 centered columns">
+            {{hamptonresult}}
+          </div>
+          <div class="large-2 medium-2 columns">
+            {{opponentresult}} 
+          </div>
+        </div>
           {{/each}}
-        </tbody>
-      </table>
+      </div>
+    </div>
       {{else}}
+    <div class="row hide-for-small">
+      <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
+
         <p>
           No league tennis fixtures found to list
         </p>
-      {{/if}}
 
       </div>
     </div>
+      {{/if}}
   </script>   
 
 
