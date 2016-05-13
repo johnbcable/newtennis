@@ -8,7 +8,6 @@
 //
 var jsonstring = new String("");
 var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp");
-
 var curseason = 2016;  	// get the current value from the year
 
 // Now create the required URLs for the team and its fixtures
@@ -106,6 +105,8 @@ function displayTeamFixtures(teamid, season) {
 	summarydata.drawn = 0;
 	summarydata.points = 0;
 	summarydata.notplayed = 0;
+	summarydata.totalmatches = 0;
+	summarydata.played = 0;
 
 	// var eventsfound = false;
 	$.getJSON(fixturesurl,function(data){
@@ -137,7 +138,72 @@ function displayTeamFixtures(teamid, season) {
 		$("#main").empty();   
 		$("#main").append (theTemplate(fixturedata)); 
 
-		// Now need to display the summary data
+		// Now need to accumulate summary data from fixturedata
+/*
+		var json = [ 
+ 		 { 'red': '#f00' },
+ 		 { 'green': '#0f0' },
+ 		 { 'blue': '#00f' }
+		 ];
+
+		$.each(json, function () {
+		   $.each(this, function (name, value) {
+		      console.log(name + '=' + value);
+		   });
+		});
+
+	summarydata.won = 0;
+	summarydata.lost = 0;
+	summarydata.drawn = 0;
+	summarydata.points = 0;
+	summarydata.notplayed = 0;
+	summarydata.totalmatches = 0;
+	summarydata.played = 0;
+
+*/
+		// Loop through fixturedata
+		$.each(fixturedata, function () {
+		   $.each(this, function () {
+		   		summarydata.totalmatches += 1;
+		   		if (this.hamptonresult == 0 && this.opponentresult == 0) {
+		   			summarydata.notplayed += 1;
+		   		}  
+		   		if (this.hamptonresult > 0 && this.opponentresult == this.hamptonresult) {
+		   			summarydata.drawn += 1;
+		   		}  
+		   		if (this.hamptonresult > this.opponentresult) {
+		   			summarydata.won += 1;
+		   		}  
+		   		if (this.hamptonresult < this.opponentresult) {
+		   			summarydata.lost += 1;
+		   		}  
+		   		if (this.hamptonresult > 0 || this.opponentresult > 0) {
+		   			summarydata.played += 1;
+		   		}  
+		   		summarydata.points += this.hamptonresult;
+
+		   });
+		});
+		summarydata.potentialpointstotal = (summarydata.notplayed * 4) + summarydata.points;
+
+   		if (debugthis) {
+			console.log('At end of loop for summary data ........................');
+			console.log('Total matches is '+summarydata.totalmatches);
+			console.log('Played so far is '+summarydata.played);
+			console.log('Matches won so far is '+summarydata.won);
+			console.log('Matches lost so far is '+summarydata.lost);
+			console.log('Matches drawn so far is '+summarydata.drawn);
+			console.log('Points so far is '+summarydata.points);
+			console.log('Potential maximum points achievable is '+summarydata.potentialpointstotal);
+   		}
+
+		jsonstring = JSON.stringify(summarydata);
+
+		jsonstring = new String("{fixtureSummary:"+jsonstring+"}");
+
+		// var eventdata = $.parseJSON(jsonstring);
+		summarydata = eval("(" + jsonstring + ")");
+
 		//Get the HTML from the template   in the script tag
 	    var summaryTemplateScript = $("#summary-template").html(); 
 
