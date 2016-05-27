@@ -78,6 +78,11 @@
     .centered {
     text-align: center;
     }
+    div.fixturelist {
+      padding-bottom: 20px;
+      border-bottom: 2px solid #c0c0c0;
+      margin-bottom: 20px;
+    }
     </style>
   </head>
   <body>
@@ -300,7 +305,7 @@
         <script id="fixturelist-template" type="x-handlebars-template">
         {{#if allFixtures }}
         <div class="row hide-for-small-only">
-          <div class="large-10 medium-10 large-offset-1 medium-offset-1 columns">
+          <div class="large-10 medium-10 large-offset-1 medium-offset-1 fixturelist columns">
             <div class="row">
               <div class="large-2 medium-2 centered columns">
                 Date
