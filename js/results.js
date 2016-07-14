@@ -88,6 +88,12 @@ $(document).ready(function() {
 	
 	displayWinners();  // Get winners on initial load
 
+	// Refresh all results if the year changes
+	$('#year').change( function(event) {
+		event.preventDefault();
+		displayWinners();
+	});
+
 	// Refresh all results if the Fetch button is pressed
 	$('#mysubmit').click( function (event) {
 

@@ -13,7 +13,7 @@ Dim rsDB		   'Holds the recordset for the records in the database
 Dim strSQL         'Holds the SQL query to query the database	
 Dim dataSource	   'Holds the name of the data source from the Application object
 Dim dataResults    'Holds results from the JSON query
-Dim querylist(40)  'Array of queries
+Dim querylist(60)  'Array of queries
 Dim queryref       'Reference to query in querylist (default to 1)
 Dim p1, p2, p3     'Parameters (text)
 Dim paramknt       'Count of the number of parameters
@@ -143,6 +143,8 @@ If queryref > -1 Then
 	querylist(34) = "SELECT [title], MIN(displayorder) as displayorder, COUNT(*) as kount FROM winners GROUP BY [title], [displayorder] ORDER BY [displayorder] ASC;"
 	querylist(35) = "SELECT m.forename1, m.surname, m.onlinebookingid FROM members m WHERE m.onlinebookingid IN ({{p1}});"
 	querylist(36) = "SELECT * FROM tennisteams WHERE teamcategory = 'ADULT' AND teamname ='{{p1}}';"
+	querylist(37) = "SELECT * FROM members WHERE webaccess = {{p1}};"
+	querylist(38) = "SELECT gender, membergrade, forename1, surname, detailscorrectdate FROM members WHERE detailscorrectdate IS NOT null AND detailscorrectdate > (Date()-{{p1}})"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
