@@ -111,6 +111,12 @@
 
           <h5>Which results do you want to see</h5>
 
+          <div class="large-4 medium-4 small-6 columns">
+            <p style="text-align: right; margin-right: 10px; vertical-align: middle;">
+              For which title:
+            </p>
+          </div>
+
           <div id="titleslist" class="large-4 medium-4 small-6 columns"></div>
 
           <div class="large-4 medium-4 small-12 columns">
@@ -118,8 +124,9 @@
             <p>
 <!-- 
               <button id="mysubmit" name="mysubmit" class="small button fetchresults">Fetch</button>
--->
+
               <input type="submit" class="medium submit-button fetchresults" id="mysubmit" name="mysubmit" value="Fetch Title Winners" />
+-->
             </p>
 
           </div>
@@ -269,8 +276,7 @@
           </script>
 
           <script id="titleslist-template" type="x-handlebars-template">
-              <label for="title">For title:&nbsp;</label>
-              <select id="title" name="title">
+              <select id="titlepicker" name="titlepicker">
                {{#each allTitles}}
                 <option value="{{title}}">{{title}}</option>
                 {{/each}}
