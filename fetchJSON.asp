@@ -145,6 +145,7 @@ If queryref > -1 Then
 	querylist(36) = "SELECT * FROM tennisteams WHERE teamcategory = 'ADULT' AND teamname ='{{p1}}';"
 	querylist(37) = "SELECT * FROM members WHERE webaccess = {{p1}};"
 	querylist(38) = "SELECT gender, membergrade, forename1, surname, detailscorrectdate FROM members WHERE detailscorrectdate IS NOT null AND detailscorrectdate > (Date()-{{p1}})"
+	querylist(39) = "SELECT * FROM members WHERE email LIKE '%{{p1}}%';"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
