@@ -21,6 +21,26 @@ var debugthis = true;    	// Set to false for normal production use
 //
 // Date functions
 //==================================================
+function currentYear()
+{
+	var today = new Date();
+	var s = new String("").toString();
+	s += today.getFullYear();
+	return(s);
+}
+//==================================================
+function currentMonth()
+{
+	var today = new Date();
+	var month;
+	var s = 0;
+	month = today.getMonth()+1;
+	if (month < 10)
+		s+= "0";
+	s += month;
+	return(s);
+}
+//==================================================
 function seasonAge(birthdate) {
    // birthDate must be a string in DD/MM/YYYY format
    var seasonStart;
@@ -57,7 +77,7 @@ function seasonGrade(age)
 	if (theage > 25 && theage < 65 )
 		thegrade = new String("Adult").toString();
 	if (theage > 64 )
-		thegrade = new String("18-25").toString();
+		thegrade = new String("65-and-Over").toString();
 	return (thegrade);
 
 }
@@ -80,6 +100,12 @@ function feeForGrade(grade)
 	}
 	if (a == "Adult") {
 		return 180;
+	}
+	if (a == "65-and-Over") {
+		return 74;
+	}
+	if (a == "Social") {
+		return 42;
 	}
 }
 
@@ -104,7 +130,7 @@ function feesDifference(gradeondb, calculatedgrade)
 function paramSetup() {
 
 	// Now create the URL's for the team and its fixtures
-	membersurl = new String(baseurl + "?id=13&p1=allmembers");
+	membersurl = new String(baseurl + "?id=41");
 }
 
 // Utility functions
@@ -156,6 +182,8 @@ function displayAgeGradeComparison() {
 		   $.each(this, function () {
 		   		seasongrade = new String("Unknown").toString();
 		   		feesmismatch = 0;
+		   		this.seasongrade = "UNKNOWN";
+		   		this.feesmismatch = 0;
 		   		// Calculate age at start of season for this person
 		   		seasonstartage = seasonAge(this.printabledob);
 		   		if (seasonstartage) {
@@ -164,10 +192,14 @@ function displayAgeGradeComparison() {
 		   			this.seasonage = -1;
 		   		}
 		   		// get correct grade for this season based on season age
-		   		if (!(seasonage == -1)) {
-		   			seasongrade = seasonGrade(this.seasonage);
-			   		// Now get financial difference between actual and calculated grades
-			   		feesmismatch = feesDifference(this.membergrade, seasongrade);
+		   		if (!(this.seasonage == -1)) {
+		   			if (! (this.membergrade == "Social")) {
+			   			seasongrade = seasonGrade(this.seasonage);
+				   		// Now get financial difference between actual and calculated grades
+				   		feesmismatch = feesDifference(this.membergrade, seasongrade);
+		   			} else {
+		   				seasongrade = new String("Social").toString();
+		   			}
 		   		}
 		   		this.seasongrade = seasongrade;
 		   		this.feesmismatch = feesmismatch;
@@ -186,7 +218,7 @@ function displayAgeGradeComparison() {
 	    // var memberTemplate = Handlebars.compile (memberTemplateScript); 
 		// Handlebars.registerPartial("description", $("#shoe-description").html()); 
 		$("#main").empty();   
-		$("#main").append (memberTemplate(memberdata)); 
+		$("#main").append (theTemplate(memberdata)); 
 
 
 	});  // end of function(data)

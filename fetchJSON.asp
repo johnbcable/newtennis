@@ -147,6 +147,7 @@ If queryref > -1 Then
 	querylist(38) = "SELECT gender, membergrade, forename1, surname, detailscorrectdate FROM members WHERE detailscorrectdate IS NOT null AND detailscorrectdate > (Date()-{{p1}})"
 	querylist(39) = "SELECT * FROM members WHERE email LIKE '%{{p1}}%';"
 	querylist(40) = "SELECT eventtype, MAX(eventdate) as latestdate, count(*) as kount FROM events GROUP BY eventtype ORDER BY eventtype"
+	querylist(41) = "SELECT * FROM allmembers WHERE [membergrade] in ('Adult','18-25s','Junior','Under 7','Social') ORDER BY surname, forename1 ASC"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
