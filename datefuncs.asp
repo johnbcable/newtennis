@@ -251,14 +251,19 @@ function seasonAge(birthdate) {
    // birthDate must be a string in DD/MM/YYYY format
    var seasonStart;
    var age = 0;
-   var dateArr = birthDate.split("/");
+   var dateArr = birthdate.split("/");
    var theyear = dateArr[2];
    var themonth = new Number(dateArr[1])-1;  // Month numbers start at zero in Javascript
    var theday = dateArr[0];
    var d = new Date(theyear,themonth,theday,0,0,0);
+   var curyear = currentYear();
+   var curmonth = currentMonth();
+   curmonth = new Number(curmonth);
 
    // Needs to reflect current season not constant 2014
-   seasonStart = new Date(2014, 3, 1, 0, 0, 0);  // So, April = 3 in JS
+   if (curmonth < 4)
+      curyear = curyear - 1;
+   seasonStart = new Date(curyear, 3, 1, 0, 0, 0);  // So, April = 3 in JS
    
    age = Math.floor ( (seasonStart - d) / 31556952000 );
    return ( age );

@@ -2,8 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Tournaments</title>
+    <title>Hampton-in-Arden Tennis Club - Grade - Age Comparisons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
@@ -48,16 +47,26 @@
     <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css" />
     <!-- <link rel="stylesheet" href="/css/base.css" />  -->
     <link rel="stylesheet" href="/css/main.css" />
-    <!-- Style sheets specific to this page -->
-    <link rel="stylesheet" href="/css/collapsible.css" />
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <style type="text/css">
+    <style type="text/css">
+      .fullwidth {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .whitepanel {
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #c0c0c0;
+        border-radius: 20px;
+      }
+      .btmnumber {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
   </head>
-  <style type="text/css">
-    .fullwidth {
-      width: 95%;
-      margin: 0 auto;
-    }
-  </style>
   <body>
 
 <nav class="top-bar" role="navigation" data-topbar>
@@ -76,8 +85,8 @@
       <ul class="right">
         <li><a href="/index.html">Home</a></li>
         <li><a href="javascript: routeMember()">Members</a></li>
-        <li class="active"><a href="ourclub.html">Our Club</a></li>
-        <li><a href="/playing.html">Playing</a>
+        <li><a href="/ourclub.html">Our Club</a></li>
+        <li class="active"><a href="/playing.html">Playing</a>
         <li><a href="/juniors/index.html">Juniors</a></li>
         <li><a href="/search.html">Search &raquo;</a></li>
       </ul>
@@ -90,118 +99,31 @@
 
   <!--     Main Content Area    -->
 
-  <!--     Today at the club     -->
+    <div class="row">
 
-  <div class="row">
+      <div class="large-10 medum-10 small-12 large-offset-1 medium-offset-1 columns">
 
-    <div class="large-12 medium-12 small-12 columns">
+        <h3>Member Age - Grade Comparison</h3>
 
-      <div class="row">
-        <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
-          <h2>Tournaments at Hampton</h2>
-        </div>
-      </div>
+        <div id="main"></div>
 
-      <div class="row">
-
-        <div class="large-8 medium-8 small-12 large-offset-1 medium-offset-1 columns">
-          <!--  Content about tournaments  -->
-
-          <h3>Annual Adult Tournament</h3>
-          <p>
-            Hampton runs one internal adult tournament each season, usually commencing in late April/early May. Existing members are invited to opt-in to whichever tournaments they wish to enter via the online membership renewals process; for new joiners, you are able to adjust your tournament choices online as well. Any member can participate. Several titles are contested namely:
-          </p>
-          <ul type="none">
-            <li><span style="font-weight:bold;">Mens</span>:      Singles, Doubles, Singles Plate, Veterans Doubles, Veterans Doubles (40+, 50+ and 60+)</li>
-            <li><span style="font-weight:bold;">Ladies</span>:    Singles, Doubles, Singles Plate, Veterans Doubles, Veterans Doubles (40+, 50+ and 60+)</li>
-            <li><span style="font-weight:bold;">Mixed</span>:     Doubles, Doubles Plate</li>
-          </ul>
-          <p>
-            There are two finals days for these tournaments - a summer finals day which is usually held in early July and an autumn finals day which is usually held in late September.
-          </p>
-
-        </div>    <!--    /large-8    -->
-
-        <!--    Sidebar area    -->
-
-        <div class="large-3 medium-3 small-12 columns">
-
-          <h3>Quick links</h3>
-          <ul type="none">
-            <li style="margin-bottom: 20px;">
-              <a href="/tournamentresults.html" class="medium fullwidth info button">Past winners</a>
-            </li>
-             <li>
-              <a href="/documents/ChallengerFinalsDayOrderOfPlay.pdf" class="medium fullwidth info button">Challenger Finals Day<br />Order of Play</a>
-            </li>
-           <hr />
-
+        <div class="panel">
+          <h5>Notes</h5>
+          <ul>
             <li>
-              <a href="/documents/tourdraw2016.pdf" class="medium fullwidth info button">Tournament Draw 2016 <br />(Final Version)</a>
-            </li>
-  
-          </ul>
-
-        </div>
-
-      </div>    <!--    outer row adults   -->
-
-      <div class="row">
-
-        <div class="large-8 medium-8 small-12 row--grey large-offset-1 medium-offset-1 columns">
-
-          <img src="/images/Juniorlogo.gif" width="163" height="54" alt="Junior Logo">
-
-          <!--  Content about tournaments  -->
-
-          <h3>Junior Tournaments</h3>
-          <p>
-            A variety of tournaments are run throughout the year for our junior members. They too have one major annual tournament usually run sometime during June with their finals day usually on the same day as the adult summer finals day.
-          </p>
-
-        </div>    <!--    /large-8    -->
-
-        <!--    Sidebar area    -->
-
-        <div class="large-3 medium-3 small-12 columns">
-
-          <h3>Quick links</h3>
-          <ul type="none">
-            <li>
-              <a href="/juniors/tournaments.html"  class="medium fullwidth info button">Past Winners</a>
+              <p>
+              &nbsp;
+              </p>
             </li>
           </ul>
-
         </div>
 
-      </div>    <!--    outer row juniors   -->
-
-      <div class="row">
-
-        <div class="large-12 medium-12 small-12 columns">
-
-          <div class="row">
-
-            <div class="large-8 medium-8 small-12 large-offset-2 medium-offset-2 columns">
-
-              <div id="futuretournaments"></div>   <!-- upcoming and running tournaments -->
-
-              <h3>Tournaments Run Recently</h3>
-          
-              <div id="pasttournaments"></div>     <!-- completed tournaments this year -->
-
-            </div>    <!--    /large-8    -->
-
-          </div>
-
-        </div>
-
-      </div>
+      </div>    <!--   /large-10    -->
 
     </div>
 
-  </div>
-
+  <!--     end of Main Content Area    -->
+ 
   <!--   Define the footer area  -->
   
   <footer class="footer" role="contentinfo">
@@ -212,7 +134,7 @@
       </div>
       <div class="large-9 medium-9 small-12 columns">
         <p>
-          You already know there are many benefits to becoming a member of Hampton-in-Arden Tennis Club, whether you are an adult or a child. Invite a friend or family member to join as well - download an application form for them today!
+          There are many benefits to becoming a member of Hampton-in-Arden Tennis Club, whether you are an adult or a child. These include preferential pricing on certain activities and web access to all club communications. See what we have to offer - click Join Us now!
         </p>
       </div>
     </div>
@@ -229,22 +151,22 @@
             <div class="large-3 medium-3 small-12 columns">
               <p class="footermenuhead">Our Club</p>
               <ul>
-                <li><a href="/juniors/contact.html" title="Contact the club">Contact Us</a></li>
-                <li><a href="/ourclub.html" title="Facilities at our club">Facilities</a></li>
-                <li><a href="/juniors/joinus.html" title="Join the club">Join Us</a></li>
-                <li><a href="/juniors/faqs.html" title="Frequently asked questions">FAQ&apos;s</a></li>
-                <li><a href="/juniors/clubmark.html" title="Policies and procedures for running the club">Policies &amp; Procedures</a></li>
+                <li><a href="juniors/contact.html" title="Contact the club">Contact Us</a></li>
+                <li><a href="ourclub.html" title="Facilities at our club">Facilities</a></li>
+                <li><a href="juniors/joinus.html" title="Join the club">Join Us</a></li>
+                <li><a href="juniors/faqs.html" title="Frequently asked questions">FAQ&apos;s</a></li>
+                <li><a href="juniors/clubmark.html" title="Policies and procedures for running the club">Policies &amp; Procedures</a></li>
               </ul>
             </div>
 
             <div class="large-3 medium-3 small-12 columns">
               <p class="footermenuhead">Playing</p>
               <ul>
-                <li><a href="/league.html" title="Playing for Hampton in the Coventry and Disytrict League">Coventry League</a></li>
-                <li><a href="/boxleagues.html" title="Internal box leagues">Box Leagues</a></li>
-                <li><a href="/tournaments.html" title="Tournaments">Tournaments</a></li>
-                <li><a href="/juniors/socialtennis.html" title="Provision for social tennis at our club">Social Tennis</a></li>
-                <li><a href="/juniors/coaching.html" title="Opportunities for coaching at our club whatever your age or ability">Coaching</a></li>
+                <li><a href="league.html" title="Playing for Hampton in the Coventry and Disytrict League">Coventry League</a></li>
+                <li><a href="boxleagues.html" title="Internal box leagues">Box Leagues</a></li>
+                <li><a href="tournaments.html" title="Tournaments">Tournaments</a></li>
+                <li><a href="juniors/socialtennis.html" title="Provision for social tennis at our club">Social Tennis</a></li>
+                <li><a href="juniors/coaching.html" title="Opportunities for coaching at our club whatever your age or ability">Coaching</a></li>
               </ul>
             </div>
             <div class="large-3 medium-3 small-12 columns">
@@ -297,82 +219,41 @@
 
   <!--  Handlebars templates      -->
 
-      <script id="futuretourlist-template" type="x-handlebars-template">
-      {{#each futureTournaments}}
-      <div class="row tournament panel">
+  <script id="memberlist-template" type="x-handlebars-template">
 
-        <div class="large-12 medium-12 small-12 columns">
-          <h6>{{tourtitle}}</h6>
-          <p class="tournamentwhen">{{startdate}} at {{sortablestarttime}}</p>
-          {{#if tourfinalsday}}
-          <p class="tourfinalsfday">
-            Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
-          </p>
-          {{/if}}
-          <p class="tournamentinclusion">
-            {{tourwho}}
-          </p>
-            {{#if tourblurb}}
-            <p class="tourblurb">
-              {{tourblurb}}
-            </p>
-            {{/if}}
-         <p class="tournamentfee">
-            {{tourcost}}
-          </p>
-          {{#if toururl}}
-          <p class="tournamentflyer">
-            <a href="../documents/{{toururl}}">More information &raquo;</a>
-          </p>
-          {{/if}}
-          <hr />
-          <p class="tournamentcontact">
-            {{tourcontact}}</a>
-          </p>
-        </div>
-
-      </div>
-      <hr />
-      {{/each}}
-      </script>
-
-
-      <script id="pasttourlist-template" type="x-handlebars-template">
-        {{#each pastTournaments}}
-        <div class="collapsible">{{tourtitle}}<span></span></div>
-          <div class="collapsible-container">
-            <p class="tournamentwhen">Start: {{startdate}} at {{sortablestarttime}}</p>
-            {{#if tourfinalsday}}
-            <p class="tourfinalsfday">
-              Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
-            </p>
-            {{/if}}
-            <p class="tournamentinclusion">
-              {{tourwho}}
-            </p>
-            {{#if tourblurb}}
-            <p class="tourblurb">
-              {{tourblurb}}
-            </p>
-            {{/if}}
-             <p class="tournamentfee">
-                {{tourcost}}
-              </p>
-              {{#if toururl}}
-              <p class="tournamentflyer">
-                <a href="../documents/{{toururl}}">More information &raquo;</a>
-              </p>
-              {{/if}}
-              <hr />
-              <p class="tournamentcontact">
-                {{tourcontact}}</a>
-              </p>
-          </div> <!--   end of class collapsible-container div     -->
-
+    {{#if allMembers }}
+     <table width="100%" class="responsive">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Grade (DB)</th>
+          <th>Age<br />Now</th>
+          <th>Season<br />Age</th>
+          <th>Season<br />Grade</th>
+          <th>&pound; Difference</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each allMembers}}
+        <tr>
+          <td>{{forename1}}&nbsp;{{surname}}</td>
+          <td>{{membergrade}}</td>
+          <td>{{currentage}}</td>
+          <td>{{seasonage}}</td>
+          <td>{{seasongrade}}</td>
+          <td>{{feesmismatch}}</td>
+        </tr>
         {{/each}}
-       </script>
+      </tbody>
+    </table>
+    {{else}}
+      <p>
+        No members found to list
+      </p>
+    {{/if}}
+  </script>   
 
-  <!--    end of Handlebars templates    -->
+
 
   <!--    Reveal Modals begin                         -->
 
@@ -380,13 +261,13 @@
 
     <h2>Sign-In</h2>
     <p>
-      Plesae sign-in below with your User ID and PIN (that you use for booking courts)
+      Please sign-in below with your User ID and PIN (that you use for booking courts)
     </p>
     <div id="signinpanel">
-      <form id="signin" name="signin" action="/signin.asp" method="POST" data-abide>
+      <form name="signin" action="#" method="POST" data-abide>
         <div class="userid-field">
           <label>User ID:
-            <input type="text" name="frmUserId" id="frmUserId" placeholder="Your User ID" required pattern="[0-9]+" autofocus />
+            <input type="text" name="frmUserId" id="frmUserId" placeholder="Your User ID" required pattern="[0-9]+" />
           </label>
           <small class="error">Your User ID must be a number</small>
         </div>
@@ -396,15 +277,14 @@
           </label>
           <small class="error">Your PIN number must be a 4-digit number</small>
         </div>
-        <input type="hidden" id="refurl" name="refurl" value="/members.html" />
-        <a href="javascript: logMeIn()" name="loginSubmit" id="loginSubmit" class="medium button">Sign-In</a>
+        <button name="loginSubmit" id="loginSubmit">Sign-In</button>
       </form>   
       <p>
         <a href="#" data-reveal-id="forgotPasswordModal" title="Forgotten User ID or password"> I have forgotten my User ID and/or password&raquo;</a>
       </p>
+      <a class="close-reveal-modal">&#215;</a>
     </div>    <!--    /signinpanel    -->
 
-      <a class="close-reveal-modal">&#215;</a>
   </div>   <!--    /loginModal    -->
 
   <!--   forgotPasswordModal    -->
@@ -416,7 +296,7 @@
       Complete and submit the form below and your User ID and PIN will be sent to your email address.
     </p>
     <div id="forgotpanel">
-      <form id="forgot" name="forgot" action="reminduser.asp" method="POST" data-abide>
+      <form name="forgot" action="reminduser.asp" method="POST" data-abide>
         <div class="forename-field">
           <label>First name:
             <input type="text" name="frmForename" id="frmForename" placeholder="Your first name" required />
@@ -436,8 +316,8 @@
           <small class="error">You must supply the email address you gave us when joining or renewing your membership at the club</small>
         </div>
         <button name="forgotSubmit" id="forgotSubmit">Remind Me</button>
+        <a class="close-reveal-modal">&#215;</a>
       </form>   
-      <a class="close-reveal-modal">&#215;</a>
     </div>    <!--    /forgotpanel    -->
 
   </div>   <!--    /forgotPasswordModal    -->
@@ -446,19 +326,12 @@
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
-    <script src="/js/jquery.collapsible.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/js/responsive-tables.js"></script>    
     <script src="/js/app.js"></script>
     <!-- <script src="http://l2.io/ip.js?var=myip"></script> -->
     <script src="/js/sessions.js"></script>
-    <script src="/bower_components/handlebars/handlebars.js"></script>
-   <script src="/js/tournaments.js"></script>
-<!--
-    <script src="/js/members.js"></script>
-    <script src="/js/maintwitterfeed.js"></script>
-    <script src="/js/wordpress.js"></script>
-    <script src="/js/eventlist.js"></script>
-    <script src="/js/today.js"></script>
--->
+    <script src="/js/rightgrade.js"></script>
 
       <!--    Google Analytics    -->
 
