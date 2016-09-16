@@ -93,11 +93,10 @@ if (debugging)
 
 		<div id="main2015orderofplay">
 			<p>
-				The scheduled order of play and the summary results for the autumn finals day is shown below. Names highlighted in green are the winners for that match.
+				The scheduled order of play and the summary results for the autumn finals day is shown below. Names will be highlighted in green to designate the winners for that match.
 			</p>
 
 			 <img alt="September Finals Day 2016 Order of Play" src="img/orderofplay2016.png" width="601" />
-
 <!--
  			 <p style="clear: both;">
 			 	Please note:
@@ -108,20 +107,19 @@ if (debugging)
 			 		<li>For the court-side scoreboards, first named player/pair above is the &quot;Home&quot; team.
 			 	</ol>
 			 </p>
--->
+-->			 
  		</div>
 
-
-
+<!--
 		<p class="matchreport" style="clear: both; padding-top: 10px; margin-top: 10px; border-top: 1px solid black;">
 			The weather for the main September finals day was fine following on from the patchy weather on Friday 16<sup>th</sup>. Once again, another great Finals Day with loads of specators and a great sporting and inclusive atmosphere everywhere while we were treated to some cliffhanger and exhibition tennis on show across all award areas. 
 		</p>
 
-<!--
+
 			<br /><br />
 			Finals Day was made all the sweeter for knowing that our Mens 1st Team had regained their Inter-District title (playing against the Birmingham league winners Streetly) on the previous night. Hampton have now won this title twice in the last 3 years - way to go!
 		</p>
--->
+
 		<p class="team">
 			<span>Veterans Mens Doubles</span>Paul Thomas and Ted Frith vs Savio Gaspar and Mark Walker
 		</p>
@@ -245,29 +243,25 @@ if (debugging)
 		</p>
 
 
-<!--
-
--->
-<!--
-
  		<p class="matchreport" style="padding-top: 10px; margin-top: 10px; border-top: 1px solid black;">
 			The weather for the September finals day was cool and overcast for much of the day, turning eventually to rain in the latter part of the afternoon, luckily after most of the matches had completed! Great atmosphere in the clubhouse and some good tennis on show across all award areas. 
 		</p>
  -->
- 		<p class="matchreport">
+ 		<p class="matchreport" style="clear:both;">
 			Many thanks to all the players, volunteers and spectators for turning out and supporting our tennis finals days this year. See you all next year!
 		</p>
 		<div class="seealso" style="clear: both; margin-top: 10px; border-top: 1px solid black;">
 			<h2>See Also:</h2>
 			<ul>
-				<li><a href="tours.asp?season=2016">2016 Summary results</a></li>
+
+<!--				<li><a href="tours.asp?season=2016">2016 Summary results</a></li>
 				
-<!--
+
 				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157659137091796">September Finals Day Photos</a></li>
--->
+
 
  				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157655547638422">Challenger Finals Day photos</a></li>
-
+-->
  				<li><a href="juniors/results.html?season=2016">Junior tournament results</a></li>
 			</ul>
 		</div>	
