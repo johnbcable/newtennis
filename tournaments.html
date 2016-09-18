@@ -303,11 +303,13 @@
 
         <div class="large-12 medium-12 small-12 columns">
           <h6>{{tourtitle}}</h6>
-          <p class="tournamentwhen">{{startdate}} at {{sortablestarttime}}</p>
           {{#if tourfinalsday}}
+          <p class="tournamentwhen">Tournament matches may be played from {{startdate}}</p>
           <p class="tourfinalsfday">
             Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
           </p>
+          {{else}}
+          <p class="tournamentwhen">Starts {{tourstart}} at {{tourstarttime}} and finishes at {{tourend}} at approximately {{tourendtime}}</p>
           {{/if}}
           <p class="tournamentinclusion">
             {{tourwho}}
