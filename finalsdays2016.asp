@@ -91,12 +91,12 @@ if (debugging)
 		</p>
 
 
-		<div id="main2015orderofplay">
+		<div id="main2016orderofplay">
 			<p>
-				The scheduled order of play and the summary results for the autumn finals day is shown below. Names will be highlighted in green to designate the winners for that match.
+				The scheduled order of play and the summary results for the autumn finals day is shown below. Names are highlighted in green to designate the winners for that match.
 			</p>
 
-			 <img alt="September Finals Day 2016 Order of Play" src="img/orderofplay2016.png" width="601" />
+			 <img alt="September Finals Day 2016 Reasults" src="img/finalsresults2016.png" width="601" />
 <!--
  			 <p style="clear: both;">
 			 	Please note:
@@ -248,18 +248,18 @@ if (debugging)
 		</p>
  -->
  		<p class="matchreport" style="clear:both;">
-			Many thanks to all the players, volunteers and spectators for turning out and supporting our tennis finals days this year. See you all next year!
+			Many thanks to Andy Frith for sterling work on the BBQ, the hard-pressed bar staff for coping with us all and many thanks to all the players, volunteers and spectators for turning out and supporting our tennis finals days this year. See you all next year!
 		</p>
 		<div class="seealso" style="clear: both; margin-top: 10px; border-top: 1px solid black;">
 			<h2>See Also:</h2>
 			<ul>
+<!--
+				<li><a href="tours.asp?season=2016">2016 Summary results</a></li>
+-->				
 
-<!--				<li><a href="tours.asp?season=2016">2016 Summary results</a></li>
-				
+				<li><a href="https://www.flickr.com/photos/103781054@N07/albums/72157672865713332">September Finals Day Photos</a></li>
 
-				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157659137091796">September Finals Day Photos</a></li>
-
-
+<!--
  				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157655547638422">Challenger Finals Day photos</a></li>
 -->
  				<li><a href="juniors/results.html?season=2016">Junior tournament results</a></li>
