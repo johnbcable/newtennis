@@ -30,6 +30,7 @@ var toexclude = new String(Request.QueryString("exclusions")).toString();
 var sSubject = new String(Request.QueryString("subject")).toString();
 var sFrom = new String("Hampton-In-Arden Tennis Club");
 var sOnBehalfOf = new String(Request.QueryString("onbehalfof")).toString();
+var replyTo = new String("").toString();
 var squery = new String(Request.QueryString("query")).toString(); 
 var sBodyTitle = new String(Request.QueryString("bodytitle")).toString();
 var sBodyText = new String(Request.QueryString("bodytext")).toString();
@@ -133,10 +134,17 @@ RS = connObj.Execute(SQL2);
 if (! RS.EOF)
 	recipient = Trim(new String(RS("email")).toString());
 // Update sender if onbehalfof is not the same
-sender = new String("support@hamptontennis.org.uk").toString();
+//
+// Changes 19 Sep 2016:  
+// always send from tennisclub@...
+// as this is a POP address and configure the ReplyTo 
+// parameter so that replies go there and not to tennisclub
+//
+sender = new String("tennisclub@hamptontennis.org.uk").toString();
+replyTo = new String("tennisclub@hamptontennis.org.uk").toString();
 if (! (sFrom == sOnBehalfOf))
 {
-	sender = new String(sOnBehalfOf+"@hamptontennis.org.uk").toString();
+	replyTo = new String(sOnBehalfOf+"@hamptontennis.org.uk").toString();
 }
 // 
 doctypeindex = sMessage.indexOf("<!DOCTYPE");
@@ -209,6 +217,7 @@ if (debugging)
 			<li>Circulation is:       <%= squery %></li>
 			<li>Coaches?:             <%= coachclause %></li>
 			<li>To be sent from:      <%= sender %></li>
+			<li>Replies go to:		  <%= replyTo %></li>
 			<li>Debugging status:     <%= debugging %></li>
 			<li>Age-range:            <%= agetext %> &ndash; <%= ageclause %></li>
 <%
@@ -287,6 +296,7 @@ if (debugging)
 	objCDOMail.Subject=new String(sSubject).toString();
 	objCDOMail.HTMLBody=new String(tMessage).toString();
 	objCDOMail.BodyPart.charset = "utf-8";
+	objCDOMail.ReplyTo=new String(replyTo).toString();
 	
 	// Next few lines deal with attachments
 	if (attachfile1 != "NONE")
