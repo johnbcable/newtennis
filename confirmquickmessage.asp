@@ -41,6 +41,7 @@ var sIncludeCoaches = new String(Request.Form("includecoaches")).toString();
 var startage = new String(Request.Form("youngest")).toString();
 var endage = new String(Request.Form("oldest")).toString();
 var sTitle = new String(sSubject).toString();
+var replyTo = new String(sFrom).toString();
 var sMessage, fullmessage, messagestart, htmlindex, sender, recipient;
 var coachclause = new String("").toString();
 var ageclause = new String("").toString();
@@ -162,7 +163,7 @@ sLeadParagraph = sLeadParagraph.replace(/[^\x00-\x7F]/g, "");
 
 //
 // set up sender
-sender = new String(sFrom+"@hamptontennis.org.uk").toString();
+sender = new String("communications@hamptontennis.org.uk").toString();
 //
 var displaydate = dateasstring(Date());
 var debugging=current_debug_status();
@@ -271,6 +272,7 @@ else
 	objCDOMail = newMailObject();   // in emailfuncs
 	
 	objCDOMail.From=new String(sender);
+	objCDOMail.ReplyTo=new String(replyTo+"@hamptontennis.org.uk")
 	objCDOMail.Subject=new String(sTitle).toString();
 	// objCDOMail.BodyFormat=0;
 	// objCDOMail.MailFormat=0;

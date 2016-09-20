@@ -17,20 +17,21 @@ var myfullname, myemail;
 var ConnObj, RS, SQL1;
 var themember = new Object();
 var debugging = current_debug_status();
-var senders = ["secretary","chairman","coaching","tournaments","americantournaments","juniors","social","mensleague","ladiesleague","league","arden9help","support"];
+var senders = ["secretary","chairman","coaching","tournaments","juniors","social", "league","social", "boxleagues", "arden9help","support", "committee", "wimbledontickets"];
 var sendernames = new Array();
 sendernames[0] = "Club Secretary";
 sendernames[1] = "Club Chairman";
 sendernames[2] = "Coaching Administration";
 sendernames[3] = "Tournament Organisers";
-sendernames[4] = "American Tournaments";
-sendernames[5] = "Juniors";
-sendernames[6] = "Social Event Organisers";
-sendernames[7] = "Mens League Administration";
-sendernames[8] = "Ladies League Administration";
-sendernames[9] = "General League Questions";
-sendernames[10] = "Arden 9 Helpers Admin";
-sendernames[11] = "Web Administrator";
+sendernames[4] = "Juniors";
+sendernames[5] = "Social Event Organisers";
+sendernames[6] = "League Tennis Administration";
+sendernames[7] = "Social Events";
+sendernames[8] = "Box Leagues Administration";
+sendernames[9] = "Arden 9 Helpers Admin";
+sendernames[10] = "Web Administrator";
+sendernames[11] = "Committee";
+sendernames[12] = "Wimbledon Tickets";
 
 // Now for any variables local to this page
 // Set up default greeting strings
@@ -171,7 +172,7 @@ if (x==null || x=="")
 //  Check that message is being sent out from a known source
 x=document.forms["quickmessageform"]["onbehalfof"].value;
 if (x==null || x=="")
-	errmess += ("You need to choose who the message is to go out from\n");
+	errmess += ("You need to choose where replies to this message should go\n");
 
 // Process error indications
 if( ! (errmess == "")) {
@@ -273,7 +274,7 @@ RS.Close();
 					</div>
 
 					<div>
-						<label for="onbehalfof">Send from:</label>
+						<label for="onbehalfof">Replies go to:</label>
 						<select name="onbehalfof" id="onbehalfof">
 <%
 for(var x=0; x < senders.length; x++)
