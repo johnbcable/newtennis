@@ -47,6 +47,7 @@ var toexclude = new String(Request.QueryString("exclusions")).toString();
 var sSubject = new String(Request.QueryString("subject")).toString();
 var sFrom = new String("Hampton-In-Arden Tennis Club");
 var sOnBehalfOf = new String(Request.QueryString("onbehalfof")).toString();
+var replyTo = new String("").toString();
 var thequery = new String(Request.QueryString("query")).toString();
 var sIncludeCoaches = new String(Request.QueryString("includecoaches")).toString();
 var startage = new String(Request.QueryString("youngest")).toString();
@@ -108,7 +109,14 @@ if (sSubject == "null" || sSubject == "undefined" || sSubject == "")
 if (thequery == "null" || thequery == "undefined" || thequery == "")
 	thequery = new String("members");
 if (sOnBehalfOf == "null" || sOnBehalfOf == "undefined" || sOnBehalfOf == "")
+{
 	sOnBehalfOf = new String("support@hamptontennis.org.uk");
+	replyTo = new String("support@hamptontennis.org.uk");	
+}
+else
+{
+	replyTo = new String(sOnBehalfOf+"@hamptontennis.org.uk");	
+}
 
 // Now remove any remaining non-ASCII characters from the Subject
 
@@ -240,6 +248,7 @@ if (debugging)
 			<li>Attachment 3 is:      <%= attachfile3 %></li>
 			<li>Circulation is        <%= thequery %></li>
 			<li>To be sent from:      <%= sender %></li>
+			<li>Replies to:           <%= replyTo %></li>
 			<li>Debugging status:     <%= debugging %></li>
 			<li>Age-range:            <%= ageclause %></li>
 <%
@@ -323,7 +332,8 @@ while (! RS.EOF)
 
 		objCDOMail = newMailObject();   // in emailfuncs
 	
-		objCDOMail.From=new String(sender);
+		objCDOMail.From=new String(sender).toString();
+		objCDOMail.ReplyTo=new String(replyTo).toString();
 		objCDOMail.Subject=new String(sSubject).toString();
 		objCDOMail.HTMLBody=new String(tMessage).toString();
 		objCDOMail.BodyPart.charset = "utf-8";
