@@ -136,12 +136,12 @@ if (! RS.EOF)
 // Update sender if onbehalfof is not the same
 //
 // Changes 19 Sep 2016:  
-// always send from tennisclub@...
+// always send from communications@...
 // as this is a POP address and configure the ReplyTo 
 // parameter so that replies go there and not to tennisclub
 //
-sender = new String("tennisclub@hamptontennis.org.uk").toString();
-replyTo = new String("tennisclub@hamptontennis.org.uk").toString();
+sender = new String("communications@hamptontennis.org.uk").toString();
+replyTo = new String("communications@hamptontennis.org.uk").toString();
 if (! (sFrom == sOnBehalfOf))
 {
 	replyTo = new String(sOnBehalfOf+"@hamptontennis.org.uk").toString();

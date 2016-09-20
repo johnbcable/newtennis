@@ -26,8 +26,23 @@ function newMailObject()
   var cdoFields = cdoConfig.Fields;
   cdoFields.Item(cdoSendUsingMethod) = cdoSendUsingPort;
   cdoFields.Item(cdoSMTPServerPort) = 25;
-  cdoFields.Item(cdoSMTPServer) = "SMTPMAIL";
+  cdoFields.Item(cdoSMTPServer) = "smtp.hamptontennis.org.uk";
   cdoFields.Item(cdoSMTPconnectiontimeout) = 30;
+
+  cdoFields.Item("http://schemas.microsoft.com/cdo/configuration/sendusing") = 2; 
+
+  //  Name or IP of Remote SMTP Server
+  cdoFields.Item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.hamptontennis.org.uk";
+  
+  // Type of authentication, NONE, Basic (Base64 encoded), NTLM
+  cdoFields.Item("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = cdoBasic;
+
+  // Your UserID on the SMTP server
+  cdoFields.Item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "communications@hamptontennis.org.uk";
+
+  // Your password on the SMTP server
+  cdoFields.Item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "Mandala1956";
+
   cdoFields.Update();
 
 /*	
