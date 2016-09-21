@@ -332,7 +332,7 @@ else
 }	
 %>	
 		<p>
-			The following message has been sent to <%= myemail %> for you to check over. Please check content, target audience and sender BEFORE pressing the Send Message button (below). Messages cannot be recalled once sent.<br />
+			The following message has been sent to <%= myemail %> for you to check over. Please check content, target audience and who replies will go to BEFORE pressing the Send Message button (below). Messages cannot be recalled once sent.<br />
 		</p>
 		<hr /><br />
 		<p>

@@ -135,20 +135,21 @@ RS.Close();
 						</div>
 
 						<div>
-							<label for="onbehalfof">Send as:</label>
+							<label for="onbehalfof">Replies go to:</label>
 							<select name="onbehalfof" id="onbehalfof">
 								<option selected value="support">From web administrator</option>
 								<option value="secretary">Club Secretary</option>
 								<option value="chairman">Club Chairman</option>
 								<option value="coaching">Coaching Administration</option>
 								<option value="tournaments">Tournament Organisers</option>
-								<option value="americantournaments">American Tournaments</option>
 								<option value="juniors">Juniors</option>
 								<option value="social">Social Event Organisers</option>
-								<option value="mensleague">Mens League Administration</option>
-								<option value="ladiesleague">Ladies League Administration</option>
-								<option value="league">General League Questions</option>
+								<option value="league">League Tennis Administration</option>
+								<option value="boxleagues"> Box Leagues Administration</option>
 								<option value="arden9">Arden 9 Organisers</option>
+								<option value="committee">Committee</option>
+								<option value="support">Web Site Administration</option>
+								<option value="wimbledontickets">Wimbledon Ticket Draw</option>
 							</select>
 						</div>
 
