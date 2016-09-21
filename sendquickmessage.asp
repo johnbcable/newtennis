@@ -42,6 +42,7 @@ var sIncludeCoaches = new String(Request.Form("includecoaches")).toString();
 var startage = new String(Request.Form("youngest")).toString();
 var endage = new String(Request.Form("oldest")).toString();
 var sTitle = new String(sSubject).toString();
+var replyTo = new String(sFrom+"@hamptontennis.org.uk").toString();
 var sMessage, fullmessage, messagestart, htmlindex, sender, recipient;
 var coachclause = new String("").toString();
 var agetext = new String("").toString();
@@ -186,7 +187,7 @@ else
 }	 
 //
 // set up sender
-sender = new String(sFrom+"@hamptontennis.org.uk").toString();
+sender = new String("communications@hamptontennis.org.uk").toString();
 // Now do merge field replacements on request template
 doctypeindex = sMessage.indexOf("<!DOCTYPE");
 htmlindex = sMessage.indexOf("<html");
@@ -315,7 +316,8 @@ while (! RS.EOF)
 	the_email = new String(RS("email")).toString();
 	objCDOMail = newMailObject();   // in emailfuncs
 	
-	objCDOMail.From=new String(sender);
+	objCDOMail.From=new String(sender).toString();
+	objCDOMail.ReplyTo=new String(replyTo).toString();
 	objCDOMail.Subject=new String(sTitle).toString();
 	// objCDOMail.BodyFormat=0;
 	// objCDOMail.MailFormat=0;
@@ -474,10 +476,6 @@ while (! RS.EOF)
 }
 RS.Close();
 
-
-
-
-
 Response.Write("<br>");
 Response.Write("==============================================================<br>");
 Response.Write("Quick message email sent out to the above<br /><br />");
@@ -507,7 +505,7 @@ else
 	 fullwhichfile = new String(emaildir+"/"+circulationtemplate).toString();
 }	 
 // set up sender
-sender = new String(sFrom+"@hamptontennis.org.uk").toString();
+sender = new String("communications@hamptontennis.org.uk").toString();
 // Now do merge field replacements on circulation template
 doctypeindex = sMessage.indexOf("<!DOCTYPE");
 htmlindex = sMessage.indexOf("<html");
@@ -532,8 +530,9 @@ objCDOMail.HTMLBody=new String(sMessage).toString();
 objCDOMail.BodyPart.charset = "utf-8";
 	
 objCDOMail.To=new String(myemail).toString();
+objCDOMail.ReplyTo=new String(replyTo).toString();
 objCDOMail.Cc=new String("support@hamptontennis.org.uk").toString();
-objCDOMail.Bcc=new String("cbarnes@lanner.co.uk").toString();
+// objCDOMail.Bcc=new String("cbarnes@lanner.co.uk").toString();
 
 try 
 {
