@@ -134,11 +134,11 @@ if (debugging)
 	<div id="content">
 		<h1>Welcome to <b>Hampton-in-Arden Tennis Club</b></h1>
 
+<!-- 
 		<div id="finalsday2012collage" class="collage">
 			 <img alt="Finals Day 2015" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 
-<!--     Finals Day
 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
@@ -171,26 +171,25 @@ if (debugging)
 
 		</div>
 
-
-
+-->
 		<div id="awards2014" class="collage">
-			 <img alt="Coventry League awards night" src="img/Awards2014.jpg" width="601">
-			 <h2>Coventry League - Awards Night</h2>
+			 <img alt="Coventry League awards night" src="images/InterDistrictAward2016.jpg" width="601">
+			 <h2 style="clear:both;">Inter&ndash;District League play&ndash;off winners 2016</h2>
 		</div>
 
  		<div class="promobox" style="clear: both; padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid black; ">
 			 <div class="promobutton">
-			 			<a href="coventryleagueawards.asp">More &raquo;</a>
+			 			<a href="/awards.html">More &raquo;</a>
 			 </div>
 			<div class="promotext">
 				<p>
-			 	Culmination of another fantastic league season for the Hampton teams in 2014.
+			 	Tony Eccleston receives the Inter District League play-off trophy from Sherrie Meaking, Chairman of Warwickshire LTA, along with fellow Hampton Mens 1st Team players Will Bramley, Josh-Crisp Jones and Richard Westman.
 			 	</p>
 			</div>
 
 		</div>
 
--->
+
 <!-- 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
