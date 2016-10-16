@@ -435,7 +435,7 @@ SQL2 = new String("").toString();   // Start with blank SQL
 // 5 == Chester
 courtesycopies = "SELECT DISTINCT(email) FROM members WHERE uniqueref IN (5) "
 // Coaches
-SQL2 += courtesycopies + coachclause;
+SQL2 += courtesycopies + coachclause + " " + excludeclause;
 RS = ConnObj.Execute(SQL2);
 the_email = new String("Not specified");
 //
