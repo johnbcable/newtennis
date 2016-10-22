@@ -3,13 +3,13 @@
 //					Incorporating autocomplete on members names ()
 //					Needs autocomplete.js loaded beforehand.
 //
-//  Variables
+//  Global Variables
 //
 var jsonstring = new String("");
 var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp?id=14");
 var memberspicklist = new Array();
-
-var cursearch;   	// get the current value from the search term
+var surnamelist = new Array();   // List of surnames for autocomplete to use
+var cursearch;  	// get the current value from the search term
 
 // Now create the required URL for the tournament results
 var searchurl;	// holds string for URL for tournament winners query
@@ -40,12 +40,14 @@ function getMembersList(all) {
 		memberlisturl = new String("http://hamptontennis.org.uk/fetchJSON.asp?id=42");
 	}
 
+	console.log("memberlisturl = "+memberlisturl);
+
 	var jsonstring = new String("");
 
 	// console.log("Inside displayDirectorySearchResults, url = ["+url+"]");
 
 	// var eventsfound = false;
-	$.getJSON(memberslisturl,function(data){
+	$.getJSON(memberlisturl,function(data){
 
 		var jsonstring = JSON.stringify(data);
 
@@ -54,26 +56,15 @@ function getMembersList(all) {
 		// var eventdata = $.parseJSON(jsonstring);
 		var searchdata = eval("(" + jsonstring + ")");
 
-		// Set the boolean if we have data
-		// if (eventdata.length > 1)
-		//	eventsfound = true;
+		$.each(searchdata, function () {
+		   $.each(this, function () {
 
-		//Get the HTML from the template   in the script tag
-	    var theTemplateScript = $("#directorysearch-template").html(); 
+		   	surnamelist.push(this.surname);
 
-	   //Compile the template
-	    var theTemplate = Handlebars.compile (theTemplateScript); 
-		// Handlebars.registerPartial("description", $("#shoe-description").html());    
+		   });
+		});
 
-		// clear out existing content
-		$('#directorysearchresults').html('');
-
-		$("#directorysearchresults").append (theTemplate(searchdata)); 
-
-		// Change results heading
-		$('.resultsheading').html('Results - <small>surnames beginning with &quot;'+cursearch+'&quot;</small>');
-
-
+	});
 }
 
 function displayDirectorySearchResults () {
@@ -120,7 +111,11 @@ $(document).ready(function() {
 
 	// Make sure and fill up memberspicklist before first search
 
-	getMembersList();   // Default to not including children
+	getMembersList();   // Fill surname list up
+
+	$( "#searchsurname").autocomplete({
+		source: surnamelist
+	});
 
 	// Register onclick handlers for the searchbutton
 
