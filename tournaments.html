@@ -186,8 +186,6 @@
 
               <div id="futuretournaments"></div>   <!-- upcoming and running tournaments -->
 
-              <h3>Tournaments Run Recently</h3>
-          
               <div id="pasttournaments"></div>     <!-- completed tournaments this year -->
 
             </div>    <!--    /large-8    -->
@@ -298,80 +296,89 @@
   <!--  Handlebars templates      -->
 
       <script id="futuretourlist-template" type="x-handlebars-template">
-      {{#each futureTournaments}}
-      <div class="row tournament panel">
+      {{#if futureTournaments}}
+        <h3>Tournaments Coming Up</h3>
+          
+        {{#each futureTournaments}}
+        <div class="row tournament panel">
 
-        <div class="large-12 medium-12 small-12 columns">
-          <h6>{{tourtitle}}</h6>
-          {{#if tourfinalsday}}
-          <p class="tournamentwhen">Tournament matches may be played from {{startdate}}</p>
-          <p class="tourfinalsfday">
-            Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
-          </p>
-          {{else}}
-          <p class="tournamentwhen">Starts {{tourstart}} at {{tourstarttime}} and finishes at {{tourend}} at approximately {{tourendtime}}</p>
-          {{/if}}
-          <p class="tournamentinclusion">
-            {{tourwho}}
-          </p>
-            {{#if tourblurb}}
-            <p class="tourblurb">
-              {{tourblurb}}
-            </p>
-            {{/if}}
-         <p class="tournamentfee">
-            {{tourcost}}
-          </p>
-          {{#if toururl}}
-          <p class="tournamentflyer">
-            <a href="../documents/{{toururl}}">More information &raquo;</a>
-          </p>
-          {{/if}}
-          <hr />
-          <p class="tournamentcontact">
-            {{tourcontact}}</a>
-          </p>
-        </div>
-
-      </div>
-      <hr />
-      {{/each}}
-      </script>
-
-
-      <script id="pasttourlist-template" type="x-handlebars-template">
-        {{#each pastTournaments}}
-        <div class="collapsible">{{tourtitle}}<span></span></div>
-          <div class="collapsible-container">
-            <p class="tournamentwhen">Start: {{startdate}}</p>
+          <div class="large-12 medium-12 small-12 columns">
+            <h6>{{tourtitle}}</h6>
             {{#if tourfinalsday}}
+            <p class="tournamentwhen">Tournament matches may be played from {{startdate}}</p>
             <p class="tourfinalsfday">
               Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
             </p>
+            {{else}}
+            <p class="tournamentwhen">Starts {{tourstart}} at {{tourstarttime}} and finishes at {{tourend}} at approximately {{tourendtime}}</p>
             {{/if}}
             <p class="tournamentinclusion">
               {{tourwho}}
             </p>
-            {{#if tourblurb}}
-            <p class="tourblurb">
-              {{tourblurb}}
-            </p>
-            {{/if}}
-             <p class="tournamentfee">
-                {{tourcost}}
-              </p>
-              {{#if toururl}}
-              <p class="tournamentflyer">
-                <a href="../documents/{{toururl}}">More information &raquo;</a>
+              {{#if tourblurb}}
+              <p class="tourblurb">
+                {{tourblurb}}
               </p>
               {{/if}}
-              <hr />
-              <p class="tournamentcontact">
-                {{tourcontact}}</a>
-              </p>
-          </div> <!--   end of class collapsible-container div     -->
+           <p class="tournamentfee">
+              {{tourcost}}
+            </p>
+            {{#if toururl}}
+            <p class="tournamentflyer">
+              <a href="{{toururl}}">More information &raquo;</a>
+            </p>
+            {{/if}}
+            <hr />
+            <p class="tournamentcontact">
+              {{tourcontact}}</a>
+            </p>
+          </div>
 
+        </div>
+        <hr />
         {{/each}}
+      {{/if}}
+
+      </script>
+
+
+      <script id="pasttourlist-template" type="x-handlebars-template">
+        {{#if pastTournaments}}
+          <h3>Tournaments Run Recently</h3>
+          
+          {{#each pastTournaments}}
+          <div class="collapsible">{{tourtitle}}<span></span></div>
+            <div class="collapsible-container">
+              <p class="tournamentwhen">Start: {{startdate}}</p>
+              {{#if tourfinalsday}}
+              <p class="tourfinalsfday">
+                Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
+              </p>
+              {{/if}}
+              <p class="tournamentinclusion">
+                {{tourwho}}
+              </p>
+              {{#if tourblurb}}
+              <p class="tourblurb">
+                {{tourblurb}}
+              </p>
+              {{/if}}
+               <p class="tournamentfee">
+                  {{tourcost}}
+                </p>
+                {{#if toururl}}
+                <p class="tournamentflyer">
+                  <a href="{{toururl}}">More information &raquo;</a>
+                </p>
+                {{/if}}
+                <hr />
+                <p class="tournamentcontact">
+                  {{tourcontact}}</a>
+                </p>
+            </div> <!--   end of class collapsible-container div     -->
+
+          {{/each}}
+        {{/if}}
        </script>
 
   <!--    end of Handlebars templates    -->
