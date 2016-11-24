@@ -149,6 +149,7 @@ If queryref > -1 Then
 	querylist(40) = "SELECT eventtype, MAX(eventdate) as latestdate, count(*) as kount FROM events GROUP BY eventtype ORDER BY eventtype"
 	querylist(41) = "SELECT DISTINCT([surname]) FROM allmembers WHERE [membergrade] in ('Adult','18-25s','Junior','Under 7','Social') ORDER BY surname ASC"
 	querylist(42) = "SELECT DISTINCT([surname]) FROM allmembers ORDER BY surname ASC"
+	querylist(43) = "SELECT * FROM members WHERE mobilephone LIKE '%{{p1}}%';"
 
 
 
