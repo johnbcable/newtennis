@@ -113,8 +113,8 @@ if (debugging)
 <%
 }
 %>
-	<script language="Javascript" src="datetimepicker.js"></script>
-	<script language="Javascript" src="TabInterface.js"></script>
+	<script language="Javascript" src="js/datetimepicker.js"></script>
+	<script language="Javascript" src="js/TabInterface.js"></script>
 <script type="text/javascript">
 function validateMember()
 {
