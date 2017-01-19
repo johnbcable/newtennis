@@ -136,7 +136,7 @@ if (thelayout=="D")
 // Set up SQL query	
 baseSQL = new String("SELECT * from "+thememberquery+" where surname like '" + themembername + "' order by " + thesorttext);
 
-// Change baseSQL if we are delaing with fees paid 
+// Change baseSQL if we are dealing with fees paid 
 if (thememberquery == "feespaid") {
 	baseSQL = new String("SELECT * FROM allmembers WHERE paid LIKE 'Y'  AND membergrade IN ('Adult','18-25s','Junior') ORDER BY " + thesorttext);
 	thetypetext = new String("Members who have paid their fees");
@@ -400,8 +400,6 @@ if (thelayout=="B")
 				</td>
 				<td>
 					Home Phone: <%= RS("homephone") %>
-					<br />
-					Work Phone: <%= RS("workphone") %>
 					<br />
 					Mobile Phone: <%= RS("mobilephone") %>
 					<br />
