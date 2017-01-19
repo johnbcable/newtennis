@@ -48,8 +48,8 @@ if (debugging)
 <%
 }
 %>
-	<script language="Javascript" src="datetimepicker.js"></script>
-	<script language="Javascript" src="minmax.js"></script>
+	<script language="Javascript" src="js/datetimepicker.js"></script>
+	<script language="Javascript" src="js/minmax.js"></script>
 </head>
 <body>
 <!--#include file="dateval.asp" -->
