@@ -128,7 +128,7 @@
       {{#if myPreferences}}
       {{#each myPreferences}}
       <form method="POST" action="/renewpreferences.asp">
-        <fieldset class="completed">
+        <fieldset>
           <legend>Your Tournament Entry Preferences</legend>
 
           <div class="row">
@@ -181,6 +181,18 @@
 
           <div class="row">
             <div class="large-6 medium-7 small-10 columns">
+              the Challenger Mixed Doubles Tournament
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="challengermixeddoubles" name="chaallengermixeddoubles" type="checkbox" {{#equalsTo challengermixeddoubles "Y"}}checked{{/equalsTo}}>
+            </div>
+            <div class="large-5 medium-4 small-12 columns">
+              <input type="text" name="challengermixedpartner" id="challengermixedpartner" value="{{challengermixedpartner}}" placeholder="Preferred challenger mixed doubles partner" title="The name of your preferred challenger mixed doubles partner" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-6 medium-7 small-10 columns">
               the Mixed Doubles Plate Tournament
             </div>
             <div class="large-1 medium-1 small-1 columns">
@@ -194,25 +206,13 @@
 
           <div class="row">
             <div class="large-6 medium-7 small-10 columns">
-              the Veterans Doubles (&gt;40) Tournament
+              the Veterans Doubles (&gt;45) Tournament
             </div>
             <div class="large-1 medium-1 small-1 columns">
-              <input id="vets40plus" name="vets40plus" type="checkbox" {{#equalsTo vets40plus "Y"}}checked{{/equalsTo}}>
+              <input id="vets45plus" name="vets45plus" type="checkbox" {{#equalsTo vets45plus "Y"}}checked{{/equalsTo}}>
             </div>
             <div class="large-5 medium-4 small-12 columns">
-              <input type="text" name="vets40pluspartner" id="vets40pluspartner" value="{{vets40pluspartner}}" placeholder="Preferred veterans &gt;40 partner" title="The name of your preferred veterans &gt;40 partner" />
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-6 medium-7 small-10 columns">
-              the Veterans Doubles (&gt;50) Tournament
-            </div>
-            <div class="large-1 medium-1 small-1 columns">
-              <input id="vets50plus" name="vets50plus" type="checkbox" {{#equalsTo vets50plus "Y"}}checked{{/equalsTo}}>
-            </div>
-            <div class="large-5 medium-4 small-12 columns">
-              <input type="text" name="vets50pluspartner" id="vets50pluspartner" value="{{vets50pluspartner}}" placeholder="Preferred veterans &gt;50 partner" title="The name of your preferred veterans &gt;50 partner" />
+              <input type="text" name="vets45pluspartner" id="vets45pluspartner" value="{{vets45pluspartner}}" placeholder="Preferred veterans &gt;45 partner" title="The name of your preferred veterans &gt;45 partner" />
             </div>
           </div>
 
@@ -242,7 +242,6 @@
               </p>
 
           </div>
-<!--
            <hr />
 
           <div class="large-12 medium-12 small-12 columns">
@@ -253,7 +252,7 @@
 
           <div class="row">
             <div class="large-6 medium-7 small-10 columns">
-              summer finals day (4<sup>th</sup> July, 2015)
+              summer finals day (1<sup>st</sup> July, 2017)
             </div>
             <div class="large-1 medium-1 small-1 columns">
               <input id="summerfinalsday" name="summerfinalsday" type="checkbox" {{#equalsTo summerfinalsday "Y"}}checked{{/equalsTo}}>
@@ -265,7 +264,7 @@
 
           <div class="row">
             <div class="large-6 medium-7 small-10 columns">
-              autumn finals day (27<sup>th</sup> September, 2015)
+              autumn finals day (30<sup>th</sup> September, 2017)
             </div>
             <div class="large-1 medium-1 small-1 columns">
               <input id="autumnfinalsday" name="autumnfinalsday" type="checkbox" {{#equalsTo autumnfinalsday "Y"}}checked{{/equalsTo}}>
@@ -274,7 +273,19 @@
               &nbsp;
             </div>
           </div>
--->
+
+          <div class="row">
+            <div class="large-6 medium-7 small-10 columns">
+              mini-tennis finals day (14<sup>th</sup> October, 2017)
+            </div>
+            <div class="large-1 medium-1 small-1 columns">
+              <input id="juniorfinalsday" name="juniorfinalsday" type="checkbox" {{#equalsTo juniorfinalsday "Y"}}checked{{/equalsTo}}>
+            </div>
+            <div class="large-5 medium-4 small-12 columns">
+              &nbsp;
+            </div>
+          </div>
+
         </fieldset>
 
         <!--   The box league preferences area -->
@@ -388,7 +399,7 @@
 
         <!--   The enter the club Wimbledon draw area -->
         
-        <fieldset class="completed">
+        <fieldset>
           <legend>The Draw for Wimbledon Tickets</legend>
 
           <div class="row">

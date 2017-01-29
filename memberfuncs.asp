@@ -57,20 +57,25 @@ function getMember(memberid)
 		themember.singles = Trim(new String(RS("singles")).toString());
 		themember.doubles = Trim(new String(RS("doubles")).toString());
 		themember.mixeddoubles = Trim(new String(RS("mixeddoubles")).toString());
+		themember.challengermixeddoubles = Trim(new String(RS("challengermixeddoubles")).toString());
 		themember.mixedplate = Trim(new String(RS("mixedplate")).toString());
 		themember.vets40plus = Trim(new String(RS("vets40plus")).toString());
+		themember.vets45plus = Trim(new String(RS("vets45plus")).toString());
 		themember.vets50plus = Trim(new String(RS("vets50plus")).toString());
 		themember.vets60plus = Trim(new String(RS("vets60plus")).toString());
 		themember.doublespartner = Trim(new String(RS("doublespartner")).toString());
 		themember.mixedpartner = Trim(new String(RS("mixedpartner")).toString());
+		themember.challengermixedpartner = Trim(new String(RS("challengermixedpartner")).toString());
 		themember.summerfinalsday = Trim(new String(RS("summerfinalsday")).toString());
 		themember.autumnfinalsday = Trim(new String(RS("autumnfinalsday")).toString());
+		themember.juniorfinalsday = Trim(new String(RS("juniorfinalsday")).toString());
 		themember.teamhelp = Trim(new String(RS("teamhelp")).toString());
 		themember.socialhelp = Trim(new String(RS("socialhelp")).toString());
 		themember.adminhelp = Trim(new String(RS("adminhelp")).toString());
 		themember.arden9help = Trim(new String(RS("arden9help")).toString());
 		themember.detailscorrect = Trim(new String(RS("detailscorrect")).toString());
 		themember.vets40pluspartner = Trim(new String(RS("vets40pluspartner")).toString());
+		themember.vets45pluspartner = Trim(new String(RS("vets45pluspartner")).toString());
 		themember.vets50pluspartner = Trim(new String(RS("vets50pluspartner")).toString());
 		themember.vets60pluspartner = Trim(new String(RS("vets60pluspartner")).toString());
 		themember.teamhelptext = Trim(new String(RS("teamhelptext")).toString());
@@ -180,10 +185,14 @@ function getMember(memberid)
 		themember.doubles="N";
 	if (themember.mixeddoubles=="null" || themember.mixeddoubles=="undefined")
 		themember.mixeddoubles="N";
+	if (themember.challengermixeddoubles=="null" || themember.challengermixeddoubles=="undefined")
+		themember.challengermixeddoubles="N";
 	if (themember.mixedplate=="null" || themember.mixedplate=="undefined")
 		themember.mixedplate="N";
 	if (themember.vets40plus=="null" || themember.vets40plus=="undefined")
 		themember.vets40plus="N";
+	if (themember.vets45plus=="null" || themember.vets45plus=="undefined")
+		themember.vets45plus="N";
 	if (themember.vets50plus=="null" || themember.vets50plus=="undefined")
 		themember.vets50plus="N";
 	if (themember.vets60plus=="null" || themember.vets60plus=="undefined")
@@ -192,12 +201,18 @@ function getMember(memberid)
 		themember.summerfinalsday="N";
 	if (themember.autumnfinalsday=="null" || themember.autumnfinalsday=="undefined")
 		themember.autumnfinalsday="N";
+	if (themember.juniorfinalsday=="null" || themember.juniorfinalsday=="undefined")
+		themember.juniorfinalsday="N";
 	if (themember.doublespartner=="null" || themember.doublespartner=="undefined")
 		themember.doublespartner="Not specified";
 	if (themember.mixedpartner=="null" || themember.mixedpartner=="undefined")
 		themember.mixedpartner="Not specified";
+	if (themember.challengermixedpartner=="null" || themember.challengermixedpartner=="undefined")
+		themember.challengermixedpartner="Not specified";
 	if (themember.vets40pluspartner=="null" || themember.vets40pluspartner=="undefined")
 		themember.vets40pluspartner="Not specified";
+	if (themember.vets45pluspartner=="null" || themember.vets45pluspartner=="undefined")
+		themember.vets45pluspartner="Not specified";
 	if (themember.vets50pluspartner=="null" || themember.vets50pluspartner=="undefined")
 		themember.vets50pluspartner="Not specified";
 	if (themember.vets60pluspartner=="null" || themember.vets60pluspartner=="undefined")
@@ -313,10 +328,14 @@ function setMember(memberobj)
 		memberobj.doubles="N";
 	if (memberobj.mixeddoubles=="null" || memberobj.mixeddoubles=="undefined")
 		memberobj.mixeddoubles="N";
+	if (memberobj.challengermixeddoubles=="null" || memberobj.challengermixeddoubles=="undefined")
+		memberobj.challengermixeddoubles="N";
 	if (memberobj.mixedplate=="null" || memberobj.mixedplate=="undefined")
 		memberobj.mixedplate="N";
 	if (memberobj.vets40plus=="null" || memberobj.vets40plus=="undefined")
 		memberobj.vets40plus="N";
+	if (memberobj.vets45plus=="null" || memberobj.vets45plus=="undefined")
+		memberobj.vets45plus="N";
 	if (memberobj.vets50plus=="null" || memberobj.vets50plus=="undefined")
 		memberobj.vets50plus="N";
 	if (memberobj.vets60plus=="null" || memberobj.vets60plus=="undefined")
@@ -329,8 +348,12 @@ function setMember(memberobj)
 		memberobj.doublespartner="Not specified";
 	if (memberobj.mixedpartner=="null" || memberobj.mixedpartner=="undefined")
 		memberobj.mixedpartner="Not specified";
+	if (memberobj.challengermixedpartner=="null" || memberobj.challengermixedpartner=="undefined")
+		memberobj.challengermixedpartner="Not specified";
 	if (memberobj.vets40pluspartner=="null" || memberobj.vets40pluspartner=="undefined")
 		memberobj.vets40pluspartner="Not specified";
+	if (memberobj.vets45pluspartner=="null" || memberobj.vets45pluspartner=="undefined")
+		memberobj.vets45pluspartner="Not specified";
 	if (memberobj.vets50pluspartner=="null" || memberobj.vets50pluspartner=="undefined")
 		memberobj.vets50pluspartner="Not specified";
 	if (memberobj.vets60pluspartner=="null" || memberobj.vets60pluspartner=="undefined")
@@ -398,14 +421,19 @@ function setMember(memberobj)
 	SQLmiddle +=" doubles='"+memberobj.doubles+"',"
 	SQLmiddle +=" mixedplate='"+memberobj.mixedplate+"',"
 	SQLmiddle +=" mixeddoubles='"+memberobj.mixeddoubles+"',"
+	SQLmiddle +=" challengermixeddoubles='"+memberobj.challengermixeddoubles+"',"
 	SQLmiddle +=" vets40plus='"+memberobj.vets40plus+"',"
+	SQLmiddle +=" vets45plus='"+memberobj.vets45plus+"',"
 	SQLmiddle +=" vets50plus='"+memberobj.vets50plus+"',"
 	SQLmiddle +=" vets60plus='"+memberobj.vets60plus+"',"
 	SQLmiddle +=" summerfinalsday='"+memberobj.summerfinalsday+"',"
 	SQLmiddle +=" autumnfinalsday='"+memberobj.autumnfinalsday+"',"
+	SQLmiddle +=" juniorfinalsday='"+memberobj.juniorfinalsday+"',"
 	SQLmiddle +=" doublespartner='"+memberobj.doublespartner+"',"
 	SQLmiddle +=" mixedpartner='"+memberobj.mixedpartner+"',"
+	SQLmiddle +=" challengermixedpartner='"+memberobj.challengermixedpartner+"',"
 	SQLmiddle +=" vets40pluspartner='"+memberobj.vets40pluspartner+"',"
+	SQLmiddle +=" vets45pluspartner='"+memberobj.vets45pluspartner+"',"
 	SQLmiddle +=" vets50pluspartner='"+memberobj.vets50pluspartner+"',"
 	SQLmiddle +=" vets60pluspartner='"+memberobj.vets60pluspartner+"',"
 	SQLmiddle +=" teamhelp='"+memberobj.teamhelp+"',"
@@ -486,12 +514,16 @@ function printMember(memberobj)
 		sReport += memberobj.singles +"<br />";
 		sReport += memberobj.doubles +"<br />";
 		sReport += memberobj.mixeddoubles +"<br />";
+		sReport += memberobj.challengermixeddoubles +"<br />";
 		sReport += memberobj.mixedplate +"<br />";
 		sReport += memberobj.doublespartner +"<br />";
 		sReport += memberobj.mixedpartner +"<br />";
+		sReport += memberobj.challengermixedpartner +"<br />";
 		sReport += memberobj.wimbledonweekday +"<br />";
 		sReport += memberobj.vets40plus +"<br />";
 		sReport += memberobj.vets40pluspartner +"<br />";
+		sReport += memberobj.vets45plus +"<br />";
+		sReport += memberobj.vets45pluspartner +"<br />";
 		sReport += memberobj.vets50plus +"<br />";
 		sReport += memberobj.vets50pluspartner +"<br />";
 		sReport += memberobj.vets60plus +"<br />";
@@ -500,6 +532,7 @@ function printMember(memberobj)
 		sReport += memberobj.wimbledonweekday +"<br />";
 		sReport += memberobj.summerfinalsday +"<br />";
 		sReport += memberobj.autumnfinalsday +"<br />";
+		sReport += memberobj.juniorfinalsday +"<br />";
 		sReport += memberobj.teamhelp +"<br />";
 		sReport += memberobj.teamhelptext +"<br />";
 		sReport += memberobj.socialhelp +"<br />";
