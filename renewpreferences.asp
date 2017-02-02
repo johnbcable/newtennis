@@ -26,17 +26,17 @@ var memberObj = new Object();
 var resultObj = new Object();
 
 var uniqueref;
-var mSingles, mDoubles, mMixed, mMixedPlate;
-var mDoublesPartner, mMixedPartner;
-var mVets40PlusPartner, mVets50PlusPartner, mVets60PlusPartner;
-var mVets40, mVets50, mVets60;
+var mSingles, mDoubles, mMixed, mMixedPlate, mChallengerMixed;
+var mDoublesPartner, mMixedPartner, mChallengerMixedPartner;
+var mVets45plusPartner, mVets50PlusPartner, mVets60PlusPartner;
+var mVets45, mVets50, mVets60;
 var teamhelp, socialhelp, adminhelp, arden9help;
 var teamHelpText, socialHelpText, adminHelpText;
 var mWeekday, mWeekend, mPhotoConsent;
-var mSummerFinalsDay, mAutumnFinalsDay;
+var mSummerFinalsDay, mAutumnFinalsDay, mJuniorFinalsDay;
 var singlesBoxLeague, doublesBoxLeague;
-var vets40Plus, vets50Plus, vets60Plus;
-var vets40PlusPartner, vets50PlusPartner, vets60PlusPartner;
+var vets45plus, vets50Plus, vets60Plus;
+var vets45plusPartner, vets50PlusPartner, vets60PlusPartner;
 var detailscorrect = new String("Y").toString();
 var mydebug = false;  // Default for production use.
 var sendboxleagueemail = false;
@@ -53,13 +53,15 @@ debugging = false;    // Production = false
 mSingles = new String("N").toString();
 mDoubles = new String("N").toString();
 mMixed = new String("N").toString();
+mChallengerMixed = new String("N").toString();
 mMixedPlate = new String("N").toString();
 mDoublesPartner = new String("Not specified").toString();
 mMixedPartner = new String("Not specified").toString();
-mVets40 = new String("N").toString();
+mChallengerMixedPartner = new String("Not specified").toString();
+mVets45 = new String("N").toString();
 mVets50 = new String("N").toString();
 mVets60 = new String("N").toString();
-mVets40PlusPartner = new String("Not specified").toString();
+mVets45plusPartner = new String("Not specified").toString();
 mVets50PlusPartner = new String("Not specified").toString();
 mVets60PlusPartner = new String("Not specified").toString();
 teamhelp = new String("N").toString();
@@ -71,6 +73,7 @@ mWeekend = new String("N").toString();
 mPhotoConsent = new String("Y").toString();
 mSummerFinalsDay = new String("Y").toString();
 mAutumnFinalsDay = new String("Y").toString();
+mJuniorFinalsDay = new String("Y").toString();
 singlesBoxLeague = new String("N").toString();
 doublesBoxLeague = new String("N").toString();
 teamHelpText = new String("").toString();
@@ -136,6 +139,20 @@ if (mMixedPartner == "" || mMixedPartner =="null" || mMixedPartner == "undefined
 	mMixedPartner = new String("Not specified").toString();
 } 
 
+mChallengerMixed = Trim(new String(Request.Form("challengermixeddoubles")));
+if (mChallengerMixed == "" || mChallengerMixed =="null" || mChallengerMixed == "undefined")
+{
+	mChallengerMixed = new String("N").toString();
+} else {
+	mChallengerMixed = new String("Y").toString();
+}
+
+mChallengerMixedPartner = Trim(new String(Request.Form("challengermixedpartner")));
+if (mChallengerMixedPartner == "" || mChallengerMixedPartner =="null" || mChallengerMixedPartner == "undefined")
+{
+	mChallengerMixedPartner = new String("Not specified").toString();
+} 
+
 mMixedPlate = Trim(new String(Request.Form("mixedplate")));
 if (mMixedPlate == "" || mMixedPlate =="null" || mMixedPlate == "undefined")
 {
@@ -144,18 +161,18 @@ if (mMixedPlate == "" || mMixedPlate =="null" || mMixedPlate == "undefined")
 	mMixedPlate = new String("Y").toString();
 }
 
-mVets40 = Trim(new String(Request.Form("vets40plus")));
-if (mVets40 == "" || mVets40 =="null" || mVets40 == "undefined")
+mVets45 = Trim(new String(Request.Form("vets45plus")));
+if (mVets45 == "" || mVets45 =="null" || mVets45 == "undefined")
 {
-	mVets40 = new String("N").toString();
+	mVets45 = new String("N").toString();
 } else {
-	mVets40 = new String("Y").toString();
+	mVets45 = new String("Y").toString();
 }
 
-mVets40PlusPartner = Trim(new String(Request.Form("vets40pluspartner")));
-if (mVets40PlusPartner == "" || mVets40PlusPartner =="null" || mVets40PlusPartner == "undefined")
+mVets45plusPartner = Trim(new String(Request.Form("vets45pluspartner")));
+if (mVets45plusPartner == "" || mVets45plusPartner =="null" || mVets45plusPartner == "undefined")
 {
-	mVets40PlusPartner = new String("Not specified").toString();
+	mVets45plusPartner = new String("Not specified").toString();
 } 
 
 mVets50 = Trim(new String(Request.Form("vets50plus")));
@@ -260,7 +277,7 @@ if (mPhotoConsent == "" || mPhotoConsent =="null" || mPhotoConsent == "undefined
 	mPhotoConsent = new String("Y").toString();
 }
 
-mSummerFinalsDay = Trim(new String(Request.Form("photoconsent")));
+mSummerFinalsDay = Trim(new String(Request.Form("summerfinalsday")));
 if (mSummerFinalsDay == "" || mSummerFinalsDay =="null" || mSummerFinalsDay == "undefined")
 {
 	mSummerFinalsDay = new String("N").toString();
@@ -268,12 +285,20 @@ if (mSummerFinalsDay == "" || mSummerFinalsDay =="null" || mSummerFinalsDay == "
 	mSummerFinalsDay = new String("Y").toString();
 }
 
-mAutumnFinalsDay = Trim(new String(Request.Form("photoconsent")));
+mAutumnFinalsDay = Trim(new String(Request.Form("autumnfinalsday")));
 if (mAutumnFinalsDay == "" || mAutumnFinalsDay =="null" || mAutumnFinalsDay == "undefined")
 {
 	mAutumnFinalsDay = new String("N").toString();
 } else {
 	mAutumnFinalsDay = new String("Y").toString();
+}
+
+mJuniorFinalsDay = Trim(new String(Request.Form("juniorfinalsday")));
+if (mJuniorFinalsDay == "" || mJuniorFinalsDay =="null" || mJuniorFinalsDay == "undefined")
+{
+	mJuniorFinalsDay = new String("N").toString();
+} else {
+	mJuniorFinalsDay = new String("Y").toString();
 }
 
 singlesBoxLeague = Trim(new String(Request.Form("singlesBoxLeague")));
@@ -304,21 +329,24 @@ SQLmiddle = new String("SET ").toString();
 SQLmiddle += " singles='"+mSingles+"',";
 SQLmiddle += " doubles='"+mDoubles+"',";
 SQLmiddle += " mixeddoubles='"+mMixed+"',";
+SQLmiddle += " challengermixeddoubles='"+mChallengerMixed+"',";
 SQLmiddle += " mixedplate='"+mMixedPlate+"',";
-SQLmiddle += " vets40plus='"+mVets40+"',"
+SQLmiddle += " vets45plus='"+mVets45+"',"
 SQLmiddle += " vets50plus='"+mVets50+"',"
 SQLmiddle += " vets60plus='"+mVets60+"',"
 SQLmiddle += " doublespartner='"+mDoublesPartner+"',";
 SQLmiddle += " mixedpartner='"+mMixedPartner+"',";
+SQLmiddle += " challengermixedpartner='"+mChallengerMixedPartner+"',";
 SQLmiddle += " summerfinalsday='"+mSummerFinalsDay+"',";
 SQLmiddle += " autumnfinalsday='"+mAutumnFinalsDay+"',";
+SQLmiddle += " juniorfinalsday='"+mJuniorFinalsDay+"',";
 SQLmiddle += " teamhelp='"+teamhelp+"',";
 SQLmiddle += " socialhelp='"+socialhelp+"',";
 SQLmiddle += " adminhelp='"+adminhelp+"',";
 SQLmiddle += " arden9help='"+arden9help+"',";
 SQLmiddle += " detailscorrect='"+detailscorrect+"',";
 SQLmiddle += " detailscorrectdate='"+today()+"',";
-SQLmiddle += " vets40pluspartner='"+mVets40PlusPartner+"',"
+SQLmiddle += " vets45pluspartner='"+mVets45plusPartner+"',"
 SQLmiddle += " vets50pluspartner='"+mVets50PlusPartner+"',"
 SQLmiddle += " vets60pluspartner='"+mVets60PlusPartner+"',"
 SQLmiddle += " wimbledonweekday='"+mWeekday+"', ";
@@ -394,9 +422,11 @@ if (debugging) {
 	Response.Write("<tr><td>Doubles partner</td><td>"+mDoublesPartner+"</td></tr>");
 	Response.Write("<tr><td>Mixed Doubles decoded</td><td>"+mMixed+"</td></tr>");
 	Response.Write("<tr><td>Mixed Doubles partner</td><td>"+mMixedPartner+"</td></tr>");
+	Response.Write("<tr><td>Challenger Mixed Doubles decoded</td><td>"+mChallengerMixed+"</td></tr>");
+	Response.Write("<tr><td>Challenger Mixed Doubles partner</td><td>"+mChallengerMixedPartner+"</td></tr>");
 	Response.Write("<tr><td>Mixed Doubles Plate decoded</td><td>"+mMixedPlate+"</td></tr>");
-	Response.Write("<tr><td>Vets &gt; 40</td><td>"+mVets40+"</td></tr>");
-	Response.Write("<tr><td>Vets &gt; 40 partner</td><td>"+mVets40PlusPartner+"</td></tr>");
+	Response.Write("<tr><td>Vets &gt; 45</td><td>"+mVets45+"</td></tr>");
+	Response.Write("<tr><td>Vets &gt; 45 partner</td><td>"+mVets45plusPartner+"</td></tr>");
 	Response.Write("<tr><td>Vets &gt; 50</td><td>"+mVets50+"</td></tr>");
 	Response.Write("<tr><td>Vets &gt; 50 partner</td><td>"+mVets50PlusPartner+"</td></tr>");
 	Response.Write("<tr><td>Vets &gt; 60</td><td>"+mVets60+"</td></tr>");
