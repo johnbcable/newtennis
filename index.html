@@ -518,13 +518,13 @@
       <form id="signin" name="signin" action="/signin.asp" method="POST" data-abide>
         <div class="userid-field">
           <label>User ID:
-            <input type="text" name="frmUserId" id="frmUserId" placeholder="Your User ID" required pattern="[0-9]+" autofocus />
+            <input type="number" name="frmUserId" id="frmUserId" placeholder="Your User ID" min="1" max="9999" maxlength="4" size="5" required pattern="[0-9]+" autofocus />
           </label>
           <small class="error">Your User ID must be a number</small>
         </div>
         <div class="pin-field">
           <label>PIN:
-            <input type="password" name="frmPassword" id="frmPassword" placeholder="Your PIN number" required pattern="[0-9]+" />
+            <input type="password" name="frmPassword" id="frmPassword" placeholder="Your PIN number" required pattern="[0-9]+" maxlength="4" size="5" />
           </label>
           <small class="error">Your PIN number must be a 4-digit number</small>
         </div>
