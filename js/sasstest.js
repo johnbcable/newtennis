@@ -15,7 +15,7 @@ Handlebars.registerHelper('equalsTo', function(v1, v2, options) {
 function displayTodaysEvents() {
 	
 	var jsonstring = new String("");
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=1";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 

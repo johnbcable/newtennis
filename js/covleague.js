@@ -23,7 +23,7 @@ function debugWrite(message) {
 // Display league team list
 function displayLeagueTeamList() {
 
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=17";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=17";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -55,7 +55,7 @@ function displayLeagueTeamList() {
 // Display this seasons fixtures
 function displayFixtures(gender,team) {
 
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=20";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=20";
 	var offset = (gender == "Ladies" ? 0 : 3);
 	var myindex = team + offset;
 	var teamnames = ["",

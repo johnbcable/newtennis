@@ -91,7 +91,7 @@ function logMeIn() {
     var signinData = new Object();
     var signinurl = new String("").toString();
 
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=11&p1="+userid+"&p2="+pin;
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=11&p1="+userid+"&p2="+pin;
 	var goodlogin = "N";
 
 	// Re-initialise global variables on new login

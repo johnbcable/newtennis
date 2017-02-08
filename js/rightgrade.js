@@ -7,7 +7,7 @@
 //  Variables
 //
 var jsonstring = new String("");
-var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp");
+var baseurl = new String("https://hamptontennis.org.uk/fetchJSON.asp");
 var curseason = 2016;  	// get the current value from the year
 
 // Now create the required URLs for the team and its fixtures

@@ -6,7 +6,7 @@
 //  Global Variables
 //
 var jsonstring = new String("");
-var baseurl = new String("http://hamptontennis.org.uk/fetchJSON.asp?id=14");
+var baseurl = new String("https://hamptontennis.org.uk/fetchJSON.asp?id=14");
 var memberspicklist = new Array();
 var surnamelist = new Array();   // List of surnames for autocomplete to use
 var cursearch;  	// get the current value from the search term
@@ -33,11 +33,11 @@ function getMembersList(all) {
 	// Get full searchable members list
 	all = all || false;		// Default to not including children
 
-	var memberlisturl = new String("http://hamptontennis.org.uk/fetchJSON.asp?id=41");
+	var memberlisturl = new String("https://hamptontennis.org.uk/fetchJSON.asp?id=41");
 
 	if (all) {
 		// Make sure and include all members if boolean set.
-		memberlisturl = new String("http://hamptontennis.org.uk/fetchJSON.asp?id=42");
+		memberlisturl = new String("https://hamptontennis.org.uk/fetchJSON.asp?id=42");
 	}
 
 	console.log("memberlisturl = "+memberlisturl);

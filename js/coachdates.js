@@ -2,7 +2,7 @@
 
 function displayCoachSetupDates() {
 
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=18";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=18";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 

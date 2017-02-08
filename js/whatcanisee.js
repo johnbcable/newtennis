@@ -3,7 +3,7 @@ function showTodaysMatches(domid) {
 
 	var jsonstring = new String("");
 	var mydomid = domid || "#whatcanisee";
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=22";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=22";
 	var mytitle = "<h4>To watch or take part in today at the club</h4>";
 
 	// var eventsfound = false;

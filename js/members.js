@@ -81,7 +81,7 @@ function displayMyBoxleagues() {
 
 function displayTodaysEvents() {
 	
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=1";
 	var willdebug = true;
 
 	// var eventsfound = false;

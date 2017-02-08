@@ -170,7 +170,7 @@ function displayOverviewMap() {
 
     // JSON retrieval of other club data
 
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=21";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=21";
 
 	$.getJSON(url,function(tennisclubData) {
 

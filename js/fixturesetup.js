@@ -23,7 +23,7 @@ function debugWrite(message) {
 // Display this seasons fixtures
 function displayFixtures(gender,team) {
 
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=20";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=20";
 	var offset = (gender == "Ladies" ? 0 : 3);
 	var myindex = team + offset;
 	var teamnames = ["",

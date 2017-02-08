@@ -13,7 +13,7 @@ Handlebars.registerHelper('equalsTo', function(v1, v2, options) {
 function displayClubCommunications() {
 
 	var jsonstring = new String("");
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=15";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=15";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -48,7 +48,7 @@ function displayClubCommunications() {
 function displayClubNewsList() {
 
 	var jsonstring = new String("");
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=24";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=24";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 

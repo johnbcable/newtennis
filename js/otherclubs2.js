@@ -18,7 +18,7 @@ Handlebars.registerHelper('equalsTo', function(v1, v2, options) {
 // Display coach list
 function displayClubList() {
 
-	var url = "http://hamptontennis.org.uk/fetchJSON.asp?id=21";
+	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=21";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
