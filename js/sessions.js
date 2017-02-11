@@ -166,7 +166,7 @@ function logMeIn() {
 			localStorage.setItem("tennissignin", JSON.stringify(signinData));
 
 			// Complete signin process using server-side ASP page
-			signinurl = new String("http://hamptontennis.org.uk/signin.asp?u="+userid+"&p="+pin+"&d="+refurl).toString();
+			signinurl = new String("https://hamptontennis.org.uk/signin.asp?u="+userid+"&p="+pin+"&d="+refurl).toString();
 
 			if (debugthis) {
 				console.log("Signin server-side URL = "+signinurl);

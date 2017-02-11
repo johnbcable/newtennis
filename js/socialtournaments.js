@@ -6,7 +6,7 @@ function getFutureTournaments() {
 	// Displays all upcoming tournaments
 
 	var jsonstring = new String("");
-	var url = "http://hamptontennis.org.uk/juniors/fetchJSON.asp?id=12";
+	var url = "https://hamptontennis.org.uk/juniors/fetchJSON.asp?id=12";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -45,7 +45,7 @@ function getPastTournaments() {
 	var theyear = thedate.getFullYear() - 1;
 	var startdate = new String(theyear+"1231").toString();
 
-	var url = "http://hamptontennis.org.uk/juniors/fetchJSON.asp?id=13&p1="+startdate;
+	var url = "https://hamptontennis.org.uk/juniors/fetchJSON.asp?id=13&p1="+startdate;
 	
 	// var eventsfound = false;
 	$.getJSON(url,function(data){

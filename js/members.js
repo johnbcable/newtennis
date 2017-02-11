@@ -14,7 +14,7 @@ Handlebars.registerHelper('equalsTo', function(v1, v2, options) {
 // Display my court bookings
 function displayMyCourtBookings() {
 
-	var url = "http://hamptontennis.org.uk/mycourtbookings.asp";
+	var url = "https://hamptontennis.org.uk/mycourtbookings.asp";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -47,7 +47,7 @@ function displayMyCourtBookings() {
 // Display my box league involvement
 function displayMyBoxleagues() {
 
-	var url = "http://hamptontennis.org.uk/myboxleagues.asp";
+	var url = "https://hamptontennis.org.uk/myboxleagues.asp";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -71,9 +71,6 @@ function displayMyBoxleagues() {
 	    var theTemplate = Handlebars.compile (theTemplateScript); 
 		// Handlebars.registerPartial("description", $("#shoe-description").html());    
 		$("#myboxleagues").append (theTemplate(boxleaguedata)); 
-
-		// Uncomment following line for debugging
-		// $("#receivedjson").html('JSON received back from testboxleagues.asp is <br /><br />'+jsonstring+'<br /><hr />');
 
 	});  // end of function(data)
 
