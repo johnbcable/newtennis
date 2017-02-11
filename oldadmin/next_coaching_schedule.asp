@@ -261,7 +261,7 @@ td {
 							</tr>
 						</table>
 						<p class="notprint">
-						You may also view the <a href="http://hamptontennis.org.uk/prior_juniors/coaching_schedule.html">previous coaching schedule</a> (covering Summer term 2013 up to  
+						You may also view the <a href="https://hamptontennis.org.uk/prior_juniors/coaching_schedule.html">previous coaching schedule</a> (covering Summer term 2013 up to  
 						start of summer state school holidays).
 						</p>
 						<p class="notprint" style="color: black; font-weight: bold;">

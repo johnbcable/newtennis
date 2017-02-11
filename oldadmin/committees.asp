@@ -175,7 +175,7 @@ td {
 	<br />
 	<p>
 		You can e-mail the club on <a href="mailto:secretary@hamptontennis.org.uk">secretary@hamptontennis.org.uk</a> or visit the web site
-		at <a href="http://hamptontennis.org.uk">http://hamptontennis.org.uk</a> for any further information.
+		at <a href="https://hamptontennis.org.uk">https://hamptontennis.org.uk</a> for any further information.
 	</p>
 	</div>
 	

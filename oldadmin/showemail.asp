@@ -61,7 +61,7 @@ if (whichemail == "")
 	if (emailobj.subject == "NOT FOUND")
 		 Response.Redirect("noemail.asp");
 	whichemail = new String(emailobj.emailfile).toString();
-	Response.Redirect("http://hamptontennis.org.uk/emails/"+emailobj.emailfile);
+	Response.Redirect("https://hamptontennis.org.uk/emails/"+emailobj.emailfile);
 }
 else
 {

@@ -144,7 +144,7 @@ if (debugging)
 			<div>
 				<h3>Autumn Finals Day - Sunday 27<sup>th</sup> September</h3>
 				 <div class="promobutton">
-				 	<a href="http://hamptontennis.org.uk/finalsdays2015.asp">Order of Play &raquo;</a>
+				 	<a href="https://hamptontennis.org.uk/finalsdays2015.asp">Order of Play &raquo;</a>
 				 </div>
 				<div class="promotext">
 					<p>
@@ -160,7 +160,7 @@ if (debugging)
 			<div>
 				<h3>Your web site will change ... <span style="font-size:110%;">TOMORROW Sunday 11<sup>th</sup> October!</span></h3>
 				 <div class="promobutton">
-				 	<a href="http://hamptontennis.org.uk/index.html">Preview &raquo;</a>
+				 	<a href="https://hamptontennis.org.uk/index.html">Preview &raquo;</a>
 				 </div>
 				<div class="promotext">
 					<p>

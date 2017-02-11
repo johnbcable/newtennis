@@ -110,7 +110,7 @@ if (debugging)
 		<p>
 				The junior tennis programme offers coaching and both social and competitive playing opportunities for players 
 				of all levels, within a structured, but friendly environment. The current coaching schedule is set out 
-				<a href="http://hamptontennis.org.uk/juniors/coaching_schedule.html">here</a>.
+				<a href="https://hamptontennis.org.uk/juniors/coaching_schedule.html">here</a>.
 		</p>
 		<table>
 			<caption>Child's Details</caption>

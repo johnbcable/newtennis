@@ -142,7 +142,7 @@ if (debugging)
 			<div>
 				<h3>Your web site is changing!</h3>
 				 <div class="promobutton">
-				 	<a href="http://hamptontennis.org.uk/index.html">Preview &raquo;</a>
+				 	<a href="https://hamptontennis.org.uk/index.html">Preview &raquo;</a>
 				 </div>
 				<div class="promotext">
 					<p>
