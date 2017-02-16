@@ -1,6 +1,6 @@
 <%@language="VBScript"%>
 <%
-Response.AddHeader "Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk"
+Response.AddHeader "Access-Control-Allow-Origin", "*"
 %>
 <!--#include file="JSON_2.0.4.asp" -->
 <!--#include file="JSON_UTIL_0.1.1.asp" -->
