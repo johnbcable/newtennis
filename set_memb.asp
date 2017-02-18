@@ -310,7 +310,8 @@ if (result.result)
 
 		objCDOMail = newMailObject();   // in emailfuncs
 		
-		objCDOMail.From=new String("secretary@hamptontennis.org.uk");
+		objCDOMail.From=new String("communications@hamptontennis.org.uk");
+		objCDOMail.ReplyTo=new String("secretary@hamptontennis.org.uk");
 		objCDOMail.Subject=new String("New Member").toString();
 		// objCDOMail.BodyFormat=0;
 		// objCDOMail.MailFormat=0;
@@ -378,7 +379,8 @@ if (result.result)
 
 				objCDOMail = newMailObject();   // in emailfuncs
 				
-				objCDOMail.From=new String("secretary@hamptontennis.org.uk");
+				objCDOMail.From=new String("communications@hamptontennis.org.uk");
+				objCDOMail.ReplyTo=new String("secretary@hamptontennis.org.uk");
 				objCDOMail.Subject=new String("New Tennis Club Member").toString();
 				// objCDOMail.BodyFormat=0;
 				// objCDOMail.MailFormat=0;
@@ -446,7 +448,8 @@ if (result.result)
 
 			objCDOMail = newMailObject();   // in emailfuncs
 			
-			objCDOMail.From=new String("secretary@hamptontennis.org.uk");
+			objCDOMail.From=new String("communications@hamptontennis.org.uk");
+			objCDOMail.ReplyTo=new String("secretary@hamptontennis.org.uk");
 			objCDOMail.Subject=new String("New Tennis Club Member").toString();
 			// objCDOMail.BodyFormat=0;
 			// objCDOMail.MailFormat=0;

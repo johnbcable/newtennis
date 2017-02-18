@@ -163,9 +163,11 @@ else
 }	 
 
 // set up sender
-sender = new String(sFrom+"@hamptontennis.org.uk").toString();
-if (! (sFrom == sOnBehalfOf))
-	sender = new String(sOnBehalfOf+"@hamptontennis.org.uk").toString();
+sender = new String("communications@hamptontennis.org.uk").toString();
+
+// if (! (sFrom == sOnBehalfOf))
+//	sender = new String(sOnBehalfOf+"@hamptontennis.org.uk").toString();
+
 ConnObj=Server.CreateObject("ADODB.Connection");
 RS=Server.CreateObject("ADODB.Recordset");
 ConnObj.Open(dbconnect);
