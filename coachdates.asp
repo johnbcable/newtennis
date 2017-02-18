@@ -11,7 +11,7 @@ Response.AddHeader("Access-Control-Allow-Origin", "*");
 Response.AddHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 Response.AddHeader("Pragma", "no-cache");
 Response.AddHeader("Expires", 0);
-Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
+Response.AddHeader("Access-Control-Allow-Origin", "*");
 
 var startdate, enddate, excludestart, escludeend;
 var fees60, fees45, fees30;

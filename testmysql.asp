@@ -1,7 +1,7 @@
 
 <%@language="JScript" CODEPAGE="65001" %>
 <%
-Response.AddHeader("Access-Control-Allow-Origin", "http://www.hamptontennis.org.uk");
+Response.AddHeader("Access-Control-Allow-Origin", "*");
 %>
 <!--#include file="unserialize.js.asp" -->
 <!--#include file="json2.js.asp" -->
