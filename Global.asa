@@ -7,6 +7,7 @@ function Session_OnStart() {
   Response.Cookies("member")("acclevel")=0;
   
   Application("hamptonsportsdb") = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\websites\\hamp29455\\data\\sports.mdb;User Id=admin;Password=;"
+  Application("jctestdata") = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\websites\\hamp29455\\data\\TestData.accdb;"
  }
 
 function Session_OnEnd() {
