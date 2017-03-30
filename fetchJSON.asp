@@ -151,6 +151,7 @@ If queryref > -1 Then
 	querylist(42) = "SELECT DISTINCT([surname]) FROM allmembers ORDER BY surname ASC"
 	querylist(43) = "SELECT * FROM members WHERE mobilephone LIKE '%{{p1}}%';"
 	querylist(44) = "SELECT m.forename1, m.surname, m.membergrade, m.britishtennisno FROM members m WHERE dob IS NULL;"
+	querylist(45) = "SELECT gender, membergrade, forename1, surname, joined FROM allmembers WHERE joined IS NOT null AND joined > CDate('August 31, 2016') AND currentage > 17"
 
 
 
