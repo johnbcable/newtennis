@@ -252,6 +252,7 @@ if (debugging)
 			<li>Circulation is:       <%= thequery %></li>
 			<li>Coaches?:             <%= coachtext %></li>
 			<li>To be sent from:      <%= sender %></li>
+			<li>Replies to:           <%= replyTo %></li>
 			<li>Debugging status:     <%= debugging %></li>
 			<li>Age-range:            <%= agetext %></li>
 <%
