@@ -68,7 +68,7 @@ function currentSeason()
 {
 	var thisyear = currentYear();
 	var thismonth = currentMonth();
-	if (thismonth < 5)
+	if (thismonth < 4)
 		thisyear = thisyear - 1;
 	return(thisyear);
 }
