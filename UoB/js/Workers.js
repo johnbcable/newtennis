@@ -6,12 +6,16 @@
 //
 //	Normally called from Workers.html
 //
+//  METADATA|Worker|SourceSystemOwner|SourceSystemId|EffectiveStartDate|EffectiveEndDate|PersonNumber|StartDate|DateOfBirth|ActionCode
+//
 
 function getAnonymousWorkers() {
 
 	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=1";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
+
+		// Now loop through returned data correcting it as required. 
 
 		// console.log(url);
 
@@ -34,10 +38,13 @@ function getAnonymousWorkers() {
 
 }
 
+//
+// METADATA|PersonLegislativeData|SourceSystemOwner|SourceSystemId|EffectiveStartDate|EffectiveEndDate|PersonId(SourceSystemId)|LegislationCode|Sex|MaritalStatus
+// MERGE|PersonLegislativeData|ALTAHRN01|27332087_LEGISLATIVE|2016/07/04|4712/12/31|27332087|GB|M|M
 // ============================================================================
 function getLegislativeData() {
 
-	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=2";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -50,7 +57,7 @@ function getLegislativeData() {
 // ============================================================================
 function getWorkRelationship() {
 
-	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=3";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -63,7 +70,7 @@ function getWorkRelationship() {
 // ============================================================================
 function getWorkTerms() {
 
-	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=4";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -76,7 +83,7 @@ function getWorkTerms() {
 // ============================================================================
 function getPersonPhone() {
 
-	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=5";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -89,7 +96,7 @@ function getPersonPhone() {
 // ============================================================================
 function getPersonEmail() {
 
-	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=6";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 
@@ -102,7 +109,7 @@ function getPersonEmail() {
 // ============================================================================
 function getPersonAddress() {
 
-	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=1";
+	var url = "https://hamptontennis.org.uk/jcJSON.asp?id=7";
 	// var eventsfound = false;
 	$.getJSON(url,function(data){
 

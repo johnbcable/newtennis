@@ -106,8 +106,40 @@ If queryref > -1 Then
 
 	'Initialise querylist with queries
 	querylist(0) = "SELECT count(*) FROM AnonPersonFeed"
-	querylist(1) = "SELECT 'MERGE' as METADATA, 'Worker' as Worker, 'ALTAHRN01' as SourceSystemOwner, [Person Code] as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code] as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+' METADATA|Worker|SourceSystemOwner|SourceSystemId|EffectiveStartDate|EffectiveEndDate|PersonNumber|StartDate|DateOfBirth|ActionCode
+'	
+	querylist(1) = "SELECT 'MERGE' as METADATA, 'Worker' as Worker, 'ALTAHRN01' as SourceSystemOwner, [Person Code]+5500000 as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code]+5500000 as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+'METADATA|PersonLegislativeData|SourceSystemOwner|SourceSystemId|EffectiveStartDate|EffectiveEndDate|PersonId(SourceSystemId)|LegislationCode|Sex|MaritalStatus
+'	
+	querylist(2) = "SELECT 'MERGE' as METADATA, 'PersonLegislativeData' as PersonLegislativeData, 'ALTAHRN01' as SourceSystemOwner, [Person Code]+5500000 as SourceSystemId, Format([PeriodofServiceStartDate], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code] as PersonNumber, Format([PeriodofServiceStartDate], 'YYYY/MM/DD') as StartDate, Format(DOB,'YYYY/MM/DD') as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+'METADATA|PersonName|SourceSystemOwner|SourceSystemId|EffectiveStartDate|EffectiveEndDate|PersonId(SourceSystemId)|NameType|LegislationCode|Title|LastName|FirstName|MiddleNames
+'	
+	querylist(3) = "SELECT 'MERGE' as METADATA, 'PersonName' as PersonName, 'ALTAHRN01' as SourceSystemOwner, [Person Code]+5500000 as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code]+5500000 as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
 
+' METADATA|WorkRelationship|SourceSystemOwner|SourceSystemId|PersonId(SourceSystemId)|LegalEmployerName|DateStart|WorkerType|PrimaryFlag
+'
+	querylist(4) = "SELECT 'MERGE' as METADATA, 'WorkRelationship' as WorkRelationship, 'ALTAHRN01' as SourceSystemOwner, [Person Code]+5500000 as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code]+5500000 as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+
+' METADATA|WorkTerms|SourceSystemOwner|SourceSystemId|PeriodOfServiceId(SourceSystemId)|ActionCode|EffectiveStartDate|EffectiveEndDate|EffectiveSequence|EffectiveLatestChange|AssignmentName|AssignmentNumber|PrimaryWorkTermsFlag'
+
+	querylist(5) = "SELECT 'MERGE' as METADATA, 'Worker' as Worker, 'ALTAHRN01' as SourceSystemOwner, [Person Code] as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code] as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+
+' METADATA|Assignment|SourceSystemOwner|SourceSystemId|ActionCode|EffectiveStartDate|EffectiveEndDate|EffectiveSequence|EffectiveLatestChange|WorkTermsAssignmentId(SourceSystemId)|AssignmentName|AssignmentNumber|AssignmentStatusTypeCode|PersonTypeCode|BusinessUnitShortCode|LocationCode|JobCode|PrimaryAssignmentFlag'
+
+	querylist(6) = "SELECT 'MERGE' as METADATA, 'Assignment' as Assignment, 'ALTAHRN01' as SourceSystemOwner, [Person Code] as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code] as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+
+' METADATA|PersonPhone|SourceSystemOwner|SourceSystemId|PersonId(SourceSystemId)|DateFrom|DateTo|PhoneType|PhoneNumber|AreaCode|PrimaryFlag
+'	
+	querylist(7) = "SELECT 'MERGE' as METADATA, 'Worker' as Worker, 'ALTAHRN01' as SourceSystemOwner, [Person Code] as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code] as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+
+' METADATA|PersonAddress|SourceSystemOwner|SourceSystemId|EffectiveStartDate|EffectiveEndDate|AddressType|PersonId(SourceSystemId)|AddressLine1|AddressLine2|TownOrCity|Region1|Country|PostalCode|LongPostalCode|TimezoneCode|PrimaryFlag'
+
+	querylist(8) = "SELECT 'MERGE' as METADATA, 'Worker' as Worker, 'ALTAHRN01' as SourceSystemOwner, [Person Code] as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code] as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
+
+' METADATA|PersonEmail|SourceSystemOwner|SourceSystemId|PersonId(SourceSystemId)|EmailType|EmailAddress|DateFrom|PrimaryFlag
+'
+
+	querylist(9) = "SELECT 'MERGE' as METADATA, 'Worker' as Worker, 'ALTAHRN01' as SourceSystemOwner, [Person Code] as SourceSystemId, Format([Period of Service Start Date], 'YYYY/MM/DD') as EffectiveStartDate, '4712/12/31' as EffectiveEndDate, [Person Code] as PersonNumber, Format([Period of Service Start Date], 'YYYY/MM/DD') as StartDate, DOB as DateOfBirth, 'HIRE' as ActionCode FROM AnonPersonFeed"
 
 	strSQL = querylist(queryref)
 	origSQL = strSQL
