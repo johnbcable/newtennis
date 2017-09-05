@@ -155,7 +155,6 @@ If queryref > -1 Then
 
 
 
-
 	querylist(50) = "SELECT * FROM allmembers WHERE [email] LIKE '%{{p1}}%' ORDER BY surname, forename1 ASC"
 
 	strSQL = querylist(queryref)
