@@ -124,7 +124,7 @@ If queryref > -1 Then
 	querylist(16) = "SELECT gender, membergrade, count(*) AS kount FROM members WHERE detailscorrectdate IS NOT null GROUP BY gender, membergrade;"
 	querylist(17) = "SELECT * FROM tennisteams WHERE teamcategory = 'ADULT' AND teamid NOT IN (42) ORDER BY teamname, teamid;"
 	querylist(18) = "SELECT Format(start_date,'YYYY-mm-dd') AS start_date, Format(end_date,'YYYY-mm-dd') AS end_date, Format(break_start,'YYYY-mm-dd') AS break_start, Format(break_end,'YYYY-mm-dd') AS break_end, Format(fees_hour, 'Standard') as fees_hour, Format(fees_45mins, 'Standard') as fees_45mins, Format(fees_30mins, 'Standard') AS fees_30mins FROM coaching_schedules WHERE schedule_role = 'NEXT';"
-	querylist(19) = "SELECT * FROM coaching_lessons WHERE lesson_day = '{{p1}}' ORDER BY lesson_id, group_display_order, start_time, end_time;"
+	querylist(19) = "SELECT * FROM coaching_lessons WHERE lesson_day = '{{p1}}' ORDER BY group_display_order, start_time, lesson_id, end_time;"
 	querylist(20) = "SELECT Format(fixturedate,'dd/mm/YYYY') AS fixturedate, homeoraway, fixtureid, opponents, hamptonresult, opponentresult, fixtureyear, teamname, pair1, pair2, fixturenote, matchreport FROM tennisfixtures WHERE fixtureyear = {{p1}} AND teamname = '{{p2}}' ORDER BY fixturedate ASC;"
 	querylist(21) = "SELECT * FROM otherclubs ORDER BY clubname;"
 	querylist(22) = "SELECT eventdate, Format(eventtime,'HH:mm') as eventtime, Format(endtime,'HH:mm') as endtime, eventnote, eventreport FROM futureevents WHERE eventtype in('SOCIAL','MATCH','SOCIALTENNIS')  AND eventdate = Date() ORDER BY eventtime ASC;"
