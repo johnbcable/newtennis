@@ -1,0 +1,17 @@
+
+Creating Renewal Addresses Mailing List
+
+
+
+DELETE from LastYearsRenewalAddresses;
+
+INSERT INTO LastYearsRenewalAddresses SELECT * from RenewalAddresses;
+
+DELETE FROM RenewalAddresses;
+
+INSERT INTO RenewalAddresses
+SELECT address1 AS address1, address2 AS address2, address3 AS address3, address4 AS address4, postcode AS postcode, '' AS addressee, surname AS surname
+FROM DistinctAddresses;
+
+UPDATE RenewalAddresses AS ra, LastYearsRenewalAddresses AS p SET ra.addressee = p.addressee
+WHERE ra.address1=p.address1 And ra.address2=p.address2 And ra.surname=p.surname;

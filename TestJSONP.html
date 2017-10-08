@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<htmL>
+	<head>
+		<title>JSONP Call Testing</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript">
+
+$(document).ready(function () {
+    $.ajax({
+        type: 'GET',
+        url: 'http://jsonp.guffa.com/Proxy.ashx?url=pubapi.cryptsy.com%2fapi.php%3fmethod=marketdatav2',
+        dataType: 'jsonp',
+        success: function (data) {
+            console.log(data);
+        }
+    });
+});
+
+/*
+
+        $(document).ready(function() {
+// var url = 'http://www.jquery4u.com/scripts/jquery4u-sites.json?callback=?';
+
+var url = 'https://hamptontennis.org.uk/fetchJSONP.asp?id=13&p1=coaches';
+
+function processData (data) {
+    console.log("From processData");
+    console.log(data);
+}
+
+$.ajax({
+   type: 'GET',
+    url: url,
+    async: false,
+    contentType: "application/json",
+    dataType: 'jsonp',
+    async: false,
+    jsonpCallback: 'processData',
+    success: function(data) {
+    	console.log("From success function");
+       console.log(data);
+    },
+    error: function(e) {
+    	console.log("From error function");
+       	console.log(e.message);
+    }
+});
+		});
+*/
+		</script>
+	</head>
+	<body>
+		<h2>JSONP call to Hamptontennis</h2>
+		<p>JSONP call to the Hamptontennis web site</p>
+</htmL>

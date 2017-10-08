@@ -1,0 +1,237 @@
+//
+//   test.scss
+//
+//   Test bed for Sass constructs
+
+// Import support for Compass mixins
+@import "compass/css3";
+
+// Variables
+$body-bg: #fff;
+$test-image: "../img/mainbanner-small.jpg";
+$default-banner-height: 360px;
+
+$color1: #FF0000; // Red
+$color2: #FFBF00; // Orange
+$color3: #FFFF00; // Yellow
+$color4: #7FFF00; // Green
+$color5: #007FFF; // Light Blue
+$color6: #00FFFF; // Cyan
+$color7: #0000FF; // Blue
+$color8: #7F00FF; // Purple
+$color9: #FF00FF; // Magenta
+$color10: #000; // Black
+$color11: #FFF; // White
+$color-brand: pink; // Yep, pink!
+$blockquote-bg: #faebbe; // Yellowy
+$color-link: #3D518F; // blue-dark
+$sage-green: #85C2A3;
+
+
+// Mixins and Extends
+
+// Mixins from Dan Cederholm
+
+@mixin rounded($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin shadow($x, $y, $blur, $color) {
+	-webkit-box-shadow: $x $y $blur $color;
+	-moz-box-shadow: $x $y $blur $color;
+	-ms-box-shadow: $x $y $blur $color;
+	-o-box-shadow: $x $y $blur $color;
+	box-shadow: $x $y $blur $color;
+}
+@mixin shadow-inset($x, $y, $blur, $color) {
+	-webkit-box-shadow: inset $x $y $blur $color;
+	-moz-box-shadow: inset $x $y $blur $color;
+	-ms-box-shadow: inset $x $y $blur $color;
+	-o-box-shadow: inset $x $y $blur $color;
+	box-shadow: inset $x $y $blur $color;
+}
+@mixin transition($property) {
+	-webkit-transition: $property .2s ease;
+	-moz-transition: $property .2s ease;
+	-ms-transition: $property .2s ease;
+	-o-transition: $property .2s ease;
+	transition: $property .2s ease;
+}
+@mixin box-sizing($property: border-box) {
+	-webkit-box-sizing: $property;
+	-moz-box-sizing: $property;
+	-ms-box-sizing: $property;
+	-o-box-sizing: $property;
+	box-sizing: $property;
+}
+@mixin linear-gradient($from, $to) {
+	/*  Fallback fort sad browsers */
+	background-color: $to;
+	/*  Mozilla Firefoz  */
+	background-image: -moz-linear-gradient($from, $to);
+	/*  Opera  */
+	background-image: -o-linear-gradient($from, $to);
+	/*  Webkit   Chrome 11+  */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,$from) color-stop(1, $to));
+	/*  Webkit   Safrai 5.1+, Chrome 10+  */
+	background-image: -webkit-linear-gradient($from, $to);
+	/*  IE10+  */
+	background-image: -ms-linear-gradient($from, $to);
+	/*  W3C  */
+	background-image: linear-gradient($from, $to);
+}
+
+
+@mixin page-banner($bannerimage: $test-image, $image-height: $default-banner-height) {
+	background-color: $body-bg;
+	background-image: url($bannerimage);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media (min-width: 38em)
+	{
+	  /*  Must give banners a height when on desktops  */
+	  height: $image-height;
+	}
+}
+
+// Mixin for creating pill shaped buttons
+// ====================================================================
+
+@mixin button-links($button-base: darken($color5,10%), $button-hover: darken($color5,25%)) {
+	border: 1px solid darken($color5,40%);
+	padding: .3em .6em;
+	margin-left: .7em;
+	@include rounded(8px);
+	@include text-shadow(0 1px 2px $color5);
+	color: lighten($color10,50%);
+	background-color: $button-base;
+	&:hover {
+		background-color: $button-hover;
+	}
+}
+
+
+
+
+
+// Sass that uses the above
+
+// Styles for the banner image on main landing page
+//
+.row--banner
+{
+	/*  Include with no parameters and see which image results  */
+	@include page-banner();
+}
+
+// Styles for the banner image on ourclub.html
+//
+.row--ourclub
+{
+	/*  Include with image parameter and see which image results  */
+	@include page-banner($bannerimage: "../img/clubhouse.jpg");
+}
+
+// Styles for the banner image on league.html
+//
+.row--league
+{
+	@include page-banner($bannerimage: "../img/first_team.jpg");
+}
+
+// Styles for the banner image on league.html
+//
+.row--aegon
+{
+	@include page-banner($bannerimage: "../img/aegon-team-tennis-banner.jpg", $image-height: 230px);
+}
+
+//  submit buttons
+
+.submit-button {
+	@include button-links()
+}
+
+// Calendar icon styling
+
+time.icon
+{
+  font-size: 1em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  margin: 0 auto 2em auto;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 10%;
+  transform-origin: 50% 10%;
+}
+
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  border-bottom: 1px dashed #f37302;
+  box-shadow: 0 2px 0 #fd9f1b;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+
+time.icon span
+{
+  width: 100%;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+time.icon:hover, time.icon:focus
+{
+  -webkit-animation: swing 0.6s ease-out;
+  animation: swing 0.6s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0%   { -webkit-transform: rotate(0deg)  skewY(0deg); }
+  20%  { -webkit-transform: rotate(12deg) skewY(4deg); }
+  60%  { -webkit-transform: rotate(-9deg) skewY(-3deg); }
+  80%  { -webkit-transform: rotate(6deg)  skewY(-2deg); }
+  100% { -webkit-transform: rotate(0deg)  skewY(0deg); }
+}
+
+@keyframes swing {
+  0%   { transform: rotate(0deg)  skewY(0deg); }
+  20%  { transform: rotate(12deg) skewY(4deg); }
+  60%  { transform: rotate(-9deg) skewY(-3deg); }
+  80%  { transform: rotate(6deg)  skewY(-2deg); }
+  100% { transform: rotate(0deg)  skewY(0deg); }
+}

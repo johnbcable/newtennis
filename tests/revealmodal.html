@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Reveal Modal Test Page</h1>
+      </div>
+    </div>
+    
+    <!-- button to initiate reveal modals -->
+
+    <a href="#" data-reveal-id="loginModal">Click Me For A Login Modal</a>
+
+
+  <!--    Reveal Modals begin                         -->
+
+  <div id="loginModal" class="reveal-modal small " data-reveal>
+
+    <h2>Sign-In</h2>
+    <p>
+      Plesae sign-in below with your User ID and PIN (that you use for booking courts)
+    </p>
+    <div id="signinpanel">
+<<<<<<< HEAD
+      <form name="signin" action="signin.asp" method="POST" data-abide>
+=======
+      <form name="signin" action="#" method="POST" data-abide>
+>>>>>>> 5e2603788b1e1b648e9d0dc4bdaf5a7d06d41b61
+        <div class="userid-field">
+          <label>User ID:
+            <input type="text" name="frmUserId" id="frmUserId" placeholder="Your User ID" required pattern="[0-9]+" />
+          </label>
+          <small class="error">Your User ID must be a number</small>
+        </div>
+        <div class="pin-field">
+          <label>PIN:
+            <input type="password" name="frmPassword" id="frmPassword" placeholder="Your PIN number" required pattern="[0-9]+" />
+          </label>
+          <small class="error">Your PIN number must be a 4-digit number</small>
+        </div>
+        <button name="loginSubmit" id="loginSubmit">Sign-In</button>
+      </form>   
+      <p>
+        <a href="#" data-reveal-id="forgotPasswordModal" title="Forgotten User ID or password"> I have forgotten my User ID and/or password&raquo;</a>
+      </p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>    <!--    /signinpanel    -->
+
+  </div>   <!--    /loginModal    -->
+
+  <!--   forgotPasswordModal    -->
+
+    <div id="forgotPasswordModal" class="reveal-modal small" data-reveal>
+
+    <h3>Forgot User ID or PIN</h3>
+    <p>
+      Complete and submit the form below and your User ID and PIN will be sent to your email address.
+    </p>
+    <div id="forgotpanel">
+      <form name="forgot" action="reminduser.asp" method="POST" data-abide>
+        <div class="forename-field">
+          <label>First name:
+            <input type="text" name="frmForename" id="frmForename" placeholder="Your first name" required />
+          </label>
+          <small class="error">Your first name must be completed</small>
+        </div>
+        <div class="surname-field">
+          <label>Surname:
+            <input type="text" name="frmSurname" id="frmSurname" placeholder="Your surname" required />
+          </label>
+          <small class="error">You must supply your surname</small>
+        </div>
+        <div class="email-field">
+          <label>Email address from your application / renewal form:
+            <input type="text" name="frmEmail" id="frmEmail" placeholder="Your email address that you supplied when joining or renewing your membership" required />
+          </label>
+          <small class="error">You must supply the email address you gave us when joining or renewing your membership at the club</small>
+        </div>
+        <button name="forgotSubmit" id="forgotSubmit">Remind Me</button>
+        <a class="close-reveal-modal">&#215;</a>
+      </form>   
+    </div>    <!--    /forgotpanel    -->
+
+  </div>   <!--    /forgotPasswordModal    -->
+  
+  <!--    Reveal Modals end                           -->
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/js/app.js"></script>
+
+    <script src="/js/sessions.js"></script>
+      <!--    Google Analytics    -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65278110-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</body>
+</html>

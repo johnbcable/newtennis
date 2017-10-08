@@ -1,0 +1,47 @@
+/*
+	_slideshow.scss
+
+   	Styles for slideshows
+
+*/
+
+.content {
+	margin-top: emCalc(20px);
+	.orbit-container {
+		@include background(radial-gradient(lighten($body-bg, 6%), darken($body-bg, 3%)));
+		li {
+			padding: emCalc(20px) emCalc(40px);
+			&:nth-child(1) {
+				background: image-url('../img/CoachingBanner.png') no-repeat right bottom;
+			}
+			&:nth-child(2) {
+				background: image-url('../img/CompeteBanner.png') no-repeat right bottom;
+			}
+			&:nth-child(3) {
+				background: image-url('../img/SocialBanner.png') no-repeat right bottom;
+			}
+			&:nth-child(4) {
+				background: image-url('../img/HolidayClubBanner.png') no-repeat right bottom;
+			}
+		}
+		a.orbit-prev, a.orbit-next {
+			@include opacity(0);
+			@include single-transition(opacity, 400ms);
+		}
+		&:hover {
+			a.orbit-prev, a.orbit-next {
+				@include opacity(1);
+			}
+		}
+
+		h3 {
+			padding: emCalc(10px);
+			background-color: rgba($white, .3);
+			+ p {
+				padding: emCalc(10px);
+				background-color: rgba($white, .5);
+				position: relative;
+				// bottom: emCalc(20px);
+			}
+		}
+	}   /* slideshow    */

@@ -1,0 +1,1984 @@
+// Global Foundation Settings
+@import "base";
+
+// Import support for Compass mixins
+@import "compass/css3";
+
+//  Compass Sprite Helper (for social networking icons)
+@import "social/*.png";
+
+//  Include stuff relevant to Foundation icon fonts
+// Foundation general icon fonts
+@font-face {
+  font-family: "foundation-icons";
+  src: url("fonts/foundation-icons.eot");
+  src: url("fonts/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("fonts/foundation-icons.woff") format("woff"),
+       url("fonts/foundation-icons.ttf") format("truetype"),
+       url("fonts/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fi-address-book:before,
+.fi-alert:before,
+.fi-align-center:before,
+.fi-align-justify:before,
+.fi-align-left:before,
+.fi-align-right:before,
+.fi-anchor:before,
+.fi-annotate:before,
+.fi-archive:before,
+.fi-arrow-down:before,
+.fi-arrow-left:before,
+.fi-arrow-right:before,
+.fi-arrow-up:before,
+.fi-arrows-compress:before,
+.fi-arrows-expand:before,
+.fi-arrows-in:before,
+.fi-arrows-out:before,
+.fi-asl:before,
+.fi-asterisk:before,
+.fi-at-sign:before,
+.fi-background-color:before,
+.fi-battery-empty:before,
+.fi-battery-full:before,
+.fi-battery-half:before,
+.fi-bitcoin-circle:before,
+.fi-bitcoin:before,
+.fi-blind:before,
+.fi-bluetooth:before,
+.fi-bold:before,
+.fi-book-bookmark:before,
+.fi-book:before,
+.fi-bookmark:before,
+.fi-braille:before,
+.fi-burst-new:before,
+.fi-burst-sale:before,
+.fi-burst:before,
+.fi-calendar:before,
+.fi-camera:before,
+.fi-check:before,
+.fi-checkbox:before,
+.fi-clipboard-notes:before,
+.fi-clipboard-pencil:before,
+.fi-clipboard:before,
+.fi-clock:before,
+.fi-closed-caption:before,
+.fi-cloud:before,
+.fi-comment-minus:before,
+.fi-comment-quotes:before,
+.fi-comment-video:before,
+.fi-comment:before,
+.fi-comments:before,
+.fi-compass:before,
+.fi-contrast:before,
+.fi-credit-card:before,
+.fi-crop:before,
+.fi-crown:before,
+.fi-css3:before,
+.fi-database:before,
+.fi-die-five:before,
+.fi-die-four:before,
+.fi-die-one:before,
+.fi-die-six:before,
+.fi-die-three:before,
+.fi-die-two:before,
+.fi-dislike:before,
+.fi-dollar-bill:before,
+.fi-dollar:before,
+.fi-download:before,
+.fi-eject:before,
+.fi-elevator:before,
+.fi-euro:before,
+.fi-eye:before,
+.fi-fast-forward:before,
+.fi-female-symbol:before,
+.fi-female:before,
+.fi-filter:before,
+.fi-first-aid:before,
+.fi-flag:before,
+.fi-folder-add:before,
+.fi-folder-lock:before,
+.fi-folder:before,
+.fi-foot:before,
+.fi-foundation:before,
+.fi-graph-bar:before,
+.fi-graph-horizontal:before,
+.fi-graph-pie:before,
+.fi-graph-trend:before,
+.fi-guide-dog:before,
+.fi-hearing-aid:before,
+.fi-heart:before,
+.fi-home:before,
+.fi-html5:before,
+.fi-indent-less:before,
+.fi-indent-more:before,
+.fi-info:before,
+.fi-italic:before,
+.fi-key:before,
+.fi-laptop:before,
+.fi-layout:before,
+.fi-lightbulb:before,
+.fi-like:before,
+.fi-link:before,
+.fi-list-bullet:before,
+.fi-list-number:before,
+.fi-list-thumbnails:before,
+.fi-list:before,
+.fi-lock:before,
+.fi-loop:before,
+.fi-magnifying-glass:before,
+.fi-mail:before,
+.fi-male-female:before,
+.fi-male-symbol:before,
+.fi-male:before,
+.fi-map:before,
+.fi-marker:before,
+.fi-megaphone:before,
+.fi-microphone:before,
+.fi-minus-circle:before,
+.fi-minus:before,
+.fi-mobile-signal:before,
+.fi-mobile:before,
+.fi-monitor:before,
+.fi-mountains:before,
+.fi-music:before,
+.fi-next:before,
+.fi-no-dogs:before,
+.fi-no-smoking:before,
+.fi-page-add:before,
+.fi-page-copy:before,
+.fi-page-csv:before,
+.fi-page-delete:before,
+.fi-page-doc:before,
+.fi-page-edit:before,
+.fi-page-export-csv:before,
+.fi-page-export-doc:before,
+.fi-page-export-pdf:before,
+.fi-page-export:before,
+.fi-page-filled:before,
+.fi-page-multiple:before,
+.fi-page-pdf:before,
+.fi-page-remove:before,
+.fi-page-search:before,
+.fi-page:before,
+.fi-paint-bucket:before,
+.fi-paperclip:before,
+.fi-pause:before,
+.fi-paw:before,
+.fi-paypal:before,
+.fi-pencil:before,
+.fi-photo:before,
+.fi-play-circle:before,
+.fi-play-video:before,
+.fi-play:before,
+.fi-plus:before,
+.fi-pound:before,
+.fi-power:before,
+.fi-previous:before,
+.fi-price-tag:before,
+.fi-pricetag-multiple:before,
+.fi-print:before,
+.fi-prohibited:before,
+.fi-projection-screen:before,
+.fi-puzzle:before,
+.fi-quote:before,
+.fi-record:before,
+.fi-refresh:before,
+.fi-results-demographics:before,
+.fi-results:before,
+.fi-rewind-ten:before,
+.fi-rewind:before,
+.fi-rss:before,
+.fi-safety-cone:before,
+.fi-save:before,
+.fi-share:before,
+.fi-sheriff-badge:before,
+.fi-shield:before,
+.fi-shopping-bag:before,
+.fi-shopping-cart:before,
+.fi-shuffle:before,
+.fi-skull:before,
+.fi-social-500px:before,
+.fi-social-adobe:before,
+.fi-social-amazon:before,
+.fi-social-android:before,
+.fi-social-apple:before,
+.fi-social-behance:before,
+.fi-social-bing:before,
+.fi-social-blogger:before,
+.fi-social-delicious:before,
+.fi-social-designer-news:before,
+.fi-social-deviant-art:before,
+.fi-social-digg:before,
+.fi-social-dribbble:before,
+.fi-social-drive:before,
+.fi-social-dropbox:before,
+.fi-social-evernote:before,
+.fi-social-facebook:before,
+.fi-social-flickr:before,
+.fi-social-forrst:before,
+.fi-social-foursquare:before,
+.fi-social-game-center:before,
+.fi-social-github:before,
+.fi-social-google-plus:before,
+.fi-social-hacker-news:before,
+.fi-social-hi5:before,
+.fi-social-instagram:before,
+.fi-social-joomla:before,
+.fi-social-lastfm:before,
+.fi-social-linkedin:before,
+.fi-social-medium:before,
+.fi-social-myspace:before,
+.fi-social-orkut:before,
+.fi-social-path:before,
+.fi-social-picasa:before,
+.fi-social-pinterest:before,
+.fi-social-rdio:before,
+.fi-social-reddit:before,
+.fi-social-skillshare:before,
+.fi-social-skype:before,
+.fi-social-smashing-mag:before,
+.fi-social-snapchat:before,
+.fi-social-spotify:before,
+.fi-social-squidoo:before,
+.fi-social-stack-overflow:before,
+.fi-social-steam:before,
+.fi-social-stumbleupon:before,
+.fi-social-treehouse:before,
+.fi-social-tumblr:before,
+.fi-social-twitter:before,
+.fi-social-vimeo:before,
+.fi-social-windows:before,
+.fi-social-xbox:before,
+.fi-social-yahoo:before,
+.fi-social-yelp:before,
+.fi-social-youtube:before,
+.fi-social-zerply:before,
+.fi-social-zurb:before,
+.fi-sound:before,
+.fi-star:before,
+.fi-stop:before,
+.fi-strikethrough:before,
+.fi-subscript:before,
+.fi-superscript:before,
+.fi-tablet-landscape:before,
+.fi-tablet-portrait:before,
+.fi-target-two:before,
+.fi-target:before,
+.fi-telephone-accessible:before,
+.fi-telephone:before,
+.fi-text-color:before,
+.fi-thumbnails:before,
+.fi-ticket:before,
+.fi-torso-business:before,
+.fi-torso-female:before,
+.fi-torso:before,
+.fi-torsos-all-female:before,
+.fi-torsos-all:before,
+.fi-torsos-female-male:before,
+.fi-torsos-male-female:before,
+.fi-torsos:before,
+.fi-trash:before,
+.fi-trees:before,
+.fi-trophy:before,
+.fi-underline:before,
+.fi-universal-access:before,
+.fi-unlink:before,
+.fi-unlock:before,
+.fi-upload-cloud:before,
+.fi-upload:before,
+.fi-usb:before,
+.fi-video:before,
+.fi-volume-none:before,
+.fi-volume-strike:before,
+.fi-volume:before,
+.fi-web:before,
+.fi-wheelchair:before,
+.fi-widget:before,
+.fi-wrench:before,
+.fi-x-circle:before,
+.fi-x:before,
+.fi-yen:before,
+.fi-zoom-in:before,
+.fi-zoom-out:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fi-address-book:before { content: "\f100"; }
+.fi-alert:before { content: "\f101"; }
+.fi-align-center:before { content: "\f102"; }
+.fi-align-justify:before { content: "\f103"; }
+.fi-align-left:before { content: "\f104"; }
+.fi-align-right:before { content: "\f105"; }
+.fi-anchor:before { content: "\f106"; }
+.fi-annotate:before { content: "\f107"; }
+.fi-archive:before { content: "\f108"; }
+.fi-arrow-down:before { content: "\f109"; }
+.fi-arrow-left:before { content: "\f10a"; }
+.fi-arrow-right:before { content: "\f10b"; }
+.fi-arrow-up:before { content: "\f10c"; }
+.fi-arrows-compress:before { content: "\f10d"; }
+.fi-arrows-expand:before { content: "\f10e"; }
+.fi-arrows-in:before { content: "\f10f"; }
+.fi-arrows-out:before { content: "\f110"; }
+.fi-asl:before { content: "\f111"; }
+.fi-asterisk:before { content: "\f112"; }
+.fi-at-sign:before { content: "\f113"; }
+.fi-background-color:before { content: "\f114"; }
+.fi-battery-empty:before { content: "\f115"; }
+.fi-battery-full:before { content: "\f116"; }
+.fi-battery-half:before { content: "\f117"; }
+.fi-bitcoin-circle:before { content: "\f118"; }
+.fi-bitcoin:before { content: "\f119"; }
+.fi-blind:before { content: "\f11a"; }
+.fi-bluetooth:before { content: "\f11b"; }
+.fi-bold:before { content: "\f11c"; }
+.fi-book-bookmark:before { content: "\f11d"; }
+.fi-book:before { content: "\f11e"; }
+.fi-bookmark:before { content: "\f11f"; }
+.fi-braille:before { content: "\f120"; }
+.fi-burst-new:before { content: "\f121"; }
+.fi-burst-sale:before { content: "\f122"; }
+.fi-burst:before { content: "\f123"; }
+.fi-calendar:before { content: "\f124"; }
+.fi-camera:before { content: "\f125"; }
+.fi-check:before { content: "\f126"; }
+.fi-checkbox:before { content: "\f127"; }
+.fi-clipboard-notes:before { content: "\f128"; }
+.fi-clipboard-pencil:before { content: "\f129"; }
+.fi-clipboard:before { content: "\f12a"; }
+.fi-clock:before { content: "\f12b"; }
+.fi-closed-caption:before { content: "\f12c"; }
+.fi-cloud:before { content: "\f12d"; }
+.fi-comment-minus:before { content: "\f12e"; }
+.fi-comment-quotes:before { content: "\f12f"; }
+.fi-comment-video:before { content: "\f130"; }
+.fi-comment:before { content: "\f131"; }
+.fi-comments:before { content: "\f132"; }
+.fi-compass:before { content: "\f133"; }
+.fi-contrast:before { content: "\f134"; }
+.fi-credit-card:before { content: "\f135"; }
+.fi-crop:before { content: "\f136"; }
+.fi-crown:before { content: "\f137"; }
+.fi-css3:before { content: "\f138"; }
+.fi-database:before { content: "\f139"; }
+.fi-die-five:before { content: "\f13a"; }
+.fi-die-four:before { content: "\f13b"; }
+.fi-die-one:before { content: "\f13c"; }
+.fi-die-six:before { content: "\f13d"; }
+.fi-die-three:before { content: "\f13e"; }
+.fi-die-two:before { content: "\f13f"; }
+.fi-dislike:before { content: "\f140"; }
+.fi-dollar-bill:before { content: "\f141"; }
+.fi-dollar:before { content: "\f142"; }
+.fi-download:before { content: "\f143"; }
+.fi-eject:before { content: "\f144"; }
+.fi-elevator:before { content: "\f145"; }
+.fi-euro:before { content: "\f146"; }
+.fi-eye:before { content: "\f147"; }
+.fi-fast-forward:before { content: "\f148"; }
+.fi-female-symbol:before { content: "\f149"; }
+.fi-female:before { content: "\f14a"; }
+.fi-filter:before { content: "\f14b"; }
+.fi-first-aid:before { content: "\f14c"; }
+.fi-flag:before { content: "\f14d"; }
+.fi-folder-add:before { content: "\f14e"; }
+.fi-folder-lock:before { content: "\f14f"; }
+.fi-folder:before { content: "\f150"; }
+.fi-foot:before { content: "\f151"; }
+.fi-foundation:before { content: "\f152"; }
+.fi-graph-bar:before { content: "\f153"; }
+.fi-graph-horizontal:before { content: "\f154"; }
+.fi-graph-pie:before { content: "\f155"; }
+.fi-graph-trend:before { content: "\f156"; }
+.fi-guide-dog:before { content: "\f157"; }
+.fi-hearing-aid:before { content: "\f158"; }
+.fi-heart:before { content: "\f159"; }
+.fi-home:before { content: "\f15a"; }
+.fi-html5:before { content: "\f15b"; }
+.fi-indent-less:before { content: "\f15c"; }
+.fi-indent-more:before { content: "\f15d"; }
+.fi-info:before { content: "\f15e"; }
+.fi-italic:before { content: "\f15f"; }
+.fi-key:before { content: "\f160"; }
+.fi-laptop:before { content: "\f161"; }
+.fi-layout:before { content: "\f162"; }
+.fi-lightbulb:before { content: "\f163"; }
+.fi-like:before { content: "\f164"; }
+.fi-link:before { content: "\f165"; }
+.fi-list-bullet:before { content: "\f166"; }
+.fi-list-number:before { content: "\f167"; }
+.fi-list-thumbnails:before { content: "\f168"; }
+.fi-list:before { content: "\f169"; }
+.fi-lock:before { content: "\f16a"; }
+.fi-loop:before { content: "\f16b"; }
+.fi-magnifying-glass:before { content: "\f16c"; }
+.fi-mail:before { content: "\f16d"; }
+.fi-male-female:before { content: "\f16e"; }
+.fi-male-symbol:before { content: "\f16f"; }
+.fi-male:before { content: "\f170"; }
+.fi-map:before { content: "\f171"; }
+.fi-marker:before { content: "\f172"; }
+.fi-megaphone:before { content: "\f173"; }
+.fi-microphone:before { content: "\f174"; }
+.fi-minus-circle:before { content: "\f175"; }
+.fi-minus:before { content: "\f176"; }
+.fi-mobile-signal:before { content: "\f177"; }
+.fi-mobile:before { content: "\f178"; }
+.fi-monitor:before { content: "\f179"; }
+.fi-mountains:before { content: "\f17a"; }
+.fi-music:before { content: "\f17b"; }
+.fi-next:before { content: "\f17c"; }
+.fi-no-dogs:before { content: "\f17d"; }
+.fi-no-smoking:before { content: "\f17e"; }
+.fi-page-add:before { content: "\f17f"; }
+.fi-page-copy:before { content: "\f180"; }
+.fi-page-csv:before { content: "\f181"; }
+.fi-page-delete:before { content: "\f182"; }
+.fi-page-doc:before { content: "\f183"; }
+.fi-page-edit:before { content: "\f184"; }
+.fi-page-export-csv:before { content: "\f185"; }
+.fi-page-export-doc:before { content: "\f186"; }
+.fi-page-export-pdf:before { content: "\f187"; }
+.fi-page-export:before { content: "\f188"; }
+.fi-page-filled:before { content: "\f189"; }
+.fi-page-multiple:before { content: "\f18a"; }
+.fi-page-pdf:before { content: "\f18b"; }
+.fi-page-remove:before { content: "\f18c"; }
+.fi-page-search:before { content: "\f18d"; }
+.fi-page:before { content: "\f18e"; }
+.fi-paint-bucket:before { content: "\f18f"; }
+.fi-paperclip:before { content: "\f190"; }
+.fi-pause:before { content: "\f191"; }
+.fi-paw:before { content: "\f192"; }
+.fi-paypal:before { content: "\f193"; }
+.fi-pencil:before { content: "\f194"; }
+.fi-photo:before { content: "\f195"; }
+.fi-play-circle:before { content: "\f196"; }
+.fi-play-video:before { content: "\f197"; }
+.fi-play:before { content: "\f198"; }
+.fi-plus:before { content: "\f199"; }
+.fi-pound:before { content: "\f19a"; }
+.fi-power:before { content: "\f19b"; }
+.fi-previous:before { content: "\f19c"; }
+.fi-price-tag:before { content: "\f19d"; }
+.fi-pricetag-multiple:before { content: "\f19e"; }
+.fi-print:before { content: "\f19f"; }
+.fi-prohibited:before { content: "\f1a0"; }
+.fi-projection-screen:before { content: "\f1a1"; }
+.fi-puzzle:before { content: "\f1a2"; }
+.fi-quote:before { content: "\f1a3"; }
+.fi-record:before { content: "\f1a4"; }
+.fi-refresh:before { content: "\f1a5"; }
+.fi-results-demographics:before { content: "\f1a6"; }
+.fi-results:before { content: "\f1a7"; }
+.fi-rewind-ten:before { content: "\f1a8"; }
+.fi-rewind:before { content: "\f1a9"; }
+.fi-rss:before { content: "\f1aa"; }
+.fi-safety-cone:before { content: "\f1ab"; }
+.fi-save:before { content: "\f1ac"; }
+.fi-share:before { content: "\f1ad"; }
+.fi-sheriff-badge:before { content: "\f1ae"; }
+.fi-shield:before { content: "\f1af"; }
+.fi-shopping-bag:before { content: "\f1b0"; }
+.fi-shopping-cart:before { content: "\f1b1"; }
+.fi-shuffle:before { content: "\f1b2"; }
+.fi-skull:before { content: "\f1b3"; }
+.fi-social-500px:before { content: "\f1b4"; }
+.fi-social-adobe:before { content: "\f1b5"; }
+.fi-social-amazon:before { content: "\f1b6"; }
+.fi-social-android:before { content: "\f1b7"; }
+.fi-social-apple:before { content: "\f1b8"; }
+.fi-social-behance:before { content: "\f1b9"; }
+.fi-social-bing:before { content: "\f1ba"; }
+.fi-social-blogger:before { content: "\f1bb"; }
+.fi-social-delicious:before { content: "\f1bc"; }
+.fi-social-designer-news:before { content: "\f1bd"; }
+.fi-social-deviant-art:before { content: "\f1be"; }
+.fi-social-digg:before { content: "\f1bf"; }
+.fi-social-dribbble:before { content: "\f1c0"; }
+.fi-social-drive:before { content: "\f1c1"; }
+.fi-social-dropbox:before { content: "\f1c2"; }
+.fi-social-evernote:before { content: "\f1c3"; }
+.fi-social-facebook:before { content: "\f1c4"; }
+.fi-social-flickr:before { content: "\f1c5"; }
+.fi-social-forrst:before { content: "\f1c6"; }
+.fi-social-foursquare:before { content: "\f1c7"; }
+.fi-social-game-center:before { content: "\f1c8"; }
+.fi-social-github:before { content: "\f1c9"; }
+.fi-social-google-plus:before { content: "\f1ca"; }
+.fi-social-hacker-news:before { content: "\f1cb"; }
+.fi-social-hi5:before { content: "\f1cc"; }
+.fi-social-instagram:before { content: "\f1cd"; }
+.fi-social-joomla:before { content: "\f1ce"; }
+.fi-social-lastfm:before { content: "\f1cf"; }
+.fi-social-linkedin:before { content: "\f1d0"; }
+.fi-social-medium:before { content: "\f1d1"; }
+.fi-social-myspace:before { content: "\f1d2"; }
+.fi-social-orkut:before { content: "\f1d3"; }
+.fi-social-path:before { content: "\f1d4"; }
+.fi-social-picasa:before { content: "\f1d5"; }
+.fi-social-pinterest:before { content: "\f1d6"; }
+.fi-social-rdio:before { content: "\f1d7"; }
+.fi-social-reddit:before { content: "\f1d8"; }
+.fi-social-skillshare:before { content: "\f1d9"; }
+.fi-social-skype:before { content: "\f1da"; }
+.fi-social-smashing-mag:before { content: "\f1db"; }
+.fi-social-snapchat:before { content: "\f1dc"; }
+.fi-social-spotify:before { content: "\f1dd"; }
+.fi-social-squidoo:before { content: "\f1de"; }
+.fi-social-stack-overflow:before { content: "\f1df"; }
+.fi-social-steam:before { content: "\f1e0"; }
+.fi-social-stumbleupon:before { content: "\f1e1"; }
+.fi-social-treehouse:before { content: "\f1e2"; }
+.fi-social-tumblr:before { content: "\f1e3"; }
+.fi-social-twitter:before { content: "\f1e4"; }
+.fi-social-vimeo:before { content: "\f1e5"; }
+.fi-social-windows:before { content: "\f1e6"; }
+.fi-social-xbox:before { content: "\f1e7"; }
+.fi-social-yahoo:before { content: "\f1e8"; }
+.fi-social-yelp:before { content: "\f1e9"; }
+.fi-social-youtube:before { content: "\f1ea"; }
+.fi-social-zerply:before { content: "\f1eb"; }
+.fi-social-zurb:before { content: "\f1ec"; }
+.fi-sound:before { content: "\f1ed"; }
+.fi-star:before { content: "\f1ee"; }
+.fi-stop:before { content: "\f1ef"; }
+.fi-strikethrough:before { content: "\f1f0"; }
+.fi-subscript:before { content: "\f1f1"; }
+.fi-superscript:before { content: "\f1f2"; }
+.fi-tablet-landscape:before { content: "\f1f3"; }
+.fi-tablet-portrait:before { content: "\f1f4"; }
+.fi-target-two:before { content: "\f1f5"; }
+.fi-target:before { content: "\f1f6"; }
+.fi-telephone-accessible:before { content: "\f1f7"; }
+.fi-telephone:before { content: "\f1f8"; }
+.fi-text-color:before { content: "\f1f9"; }
+.fi-thumbnails:before { content: "\f1fa"; }
+.fi-ticket:before { content: "\f1fb"; }
+.fi-torso-business:before { content: "\f1fc"; }
+.fi-torso-female:before { content: "\f1fd"; }
+.fi-torso:before { content: "\f1fe"; }
+.fi-torsos-all-female:before { content: "\f1ff"; }
+.fi-torsos-all:before { content: "\f200"; }
+.fi-torsos-female-male:before { content: "\f201"; }
+.fi-torsos-male-female:before { content: "\f202"; }
+.fi-torsos:before { content: "\f203"; }
+.fi-trash:before { content: "\f204"; }
+.fi-trees:before { content: "\f205"; }
+.fi-trophy:before { content: "\f206"; }
+.fi-underline:before { content: "\f207"; }
+.fi-universal-access:before { content: "\f208"; }
+.fi-unlink:before { content: "\f209"; }
+.fi-unlock:before { content: "\f20a"; }
+.fi-upload-cloud:before { content: "\f20b"; }
+.fi-upload:before { content: "\f20c"; }
+.fi-usb:before { content: "\f20d"; }
+.fi-video:before { content: "\f20e"; }
+.fi-volume-none:before { content: "\f20f"; }
+.fi-volume-strike:before { content: "\f210"; }
+.fi-volume:before { content: "\f211"; }
+.fi-web:before { content: "\f212"; }
+.fi-wheelchair:before { content: "\f213"; }
+.fi-widget:before { content: "\f214"; }
+.fi-wrench:before { content: "\f215"; }
+.fi-x-circle:before { content: "\f216"; }
+.fi-x:before { content: "\f217"; }
+.fi-yen:before { content: "\f218"; }
+.fi-zoom-in:before { content: "\f219"; }
+.fi-zoom-out:before { content: "\f21a"; }
+
+// @include font-face("ChunkFive", font-files("ChunkFive-webfont.ttf", "ChunkFive-webfont.otf", "ChunkFive-webfont.woff"), "ChunkFive-webfont.eot", normal);
+// @include font-face("OpenSans", font-files("OpenSans-Regular-webfont.ttf", "OpenSans-Regular-webfont.otf", "OpenSans-Regular-webfont.woff"), "OpenSans-Regular-webfont.eot", normal);
+@include font-face("MyriadPro", font-files("MyriadPro_Regular.ttf", "MyriadPro_Regular.otf", "MyriadPro_Regular.woff"), "MyriadPro_Regular.eot", normal);
+@include font-face("NeoSansProBold", font-files("Neo-Sans-Pro-Bold.ttf", "Neo-Sans-Pro-Bold.otf", "Neo-Sans-Pro-Bold.woff"), "Neo-Sans-Pro-Bold.eot", normal);
+
+// Establish default fonts for use on the site
+
+$body-font-family: "MyriadPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-bg: $white;
+$body-font-color: #473016;
+
+$header-font-family: "NeoSansProBold", "OpenSans", Arial, sans-serif;
+$header-font-weight: normal;
+$header-font-color: $dark-grey;
+
+
+// -------------------------------------------------------------------
+// Placeholders
+// ====================================================================
+%message {
+  	padding: .5em;
+	margin-bottom: .5em;
+	border-radius: .15em;
+	border: 1px solid;
+}
+
+// -------------------------------------------------------------------
+// Mixin for box-sizing
+// ====================================================================
+
+@mixin bs($bs-type: $defined-bs-type) {
+	-webkit-box-sizing: $bs-type;
+	-moz-box-sizing: $bs-type;
+	box-sizing: $bs-type;
+}
+
+// Mixin for creating pill shaped buttons
+// ====================================================================
+
+@mixin bordered-image() {
+  border-color: transparent;
+  border-width: 10px;
+  border-style: solid;
+  &:hover {
+    border-color: #00a1d9;
+    /* border-color: #ADADAD;  */
+  }
+}
+
+// Media Query mixin
+@mixin MQ($canvas) {
+	@if $canvas == XS {
+		@media only screen and (min-width: $XS) and (max-width: $S - 1) { @content; }
+	}
+	@else if $canvas == S {
+		@media only screen and (min-width: $S) and (max-width: $M - 1) { @content; }
+	}
+	@else if $canvas == M {
+		@media only screen and (min-width: $M) and (max-width: $L - 1) { @content; }
+	}
+	@else if $canvas == L {
+		@media only screen and (min-width: $L) and (max-width: $XL - 1) { @content; }
+	}
+	@else if $canvas == XL {
+		@media only screen and (min-width: $XL) and (max-width: $XXL - 1) { @content; }
+	}
+	@else if $canvas == XSplus {
+		@media only screen and (min-width: $XS) { @content; }
+	}
+	@else if $canvas == Splus {
+		@media only screen and (min-width: $S) { @content; }
+	}
+	@else if $canvas == Mplus {
+		@media only screen and (min-width: $M) { @content; }
+	}
+	@else if $canvas == Lplus {
+		@media only screen and (min-width: $L) { @content; }
+	}
+	@else if $canvas == XLplus {
+		@media only screen and (min-width: $XL) { @content; }
+	}
+	@else if $canvas == XSneg {
+		@media only screen and (max-width: $XS) { @content; }
+	}
+	@else if $canvas == Sneg {
+		@media only screen and (max-width: $S) { @content; }
+	}
+	@else if $canvas == Mneg {
+		@media only screen and (max-width: $M) { @content; }
+	}
+	@else if $canvas == Lneg {
+		@media only screen and (max-width: $L) { @content; }
+	}
+	@else if $canvas == XLneg {
+		@media only screen and (max-width: $XL) { @content; }
+	}
+	@else if $canvas == StoL {
+		@media only screen and (min-width: $S) and (max-width: $L - 1) { @content; }
+	}
+}
+
+// Mixin for messages
+// ====================================================================
+// Message type colors
+// N.B.   Sass 3.3 onwards can use associative arrays (maps) to do this
+// ====================================================================
+
+$message-error: 	#b94a48;       // Basic red - fail
+$message-valid: 	#468847;       // Basic green - success
+$message-warning: 	#c09853;       // Basic yellowy-orange - warning
+$message-info: 		#3a87ad;	   // Basic medium blue - information
+$message-types: (
+	(error 		$message-error)
+	(valid 		$message-valid)
+	(warning 	$message-warning)
+	(info 		$message-info)
+) !default;
+
+@mixin message($color) {
+	@if type-of($color) == color {
+		@extend %message;
+		color: $color;
+		border-color: lighten($color, 20%);
+		background: lighten($color, 40%);		
+	}
+	@else {
+		@warn "#($color) is not a color for `message`.";
+	}
+}
+
+// Mixins from Dan Cederholm
+
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin shadow($x, $y, $blur, $color) {
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+  -ms-box-shadow: $x $y $blur $color;
+  -o-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+@mixin shadow-inset($x, $y, $blur, $color) {
+  -webkit-box-shadow: inset $x $y $blur $color;
+  -moz-box-shadow: inset $x $y $blur $color;
+  -ms-box-shadow: inset $x $y $blur $color;
+  -o-box-shadow: inset $x $y $blur $color;
+  box-shadow: inset $x $y $blur $color;
+}
+@mixin transition($property) {
+  -webkit-transition: $property .2s ease;
+  -moz-transition: $property .2s ease;
+  -ms-transition: $property .2s ease;
+  -o-transition: $property .2s ease;
+  transition: $property .2s ease;
+}
+@mixin box-sizing($property: border-box) {
+  -webkit-box-sizing: $property;
+  -moz-box-sizing: $property;
+  -ms-box-sizing: $property;
+  -o-box-sizing: $property;
+  box-sizing: $property;
+}
+@mixin linear-gradient($from, $to) {
+  /*  Fallback fort sad browsers */
+  background-color: $to;
+  /*  Mozilla Firefoz  */
+  background-image: -moz-linear-gradient($from, $to);
+  /*  Opera  */
+  background-image: -o-linear-gradient($from, $to);
+  /*  Webkit   Chrome 11+  */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,$from) color-stop(1, $to));
+  /*  Webkit   Safrai 5.1+, Chrome 10+  */
+  background-image: -webkit-linear-gradient($from, $to);
+  /*  IE10+  */
+  background-image: -ms-linear-gradient($from, $to);
+  /*  W3C  */
+  background-image: linear-gradient($from, $to);
+}
+//
+// ---------------------- end of Mixins ------------------------------
+
+// Need to explicitly set these as $ variables not working
+body {
+  font-family: "MyriadPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #473016;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "NeoSansProBold", "OpenSans", Arial, sans-serif;
+  font-weight: normal;
+  color: $dark-grey;
+}
+
+// ====================================================================
+// Layout styles, should only contain rules relating to the structure
+// ====================================================================
+
+.noshow {
+	display: none; 
+}
+
+
+/* row-colors */
+.row--white { background: #fff; }
+.row--grey { background: #f8f8f8; }
+.row--blue { background: $light-blue; }
+.row--green { background-color: $sage-green; }
+.row--beige { background-color: #f7eaad; }
+
+.row--dark-grey
+{
+	color: #fff;   // Cant use black text on this background
+	background: $dark-grey;
+}
+.row--medium-grey {
+  color: #fff;   // Cant use black text on this background
+  background: $medium-grey;
+}
+.row--light-grey {
+  background: $light-grey;
+}
+
+/* row-padding */
+.row--padding-medium
+{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	/* 24px/16px */
+}
+
+.row--padding-wide
+{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	/* 35px/16px */
+}
+
+/* containers */
+.container-narrow,
+.container-medium,
+.container-wide
+{
+	margin: 0 auto;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.container-narrow { max-width: 34em; }
+.container-medium { max-width: 52em; }
+.container-wide { max-width: 58em; }
+
+/* columns */
+.col-narrow,
+.col-narrow--right { margin-bottom: 1.5em; }
+
+/*  */
+.mid-grey {
+	background: #000;
+	opacity: 0.6;
+}
+
+/* ----------------------------
+wide
+---------------------------- */
+
+@media (min-width: 38em)
+{
+	.row--padding-medium
+	{
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		/* 36px/18px */
+	}
+	
+	.row--padding-wide
+	{
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		/* 36px/18px */
+	}
+	
+	.container-narrow,
+	.container-medium,
+	.container-wide
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	
+	.col-narrow,
+	.col-medium,
+	.col-wide { float: left; }
+	.col-narrow--right,
+	.col-wide--right { float: right; }
+	
+	.col-wide,
+	.col-wide--right { width: 61%; }
+	
+	.col-medium { width: 50%; }
+	
+	.col-narrow,
+	.col-narrow--right
+	{
+		width: 25%;
+		margin-bottom: 0;
+	}
+}
+
+
+// --------------  end of layout stuff ---------------------
+
+//
+// Styling for module elements that appear on more than one page
+// ====================================================================
+
+// Message types loop 
+// N.B.   Sass 3.3 onwards can use associative arrays (maps) to do this
+// ====================================================================
+
+@each $message-type in $message-types {
+	$type: 		nth($message-type, 1);	
+	$color: 	nth($message-type, 2);	
+
+	.message-#{$type} {
+		@include message($color);
+	}
+}
+
+/* ----------------------------
+form elements
+---------------------------- */
+input[type=checkbox] {
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  padding: 10px;
+}
+
+// Link styling
+
+a, a:visited, a:focus, a:hover, a:active {
+	color: #00a1d9;    // blue
+	text-decoration: none;   // no underlines etc
+}
+
+a.bordered:hover {
+	border: 2px solid white;
+	-ms-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+
+a img {
+	border: none;
+}
+
+// Styles for submit buttons
+input[type=submit] {
+  color: #fff;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: emCalc(8px) emCalc(24px);
+  font-size: 1.2em;
+  background-color: $primary-color;   // Foundation primary color 
+
+  -webkit-border-radius: emCalc(10px);
+  -moz-border-radius: emCalc(10px);
+  -ms-border-radius: emCalc(10px);
+  -o-border-radius: emCalc(10px);
+  border-radius: emCalc(10px);
+
+  &:hover {
+    color: #fff;
+    background-color: darken($primary-color, 20%);
+  }  
+}
+
+
+
+// Styles for the top navigation bar
+//
+.top-bar {
+	.title-area {
+		img {
+			position: relative;
+			top: emCalc(5px);
+			left: emCalc(10px);
+			overflow: auto;
+			margin-bottom: emCalc(10px);
+		}
+	}
+	.name 
+		h1 {
+		font-family: $logo-font-family;
+		text-transform: uppercase;
+		font-size: emCalc(14px);
+		padding-left: 0;
+		margin-left: 0;
+		}
+}
+
+// Styles for the awards row on main landing page
+//
+.awardstext {
+	text-align: center;
+	padding: 0 10px;
+}
+
+// Styles for the wlecome image on members.html
+
+.welcomeimage
+{
+  background-image: url(../img/smileyface-small.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// Styles for the logopanel on renewal forms
+//
+
+.logopanel
+{
+	background-image: url(../img/small_logo.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+// Styles for the banner image on main landing page
+//
+.row--banner
+{
+	background-color: $body-bg;
+	background-image: url(../img/mainbanner-small.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+// Styles for the banner image on ourclub.html
+//
+.row--ourclub
+{
+	background-color: $body-bg;
+	background-image: url(../img/clubhouse.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+// Styles for the banner image on league.html
+//
+.row--league
+{
+	background-color: $body-bg;
+	background-image: url(../img/first_team.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+// Styles for the banner image on league.html
+//
+.row--aegon
+{
+  background-color: $body-bg;
+  background-image: url(../img/aegon-team-tennis-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// Styles for banner on sports club landing page
+//
+.row--banner-sportsclub
+{
+  background-color: $body-bg;
+  background-image: url(../img/clubhouse.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.row--watching {
+  background-color: lighten($sage-green,20%);
+}
+
+.promobox {
+  padding: 1.5em;
+  webkit-border-radius: 10px;
+  moz-border-radius: 10px;
+  ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+// Styles for village festival promo box
+//
+
+.vilagefestival {
+  padding: 20px;
+}
+
+@media (min-width: 38em)
+{
+  /*  Must give banners a height when on desktops  */
+	.row--banner { 
+		background-image: url(../img/mainbanner.jpg);
+		height: 360px;
+	}
+  .row--banner-sportsclub {
+    background-image: url(../img/clubhouse.jpg);
+    height: 360px;
+  }
+	.row--ourclub
+	{
+		background-image: url(../img/clubhouse.jpg);
+		height: 360px;
+	}
+
+	.row--league
+	{
+		background-image: url(../img/first_team.jpg);
+		height: 360px;
+	}
+
+  .row--aegon
+  {
+    background-image: url(../img/aegon-team-tennis-banner.jpg);
+    height: 230px;
+  }
+
+}
+
+/* ----------------------------
+Welcome block styling on members.html
+----------------------------- */
+
+.welcomeblock {
+  padding: 1em 0 1em 0;
+  vertical-align: middle;
+}
+
+p#welcometext, #notme, #mylogout {
+  vertical-align: middle;
+}
+
+#notme, #mylogout {
+  text-aligbn: center;
+}
+
+/* ----------------------------
+Running the club layout
+---------------------------- */
+
+.helpheading {
+  text-align: center;
+
+  img {
+    margin: 1em auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+}
+
+.helpdescription {
+  margin-top: 1em;
+}
+
+
+/* ----------------------------
+header
+---------------------------- */
+
+.header
+{
+	padding: 1.25em 1em;
+	/* 20px/16px - 16px/16px */
+}
+
+.header__logo
+{
+	float: left;
+	padding-top: 2.5em;
+}
+
+.header__nav
+{
+	padding-top: 2.5em;
+	float: right;
+	width: 200px;
+}
+
+.header__nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+.header__nav li
+{
+	display: inline-block;
+	margin: 0;
+/* 	
+	background: #fff;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+ */
+}
+
+.header__nav a
+{
+	display: block;
+	margin-right: .2em;
+	padding: 0.6em 1em 0.4em;
+	border-radius: .3em;
+	color: #fff;
+	background: none;
+	font-size: 0.8125em;
+	/* 13px/16px */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header__nav-contact a { margin-right: 0; }
+
+.current a
+{
+	color: #fff;
+	background: #56b880;
+}
+
+.header__nav a:focus { background: #000; }
+.header__nav a:hover { 
+	background: #3bb2d0;
+	border: 2px solid white;
+	border-radius: .5em;
+}
+
+.header__nav a:active { background: #af0000; }
+
+@media (min-width: 38em)
+{
+	.header
+	{
+		padding: 2.2222em 2em;
+		/* 40px/18px - 36px/18px */
+	}
+	
+	.header__nav { width: 20em; }
+
+	.header__nav a
+	{
+		font-size: 0.8333em;
+		/* 15px/18px */
+	}
+}
+
+/* ----------------------------
+banner-content
+---------------------------- */
+
+.banner-content
+{
+	padding: 1.875em 1.5em 2.8125em;
+	/* 30px/16px - 24px/16px - 45px/16px */
+	text-align: center;
+}
+
+.banner-content__heading
+{
+	margin: 1em 0 1.5em;
+	/* 30px/16px */
+	color: #fff;
+	font-size: 1.5em;
+	/* 24px/16px */
+	font-weight: normal;
+}
+
+.banner-content__strapline {
+	margin: 0 0 1.5em;
+	/* 30px/16px */
+	color: #fff;
+	font-size: 1.2em;
+	/* 24px/16px */
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+}
+
+@media (min-width: 38em)
+{
+	.banner-content
+	{
+		padding: 7.5em 2em;
+		/* 135px/18px - 36px/18px */
+	}
+
+	.banner-content__heading
+	{
+		font-size: 2.5556em;
+		/* 46px/18px */
+	}
+}
+
+/* ----------------------------
+50 years banner
+---------------------------- */
+
+.banner50-content
+{
+  padding: 1.875em 1.5em 2.8125em;
+  /* 30px/16px - 24px/16px - 45px/16px */
+  text-align: center;
+}
+
+.banner50-content__heading
+{
+  margin: 1em 0 1.5em;
+  /* 30px/16px */
+  color: #fff;
+  font-size: 1.3em;
+  /* 24px/16px */
+  font-weight: normal;
+}
+
+.banner50-content__strapline {
+  margin: 0 0 1.5em;
+  /* 30px/16px */
+  color: #fff;
+  font-size: 1.1em;
+  /* 24px/16px */
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (min-width: 38em)
+{
+  .banner50-content
+  {
+    padding: 7.5em 2em;
+    /* 135px/18px - 36px/18px */
+  }
+
+  .banner50-content__heading
+  {
+    font-size: 2.0em;
+    /* 46px/18px */
+  }
+}
+
+
+/* ------------------------------------------------------------
+ *        dynamic pricning table (buy50.html)
+ * ------------------------------------------------------------ */
+ 
+.active-tb {
+  position: relative;
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+  transform: scale(1);
+  border:0;
+  transition: 0.4s ease;
+  z-index:13;
+  &:hover {
+    position: relative;
+    box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+    transform: scale(1.25);
+    border:0;
+    z-index:15;
+  }
+}
+
+
+/* ------------------------------------------------------------
+ *        footer
+ * ------------------------------------------------------------ */
+
+ .footer {
+	margin-top: emCalc(24px);
+	a {
+		color: $body-font-color;
+	}
+	.footermenuhead {
+		margin-top: emCalc(20px);
+		margin-left: 20%;
+		color: $medium-grey;
+	}
+	.toprow {
+		background-color: $footer-toprow-color;
+		.bigfooter {
+			ul {
+				list-style-type: none;
+				li a {
+					margin-left: 10%;
+					font-size: emCalc(12px);
+					text-decoration: none;
+					color: $light-grey;
+					display: block;
+					&:hover {
+						background: $light-grey;
+						color: $dark-grey;
+					}
+				}
+			}
+		}
+		.clublogo {
+			text-align: center;
+			img {
+				max-width: 50%;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.bottomrow {
+		background-color: $footer-bottomrow-color;
+		color: $medium-grey;
+		.contactsummary {
+			margin-top: emCalc(16px);
+		}
+	}
+
+	.footnav {
+		ul {
+			margin: emCalc(5px) 0 0 0;
+		}
+		li {
+			margin-left: 0;
+			margin-right: emCalc(15px);
+		}
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.joinus {
+		padding: 20px;
+		background-color: $light-grey;
+		color: $dark-grey;
+	}
+
+}
+
+.social {
+	$height: social-sprite-height(facebook);
+	$width: social-sprite-width(facebook);
+	h3 {
+		margin-top: emCalc(20px);
+		color: $medium-grey;
+	}
+	ul {
+		float: left;
+	}
+	li {
+		a {
+			display: inline-block;
+			height: $height;
+			width: $width;
+			/*   CSS image replacement  
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			*/
+		}
+		&.facebook a {
+			@include social-sprite(facebook);
+			&:hover {
+				@include social-sprite(facebook-hover);
+			}
+		}
+		&.twitter a {
+			@include social-sprite(twitter);
+			&:hover {
+				@include social-sprite(twitter-hover);
+			}
+		}
+		&.wordpress a {
+			@include social-sprite(wordpress);
+			&:hover {
+				@include social-sprite(wordpress-hover);
+			}
+		}
+		&.flickr a {
+			@include social-sprite(flickr);
+			&:hover {
+				@include social-sprite(flickr-hover);
+			}
+		}
+	}
+}
+
+.whaticansee {
+  padding: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #ADADAD;
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------
+ *        features row
+ * ------------------------------------------------------------ */
+
+.feature-grid {
+	text-align: center;
+}
+
+.feature-image {
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.feature-image:hover {
+  border-color: #ADADAD;
+}
+
+/* ------------------------------------------------------------
+ *        involved row
+ * ------------------------------------------------------------ */
+
+.involve {
+	background-color: #fff;
+}
+
+.involved-grid {
+	text-align: center;
+}
+
+.involved-image {
+	height: 100px;
+}
+
+.involvedheading {
+	text-align: center;
+	padding: 0 10px;
+}
+
+/* ------------------------------------------------------------
+ *        playing row
+ * ------------------------------------------------------------ */
+
+.playing {
+	background-color: #fff;
+}
+
+.playing-grid {
+	text-align: center;
+}
+
+.playing-image {
+	height: 100px;
+}
+
+.playingheading {
+	text-align: center;
+	padding: 0 10px;
+}
+
+/* ------------------------------------------------------------
+ *        other sports row
+ * ------------------------------------------------------------ */
+
+.othersports {
+	background-color: $sage-green;
+}
+
+.othersports-grid {
+	text-align: center;
+}
+
+.othersports-image {
+	height: 100px;
+}
+
+.othersportsheading {
+	text-align: center;
+	padding: 0 10px;
+}
+
+/* ------------------------------------------------------------
+ *        Twitter styling
+ * ------------------------------------------------------------ */
+
+#twitter-feed {
+	#loading-container {
+		text-align: center;
+		padding: emCalc(16px) 0px;
+	}
+	.twitter-article {
+		border-bottom: 1px dotted $light-grey;
+		// margin-top: emCalc(10px);
+		padding: emCalc(5px) 0 emCalc(5px) emCalc(15px);
+		.twitter-pic {
+			img {
+				display: inline-block;
+				max-width: 80%;
+				margin: auto 5%;
+				@include border-radius(7px);
+			}
+		}
+		.twitter-text {
+			.tweet-text {
+				font-size: emCalc(12px);
+        line-height: 1.36em;
+				color: $dark-grey;
+			}
+			&:hover {
+				background: $light-grey;
+			}
+			p {
+          margin: 0;
+          padding: 0;
+          position: relative;
+				.tweet-time {
+					font-size: emCalc(10px);
+					color: #878787;
+          position: relative;
+          top: 0;
+          right: 0;
+				}
+				.tweetprofilelink a {
+					color:#444;
+					&:hover {
+						color:#444;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ------------------------------------------------------------
+ *        Slideshow styling
+ * ------------------------------------------------------------ */
+
+.content {
+  margin-top: emCalc(20px);
+  .orbit-container {
+    @include background(radial-gradient(lighten($body-bg, 6%), darken($body-bg, 3%)));
+    li {
+      padding: emCalc(20px) emCalc(40px);
+      &:nth-child(1) {
+        background: image-url('../img/Logo50Banner.png') no-repeat right bottom;
+      }
+      &:nth-child(2) {
+        background: image-url('../img/Merchandise50.png') no-repeat right bottom;
+      }
+      &:nth-child(3) {
+        background: image-url('../img/Ball50Banner.png') no-repeat right bottom;
+      }
+      &:nth-child(4) {
+        background: image-url('../img/Activity50Banner.png') no-repeat right bottom;
+      }
+    }
+    a.orbit-prev, a.orbit-next {
+      @include opacity(0);
+      @include single-transition(opacity, 400ms);
+    }
+    &:hover {
+      a.orbit-prev, a.orbit-next {
+        @include opacity(1);
+      }
+    }
+
+    h3 {
+      padding: emCalc(10px);
+      background-color: rgba($white, .3);
+      + p {
+        padding: emCalc(10px);
+        background-color: rgba($white, .5);
+        position: relative;
+        // bottom: emCalc(20px);
+      }
+    }
+  }   /* slideshow    */
+}
+
+/* ------------------------------------------------------------
+ *        Wordpress styling
+ * ------------------------------------------------------------ */
+
+#blogposts {
+	img {
+		position: relative;
+		top: emCalc(5px);
+		left: emCalc(5px);
+		max-width: emCalc(20px);
+		display: inline-block;
+		margin-right: 5%;
+		padding-top: emCalc(10px);
+		overflow: auto;
+	}
+
+	border-top: 1px dotted $light-grey;
+	margin-top: emCalc(10px);
+}
+
+.blogitem {
+	padding: emCalc(8px) 0 emCalc(8px) emCalc(15px);
+}
+
+.blogitemtext {
+	font-size: emCalc(12px);
+	color: $dark-grey;
+}
+
+/*
+.blogitemtitle {
+	font-size: emCalc(14px);
+	color: darken($dark-grey,50%);
+	font-weight: bold;
+}
+*/
+.blogpostdate {
+	color: #878787;
+	font-size: emCalc(10px);
+	text-align: right;
+	padding-right: emCalc(10px);
+	font-style: italic;
+	line-height: emCalc(12px);
+}
+
+.blogitem:hover {
+		background: $light-grey;
+}
+
+
+/* ----------------------------
+form elements
+---------------------------- */
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+
+/* ----------------------------
+Calendar icon styling
+---------------------------- */
+
+time.icon
+{
+  font-size: 1em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  margin: 0 auto 2em auto;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 10%;
+  transform-origin: 50% 10%;
+}
+
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  border-bottom: 1px dashed #f37302;
+  box-shadow: 0 2px 0 #fd9f1b;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+
+time.icon span
+{
+  width: 100%;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+time.icon:hover, time.icon:focus
+{
+  -webkit-animation: swing 0.6s ease-out;
+  animation: swing 0.6s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0%   { -webkit-transform: rotate(0deg)  skewY(0deg); }
+  20%  { -webkit-transform: rotate(12deg) skewY(4deg); }
+  60%  { -webkit-transform: rotate(-9deg) skewY(-3deg); }
+  80%  { -webkit-transform: rotate(6deg)  skewY(-2deg); }
+  100% { -webkit-transform: rotate(0deg)  skewY(0deg); }
+}
+
+@keyframes swing {
+  0%   { transform: rotate(0deg)  skewY(0deg); }
+  20%  { transform: rotate(12deg) skewY(4deg); }
+  60%  { transform: rotate(-9deg) skewY(-3deg); }
+  80%  { transform: rotate(6deg)  skewY(-2deg); }
+  100% { transform: rotate(0deg)  skewY(0deg); }
+}
+
+// --------------------------------------------------------
+// Snowfall effects
+
+.snowfall{
+  background: none;
+  font-family: Arial;
+  background-image: url('./img/snow-01.png'), url('./img/snow-02.png'), url('./img/snow-03.png');
+  height: 900px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  -webkit-animation: snow 12s linear infinite;
+  -moz-animation: snow 12s linear infinite;
+  -ms-animation: snow 12s linear infinite;
+  animation: snow 12s linear infinite;
+}
+
+/*@keyframes snow { 
+  0% { background-position: 500px 0px, 120px 0px, -100px 0px; } 
+  10% { background-position: 500px 100px, 120px 40px, -100px 30px; } 
+  20% { background-position: 500px 200px, 120px 80px, -100px 60px; } 
+  30% { background-position: 500px 300px, 120px 120px, -100px 90px; } 
+  40% { background-position: 500px 400px, 100px 160px, -100px 120px; } 
+  50% { background-position: 500px 500px, 100px 200px, -100px 150px; } 
+  60% { background-position: 500px 600px, 100px 240px, -100px 180px; } 
+  70% { background-position: 500px 700px, 120px 280px, -100px 210px; } 
+  80% { background-position: 500px 800px, 120px 320px, -100px 240px; } 
+  90% { background-position: 500px 900px, 120px 360px, -100px 270px; } 
+  100% { background-position: 500px 1000px, 120px 400px, -100px 300px; } }*/
+
+/***** Change direction of the snowfall ******/
+
+/*@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}*/
+
+@keyframes snow {
+  0% {background-position: 500px 0px, 120px 0px, -100px 0px;}
+  100% {background-position: 500px 1000px, 120px 400px, -100px 300px;}
+}
+
+// ----------------  end of modules  ----------------------
+
+// --------------------------------------------------------
+// print styling
+
+@media print { 
+ /* All your print styles go here */
+ #header, #footer, #nav { display: none !important; } 
+
+ .notprint {
+ 	display: none !important;
+ }
+}
+
+// -------------------------------------------------------
+
+/********************************************
+ *    Area for media query styles 
+ ********************************************/
+
+@media screen and (max-width: 500px) {
+
+	.button {
+		width: 90%;
+		margin: emCalc(10px) auto emCalc(10px) auto;
+	}
+
+  .fullwidth {
+    width: 90%;
+    margin: emCalc(10px) auto;
+  }
+
+	.footer {
+		.footermenuhead {
+			text-align: center;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 90%;
+		}
+		.toprow { 
+      .bigfooter {
+        ul {
+          li {
+            margin: 0.25em 0 0 0;
+            padding: auto 0;
+            a {
+              margin: 0;
+              display: block;
+              text-align: center;
+              line-height: emCalc(60px);
+              background: $dark-grey;
+              color: $light-grey;
+              /* height: emCalc(40px);  */
+              font-size: emCalc(20px);
+              vertical-align: middle;
+              max-width: 90%;
+              margin: 0 auto;
+              padding: 0;
+              &:hover {
+                background: $light-grey;
+                color: $dark-grey;
+              }
+            }
+          }
+        }
+			}
+			.clublogo {
+				text-align: center;
+				img {
+					max-width: 50%;
+					margin: 0 auto;
+				}
+			}
+
+		}
+	}
+
+	.top-bar {
+		.title-area {
+			img {
+				position: relative;
+				top: emCalc(5px);
+				left: emCalc(10px);
+				overflow: auto;
+				margin-bottom: emCalc(10px);
+			}
+		}
+	}
+
+}    // end of media query for smartphones
+
+
+
+
+

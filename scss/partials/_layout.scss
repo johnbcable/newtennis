@@ -1,0 +1,120 @@
+// ====================================================================
+// Layout styles, should only contain rules relating to the structure
+// ====================================================================
+
+.noshow {
+	display: none; 
+}
+
+/* row-colors */
+.row--white { background: #fff; }
+.row--grey { background: #f8f8f8; }
+.row--blue { background: #3bb2d0; }
+.row--green { background: #abedab; }
+.row-beige { background: #f7eaad; }
+
+.row--dark-grey
+{
+	color: #fff;
+	background: #282e37;
+}
+
+/* row-padding */
+.row--padding-medium
+{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	/* 24px/16px */
+}
+
+.row--padding-wide
+{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	/* 35px/16px */
+}
+
+/* containers */
+.container-narrow,
+.container-medium,
+.container-wide
+{
+	margin: 0 auto;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.container-narrow { max-width: 34em; }
+.container-medium { max-width: 52em; }
+.container-wide { max-width: 58em; }
+
+/* columns */
+.col-narrow,
+.col-narrow--right { margin-bottom: 1.5em; }
+
+/*  */
+.mid-grey {
+	background: #000;
+	opacity: 0.6;
+}
+
+/* ----------------------------
+wide
+---------------------------- */
+
+@media (min-width: 38em)
+{
+	.row--padding-medium
+	{
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		/* 36px/18px */
+	}
+	
+	.row--padding-wide
+	{
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		/* 36px/18px */
+	}
+	
+	.container-narrow,
+	.container-medium,
+	.container-wide
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	
+	.col-narrow,
+	.col-medium,
+	.col-wide { float: left; }
+	.col-narrow--right,
+	.col-wide--right { float: right; }
+	
+	.col-wide,
+	.col-wide--right { width: 61%; }
+	
+	.col-medium { width: 50%; }
+	
+	.col-narrow,
+	.col-narrow--right
+	{
+		width: 25%;
+		margin-bottom: 0;
+	}
+}
+
+/* ----------------------------
+form elements
+---------------------------- */
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+

@@ -1,0 +1,5 @@
+
+To turn on client-side debugging on Windows PC for IIS servers: in a command prompt,
+
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/httpErrors -errorMode:Detailed
+
