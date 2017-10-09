@@ -87,13 +87,13 @@ if (debugging)
 		<h2>Autumn Finals Day - October 7<sup>th</sup> 2017</h2>
 
 		<p class="matchreport">
-			Lets see what the weather can do for us ...
+			Lets see what the weather can do for us ... Well, it was a mixed bag &ndash; weather&ndash;wise &ndash; starting off cool but cloudy, graduating to rain for most of the matches at the end of the schedule.
 		</p>
 
 
 		<div id="main2017orderofplay">
 			<p>
-				The scheduled order of play (and the summary results when we know them) for the autumn finals day will be shown below. Names will be highlighted in green to designate the winners for that match.
+				The scheduled order of play (and the summary results - winners highlighted in green) for the autumn finals day are shown below. 
 			</p>
 
 			 <img alt="October Finals Day 2017 Results" src="img/finalsresults2017.png" width="601" />
