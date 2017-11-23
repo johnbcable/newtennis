@@ -172,6 +172,8 @@ if (debugging)
 		</div>
 
 -->
+
+<!--
 		<div id="awards2014" class="collage">
 			 <img alt="Coventry League awards night" src="images/InterDistrictAward2016.jpg" width="601">
 			 <h2 style="clear:both;">Inter&ndash;District League play&ndash;off winners 2016</h2>
@@ -188,7 +190,7 @@ if (debugging)
 			</div>
 
 		</div>
-
+-->
 
 <!-- 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
