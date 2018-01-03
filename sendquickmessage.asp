@@ -559,8 +559,11 @@ objCDOMail=null;
 // end of confirmatory email bit
 
 // Now updating quick message log as required
-SQL2 = new String("INSERT into quickmessages([subject],[circulation],[sent_on],[number_sent],[messagetext],[sender],[postid])").toString(); 
-SQL2 += " values('"+sSubject+"','"+sCirculation+"','"+strtoday+"',"+numbersent+",'"+sDetails+"','"+sFrom+"','"+sPost+"')";
+// N.B.  This needs to change to accommodate sLeadParagraph
+//       (needs DB change)
+
+SQL2 = new String("INSERT into quickmessages([subject],[circulation],[sent_on],[number_sent],[messagetext],[sender],[postid],[leadparagraph])").toString(); 
+SQL2 += " values('"+sSubject+"','"+sCirculation+"','"+strtoday+"',"+numbersent+",'"+sDetails+"','"+sFrom+"','"+sPost+"','"+sLeadParagraph+"')";
 if (debugging)
 {
 	Response.Write("SQL1 = ["+SQL1+"]<br>");
