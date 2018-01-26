@@ -216,6 +216,7 @@ function getMessageByID(messageid)
 		messageobj.emailid = new String(RS("messageid")).toString();
 		messageobj.sender = new String(RS("sender")).toString();
 		messageobj.postid = new String(RS("postid")).toString();
+		messageobj.leadparagraph = new String(RS("leadparagraph")).toString();
 		RS.MoveNext();
 	}
 	RS.Close();

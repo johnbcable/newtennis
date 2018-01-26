@@ -138,6 +138,8 @@ if (debugging)
 		<%= messageobj.messageid %><br />
 		<%= messageobj.sender %><br />
 		<%= messageobj.postid %><br />
+		<%= messageobj.leadparagraph %><br />
+		</p>
 <%
 }
 %>
@@ -151,6 +153,8 @@ if (debugging)
 		</div>
 		<div class="centered" id="quickmessage" style="overflow: hidden; background-color:white; padding: 20px 0;">
 <%
+			Response.Write(messageobj.leadparagraph);
+			Response.Write("<br /><hr /><br />");
 			Response.Write(messageobj.messagetext);
 %>
 		</div>
