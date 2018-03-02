@@ -58,7 +58,7 @@ if (debugging)
 				 position: relative;
 				 margin: 20px auto;
 				 padding: 20px;
-				 height: 100px;
+				 height: 150px;
 }
 .promobutton {
 					 position: relative;
@@ -70,7 +70,7 @@ if (debugging)
 .promotext {
 			 position: relative;
 			 float: right;
-			 width: 70%;
+			 width: 100%;
 			 text-align: left;
 }
 .promotext p {
@@ -134,28 +134,27 @@ if (debugging)
 	<div id="content">
 		<h1>Welcome to <b>Hampton-in-Arden Tennis Club</b></h1>
 
-<!-- 
-		<div id="finalsday2012collage" class="collage">
-			 <img alt="Finals Day 2015" src="Images/finalsday2012_collage.jpg" width="700" height="200">
-		</div>
-
 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
-				<h3>Autumn Finals Day - Sunday 27<sup>th</sup> September</h3>
-				 <div class="promobutton">
-				 	<a href="https://hamptontennis.org.uk/finalsdays2015.asp">Order of Play &raquo;</a>
-				 </div>
+				<h3>Tennis Coaching CANCELLED</h3>
 				<div class="promotext">
 					<p>
-				 		Finals day is here ... and the weather is looking good! Come along from 12:30 and watch our finalists strut their stuff. See who&apos;s on when &ndash; click on the Order of Play button
+				 		[02/03/2018] Due to the freezing conditions, all tennis coaching for today and over the weekend is cancelled.
+				 	</p>
+				 	<p>
+				 		We will be in touch with you about catch up sessions once the weather has improved.
+				 	</p>
+				 	<p>
+				 		Ian Poole<br />
+						Head Coach
 				 	</p>
 				</div>
 			</div>
 
 		</div>
 
-
+<!--
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
 				<h3>Your web site will change ... <span style="font-size:110%;">TOMORROW Sunday 11<sup>th</sup> October!</span></h3>
