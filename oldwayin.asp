@@ -137,17 +137,16 @@ if (debugging)
 
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
-				<h3>Tennis Coaching CANCELLED</h3>
+				<h3>Ladies Prosecco Tournament Rearranged</h3>
 				<div class="promotext">
 					<p>
-				 		[02/03/2018] Due to the freezing conditions, all tennis coaching for today and over the weekend is cancelled.
+				 		[Our original Ladies Prosecco Tournament had to be cancelled due to the snow. The rearranged tournament will take place on Sunday 8<sup>th</sup> April from 3pm to 5pm. Hopefully the Beast from the East will have left by then!
 				 	</p>
 				 	<p>
-				 		We will be in touch with you about catch up sessions once the weather has improved.
+				 		This is an American style tournament open to ladies of all standards including our full ball teenage girls.
 				 	</p>
 				 	<p>
-				 		Ian Poole<br />
-						Head Coach
+				 		There is no cost, please contact Jack if you would like to take part 07895 414873. 
 				 	</p>
 				</div>
 			</div>
