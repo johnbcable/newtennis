@@ -134,7 +134,7 @@ if (debugging)
 	<div id="content">
 		<h1>Welcome to <b>Hampton-in-Arden Tennis Club</b></h1>
 
-
+<!--
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
 				<h3>Ladies Prosecco Tournament Rearranged</h3>
@@ -152,7 +152,7 @@ if (debugging)
 			</div>
 
 		</div>
-
+-->
 <!--
  		<div class="promobox" style="clear: both; padding: 20px; margin-bottom: 20px; background-color: #fff; border: 2px solid black; ">
 			<div>
@@ -214,7 +214,7 @@ if (debugging)
 		<div id="league" class="bordertop" style="clear:both; position:relative;">
 			<h2><a href="league.asp" alt="League tables for Hampton's league teams" title="League tables for Hampton's league teams">League Tennis</a></h2>
 			 <div class="promobutton">
-			 	<a href="leagueresults.asp">Summary League Tables</a>
+			 	<a href="leaguefixtures.html">Summary League Tables</a>
 			 </div>
 			<div style="position: relative; float:left; width: 50%;">
 				<p>
@@ -222,7 +222,7 @@ if (debugging)
 				</p>
 			</div>
 			<div style="position: relative; float: right; margin-left: 10px;">
-				<a href="http://www.coventrytennisleague.co.uk/" >
+				<a href="http://mydivision.com/racketindex.php?l=157" >
 				<img id="leagueimage" src="images/league.gif" style="width: 100%; margin-right:20px;">
 				</a>
 			</div>
