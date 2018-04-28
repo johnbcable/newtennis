@@ -116,6 +116,12 @@
         -o-border-radius: 10px;
         border-radius: 10px;
       }
+      .newdate {
+        background-color: #c0c0c0;
+        color: black;
+        font-weight: bold;
+        font-size: 110%;
+      }
     </style>
   </head>
   <body>
@@ -528,24 +534,23 @@
      <table width="100%" class="responsive">
       <thead>
         <tr>
-          <th>Date</th>
           <th>Start<br />Time</th>
           <th>Description</th>
         </tr>
       </thead>
       <tbody>
         {{#each allEvents}}
+        {{#if dateofevent}}
         <tr class="{{eventtype}}">
-          {{#if dateofevent}}
-          <td colspan="3" class="newdate">{{dateofevent}}</td>
-          {{#else}}
-          <td colspan="3" class="newdate">{{dateofevent}}</td>
+          <td colspan="2" class="newdate">{{dateofevent}}</td>
+        </tr>
+        {{/if}}
+        <tr class="{{eventtype}}">
           <td>{{eventtime}}</td>
           {{#if eventreport}}
           <td>{{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span></td>
           {{else}}
           <td>{{eventnote}}</td>
-          {{/if}}
           {{/if}}
         </tr>
         {{/each}}
@@ -739,7 +744,7 @@
     <script src="/js/members.js"></script>
     <script src="/js/maintwitterfeed.js"></script>
     <script src="/js/wordpress.js"></script>
-    <script src="/js/eventlist.js"></script>
+    <script src="/js/eventlist2.js"></script>
 <!-- 
     <script src="/js/today.js"></script>
  -->

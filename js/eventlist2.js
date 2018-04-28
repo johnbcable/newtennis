@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 		$.each(eventdata, function () {
 		   $.each(this, function () {
-		   		if (this.dateofevent = prevdate)
+		   		if (this.dateofevent == prevdate)
 		   				this.dateofevent = '';
 		   		else
 		   			prevdate = this.dateofevent;
