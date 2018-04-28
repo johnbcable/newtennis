@@ -1,5 +1,7 @@
-$(document).ready(function() {
-	
+
+function getFutureEvents() {
+
+
 	var jsonstring = new String("");
 	var url = "https://hamptontennis.org.uk/fetchJSON.asp?id=2";
 	var prevdate = "ZZ/ZZ/ZZZZ";
@@ -38,6 +40,47 @@ $(document).ready(function() {
 		$("#futureevents").append (theTemplate(eventdata)); 
 		// jsonstring = JSON.stringify(data);
 		// $("#receivedjson").html('JSON received back from fetchJSON.asp?id=2 is <br /><br />'+jsonstring+'<br /><hr />');
-	});  // end of function(data)
+
+	    //  Now up collapsible management
+	    $('.collapsible').collapsible({
+	    });
+
+	});  // end of function(data)	// Displays past tournaments from this year
+
+}
+
+$(document).ready(function() {
+	
+		getFutureEvents();
+
+	    // Deal with Open/Close All links
+	    // First - assign collapsible routines to functions
+	    function openAll() {
+	    	$('.collapsible').collapsible('openAll');
+	    }
+	    function closeAll() {
+	    	$('.collapsible').collapsible('closeAll');
+	    }
+	    // Now, listen for user clicking Open/Close All
+	    $('#closeAll').click(function() {
+	    	event.preventDefault();
+	    	closeAll();
+	    });
+	    $('#openAll').click(function() {
+	    	event.preventDefault();
+	    	openAll();
+	    });
+	    $('#closeAll2').click(function() {
+	        event.preventDefault();
+	        closeAll();
+	    });
+	    $('#openAll2').click(function() {
+	        event.preventDefault();
+	        openAll();
+	    });
+
+
+
+
 })  // end of document.ready
 

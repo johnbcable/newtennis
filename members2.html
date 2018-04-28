@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css" />
     <!-- <link rel="stylesheet" href="/css/base.css" />  -->
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/collapsible.css" />
     <link rel="stylesheet" href="/css/responsive-tables.css">
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <style type="text/css">
@@ -285,9 +286,7 @@
 
     <div class="row seealso signedin noshow">
 
-      <div id="futureevents" class="large-8 medium-8 small-12 columns">
-        <h4>Future events</h4>
-      </div>   <!-- /futureevents  -->
+      <div id="futureevents" class="large-8 medium-8 small-12 columns"></div>   <!-- /futureevents  -->
 
       <div class="large-4 medium-4 small-12 columns">
 
@@ -531,38 +530,73 @@
   <script id="eventlist-template" type="x-handlebars-template">
 
     {{#if allEvents }}
-     <table width="100%" class="responsive">
-      <thead>
-        <tr>
-          <th>Start<br />Time</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each allEvents}}
+      <h4>Future events</h4>
+      {{#each allEvents}}
         {{#if dateofevent}}
-        <tr class="{{eventtype}}">
-          <td colspan="2" class="newdate">{{dateofevent}}</td>
-        </tr>
+          <!-- collapsible header -->
+          <div class="collapsible">{{dateofevent}}<span></span></div>
         {{/if}}
-        <tr class="{{eventtype}}">
-          <td>{{eventtime}}</td>
-          {{#if eventreport}}
-          <td>{{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span></td>
-          {{else}}
-          <td>{{eventnote}}</td>
-          {{/if}}
-        </tr>
+            <div class="collapsible-container">
+            <!--  single event entry  -->
+            <div class="row">
+              <div "large-3 medium-3 small-4 columns">
+                <p class="eventtime {{eventtype}}">{{eventtime}}</p>
+              </div>
+              <div class="large-9 medium-9 small-8 columns">
+                {{#if eventreport}}
+                  <p>{{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span></p>
+                {{else}}
+                  <p>{{eventnote}}</p>
+                {{/if}}
+              </div>
+            </div>
         {{/each}}
-      </tbody>
-    </table>
     {{else}}
       <p>
         No upcoming events to list
       </p>
     {{/if}}
+
   </script>   
 
+  <script id="pasttourlist-template" type="x-handlebars-template">
+    {{#if pastTournaments}}
+      <h3>Tournaments Run Recently</h3>
+      
+      {{#each pastTournaments}}
+      <div class="collapsible">{{tourtitle}}<span></span></div>
+        <div class="collapsible-container">
+          <p class="tournamentwhen">Start: {{startdate}}</p>
+          {{#if tourfinalsday}}
+          <p class="tourfinalsfday">
+            Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
+          </p>
+          {{/if}}
+          <p class="tournamentinclusion">
+            {{tourwho}}
+          </p>
+          {{#if tourblurb}}
+          <p class="tourblurb">
+            {{tourblurb}}
+          </p>
+          {{/if}}
+           <p class="tournamentfee">
+              {{tourcost}}
+            </p>
+            {{#if toururl}}
+            <p class="tournamentflyer">
+              <a href="{{toururl}}">More information &raquo;</a>
+            </p>
+            {{/if}}
+            <hr />
+            <p class="tournamentcontact">
+              {{tourcontact}}</a>
+            </p>
+        </div> <!--   end of class collapsible-container div     -->
+
+      {{/each}}
+    {{/if}}
+   </script>
 
   <script id="todaysevents-template" type="x-handlebars-template">
 
@@ -660,6 +694,8 @@
   {{/if}}
   </script>   
 
+
+
   <!--    End of Handlebars templates                 -->
 
   
@@ -737,6 +773,7 @@
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/js/jquery.collapsible.js"></script>
     <script src="/js/responsive-tables.js"></script>    
     <script src="/js/app.js"></script>
 
