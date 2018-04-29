@@ -73,17 +73,22 @@
         margin: 0;
         padding-bottom: 0.75em;
       }
-      tr.SOCIAL {
+      .JUNIOR {
+        font-size: 1.1em;
+        color: #43434B;
+        font-weight: bold;
+      }
+      .SOCIAL {
         font-size: 1.1em;
         color: #c0c0c0;
         font-weight: bold;
       }
-      tr.MATCH {
+      .MATCH {
         font-size: 1.1em;
         color: #000;
         font-weight: bold;
       }
-      tr.SOCIALTENNIS {
+      .SOCIALTENNIS {
         font-size: 1.1em;
         color: #c0c0c0;
         font-weight: bold;
@@ -91,11 +96,6 @@
       .rhs {
         float: right;
         margin-right: 2em;
-      }
-      tr.JUNIOR {
-        font-size: 1.1em;
-        color: #43434B;
-        font-weight: bold;
       }
       .newsthumbnail {
         float: left;
@@ -532,13 +532,6 @@
 
     {{#if allEvents }}
      <table width="100%" class="responsive">
-      <thead>
-        <tr>
-          <th>Start<br />Time</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
         {{#each allEvents}}
         {{#if dateofevent}}
         <tr class="{{eventtype}}">
@@ -554,7 +547,6 @@
           {{/if}}
         </tr>
         {{/each}}
-      </tbody>
     </table>
     {{else}}
       <p>

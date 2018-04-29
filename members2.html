@@ -74,17 +74,26 @@
         margin: 0;
         padding-bottom: 0.75em;
       }
-      tr.SOCIAL {
+      .JUNIOR {
         font-size: 1.1em;
-        color: #c0c0c0;
+        color: #43434B;
         font-weight: bold;
       }
-      tr.MATCH {
-        font-size: 1.1em;
+      .COACHING {
+        font-size: 1.0em;
         color: #000;
+       }
+      .SOCIAL {
+        font-size: 1.1em;
+        color: green;
         font-weight: bold;
       }
-      tr.SOCIALTENNIS {
+      .MATCH {
+        font-size: 1.1em;
+        color: blue;
+        font-weight: bold;
+      }
+      .SOCIALTENNIS {
         font-size: 1.1em;
         color: #c0c0c0;
         font-weight: bold;
@@ -92,11 +101,6 @@
       .rhs {
         float: right;
         margin-right: 2em;
-      }
-      tr.JUNIOR {
-        font-size: 1.1em;
-        color: #43434B;
-        font-weight: bold;
       }
       .newsthumbnail {
         float: left;
@@ -122,6 +126,12 @@
         color: black;
         font-weight: bold;
         font-size: 110%;
+      }
+      .eventtime {
+        margin-left: 2em;
+      }
+      .eventdescription {
+        margin-left: 15%;
       }
     </style>
   </head>
@@ -286,21 +296,25 @@
 
     <div class="row seealso signedin noshow">
 
-      <div id="futureevents" class="large-8 medium-8 small-12 columns"></div>   <!-- /futureevents  -->
+      <div class="large-8 medium-8 small-12 columns">
+
+        <div id="futureevents" ></div>   <!-- /futureevents  -->
+
+      </div>
 
       <div class="large-4 medium-4 small-12 columns">
 
         <h4>Social Media</h4>
 
-        <div id="twitter-feed" class="large-12 medium-12 small-12 columns">
+        <div id="twitter-feed">
           <!--  filled in dynamically by running the JS in maintitterfeed.js on document.ready() below   -->
         </div>
 
-        <div id="blogposts" class="large-12 medium-12 small-12 columns blogposts">
+        <div id="blogposts">
           <!--  filled in dynamically by running the JS in wordpress.js on document.ready() below   -->
         </div>
 
-      </div>    <!--    /large-3    -->
+      </div>    <!--    /large-4    -->
 
     </div> <!--   /row    -->   
 
@@ -531,26 +545,24 @@
 
     {{#if allEvents }}
       <h4>Future events</h4>
+      <div>
       {{#each allEvents}}
         {{#if dateofevent}}
+            </div>  <!-- close off the previous collapsible container -->
           <!-- collapsible header -->
           <div class="collapsible">{{dateofevent}}<span></span></div>
-        {{/if}}
             <div class="collapsible-container">
-            <!--  single event entry  -->
-            <div class="row">
-              <div "large-3 medium-3 small-4 columns">
-                <p class="eventtime {{eventtype}}">{{eventtime}}</p>
-              </div>
-              <div class="large-9 medium-9 small-8 columns">
-                {{#if eventreport}}
-                  <p>{{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span></p>
-                {{else}}
-                  <p>{{eventnote}}</p>
-                {{/if}}
-              </div>
-            </div>
-        {{/each}}
+        {{/if}}
+              <!--  single event entry, multiple for each collapsible-container  -->
+              <p>
+                <span class="eventtime {{eventtype}}">{{eventtime}}</span> 
+                  {{#if eventreport}}
+                    <span class="eventdescription {{eventtype}}">{{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span></span>
+                  {{else}}
+                    <span class="eventdescription {{eventtype}}">{{eventnote}}</span>
+                  {{/if}}
+              </p>
+      {{/each}}
     {{else}}
       <p>
         No upcoming events to list
