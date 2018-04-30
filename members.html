@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css" />
     <!-- <link rel="stylesheet" href="/css/base.css" />  -->
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/collapsible.css" />
     <link rel="stylesheet" href="/css/responsive-tables.css">
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <style type="text/css">
@@ -78,14 +79,18 @@
         color: #43434B;
         font-weight: bold;
       }
+      .COACHING {
+        font-size: 1.0em;
+        color: #000;
+       }
       .SOCIAL {
         font-size: 1.1em;
-        color: #c0c0c0;
+        color: green;
         font-weight: bold;
       }
       .MATCH {
         font-size: 1.1em;
-        color: #000;
+        color: blue;
         font-weight: bold;
       }
       .SOCIALTENNIS {
@@ -121,6 +126,12 @@
         color: black;
         font-weight: bold;
         font-size: 110%;
+      }
+      .eventtime {
+        margin-left: 2em;
+      }
+      .eventdescription {
+        margin-left: 15%;
       }
     </style>
   </head>
@@ -285,23 +296,25 @@
 
     <div class="row seealso signedin noshow">
 
-      <div id="futureevents" class="large-8 medium-8 small-12 columns">
-        <h4>Future events</h4>
-      </div>   <!-- /futureevents  -->
+      <div class="large-8 medium-8 small-12 columns">
+
+        <div id="futureevents" ></div>   <!-- /futureevents  -->
+
+      </div>
 
       <div class="large-4 medium-4 small-12 columns">
 
         <h4>Social Media</h4>
 
-        <div id="twitter-feed" class="large-12 medium-12 small-12 columns">
+        <div id="twitter-feed">
           <!--  filled in dynamically by running the JS in maintitterfeed.js on document.ready() below   -->
         </div>
 
-        <div id="blogposts" class="large-12 medium-12 small-12 columns blogposts">
+        <div id="blogposts">
           <!--  filled in dynamically by running the JS in wordpress.js on document.ready() below   -->
         </div>
 
-      </div>    <!--    /large-3    -->
+      </div>    <!--    /large-4    -->
 
     </div> <!--   /row    -->   
 
@@ -531,30 +544,71 @@
   <script id="eventlist-template" type="x-handlebars-template">
 
     {{#if allEvents }}
-     <table width="100%" class="responsive">
-        {{#each allEvents}}
+      <h4>Future events</h4>
+      <div>
+      {{#each allEvents}}
         {{#if dateofevent}}
-        <tr class="{{eventtype}}">
-          <td colspan="2" class="newdate">{{dateofevent}}</td>
-        </tr>
+            </div>  <!-- close off the previous collapsible container -->
+          <!-- collapsible header -->
+          <div class="collapsible">{{dateofevent}}<span></span></div>
+            <div class="collapsible-container">
         {{/if}}
-        <tr class="{{eventtype}}">
-          <td>{{eventtime}}</td>
-          {{#if eventreport}}
-          <td>{{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span></td>
-          {{else}}
-          <td>{{eventnote}}</td>
-          {{/if}}
-        </tr>
-        {{/each}}
-    </table>
+              <!--  single event entry, multiple for each collapsible-container  -->
+              <p>
+                <span class="eventtime {{eventtype}}">{{eventtime}}</span> 
+                  {{#if eventreport}}
+                    <span class="eventdescription {{eventtype}}">{{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span></span>
+                  {{else}}
+                    <span class="eventdescription {{eventtype}}">{{eventnote}}</span>
+                  {{/if}}
+              </p>
+      {{/each}}
     {{else}}
       <p>
         No upcoming events to list
       </p>
     {{/if}}
+
   </script>   
 
+  <script id="pasttourlist-template" type="x-handlebars-template">
+    {{#if pastTournaments}}
+      <h3>Tournaments Run Recently</h3>
+      
+      {{#each pastTournaments}}
+      <div class="collapsible">{{tourtitle}}<span></span></div>
+        <div class="collapsible-container">
+          <p class="tournamentwhen">Start: {{startdate}}</p>
+          {{#if tourfinalsday}}
+          <p class="tourfinalsfday">
+            Finals Day:  {{tourfinalsday}} from {{sortablefinalsstarttime}} to {{sortablefinalsendtime}}
+          </p>
+          {{/if}}
+          <p class="tournamentinclusion">
+            {{tourwho}}
+          </p>
+          {{#if tourblurb}}
+          <p class="tourblurb">
+            {{tourblurb}}
+          </p>
+          {{/if}}
+           <p class="tournamentfee">
+              {{tourcost}}
+            </p>
+            {{#if toururl}}
+            <p class="tournamentflyer">
+              <a href="{{toururl}}">More information &raquo;</a>
+            </p>
+            {{/if}}
+            <hr />
+            <p class="tournamentcontact">
+              {{tourcontact}}</a>
+            </p>
+        </div> <!--   end of class collapsible-container div     -->
+
+      {{/each}}
+    {{/if}}
+   </script>
 
   <script id="todaysevents-template" type="x-handlebars-template">
 
@@ -652,6 +706,8 @@
   {{/if}}
   </script>   
 
+
+
   <!--    End of Handlebars templates                 -->
 
   
@@ -729,6 +785,7 @@
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/js/jquery.collapsible.js"></script>
     <script src="/js/responsive-tables.js"></script>    
     <script src="/js/app.js"></script>
 
@@ -736,7 +793,7 @@
     <script src="/js/members.js"></script>
     <script src="/js/maintwitterfeed.js"></script>
     <script src="/js/wordpress.js"></script>
-    <script src="/js/eventlist.js"></script>
+    <script src="/js/eventlist2.js"></script>
 <!-- 
     <script src="/js/today.js"></script>
  -->
