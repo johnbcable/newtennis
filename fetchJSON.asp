@@ -107,7 +107,7 @@ If queryref > -1 Then
 	'Initialise querylist with queries
 	querylist(0) = "SELECT count(*) FROM members"
 	querylist(1) = "SELECT eventdate, Format(eventtime,'HH:mm') as eventtime, Format(endtime,'HH:mm') as endtime, eventnote, eventreport FROM futureevents WHERE eventdate = Date() ORDER BY eventtime ASC;"
-	querylist(2) = "SELECT TOP 20 dateofevent, eventdate, eventtime, eventtype, eventnote, eventreport, enddate, endtime FROM futureevents WHERE eventdate > Date() ORDER BY eventdate ASC;"
+	querylist(2) = "SELECT TOP 40 dateofevent, eventdate, eventtime, eventtype, eventnote, eventreport, enddate, endtime FROM futureevents WHERE eventdate > Date() ORDER BY eventdate ASC;"
 	querylist(3) = "SELECT * FROM coaches WHERE surname = ""POOLE"";"
 	querylist(4) = "SELECT * FROM coaches WHERE surname NOT LIKE ""POOLE"";"
 	querylist(5) = "SELECT * FROM coaches ORDER BY surname ASC;"
