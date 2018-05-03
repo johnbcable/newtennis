@@ -75,8 +75,7 @@
         padding-bottom: 0.75em;
       }
       .JUNIOR {
-        font-size: 1.1em;
-        color: #43434B;
+         color: #43434B;
         font-weight: bold;
       }
       .COACHING {
@@ -84,17 +83,14 @@
         color: #000;
        }
       .SOCIAL {
-        font-size: 1.1em;
         color: green;
         font-weight: bold;
       }
       .MATCH {
-        font-size: 1.1em;
         color: blue;
         font-weight: bold;
       }
       .SOCIALTENNIS {
-        font-size: 1.1em;
         color: #c0c0c0;
         font-weight: bold;
       }
@@ -215,13 +211,14 @@
           </p>
         </div>  <!--   /row   -->
 
-        <div class="row weatherbutton">
+<!--
+       <div class="row weatherbutton">
           <p>
 
             <a class="medium info button fullwidth" onclick='javascript: window.open("/theweather.html","_weatherbox", "width=960, height=960, scrollbars=yes");'>The Weather</a>
           </p>
         </div>
-
+-->
        </div>    <!--    /large-3    -->
 
     </div> <!--   /row    -->   
@@ -544,7 +541,7 @@
   <script id="eventlist-template" type="x-handlebars-template">
 
     {{#if allEvents }}
-      <h4>Future events</h4>
+      <h4>Coming up in the next few days</h4>
       <div>
       {{#each allEvents}}
         {{#if dateofevent}}
