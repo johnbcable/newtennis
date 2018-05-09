@@ -210,13 +210,14 @@
           </p>
         </div>  <!--   /row   -->
 
-        <div class="row weatherbutton">
+<!--
+       <div class="row weatherbutton">
           <p>
 
             <a class="medium info button fullwidth" onclick='javascript: window.open("/theweather.html","_weatherbox", "width=960, height=960, scrollbars=yes");'>The Weather</a>
           </p>
         </div>
-
+-->
        </div>    <!--    /large-3    -->
 
     </div> <!--   /row    -->   
@@ -539,7 +540,7 @@
   <script id="eventlist-template" type="x-handlebars-template">
 
     {{#if allEvents }}
-      <h4>Future events</h4>
+      <h4>Coming up in the next few days</h4>
       <div>
       {{#each allEvents}}
         {{#if dateofevent}}
