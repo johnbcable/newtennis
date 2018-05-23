@@ -115,12 +115,8 @@
         <h3>League Tennis Fixtures for the Current Season</h3>
         <form id="LeagueResultsForm">
           <div class="row">
-            <div class="large-4 medium-4 small-6 columns">
-              <p style="text-align: right; margin-right: 10px; vertical-align: middle;">
-                Select Your Team
-              </p>
-            </div>
-            <div class="large-4 medium-4 small-6 columns">
+            <div class="large-4 medium-4 small-12 columns">
+              <label for="teamname">Select Your Team</label>
               <select id="teamname" name="teamname">
                 <option value="Ladies 1st Team">Ladies 1st Team</option>
                 <option value="Ladies 2nd Team">Ladies 2nd Team</option>
@@ -131,28 +127,23 @@
                 <option value="Mens 4th Team">Mens 4th Team</option>
                 <option value="Mens 5th Team">Mens 5th Team</option>
               </select>
+              <div id="teamheader"></div>
             </div>
-            <div class="large-4 medium-4 small-12 columns">
-              <p>
-                <!--
-                <button id="mysubmit" name="mysubmit" class="small button fetchresults">Fetch</button>
-                <input type="submit" class="small submit-button fetchfixtures" id="mysubmit" name="mysubmit" value="Fetch &raquo;" />
-                -->
-              </p>
-            </div>
-            </div>    <!--    /row    -->
+            <div id="summary" class="large-8 medium-8 small-12 whitepanel columns"></div>
+          </div>    <!--    /row    -->
           </form>
-          <hr />
-        </div>
+         </div>
       </div>
       <!--
       display header info for the currently selected team
-      -->
+
       <div class="row row--padding-wide" id="teamheader"></div>
+      -->
       <!--
       display the summary table for the current sesson for this team
-      -->
+      
       <div class="row row--padding-wide" id="summary"></div>
+      -->      
       <!--
       display the listed fixtures for the current sesson for this team
       -->
@@ -280,9 +271,7 @@
 
         <!--  Handlebars templates      -->
         <script id="teamheader-template" type="x-handlebars-template">
-        <div class="row">
-          <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 panel columns">
-            {{#if teamDetails }}
+             {{#if teamDetails }}
             {{#each teamDetails}}
             <h4>{{teamname}}  <small>{{division}}</small></h4>
             <p>
@@ -298,8 +287,6 @@
             </p>
             
             {{/if}}
-          </div>
-        </div>
         </script>
         
         <script id="fixturelist-template" type="x-handlebars-template">
@@ -385,7 +372,8 @@
 
       <script id="summary-template" type="x-handlebars-template">
       <div class="row">
-        <div class="large-8 medium-8 small-12 large-offset-2 medium-offset-2 panel columns">
+        <h5>Summary</h5>
+        <div class="large-8 medium-8 small-12 large-offset-2 medium-offset-2 columns">
           {{#if fixtureSummary }}
           <div class="row">
             <div class="large-10 medium-10 small-10 columns">
