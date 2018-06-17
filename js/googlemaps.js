@@ -267,7 +267,7 @@ function displayMapUsingPostcode(postcode,domid) {
 
 	mypostcode = address.replace(' ','');  // Remove any embedded spaces
 
-	var url = "http://maps.googleapis.com/maps/api/geocode/json?address="+mypostcode+"&amp;sensor=false";
+	var url = "https://maps.googleapis.com/maps/api/geocode/json?address="+mypostcode+"&amp;sensor=false";
 
 	$.getJSON(url,function(data){
 

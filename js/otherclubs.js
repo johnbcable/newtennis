@@ -1,7 +1,7 @@
 //
 //		otherclubs.js
 //
-//		Using Handlebars and plugin code 
+//		Usingeo Handlebars and plugin code 
 //
 var debugthis = true;   // set to false for production
 
