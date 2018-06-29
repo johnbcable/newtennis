@@ -89,24 +89,40 @@ td {
 		</div>
 -->
 		<p>
-			In 2018, there will be two finals days - 30<sup>th</sup> June (coinciding with the Hampton Festival) and in the autumn.  
+			In 2018, there are two finals days - the Challenger Tournament finals are being held on 30<sup>th</sup> June (coinciding with the Hampton Festival) and the Open tournament finals will be held in the autumn.  
 			Please make sure you all arrange and play your matches promptly to allow the draw to progress.
 		</p>
-		<h2>Challenger Tournament Draw</h2>
+		<h2>Challenger Tournament</h2>
 		<p>
-			The draws for the first half of this year&apos;s tournaments are shown below as they become available. Any updates will be posted here as and when they occur.
+			The order of play for the Challenger Tournament finals is show below. Any updates will be posted here as and when they occur.
 		</p>
 
-		<ul type="none">
-			<li><a href="https://hamptontennis.org.uk/documents/tournaments/2018/MensSingles.pdf">Challenger Mens Singles draw &raquo;</a></li>
-			<li><a href="https://hamptontennis.org.uk/documents/tournaments/2018/LadiesSingles.pdf">Challenger Ladies Singles draw &raquo;</a></li>
-			<li><a href="https://hamptontennis.org.uk/documents/tournaments/2018/MensDoubles.pdf">Challenger Mens Doubles draw &raquo;</a></li>
-			<li><a href="https://hamptontennis.org.uk/documents/tournaments/2018/LadiesDoubles.pdf">Challenger Ladies Doubles draw &raquo;</a></li>
-			<li><a href="https://hamptontennis.org.uk/documents/tournaments/2018/Mixed.pdf">Challenger Mixed Doubles draw &raquo;</a></li>
-		</ul>
+		<div>
+			<img src="img/challengerorderofplay2018.png" alt="Challenger tournament finals otrder of play" />
+			<ol>
+				<li>
+					Players should arrive in good time for play to commence promptly (1/2 hour early)
+				</li>
+				<li>
+					Trophy presentations to take place throughout the afternoon
+				</li>
+				<li>
+					After the start of the first matches, subsequent timings are approximate
+				</li>
+				<li>
+					On scoreboard, first named player/pair is the “Home” team
+				</li>
+				<li>
+					5.All  finals - best of two full Sets with  normal tie break at 6-6, if one set all Championship tiebreak to be played with first player to reach 10 with two clear points wins
+				</li>
+				<li>
+					6.Any queries please speak to Sav Gaspar tournament director on 07786872011 or Ruth Fennell 07790 854430
+				</li>
+			</ol>
+		</div>
 
 		<div class="borderboth">
-			<h2><span class="blueheading">Rules</span></h2>
+			<h2><span class="blueheading">General Tournament Rules</span></h2>
 			<ol type="disc">
 				<li>
 					<p>
@@ -172,4 +188,4 @@ td {
 </html>
 <%
 %>
-%>
+
