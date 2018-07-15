@@ -65,13 +65,13 @@ if (debugging)
 <!--   3. Content    -->
 	<div id="content">
 
-		<h1>Tournament:&nbsp;<b>Finals Days 2017</b></h1>
+		<h1>Tournament:&nbsp;<b>Finals Days 2018</b></h1>
 
 		<div id="finalsday2012collage" class="collage">
 			 <img alt="Finals Days 2017" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 		<p class="leader">
-			 In 2017, we had two finals days. The first (the Challenger Tournament) was held on 2<sup>nd</sup> July; the second took place on Saturday 7<sup>th</sup>October. 
+			 In 2018, we have two finals days. The first (the Challenger Tournament) is on 30<sup>th</sup> June; the second takes place on Saturday 7<sup>th</sup>October. 
 		</p>
 
 		<h2>Challenger Finals Day - July 2<sup>nd</sup> 2017</h2>
@@ -256,9 +256,9 @@ if (debugging)
 <!--
 				<li><a href="tours.asp?season=2017">2017 Summary results</a></li>
 			
-
-				<li><a href="https://www.flickr.com/photos/103781054@N07/albums/72157672865713332">September Finals Day Photos</a></li>
 -->	
+				<li><a href="https://www.flickr.com/photos/103781054@N07/albums/72157670890266898">Challenger  Finals Day Photos</a></li>
+
 <!--
  				<li><a href="https://www.flickr.com/photos/103781054@N07/sets/72157655547638422">Challenger Finals Day photos</a></li>
 -->

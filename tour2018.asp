@@ -154,7 +154,7 @@ td {
 			The draws for the second half of this year&apos;s tournaments are shown initially on the ClubSpark web site as they become available. Any updates will be posted there as and when they occur.
 		</p>
 
-<!--
+
 		<div class="seealso" style="clear: both;">
 			<h3>See Also:</h3>
 			<ul>
@@ -163,7 +163,7 @@ td {
 				<li><a href="juniors/results.html?season=2018">Junior tournament results</a></li>
 			</ul>
 		</div>
--->
+
 	</div>
 	
 <!--     4.      Supplementary navigation    -->
