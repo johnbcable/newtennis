@@ -107,7 +107,7 @@ If queryref > -1 Then
 	'Initialise querylist with queries
 	querylist(0) = "SELECT count(*) FROM members"
 	querylist(1) = "SELECT eventdate, Format(eventtime,'HH:mm') as eventtime, Format(endtime,'HH:mm') as endtime, eventnote, eventreport FROM futureevents WHERE eventdate = Date() ORDER BY eventtime ASC;"
-	querylist(2) = "SELECT TOP 40 dateofevent, eventdate, eventtime, eventtype, eventnote, eventreport, enddate, endtime FROM futureevents WHERE eventdate > Date() ORDER BY eventdate ASC;"
+	querylist(2) = "SELECT TOP 100 dateofevent, eventdate, eventtime, eventtype, eventnote, eventreport, enddate, endtime FROM futureevents WHERE eventdate > Date() ORDER BY eventdate ASC;"
 	querylist(3) = "SELECT * FROM coaches WHERE surname = ""POOLE"";"
 	querylist(4) = "SELECT * FROM coaches WHERE surname NOT LIKE ""POOLE"";"
 	querylist(5) = "SELECT * FROM coaches ORDER BY surname ASC;"
@@ -153,7 +153,8 @@ If queryref > -1 Then
 	querylist(44) = "SELECT m.forename1, m.surname, m.membergrade, m.britishtennisno FROM members m WHERE dob IS NULL;"
 	querylist(45) = "SELECT gender, membergrade, forename1, surname, joined FROM allmembers WHERE joined IS NOT null AND joined > CDate('August 31, 2016') AND currentage > 17"
 
-
+	querylist(48) = "SELECT * FROM allmembers WHERE currentage = {{p1}}"
+	querylist(49) = "SELECT gender, currentage, count(*) as kount FROM allmembers WHERE currentage > 44 AND currentage < 65 GROUP BY gender, currentage"
 
 	querylist(50) = "SELECT * FROM allmembers WHERE [email] LIKE '%{{p1}}%' ORDER BY surname, forename1 ASC"
 
