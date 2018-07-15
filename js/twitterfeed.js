@@ -2,7 +2,7 @@
 //UPDATED TO AUTHENTICATE TO API 1.1
 
 $(document).ready(function () {
-    var displaylimit = 3;
+    var displaylimit = 6;
     var twitterprofile = "hamptontennis";
 	var screenname = "hamptontennis";
     var showdirecttweets = false;
