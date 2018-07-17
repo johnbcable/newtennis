@@ -6,12 +6,18 @@
 
 // Utility functions
 
-// Register Handlebars helpers
+// Register Handlebars helpers - may use swag instead
 
+/*
 Handlebars.registerHelper('equalsTo', function(v1, v2, options) { 
     if(v1 == v2) { return options.fn(this); } 
     else { return options.inverse(this); } 
 });
+*/
+
+/*
+
+    Sample function
 
 // Display coach list
 function displayCoachList() {
@@ -44,180 +50,11 @@ function displayCoachList() {
 	});  // end of function(data)
 
 }
+*/
 
-// Edit individual coach details
-function editCoach(id) {
+function displayDummyText(message) {
 
-	$("#main").append ("<p>Editing coach with an ID of "+id+"</p>"); 
-
-	var url = "https://hamptontennis.org.uk/admin/fetchJSON.asp?id=1&p1="+id;
-
-	// var eventsfound = false;
-	$.getJSON(url,function(data){
-
-		// console.log(url);
-
-		var jsonstring = JSON.stringify(data);
-
-		jsonstring = new String("{allCoaches:"+jsonstring+"}");
-
-		// var eventdata = $.parseJSON(jsonstring);
-		var coachdata = eval("(" + jsonstring + ")");
-
-		// Set the boolean if we have data
-		// if (eventdata.length > 1)
-		//	eventsfound = true;
-
-		//Get the HTML from the template   in the script tag
-	    var theTemplateScript = $("#coachedit-template").html(); 
-
-	   //Compile the template
-	    var theTemplate = Handlebars.compile (theTemplateScript); 
-		// Handlebars.registerPartial("description", $("#shoe-description").html());    
-		$("#main").append (theTemplate(coachdata)); 
-
-	});  // end of function(data)
-
-}
-
-// Display future event list
-function displayEventList() {
-
-	var url = "https://hamptontennis.org.uk/admin/fetchJSON.asp?id=2";
-
-	console.log("Inside displayEventList");
-
-	// var eventsfound = false;
-	$.getJSON(url,function(data){
-
-		// console.log(url);
-
-		var jsonstring = JSON.stringify(data);
-
-		jsonstring = new String("{allEvents:"+jsonstring+"}");
-
-		// var eventdata = $.parseJSON(jsonstring);
-		var eventdata = eval("(" + jsonstring + ")");
-
-		// Set the boolean if we have data
-		// if (eventdata.length > 1)
-		//	eventsfound = true;
-
-		//Get the HTML from the template   in the script tag
-	    var theTemplateScript = $("#eventlist-template").html(); 
-
-	   //Compile the template
-	    var theTemplate = Handlebars.compile (theTemplateScript); 
-		// Handlebars.registerPartial("description", $("#shoe-description").html());    
-		$("#main").append (theTemplate(eventdata)); 
-
-	});  // end of function(data)
-
-}
-
-// Edit selected event
-function editEvent(id) {
-
-	var url = "https://hamptontennis.org.uk/admin/fetchJSON.asp?id=3&p1="+id;
-
-	console.log("Inside editEvent");
-
-	// var eventsfound = false;
-	$.getJSON(url,function(data){
-
-		// console.log(url);
-
-		var jsonstring = JSON.stringify(data);
-
-		jsonstring = new String("{allEvents:"+jsonstring+"}");
-
-		// var eventdata = $.parseJSON(jsonstring);
-		var eventdata = eval("(" + jsonstring + ")");
-
-		// Set the boolean if we have data
-		// if (eventdata.length > 1)
-		//	eventsfound = true;
-
-		//Get the HTML from the template   in the script tag
-	    var theTemplateScript = $("#eventedit-template").html(); 
-
-	   //Compile the template
-	    var theTemplate = Handlebars.compile (theTemplateScript); 
-		// Handlebars.registerPartial("description", $("#shoe-description").html());    
-		$("#main").append (theTemplate(eventdata)); 
-
-
-	});  // end of function(data)
-
-}
-
-// Display future tournament list
-function displayTournamentList() {
-
-	var url = "https://hamptontennis.org.uk/admin/fetchJSON.asp?id=4";
-
-	console.log("Inside displayTournamentList");
-
-	// var eventsfound = false;
-	$.getJSON(url,function(data){
-
-		// console.log(url);
-
-		var jsonstring = JSON.stringify(data);
-
-		jsonstring = new String("{allTournaments:"+jsonstring+"}");
-
-		// var eventdata = $.parseJSON(jsonstring);
-		var tournamentdata = eval("(" + jsonstring + ")");
-
-		// Set the boolean if we have data
-		// if (eventdata.length > 1)
-		//	eventsfound = true;
-
-		//Get the HTML from the template   in the script tag
-	    var theTemplateScript = $("#tournamentlist-template").html(); 
-
-	   //Compile the template
-	    var theTemplate = Handlebars.compile (theTemplateScript); 
-		// Handlebars.registerPartial("description", $("#shoe-description").html());    
-		$("#main").append (theTemplate(tournamentdata)); 
-
-	});  // end of function(data)
-
-}
-
-function editTournament(id) {
-
-	// $("#main").append ("<p>Editing tournament with an ID of "+id+"</p>"); 
-
-	var url = "https://hamptontennis.org.uk/admin/fetchJSON.asp?id=5&p1="+id;
-
-	// var eventsfound = false;
-	$.getJSON(url,function(data){
-
-		// console.log(url);
-
-		var jsonstring = JSON.stringify(data);
-
-		jsonstring = new String("{allTournaments:"+jsonstring+"}");
-
-		// var eventdata = $.parseJSON(jsonstring);
-		var tournamentdata = eval("(" + jsonstring + ")");
-
-		// Set the boolean if we have data
-		// if (eventdata.length > 1)
-		//	eventsfound = true;
-
-		//Get the HTML from the template   in the script tag
-	    var theTemplateScript = $("#tournamentedit-template").html(); 
-
-	   //Compile the template
-	    var theTemplate = Handlebars.compile (theTemplateScript); 
-		// Handlebars.registerPartial("description", $("#shoe-description").html());    
-					$("#main").append (theTemplate(tournamentdata)); 
-
-
-	});  // end of function(data)
+	$("#main").append(message);
 
 }
 
@@ -235,94 +72,121 @@ function editTournament(id) {
 
 	// Home or start page   ----------------------------
 
-	this.get('#/', function(context) { 
+	this.get('/', function(context) { 
 		// context.app.swap('');   // clears HTML content
 		// Redisplay admin home page - blank with buttons
 		context.app.swap('');
 
-	});   // end get
+	}); 
 
-	// Coaches home page   -----------------------------
+	// Membersahip pages   -----------------------------
 
-	this.get('#/coaches', function(context) { 
+	this.get('/membership', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayCoachList();
+		displayDummyText('Membership - top level');
 
 
-	});   // end get
+	});   
 
 	// Display single coach page for edit
-	this.get('#/coaches/:id', function(context) {
+	this.get('/membership/benefits', function(context) {
 		context.app.swap('');   // clears HTML content
 		// this.item = this.items[context.params['id']];
 
 		// Now edit this coach details
-		editCoach(context.params['id']);
+		displayDummyText('Membership benefits');
 
-	});    // end get
+	});    
 
-	// -------------  End of Coaches  -------------------
-
-	// Events home page  -------------------------------
-
-	this.get('#/events', function(context) { 
+	this.get('/membership/packages', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayEventList();
+		displayDummyText('Membership packages - automatically links across to ClubSpark');
 
 
 	});   // end get
 
-	// Display single event page for edit
-	this.get('#/events/:id', function(context) {
+	this.get('/othersports', function(context) { 
 		context.app.swap('');   // clears HTML content
-		// this.item = this.items[context.params['id']];
-
-		// Now edit this coach details
-		editEvent(context.params['id']);
-
-	});    // end get
-
-	// -------------  End of Events  -------------------
-
-	// Tournaments home page   -------------------------
-
-	this.get('#/tournaments', function(context) { 
-
-		context.app.swap('');   // clears HTML content
-
 		// Redisplay coaches home page
-		displayTournamentList();
+		displayDummyText('Other sports incl. links to other club web sites');
+
 
 	});   // end get
 
-	// Display single tournament page for edit
-	this.get('#/tournaments/:id', function(context) {
+	// -------------  End of Membership pages  -------------------
 
+	// Playing pages   -----------------------------
+
+	this.get('/playing', function(context) { 
 		context.app.swap('');   // clears HTML content
-		// this.item = this.items[context.params['id']];
+		// Redisplay coaches home page
+		displayDummyText('Playing - top level');
 
-		// Now edit this coach details
-		editTournament(context.params['id']);
 
-	});    // end get
+	});   
 
-	// -------------  End of Tournaments  -------------------
 
-	// -------------  Quick Message  ------------------------
+	// -------------  End of Playing pages  -----------------
 
-	this.get('#/quickmessage', function(context) {
 
-		context.app.swap('<p>Inside quick message area</p>');   // clears HTML content
-		// this.item = this.items[context.params['id']];
+	// Coaching pages   -----------------------------
 
-		// Now edit this coach details
-		//editTournament(context.params['id']);
+	this.get('/coaching', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Coaching - top level');
 
-	});    // end get
 
-	// -------------  End of Quick Message  -----------------
+	});   
+
+
+	// -------------  End of Coaching pages  -----------------
+
+
+	// Holiday Camps   -----------------------------
+
+	this.get('/holidayclubs', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Holiday Clkubs - top level');
+
+
+	});   
+
+
+	// -------------  End of Holiday Clubs pages  -----------------
+
+	// News and events pages   -----------------------------
+
+	this.get('/news', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('News and events - top level');
+
+
+	});   
+
+
+	// -------------  End of news and events pages  -----------------
+
+	// About us pages   -----------------------------
+
+	this.get('/about', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('About Us - top level');
+
+
+	});   
+
+
+	// -------------  End of Playing pages  -----------------
+
+
+
+
 
 
 });
