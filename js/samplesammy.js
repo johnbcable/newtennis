@@ -127,6 +127,45 @@ function displayDummyText(message) {
 
 	});   
 
+	this.get('/socialtennis', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Social tennis');
+
+
+	});   
+
+	this.get('/boxleagues', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Box Leagues');
+
+
+	});   
+
+	this.get('/teams', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Team tennis');
+
+
+	});   
+
+		this.get('/tournaments', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Tournaments');
+
+
+	});   
+
+	this.get('/bookacourt', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Book a court');
+
+
+	});   
 
 	// -------------  End of Playing pages  -----------------
 
@@ -137,6 +176,30 @@ function displayDummyText(message) {
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
 		displayDummyText('Coaching - top level');
+
+
+	});   
+
+	this.get('/coaching/adults', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Adult coaching');
+
+
+	});   
+
+	this.get('/coaching/juniors', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Junior coaching');
+
+
+	});   
+
+	this.get('/coaching/coaches', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Coaches');
 
 
 	});   
@@ -169,6 +232,33 @@ function displayDummyText(message) {
 	});   
 
 
+	this.get('/events', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Events calendar');
+
+
+	});   
+
+
+	this.get('/social', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('News and events - top level');
+
+
+	});   
+
+	this.get('/photos', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('Photo gallery');
+
+
+	});   
+
+
+
 	// -------------  End of news and events pages  -----------------
 
 	// About us pages   -----------------------------
@@ -182,7 +272,44 @@ function displayDummyText(message) {
 	});   
 
 
-	// -------------  End of Playing pages  -----------------
+	this.get('/about/location', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('About Us - location');
+
+
+	});   
+
+
+
+	this.get('/about/policies', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('About Us - policies');
+
+
+	});   
+
+
+
+	this.get('/about/committee', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('About Us - know your committee');
+
+
+	});   
+
+
+	this.get('/about/awards', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		displayDummyText('About Us - awards etc.');
+
+
+	});   
+
+	// -------------  End of About Us pages  -----------------
 
 
 
