@@ -38,7 +38,7 @@ var debugthis = true;   // set to false for production
 
 
 $(document).ready(function () {
-    var displaylimit = 3;
+    var displaylimit = 6;
     var twitterprofile = "hamptontennis";
 	var screenname = "hamptontennis";
     var showdirecttweets = false;
