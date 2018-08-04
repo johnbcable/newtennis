@@ -152,6 +152,7 @@ If queryref > -1 Then
 	querylist(43) = "SELECT * FROM members WHERE mobilephone LIKE '%{{p1}}%';"
 	querylist(44) = "SELECT m.forename1, m.surname, m.membergrade, m.britishtennisno FROM members m WHERE dob IS NULL;"
 	querylist(45) = "SELECT gender, membergrade, forename1, surname, joined FROM allmembers WHERE joined IS NOT null AND joined > CDate('August 31, 2016') AND currentage > 17"
+	querylist(46) = "SELECT Format(fixturedate,'dd/mm/YYYY') AS fixturedate, homeoraway, fixtureid, opponents, hamptonresult, opponentresult, fixtureyear, teamname, pair1, pair2, fixturenote, matchreport FROM tennisfixtures WHERE fixtureyear = {{p1}} AND (fixturedate > Date()-1) AND homeoraway = 'H' ORDER BY fixturedate ASC;"
 
 	querylist(48) = "SELECT * FROM allmembers WHERE currentage = {{p1}}"
 	querylist(49) = "SELECT gender, currentage, count(*) as kount FROM allmembers WHERE currentage > 44 AND currentage < 65 GROUP BY gender, currentage"
