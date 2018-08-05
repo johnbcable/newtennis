@@ -23,6 +23,7 @@ function displayDummyText(message) {
 		// context.app.swap('');   // clears HTML content
 		// Redisplay admin home page - blank with buttons
 		context.app.swap('');
+		displayDummyText('Site home page');
 
 	}); 
 
@@ -160,7 +161,7 @@ function displayDummyText(message) {
 	this.get('#/holidayclubs', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Holiday Clkubs - top level');
+		displayDummyText('Holiday Clubs - top level');
 
 
 	});   
@@ -191,7 +192,7 @@ function displayDummyText(message) {
 	this.get('#/social', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('News and events - top level');
+		displayDummyText('Social events - top level');
 
 
 	});   
