@@ -11283,7 +11283,9 @@ h1 {
   /* line 1115, ../scss/main.scss */
   .row--banner {
     background-image: url(../img/mainbanner.jpg);
-    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*   height: 360px;  */
   }
 
   /* line 1119, ../scss/main.scss */

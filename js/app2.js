@@ -5,6 +5,11 @@ function displayDummyText(message) {
 
 }
 
+function consoleText(message) {
+
+	console.log(message);
+
+}
 // --------------  End of helper/utility functions ---------------------------
 
 // Main Sammy area
@@ -23,6 +28,7 @@ function displayDummyText(message) {
 		// context.app.swap('');   // clears HTML content
 		// Redisplay admin home page - blank with buttons
 		context.app.swap('');
+		consoleText('Site home page');
 
 	}); 
 
@@ -31,7 +37,7 @@ function displayDummyText(message) {
 	this.get('#/membership', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Membership - top level');
+		consoleText('Membership - top level');
 
 
 	});   
@@ -42,14 +48,14 @@ function displayDummyText(message) {
 		// this.item = this.items[context.params['id']];
 
 		// Now edit this coach details
-		displayDummyText('Membership benefits');
+		consoleText('Membership benefits');
 
 	});    
 
 	this.get('#/membership/packages', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Membership packages - automatically links across to ClubSpark');
+		consoleText('Membership packages - automatically links across to ClubSpark');
 
 
 	});   // end get
@@ -57,7 +63,7 @@ function displayDummyText(message) {
 	this.get('#/othersports', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Other sports incl. links to other club web sites');
+		consoleText('Other sports incl. links to other club web sites');
 
 
 	});   // end get
@@ -69,7 +75,7 @@ function displayDummyText(message) {
 	this.get('#/playing', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Playing - top level');
+		consoleText('Playing - top level');
 
 
 	});   
@@ -77,7 +83,7 @@ function displayDummyText(message) {
 	this.get('#/socialtennis', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Social tennis');
+		consoleText('Social tennis');
 
 
 	});   
@@ -85,7 +91,7 @@ function displayDummyText(message) {
 	this.get('#/boxleagues', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Box Leagues');
+		consoleText('Box Leagues');
 
 
 	});   
@@ -93,7 +99,7 @@ function displayDummyText(message) {
 	this.get('#/teams', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Team tennis');
+		consoleText('Team tennis');
 
 
 	});   
@@ -101,7 +107,7 @@ function displayDummyText(message) {
 		this.get('#/tournaments', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Tournaments');
+		consoleText('Tournaments');
 
 
 	});   
@@ -109,7 +115,7 @@ function displayDummyText(message) {
 	this.get('#/bookacourt', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Book a court');
+		consoleText('Book a court');
 
 
 	});   
@@ -122,7 +128,7 @@ function displayDummyText(message) {
 	this.get('#/coaching', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Coaching - top level');
+		consoleText('Coaching - top level');
 
 
 	});   
@@ -130,7 +136,7 @@ function displayDummyText(message) {
 	this.get('#/coaching/adults', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Adult coaching');
+		consoleText('Adult coaching');
 
 
 	});   
@@ -138,7 +144,7 @@ function displayDummyText(message) {
 	this.get('#/coaching/juniors', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Junior coaching');
+		consoleText('Junior coaching');
 
 
 	});   
@@ -146,7 +152,7 @@ function displayDummyText(message) {
 	this.get('#/coaching/coaches', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Coaches');
+		consoleText('Coaches');
 
 
 	});   
@@ -160,7 +166,7 @@ function displayDummyText(message) {
 	this.get('#/holidayclubs', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Holiday Clkubs - top level');
+		consoleText('Holiday Clubs - top level');
 
 
 	});   
@@ -173,7 +179,7 @@ function displayDummyText(message) {
 	this.get('#/news', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('News and events - top level');
+		consoleText('News and events - top level');
 
 
 	});   
@@ -182,7 +188,7 @@ function displayDummyText(message) {
 	this.get('#/events', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Events calendar');
+		consoleText('Events calendar');
 
 
 	});   
@@ -191,7 +197,7 @@ function displayDummyText(message) {
 	this.get('#/social', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('News and events - top level');
+		consoleText('Social events - top level');
 
 
 	});   
@@ -199,7 +205,7 @@ function displayDummyText(message) {
 	this.get('#/photos', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('Photo gallery');
+		consoleText('Photo gallery');
 
 
 	});   
@@ -213,7 +219,7 @@ function displayDummyText(message) {
 	this.get('#/about', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('About Us - top level');
+		consoleText('About Us - top level');
 
 
 	});   
@@ -222,7 +228,7 @@ function displayDummyText(message) {
 	this.get('#/about/location', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('About Us - location');
+		consoleText('About Us - location');
 
 
 	});   
@@ -232,7 +238,7 @@ function displayDummyText(message) {
 	this.get('#/about/policies', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('About Us - policies');
+		consoleText('About Us - policies');
 
 
 	});   
@@ -242,7 +248,7 @@ function displayDummyText(message) {
 	this.get('#/about/committee', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('About Us - know your committee');
+		consoleText('About Us - know your committee');
 
 
 	});   
@@ -251,7 +257,7 @@ function displayDummyText(message) {
 	this.get('#/about/awards', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
-		displayDummyText('About Us - awards etc.');
+		consoleText('About Us - awards etc.');
 
 
 	});   
