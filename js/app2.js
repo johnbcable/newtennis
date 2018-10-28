@@ -22,25 +22,8 @@ function consoleText(message) {
 
 	// Define all the required routes
 
-	// Home or start page   ----------------------------
-
-	this.get('#/', function(context) { 
-		// context.app.swap('');   // clears HTML content
-		// Redisplay admin home page - blank with buttons
-		context.app.swap('');
-		consoleText('Site home page');
-
-	}); 
 
 	// Membersahip pages   -----------------------------
-
-	this.get('#/membership', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Redisplay coaches home page
-		consoleText('Membership - top level');
-
-
-	});   
 
 	// Display single coach page for edit
 	this.get('#/membership/benefits', function(context) {
@@ -59,6 +42,14 @@ function consoleText(message) {
 
 
 	});   // end get
+
+	this.get('#/membership', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		consoleText('Membership - top level');
+
+
+	});   
 
 	this.get('#/othersports', function(context) { 
 		context.app.swap('');   // clears HTML content
@@ -125,14 +116,6 @@ function consoleText(message) {
 
 	// Coaching pages   -----------------------------
 
-	this.get('#/coaching', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Redisplay coaches home page
-		consoleText('Coaching - top level');
-
-
-	});   
-
 	this.get('#/coaching/adults', function(context) { 
 		context.app.swap('');   // clears HTML content
 		// Redisplay coaches home page
@@ -157,6 +140,14 @@ function consoleText(message) {
 
 	});   
 
+
+	this.get('#/coaching', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		consoleText('Coaching - top level');
+
+
+	});   
 
 	// -------------  End of Coaching pages  -----------------
 
@@ -216,14 +207,6 @@ function consoleText(message) {
 
 	// About us pages   -----------------------------
 
-	this.get('#/about', function(context) { 
-		context.app.swap('');   // clears HTML content
-		// Redisplay coaches home page
-		consoleText('About Us - top level');
-
-
-	});   
-
 
 	this.get('#/about/location', function(context) { 
 		context.app.swap('');   // clears HTML content
@@ -262,9 +245,28 @@ function consoleText(message) {
 
 	});   
 
+
+	this.get('#/about', function(context) { 
+		context.app.swap('');   // clears HTML content
+		// Redisplay coaches home page
+		consoleText('About Us - top level');
+
+
+	});   
+
 	// -------------  End of About Us pages  -----------------
 
 
+	// Home or start page   ----------------------------
+
+	this.get('#/', function(context) { 
+		// context.app.swap('');   // clears HTML content
+		// Redisplay admin home page - blank with buttons
+		context.app.swap('');
+		consoleText('Site home page');
+		window.location.href = 'https://hamptontennis.org.uk/oldindex.html';
+
+	}); 
 
 
 

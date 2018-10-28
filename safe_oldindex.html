@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - ????</title>
+    <title>Hampton-in-Arden Tennis Club - Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="-1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="Hampton in Arden Tennis Club web site">
@@ -45,23 +43,45 @@
     <meta name="msapplication-square150x150logo" content="/img/logos/icon150.png">
     <meta name="msapplication-square70x70logo" content="/img/logos/icon70.png">
     <!-- CSS links -->
+
     <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css" />
     <!-- <link rel="stylesheet" href="/css/base.css" />  -->
     <link rel="stylesheet" href="/css/main.css" />
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <style type="text/css">
-      .fullwidth {
-        width: 90%;
-        margin: 0 auto;
+    <style>
+      tr.SOCIAL {
+        font-size: 1.1em;
+        color: #c0c0c0;
+        font-weight: bold;
       }
-      .whitepanel {
-        margin: 0 auto;
-        background-color: #fff;
-        border: 1px solid #c0c0c0;
+      tr.MATCH {
+        font-size: 1.1em;
+        color: #000;
+        font-weight: bold;
       }
-    </style>
+      tr.SOCIALTENNIS {
+        font-size: 1.1em;
+        color: #c0c0c0;
+        font-weight: bold;
+      }
+      .rhs {
+        float: right;
+        margin-right: 2em;
+      }
+      .borderimg1 { 
+          border: 38px solid transparent;
+          padding: 15px;
+          -webkit-border-image: url(img/hollyborder.png)  38 1 0 repeat; /* Safari 3.1-5 */
+          -o-border-image: url(img/hollyborder.png)  38 1 0 repeat; /* Opera 11-12.1 */
+          border-image: url(img/hollyborder.png)  38 1 0 repeat;
+      }
+
+    </style>    
+    <script src="/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+
+  <!--   Topbar area (small devices only)    -->
 
 <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
@@ -88,32 +108,265 @@
 
   </nav>
 
+  <!--   End of topbar area (small devices only)   -->
 
-  <!--     end of topbar navigation    -->
+  <!--   Main content area       -->
 
-  <!--     Main Content Area    -->
 
-    <div class="row">
+  <!--   Banner heading area     -->
 
-      <div class="large-12 medium-12 small-12 columns hide-for-small row--league">
-<!-- 
-        <img src="./img/clubhouse.jpg" alt="our club house" />
+   <header class="myhead">
+    <div class ="row">
+      <div class="large-12 medium-12 small-12 columns row--banner">
+        <div class="container-wide hide-for-small">
+          <div class="header__logo">
+            <a href="/wearefifty.html">
+              <img src="/img/logo50-transparent.png" alt="tennis club 50 years old logo">
+            </a>
+          </div>
+<!--
+          <div class="header__logo">
+            <img src="./img/small_logo.gif" alt="tennis club logo">
+          </div>
+          
+          <nav class="header__nav" role="navigation">
+            <ul>
+              <li class="signedin noshow header__nav-members"><a id="memberslink" href="javascript: routeMember()">Members</a></li>
+              <li class="header__nav-about"><a href="/ourclub.html">About</a></li>
+              <li class="header__nav-contact"><a href="/juniors/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+-->
 
- -->
-       </div>
-
-      <div  class="large-12 medium-12 small-12 columns">
-
-        <h3>Playing League Tennis at Hampton</h3>
-
+        <section class="row container-medium banner-content snowfall">
+          <h1 class="banner-content__heading">
+            Welcome to Hampton in Arden Tennis Club
+          </h1>
+          <p class="banner-content__strapline">
+            Your family-friendly tennis club
+          </p>
+        </section>
 
       </div>
+    </div>
+  </header> 
+
+
+  <!--     end of banner heading area   -->
+
+  <!--     promo box                    -->
+
+
+    <div class="row promobox row--padding-wide row--beige">
+      <div class="large-12 medium-12 small-12 columns">
+        <h4>Juniors Party!!</h4>
+        <p>
+          On Saturday 17<sup>th</sup> November - view details and book via <a href="https://hamptontennis.org.uk/juniors/juniorParty.html">our advert</a>.
+        </p>
+      </div>
+    </div>
+
+<!--
+    <div class="row promobox row--padding-wide">
+
+      <div class="large-12 medium-12 small-12 columns" style="text-align:center;">
+        <h3>Home League Fixtures</h3>
+        <p>
+          It is the last week of the Coventry League season for this year. Come along and watch our teams play at home and see how competitive tennis against other clubs looks. Full details <a href="homefixtures.html">here &raquo;</a>.
+        </p>
+        <hr />
+      </div>
+
+
+    </div>
+-->
+<!--
+
+    <div class="row promobox row--padding-wide row--beige">
+      <div class="large-3 medium-3 small-12 columns">
+        <a class="large fullwidth info button" href="/juniors/joinus.html">Join Us</a>
+      </div>
+      <div class="large-9 medium-9 small-12 columns">
+        <p>
+          There are many benefits to becoming a member of Hampton-in-Arden Tennis Club, whether you are an adult or a child. These include preferential pricing on certain activities and web access to all club communications. See what we have to offer - click Join Us now!
+        </p>
+      </div>
+    </div>
+-->
+
+  <!--     end of promo box             -->
+
+  <!--     whatcanisee area             -->
+
+  <div class="row row--padding-wide row--green">
+
+    <div class="small-12 medium-8 large-8 large-offset-2 medium-offset-2 columns">
+    
+      <div id="watch-title"></div>
+      <div class="whaticansee" id="whatcanisee"></div>
+
+    </div>
+  </div>
+
+  <!--     features area                -->
+
+  <div class="row row--padding-wide">
+
+    <div class="small-12 medium-12 large-12 columns">
+
+      <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 feature-grid">
+        <li>
+          <!-- Your content goes here -->
+          <a href="/juniors/coaching.html">
+            <img src="./img/feature_1.png" alt="coaching" class="feature-image" />
+          </a>
+          <h4><a href="./juniors/coaching.html">Coaching</a></h4>
+          <p>
+            We run a comprehensive mini tennis programme for children from as young as 3 years of age.  Beginners of all ages are welcome.  We also provide adult group lessons on Monday, Thursday, Friday and Saturday mornings, as well as the option to book individual or group lessons at a time to suit you.
+          </p>
+        </li>
+
+         <li>
+          <!-- Your content goes here -->
+          <a href="/juniors/holidaycamps.html">
+            <img src="/img/feature_2.png" alt="holiday clubs" class="feature-image" />
+          </a>
+          <h4><a href="/juniors/holidaycamps.html">Holiday Clubs</a></h4>
+          <p>
+            Our popular tennis and multi-sport camps run during most school holidays and are open to both members and non-members. Camps normally run from 9.30am to 3.30pm with early drop-off available.  
+          </p>
+        </li>
+
+         <li>
+          <!-- Your content goes here -->
+          <a href="/juniors/socialtennis.html">
+            <img src="/img/feature_3.png" alt="social tennis" class="feature-image" />
+          </a>
+          <h4><a href="/juniors/socialtennis.html">Social Tennis</a></h4>
+          <p>
+            Members can attend as many social tennis sessions as they wish from the variety available on weekday evenings and at weekends at no extra cost except for a contribution to lighting costs if required.  The social sessions run all year round in all but the worst weathers.
+          </p>
+        </li>
+      </ul>
 
     </div>
 
-  <!--    End of main content area    -->
+  </div>
+
+  <!--     end of features area         -->
+
+  <!--     awards area                -->
+
+  <div class="row panel">
+
+    <div class="large-12 medium-12 small-12 columns">
+
+      <div class="row">
+
+        <div class="row hide-for-small">
+          <div class="large-8 medium-8 small-12 large-offset-4 medium-offset-4 small-offset-4 columns awardheading">
+            <h2><a href="/awards.html">Our Recent Awards</a></h2>
+          </div>
+        </div>
+
+        <div class="large-6 medium-6 small-12 columns"> 
+           <a href="/awards.html"><img src="/img/tennismarkpluslogo.png" alt="TennisMark Plus accreditation" /></a>
+          <p class="awardstext">
+            TennisMark+ Accreditation 2016&ndash;2017
+          </p>
+        </div>
+        <div class="large-6 medium-6 small-12 columns">
+          <a href="/awards.html"><img src="/img/InterDistrictAward2016.jpg" alt="Inter-District League trophy" /></a>
+          <p class="awardstext">
+            Inter-District league play-off trophy.
+          </p>
+        </div>
+
+      </div>    <!--    /row    -->
+
+    </div>   <!--    /large-12    -->
  
-<!--   Define the footer area  -->
+  </div>   <!--    /row panel    -->
+
+  <!--     end of awards area         -->
+
+
+
+
+  <!--     Get More Involved area       -->
+
+  <div class="row involved row--padding-wide">
+
+    <div class="small-12 medium-12 large-12 involvedheading hide-for-small columns">
+
+        <h2>Get More Involved</h2>
+        <h3>Improve your game - help the club!</h3>
+
+    </div>
+
+    <div class="small-12 medium-12 large-12 columns">
+
+      <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4 involved-grid">
+        <li>
+          <!-- Your content goes here -->
+          <a href="/league.html">
+            <img class="involved-image" src="./img/involved-1.gif" alt="league teams"  />
+          </a>
+          <h4><a href="/league.html">League Teams</a></h4>
+          <p>
+            Why not try out for one of our Coventry League tennis teams? We have 5 mens and 3 ladies teams that compete during the league season (late April to early August) in the Coventry and District Lawn Tennis League
+          </p>
+        </li>
+
+         <li>
+          <!-- Your content goes here -->
+          <a href="/boxleagues.html">
+            <img class="involved-image" src="./img/involved-2.gif" alt="box leagues" />
+          </a>
+          <h4><a href="/boxleagues.html">Box Leagues</a></h4>
+          <p>
+            Within the club, we offer competitive singles and doubles box leagues. These are a great way for you to vary who you play against and improve your match play.  
+          </p>
+        </li>
+
+         <li>
+          <!-- Your content goes here -->
+          <a href="/tournaments.html">
+            <img class="involved-image" src="./img/involved-3.jpg" alt="tournaments" />
+          </a>
+          <h4><a href="/tournaments.html">Tournaments</a></h4>
+          <p>
+            We organise tournaments for all age groups and standards throughout the year. In the main  tournament there are 11 adult and 6 junior titles contested each year - something for everyone.
+          </p>
+        </li>
+
+         <li>
+          <!-- Your content goes here -->
+          <a href="/runtheclub.html">
+            <img class="involved-image" src="/img/tennis-admin-icon.jpg" alt="help run the club" />
+          </a>
+          <h4><a href="/runtheclub.html">Help run the club</a></h4>
+          <p>
+            Could you help us run the club? We are always pleased for volunteers to help in variety of ways: with teams and competitions, with social events and with a variety of administration tasks.
+          </p>
+        </li>
+
+
+      </ul>
+
+    </div>
+
+  </div>   <!--    /row     -->
+
+  <!--     end of Get More Involved     -->
+
+
+    
+
+  <!--   end of content area     -->
+
+  <!--   Define the footer area  -->
   
   <footer class="footer" role="contentinfo">
 
@@ -206,11 +459,47 @@
 
   <!--  end of footer definition  -->
 
-  <!--  Handlebars templates      -->
+  <!--    Start of area for any Handlebars templates    -->
+
+  <script id="whatcanisee-template" type="x-handlebars-template">
+
+   {{#if watchToday }}
+
+      <div class="row row--watching">
+
+        <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
+
+          {{#each watchToday}}
+
+          <div class="row">
+
+            <div class="large-2 medium-2 small-3 {{eventtype}} columns">
+
+              {{eventtime}}
+
+            </div>
+
+            <div class="large-10 medium-10 small-9 {{eventtype}} columns">
+
+              {{eventnote}}
+
+            </div>
+
+          </div>
+
+          {{/each}}
+
+        </div>
+
+      </div>
+
+    {{/if}}
+
+  </script>   
 
 
-  <!--    End of Handlebars templates    -->
-  
+  <!--    End of area for any Handlebars templates    -->
+
   <!--    Reveal Modals begin                         -->
 
   <div id="loginModal" class="reveal-modal small" data-reveal>
@@ -223,13 +512,13 @@
       <form id="signin" name="signin" action="/signin.asp" method="POST" data-abide>
         <div class="userid-field">
           <label>User ID:
-            <input type="text" name="frmUserId" id="frmUserId" placeholder="Your User ID" required pattern="[0-9]+" autofocus />
+            <input type="number" name="frmUserId" id="frmUserId" placeholder="Your User ID" min="1" max="9999" maxlength="4" size="5" required pattern="[0-9]+" autofocus />
           </label>
           <small class="error">Your User ID must be a number</small>
         </div>
         <div class="pin-field">
           <label>PIN:
-            <input type="password" name="frmPassword" id="frmPassword" placeholder="Your PIN number" required pattern="[0-9]+" />
+            <input type="password" name="frmPassword" id="frmPassword" placeholder="Your PIN number" required pattern="[0-9]+" maxlength="4" size="5" />
           </label>
           <small class="error">Your PIN number must be a 4-digit number</small>
         </div>
@@ -238,7 +527,7 @@
       </form>   
       <p>
         <a href="#" data-reveal-id="forgotPasswordModal" title="Forgotten User ID or password"> I have forgotten my User ID and/or password&raquo;</a>
-      </p>
+      </p><p style="position:absolute; left:-2250px; top:-1150px;"> Unlike other Daytona series, Paul Newman is uniquely designed to <a href="http://www.newwatchesoutlet.co.uk">replica watches uk</a> show only the four-digit number at the earliest date, including Ref.6239,6241,6262,6263,6264 Or above 6265. There are <a href="http://www.rolexreplicasstore.uk.com">rolex replica watches</a> so-called "dice" in the small window, and the second window at the 9 o'clock is <a href="http://www.channel-ferries.co.uk">hublot replica</a> marked with 15,30,45,60, which is  different from the general "20", and part The model is  not engraved with Daytona words, and this one is engraved on <a href="http://www.rolexreplicauk.co.uk">replica rolex</a> Daytona, located at 6 o'clock on the small window above. </p>
     </div>    <!--    /signinpanel    -->
 
       <a class="close-reveal-modal">&#215;</a>
