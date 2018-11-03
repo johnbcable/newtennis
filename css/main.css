@@ -182,7 +182,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  /* max-width: 62.5rem; */
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -11576,7 +11576,7 @@ banner-content
 /* line 1395, ../scss/main.scss */
 .footer .footermenuhead {
   margin-top: 1.25em;
-  margin-left: 20%;
+  margin-left: 1.1rem;
   color: gray;
 }
 /* line 1400, ../scss/main.scss */
@@ -11589,7 +11589,9 @@ banner-content
 }
 /* line 1405, ../scss/main.scss */
 .footer .toprow .bigfooter ul li a {
-  margin-left: 10%;
+  /*margin-left: 10%;*/
+  margin-left:0;
+  margin-right:0; 
   font-size: 0.75em;
   text-decoration: none;
   color: #e6e6e6;
