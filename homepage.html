@@ -59,7 +59,7 @@
     <ul class="title-area">
       <!-- Title Area -->
       <li class="name">
-        <a href="index.html"><img src="https://hamptontennis.org.uk/img/small_logo.gif" style="z-index:1;" /></a><br />
+        <a href="index.html"><img src="https://hamptontennis.org.uk/img/small_logo.gif" /></a><br />
         <!-- <h1><a href="#">Hampton-in-Arden Tennis Club </a></h1>   -->
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -128,7 +128,7 @@
 
   <!--   Promotional box    -->
 
-   <div class="row promobox row--padding-wide row--beige">
+   <div class="row promobox row--padding-medium row--beige">
       <div class="large-9 medium-9 small-12 columns">
         <h4>New box leagues have been published.</h4>
         <p>
@@ -141,6 +141,22 @@
     </div>
 
   <!--   end of promotional box   ->
+
+  <!--     whatcanisee area             -->
+
+    <div class="row row--padding-wide">
+
+      <div class="small-12 medium-8 large-8 large-offset-2 medium-offset-2 todaysevents columns">
+      
+        <!--
+        <div id="watch-title"></div>
+        <div class="whaticansee" id="whatcanisee"></div>
+        -->
+
+      </div>
+    </div>
+
+
   <!--   end of content area     -->
 
   <!--   Define the footer area  -->
@@ -257,6 +273,48 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
+  <script id="todaysevents-template" type="x-handlebars-template">
+
+    {{#if allToday }}
+      <div class="row">
+
+        <div class="large-3 medium-3 small-12 eventstoday columns">
+          <time datetime="2014-09-20" class="icon">
+            <em></em>    <!-- day -->
+            <strong></strong>  <!-- month  -->
+            <span></span>  <!-- day -->
+          </time>
+        </div>
+
+        <div class="large-9 medium-9 small-12 columns">
+        {{#each allToday}}
+          <div class="row">
+            {{#if endtime}}
+            <div class="large-3 medium-3 small-4 columns">
+                {{eventtime}}-{{endtime}}
+            </div>
+            {{else}}
+            <div class="large-3 medium-3 small-4 columns">
+                {{eventtime}}
+            </div>
+            {{/if}}
+            <div class="large-9 medium-9 small-8 columns">
+              {{#if eventreport}}
+              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
+              {{else}}
+              {{eventnote}}
+              {{/if}}
+            </div>
+          </div>
+        {{/each}}
+        </div>
+    </div>
+    {{else}}
+      <p>
+        Nothing scheduled today at the club.
+      </p>
+    {{/if}}
+  </script>   
 
 
   <!--    End of area for any Handlebars templates    -->
@@ -341,6 +399,7 @@
 
     <!--    page-specific JS code -->
 
+    <script src="/js/whatcanisee.js"></script> 
 
 
     <!--    Google Analytics    -->

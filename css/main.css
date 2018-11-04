@@ -11184,6 +11184,7 @@ input[type=submit]:hover {
   left: 0.625em;
   overflow: auto;
   margin-bottom: 0.625em;
+  z-index:1;   /* So that we are on top of contet i  ain page below */
 }
 /* line 1000, ../scss/main.scss */
 .top-bar .name
@@ -11571,9 +11572,11 @@ banner-content
  *        footer
  * ------------------------------------------------------------ */
 /* line 1390, ../scss/main.scss */
+/*
 .footer {
   margin-top: 1.5em;
 }
+*/
 /* line 1392, ../scss/main.scss */
 .footer a {
   color: #473016;
@@ -12230,5 +12233,6 @@ time.icon:hover, time.icon:focus {
     left: 0.625em;
     overflow: auto;
     margin-bottom: 0.625em;
+    z-index:1;   /* So that we are on top of contet i  ain page below */
   }
 }
