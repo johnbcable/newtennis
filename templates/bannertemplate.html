@@ -48,36 +48,8 @@
     <!-- <link rel="stylesheet" href="/css/base.css" />  -->
     <link rel="stylesheet" href="/css/main.css" />
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <style>
-      tr.SOCIAL {
-        font-size: 1.1em;
-        color: #c0c0c0;
-        font-weight: bold;
-      }
-      tr.MATCH {
-        font-size: 1.1em;
-        color: #000;
-        font-weight: bold;
-      }
-      tr.SOCIALTENNIS {
-        font-size: 1.1em;
-        color: #c0c0c0;
-        font-weight: bold;
-      }
-      .rhs {
-        float: right;
-        margin-right: 2em;
-      }
-      .borderimg1 { 
-          border: 38px solid transparent;
-          padding: 15px;
-          -webkit-border-image: url(img/hollyborder.png)  38 1 0 repeat; /* Safari 3.1-5 */
-          -o-border-image: url(img/hollyborder.png)  38 1 0 repeat; /* Opera 11-12.1 */
-          border-image: url(img/hollyborder.png)  38 1 0 repeat;
-      }
+    <!-- page-specific styling if necessary -->
 
-    </style>    
-    <script src="/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
@@ -96,6 +68,7 @@
 
     <section class="top-bar-section">
       <!-- Right Nav Section -->
+      <!--  Need to indicate which of the top-menu choices is currently active -->
       <ul class="right">
         <li class="active"><a href="/index.html">Home</a></li>
         <li><a href="javascript: routeMember()">Members</a></li>
@@ -113,10 +86,9 @@
 
   <!--   Main content area       -->
 
-
   <!--   Banner heading area     -->
 
-   <header>
+   <header class="myhead">
     <div class ="row">
       <div class="large-12 medium-12 small-12 columns row--banner">
         <div class="container-wide hide-for-small">
@@ -125,22 +97,7 @@
               <img src="/img/logo.gif" alt="Hampton Tennis Club logo">
             </a>
           </div>
-<!--
-          <div class="header__logo">
-            <img src="./img/small_logo.gif" alt="tennis club logo">
-          </div>
-          
-          <nav class="header__nav" role="navigation">
-            <ul>
-              <li class="signedin noshow header__nav-members"><a id="memberslink" href="javascript: routeMember()">Members</a></li>
-              <li class="header__nav-about"><a href="/ourclub.html">About</a></li>
-              <li class="header__nav-contact"><a href="/juniors/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
--->
-
-        <section class="row container-medium banner-content">
+        <section class="row container-medium banner-content snowfall">
           <h1 class="banner-content__heading">
             Welcome to Hampton in Arden Tennis Club
           </h1>
@@ -154,16 +111,13 @@
   </header> 
 
 
-  <!--     end of banner heading area   -->
-
-  <!--     promo box                    -->
-
+  <!--   Promotional box    -->
 
    <div class="row promobox row--padding-medium row--beige">
       <div class="large-9 medium-9 small-12 columns">
         <h4>New box leagues have been published.</h4>
         <p>
-          New box leagues for the period 1<sup>st</sup> November through to 31<sup>st</sup> December are under way. Make sure you get your matches in during this busy time of year!.
+          New box leagues for the period 1<sup>st</sup> November through to 31<sup>st</sup> December are now under way. Make sure you get your matches in during this busy time of year!.
         </p>
       </div>
       <div class="large-3 medium-3 small-12 columns">
@@ -171,143 +125,15 @@
       </div>
     </div>
 
+  <!--   end of promotional box   ->
 
-  <!--     end of promo box             -->
+ 
 
-  <!--     whatcanisee area             -->
-
-  <div class="row row--padding-wide row--green">
-
-    <div class="small-12 medium-8 large-8 large-offset-2 medium-offset-2 columns">
-    
-      <div id="watch-title"></div>
-      <div class="whaticansee" id="whatcanisee"></div>
-
-    </div>
-  </div>
-
-  <!--     features area                -->
-
-  <div class="row row--padding-wide">
-
-    <div class="small-12 medium-12 large-12 columns">
-
-      <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 feature-grid">
-        <li>
-          <!-- Your content goes here -->
-          <a href="/juniors/coaching.html">
-            <img src="./img/feature_1.png" alt="coaching" class="feature-image" />
-          </a>
-          <h4><a href="./juniors/coaching.html">Coaching</a></h4>
-          <p>
-            We run a comprehensive mini tennis programme for children from as young as 3 years of age.  Beginners of all ages are welcome.  We also provide adult group lessons on Monday, Thursday, Friday and Saturday mornings, as well as the option to book individual or group lessons at a time to suit you.
-          </p>
-        </li>
-
-         <li>
-          <!-- Your content goes here -->
-          <a href="/juniors/holidaycamps.html">
-            <img src="/img/feature_2.png" alt="holiday clubs" class="feature-image" />
-          </a>
-          <h4><a href="/juniors/holidaycamps.html">Holiday Clubs</a></h4>
-          <p>
-            Our popular tennis and multi-sport camps run during most school holidays and are open to both members and non-members. Camps normally run from 9.30am to 3.30pm with early drop-off available.  
-          </p>
-        </li>
-
-         <li>
-          <!-- Your content goes here -->
-          <a href="/juniors/socialtennis.html">
-            <img src="/img/feature_3.png" alt="social tennis" class="feature-image" />
-          </a>
-          <h4><a href="/juniors/socialtennis.html">Social Tennis</a></h4>
-          <p>
-            Members can attend as many social tennis sessions as they wish from the variety available on weekday evenings and at weekends at no extra cost except for a contribution to lighting costs if required.  The social sessions run all year round in all but the worst weathers.
-          </p>
-        </li>
-      </ul>
-
-    </div>
-
-  </div>
-
-  <!--     end of features area         -->
-
-
-  <!--     Get More Involved area       -->
-
-  <div class="row involved row--padding-wide row--grey">
-
-    <div class="small-12 medium-12 large-12 involvedheading hide-for-small columns">
-
-        <h2>Get More Involved</h2>
-        <h3>Improve your game - help the club!</h3>
-
-    </div>
-
-    <div class="small-12 medium-12 large-12 columns">
-
-      <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4 involved-grid">
-        <li>
-          <!-- Your content goes here -->
-          <a href="/league.html">
-            <img class="involved-image" src="./img/involved-1.gif" alt="league teams"  />
-          </a>
-          <h4><a href="/league.html">League Teams</a></h4>
-          <p>
-            Why not try out for one of our Coventry League tennis teams? We have 5 mens and 3 ladies teams that compete during the league season (late April to early August) in the Coventry and District Lawn Tennis League
-          </p>
-        </li>
-
-         <li>
-          <!-- Your content goes here -->
-          <a href="/boxleagues.html">
-            <img class="involved-image" src="./img/involved-2.gif" alt="box leagues" />
-          </a>
-          <h4><a href="/boxleagues.html">Box Leagues</a></h4>
-          <p>
-            Within the club, we offer competitive singles and doubles box leagues. These are a great way for you to vary who you play against and improve your match play.  
-          </p>
-        </li>
-
-         <li>
-          <!-- Your content goes here -->
-          <a href="/tournaments.html">
-            <img class="involved-image" src="./img/involved-3.jpg" alt="tournaments" />
-          </a>
-          <h4><a href="/tournaments.html">Tournaments</a></h4>
-          <p>
-            We organise tournaments for all age groups and standards throughout the year. In the main  tournament there are 11 adult and 6 junior titles contested each year - something for everyone.
-          </p>
-        </li>
-
-         <li>
-          <!-- Your content goes here -->
-          <a href="/runtheclub.html">
-            <img class="involved-image" src="/img/tennis-admin-icon.jpg" alt="help run the club" />
-          </a>
-          <h4><a href="/runtheclub.html">Help run the club</a></h4>
-          <p>
-            Could you help us run the club? We are always pleased for volunteers to help in variety of ways: with teams and competitions, with social events and with a variety of administration tasks.
-          </p>
-        </li>
-
-
-      </ul>
-
-    </div>
-
-  </div>   <!--    /row     -->
-
-  <!--     end of Get More Involved     -->
-
-
-    
 
   <!--   end of content area     -->
 
   <!--   Define the footer area  -->
-  
+
   <footer class="footer" role="contentinfo">
 
     <div class="row joinus">
@@ -316,82 +142,101 @@
       </div>
       <div class="large-9 medium-9 small-12 columns">
         <p>
-          There are many benefits to becoming a member of Hampton-in-Arden Tennis Club, whether you are an adult or a child. These include preferential pricing on certain activities and web access to all club communications. See what we have to offer - click Join Us now!
+          There are many benefits to becoming a member of Hampton-in-Arden Tennis Club, whether you are an adult or a child. These include preferential pricing on certain activities, booking courts and web access to club communications. See what we have to offer - click Join Us now!
         </p>
       </div>
     </div>
 
-    <div class="row toprow">
-        <div class="large-9 bigfooter columns">
+      <div class="row toprow">
+
+        <div class="large-12 bigfooter columns">
+
           <div class="row">
-            <div class="large-3 medium-3 small-12 clublogo columns">
-                <p class="footermenuhead">&nbsp;</p>
-                <a href="https://hamptontennis.org.uk/index.html"><img src="./img/small_logo.gif" /></a>
-                <br />
+
+            <div class="large-2 medium-2 small-12 columns">
+                <p class="footermenuhead">Membership</p>
+                <ul>
+                  <li><a href="/juniors/joinus.html" title="Benefits of joining the club">Why be a member</a></li>
+                  <li><a href="https://clubspark.lta.org.uk/HamptonInArden/Membership/Join" title="Available membership packages">Membership packages</a></li>
+                  <li><a href="/aboutus.html" title="Other sports available at Hampton Sports Club">Other sports</a></li>
+                  <li><a href="/directory.html" title="Search the club members list">Directory</a></li>
+                  <li><a href="#" data-reveal-id="loginModal" title="Sign-in to the members area" id="loginmenu" class="notsignedin noshow">Sign In &raquo;</a></li>
+                </ul>
             </div>
 
-            <div class="large-3 medium-3 small-12 columns">
-              <p class="footermenuhead">Our Club</p>
+            <div class="large-2 medium-2 small-12 columns">
+              <p class="footermenuhead">Playing</p>
+              <ul>
+                <li><a href="/juniors/socialtennis.html" title="Provision for social tennis at our club">Social Tennis</a></li>
+                <li><a href="/boxleagues.html" title="Internal box leagues">Box Leagues</a></li>
+                <li><a href="/league.html" title="Playing for Hampton in the Coventry and District Lawn Tennis League">Coventry League</a></li>
+                <li><a href="/tournaments.html" title="Tournaments">Tournaments</a></li>
+                <li class="signedin noshow"><a href="/bookacourt.asp" title="Book a court (Signed-in members only)">Book a court</a></li>
+              </ul>
+            </div>
+
+            <div class="large-2 medium-2 small-12 columns">
+              <p class="footermenuhead">Coaching</p>
+              <ul>
+                <li><a href="/juniors/adultcoaching.html" title="Opportunities for coaching at our club whatever your age or ability">Adults</a></li>
+                <li><a href="/juniors/coaching.html" title="Opportunities for coaching at our club whatever your age or ability">Juniors</a></li>
+                <li><a href="/juniors/coaches.html" title="get to know our coaches">Our coaches</a></li>
+                <li><a href="/juniors/one-to-one.html" title="Personal coaching sessions">One&ndash;to&ndash;One</a></li>
+                <li><a href="/juniors/holidaycamps.html" title="Holiday camps">Holiday camps</a></li>
+              </ul>
+            </div>
+
+            <div class="large-2 medium-2 small-12 columns">
+              <p class="footermenuhead">News/Events</p>
+              <ul>
+                <li><a href="/events.html" title="Full event calendar for the club">Event Calendar</a></li>
+                <li><a href="/socialevents.html" title="Social events at our club">Facilities</a></li>
+                <li><a href="/news.html" title="Club news">News</a></li>
+                <li><a href="/galleryindex.html" title="Photo galleries">Galleries</a></li>
+              </ul>
+            </div>
+
+            <div class="large-2 medium-2 small-12 columns">
+              <p class="footermenuhead">About Us</p>
               <ul>
                 <li><a href="/juniors/contact.html" title="Contact the club">Contact Us</a></li>
                 <li><a href="/ourclub.html" title="Facilities at our club">Facilities</a></li>
                 <li><a href="/juniors/joinus.html" title="Join the club">Join Us</a></li>
-                <li><a href="/juniors/faqs.html" title="Frequently asked questions">FAQ&apos;s</a></li>
+                <li><a href="/awards.html" title="Our awards and achivements">Awards</a></li>
                 <li><a href="/juniors/clubmark.html" title="Policies and procedures for running the club">Policies &amp; Procedures</a></li>
               </ul>
             </div>
 
-            <div class="large-3 medium-3 small-12 columns">
-              <p class="footermenuhead">Playing</p>
-              <ul>
-                <li><a href="/league.html" title="Playing for Hampton in the Coventry and District Lawn Tennis League">Coventry League</a></li>
-                <li><a href="/boxleagues.html" title="Internal box leagues">Box Leagues</a></li>
-                <li><a href="/tournaments.html" title="Tournaments">Tournaments</a></li>
-                <li><a href="/juniors/socialtennis.html" title="Provision for social tennis at our club">Social Tennis</a></li>
-                <li><a href="/juniors/coaching.html" title="Opportunities for coaching at our club whatever your age or ability">Coaching</a></li>
-              </ul>
+            <div class="large-2 medium-2 small-12 columns">
+              <p class="footermenuhead">&nbsp;</p>
             </div>
-            <div class="large-3 medium-3 small-12 columns">
-              <p class="footermenuhead">Members</p>
-               <ul class="signedin noshow">
-                <li><a href="/renewprofile.html" title="My details held by the club">My Details</a></li>
-                <li><a href="/directory.html" title="Search the club members list">Directory</a></li>
-                <li><a href="/galleryindex.html" title="Photo galleries">Galleries</a></li>
-                <li><a href="/juniors/documents.html" title="Archive for documents and forms used at the club">Document Library</a></li>
-                <li><a href="javascript: logMeOut()" id="logout" title="Sign-out from the members area">Sign-Out &raquo;</a></li>
-               </ul>
-               <ul class="notsignedin noshow">
-                <li><a href="#" data-reveal-id="loginModal" title="Sign-in to the members area" id="loginmenu">Sign In &raquo;</a></li>
-              </ul>
-            </div>
+ 
+          </div>
 
-          </div>
-      </div>
-        <div class="large-3 medium-3 social hide-for-small columns">
-          <div class="row">
-            <div class="large-12 columns">
-              <h3 class"footermenuhead">Stay in Touch</h3>
-              <ul class="inline-list">
-                <li class="facebook"><a href="http://facebook.com/hamptontennis" title="Facebook"></a></li>
-                <li class="twitter"><a href="http://twitter.com/hamptontennis" title="Twitter"></a></li>
-                <li class="wordpress"><a href="http://hamptontennis.wordpress.com" title="Wordpress"></a></li>
-                <li class="flickr"><a href="http://www.flickr.com/photos/103781054@N07/" title="Flickr"></a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-    </div>
+
+      </div>
 
     <!-- Second row - with copyright info etc -->
     <div class="row bottomrow hide-for-small">
-      <div class="large-4 columns">
-        <p>Hampton-in-Arden Tennis Club</p>
+      <div class="large-4 medium-4 small-12 columns">
+        <p>
+          <a href="https://hamptontennis.org.uk/index.html"><img src="./img/small_logo.gif" style="margin-top:10px;" /></a>&nbsp;&nbsp;
+          Hampton-in-Arden Tennis Club
+      </p>
       </div>
-      <div class="large-4 columns">
-          &nbsp;
+      <div class="large-4 medium-4 small-12 social columns" align="center">
+        <p>
+        <ul class="inline-list">
+          <li class="facebook"><a href="http://facebook.com/hamptontennis" title="Facebook"></a></li>
+          <li class="twitter"><a href="http://twitter.com/hamptontennis" title="Twitter"></a></li>
+          <li class="wordpress"><a href="http://hamptontennis.wordpress.com" title="Wordpress"></a></li>
+          <li class="flickr"><a href="http://www.flickr.com/photos/103781054@N07/" title="Flickr"></a></li>
+        </ul>
+      </p>
       </div>
-      <div class="large-4 columns">
-          <p>&copy; JC 2015. All rights reserved</p>
+      <div class="large-4 medium-4 small-12 columns">
+          <p style="margin-top:10px;">&copy; JC 2018. All rights reserved</p>
       </div>
     </div>
 
@@ -401,40 +246,47 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
-  <script id="whatcanisee-template" type="x-handlebars-template">
+  <script id="todaysevents-template" type="x-handlebars-template">
 
-   {{#if watchToday }}
+    {{#if allToday }}
+      <div class="row">
 
-      <div class="row row--watching">
-
-        <div class="large-10 medium-10 small-12 large-offset-1 medium-offset-1 columns">
-
-          {{#each watchToday}}
-
-          <div class="row">
-
-            <div class="large-2 medium-2 small-3 {{eventtype}} columns">
-
-              {{eventtime}}
-
-            </div>
-
-            <div class="large-10 medium-10 small-9 {{eventtype}} columns">
-
-              {{eventnote}}
-
-            </div>
-
-          </div>
-
-          {{/each}}
-
+        <div class="large-3 medium-3 small-12 eventstoday columns">
+          <time datetime="2014-09-20" class="icon">
+            <em></em>    <!-- day -->
+            <strong></strong>  <!-- month  -->
+            <span></span>  <!-- day -->
+          </time>
         </div>
 
-      </div>
-
+        <div class="large-9 medium-9 small-12 columns">
+        {{#each allToday}}
+          <div class="row">
+            {{#if endtime}}
+            <div class="large-3 medium-3 small-4 columns">
+                {{eventtime}}-{{endtime}}
+            </div>
+            {{else}}
+            <div class="large-3 medium-3 small-4 columns">
+                {{eventtime}}
+            </div>
+            {{/if}}
+            <div class="large-9 medium-9 small-8 columns">
+              {{#if eventreport}}
+              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
+              {{else}}
+              {{eventnote}}
+              {{/if}}
+            </div>
+          </div>
+        {{/each}}
+        </div>
+    </div>
+    {{else}}
+      <p>
+        Nothing scheduled today at the club.
+      </p>
     {{/if}}
-
   </script>   
 
 
@@ -516,10 +368,12 @@
     <script src="/bower_components/sammy/lib/sammy.js"></script>
 
     <script src="/js/app.js"></script>
-
     <script src="/js/sessions.js"></script> 
+
+    <!--    page-specific JS code -->
+
     <script src="/js/whatcanisee.js"></script> 
-    <!--    <script src="/js/main.js"></script>     -->
+
 
     <!--    Google Analytics    -->
 
