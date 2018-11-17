@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Home Page</title>
+    <title>Hampton-in-Arden Tennis Club - One-To-One Coaching</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
     <!-- Schema.org markup for Google+ -->
@@ -85,6 +85,76 @@
   <!--   End of topbar area (small devices only)   -->
 
   <!--   Main content area       -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>One-to-One Coaching</h2>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 medium-12 small-12 columns">
+      <p>
+        The coaching staff at Hampton are available to coach people on a one-to-one basis. The current charges for one-to-one coaching are shown below: 
+      </p>
+      <table width="100%">
+        <thead>
+          <tr>
+            <th>Coach</th>
+            <th>&half;-hour</th>
+            <th>1-hour</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ian Poole</td>
+            <td>&pound;17.00</td>
+            <td>&pound;28.00</td>
+          </tr>
+          <tr>
+            <td>Sam Peace</td>
+            <td>&pound;15.50</td>
+            <td>&pound;24.00</td>
+          </tr>
+          <tr>
+            <td>Bel Chefri</td>
+            <td>&pound;12.50</td>
+            <td>&pound;22.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Please note that over the winter months, if lights are required during a private lesson, these will be charged at &pound;2 per hour (or &pound;1 for half an hour) in addition to the above rates.
+      </p>
+      <p>
+        Private lessons for small groups can also be arranged, please speak to Ian directly about rates.
+      </p>
+
+    </div>
+
+    <div id="coachlist" class="large-4 medium-4 small-12 coachlist columns">
+    <h4>Contact a Coach</h4>
+    <script id="coachlist-template" type="x-handlebars-template">
+    <ul>
+        {{#each allCoaches}}
+        <li>
+          <a href="{{url}}">{{forename1}} {{surname}}</a>
+          <p class="mobile">mobile: {{mobilephone}}</p>
+        </li>
+        {{/each}}
+    </ul>
+
+    <hr />
+      
+    <a href="coaching_schedule.html" class="large fullwidth info button">Coaching Schedule</a><br />
+    <a href="paying.html" class="large fullwidth info button">Paying for Coaching</a>
+
+    </script>
+
+    </div>    <!--    /coachlist    -->
+ 
+  </div>
 
 
 
@@ -205,49 +275,6 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
-  <script id="todaysevents-template" type="x-handlebars-template">
-
-    {{#if allToday }}
-      <div class="row">
-
-        <div class="large-3 medium-3 small-12 eventstoday columns">
-          <time datetime="2014-09-20" class="icon">
-            <em></em>    <!-- day -->
-            <strong></strong>  <!-- month  -->
-            <span></span>  <!-- day -->
-          </time>
-        </div>
-
-        <div class="large-9 medium-9 small-12 columns">
-        {{#each allToday}}
-          <div class="row">
-            {{#if endtime}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}-{{endtime}}
-            </div>
-            {{else}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}
-            </div>
-            {{/if}}
-            <div class="large-9 medium-9 small-8 columns">
-              {{#if eventreport}}
-              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
-              {{else}}
-              {{eventnote}}
-              {{/if}}
-            </div>
-          </div>
-        {{/each}}
-        </div>
-    </div>
-    {{else}}
-      <p>
-        Nothing scheduled today at the club.
-      </p>
-    {{/if}}
-  </script>   
-
 
   <!--    End of area for any Handlebars templates    -->
 
@@ -331,7 +358,7 @@
 
     <!--    page-specific JS code -->
 
-    <script src="/js/whatcanisee.js"></script> 
+    <script src="/js/coachlist.js"></script>
 
 
     <!--    Google Analytics    -->

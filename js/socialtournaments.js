@@ -85,6 +85,8 @@ $(document).ready(function() {
 
 	    // Deal with Open/Close All links
 	    // First - assign collapsible routines to functions
+	    // Deal with Open/Close All links
+	    // First - assign collapsible routines to functions
 	    function openAll() {
 	    	$('.collapsible').collapsible('openAll');
 	    }
@@ -108,6 +110,7 @@ $(document).ready(function() {
 	        event.preventDefault();
 	        openAll();
 	    });
+
 
 	    getFutureTournaments();
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Home Page</title>
+    <title>Hampton-in-Arden Tennis Club - Coaching</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
     <!-- Schema.org markup for Google+ -->
@@ -85,6 +85,151 @@
   <!--   End of topbar area (small devices only)   -->
 
   <!--   Main content area       -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <!--     Image for page header?    -->
+      <h2>Coaching at Hampton in Arden Tennis Club</h2>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 medium-4 small-12 columns">
+      <a href="ianpoole.html">
+        <img src="./img/ianpoole.jpg" />
+      </a>
+    </div>
+    <div class="large-8 medium-8 small-12 columns">
+      <h4>Head Coach - Ian Poole</h4>
+      <p>
+        Our head coach, Ian Poole, is a level 4 CCA Performance coach.  Ian, together with his assistant coaches, runs a comprehensive mini tennis programme for children from as young as 3 years of age.  Beginners of all ages are welcome.  We also provide adult group lessons on Monday, Thursday, Friday and Saturday mornings, as well as the option to book individual or group lessons at a time to suit you.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 medium-8 small-12 columns">
+      <p>
+        Ian is supported in his coaching activities at Hampton in Arden by a team of qualified coaches. 
+      </p>
+    </div>
+    <div class="large-4 medium-4 small-12 columns">
+      <a class="large fullwidth info button" href="coaches.html">Meet our Coaches</a>
+    </div>
+
+    <hr />
+
+  </div>
+
+  <div class="row">
+
+    <div class="large-8 medium-8 small-12 services columns">
+
+      <div class="row">
+
+        <div class="large-6 medium-6 small-12 columns">
+          <h4><a href="junior_coaching.html">Junior Group Coaching</a></h4>
+          <p>
+            Hampton in Arden Tennis Club has an extensive programme of coaching for juniors from ages 3 to 18 years old. LTA-qualified staff provide structure (and fun!) to all juniors receiving coaching. Term-time coaching is supplemented with half-term and school holiday time tennis and multi-sport clubs.
+          </p>
+          <a href="junior_coaching.html">Find out more &raquo;</a>
+        </div>
+
+        <div class="large-6 medium-6 small-12 columns">
+          <h4><a href="minitennis.html">LTA Mini-Tennis</a></h4>
+          <p>
+            Hampton in arden Tennis Club is an accredited LTA Mini-Tennis training centre, teaching the four stages of Mini-Tennis from tots at ages 3-5, up through Mini-Tennis Red (ages 5-8), Mini-Tennis Orange (ages 8 and 9) to Mini-Tennis Green (age 10).  
+          </p>
+          <a href="minitennis.html">Learn more &raquo;</a>
+        </div>
+
+      </div>
+
+      <hr />
+
+      <div class="row">
+
+        <div class="large-6 medium-6 small-12 columns">
+          <h4><a href="adult_coaching.html">Adult Coaching</a></h4>
+          <p>
+            Hampton in Arden Tennis Club also provides structured coaching for all levels of adult playing capability, both during the daytimes and at weekends. New Cardio tennis sessions are also provided for those whose goals are fitness and tennis skills.
+          </p>
+          <a href="adult_coaching.html">More details &raquo;</a>
+        </div>
+
+        <div class="large-6 medium-6 small-12 columns">
+          <h4><a href="one-to-one.html">One-to-One Coaching</a></h4>
+          <p>
+            The coaching staff at Hampton in Arden Tennis Club are also available for one-to-one coaching sessions for all ages and abilities, whether you want to catch up with others in your group coaching or need to move on from group coaching activitiies to perfect individual skills.
+          </p>
+          <a href="one-to-one.html">Coach availability &raquo;</a>
+        </div>
+        <hr />
+
+      </div>   <!--    /row      -->
+
+  <div class="row">
+    <div class="large-12 medium-12 small-12 panel columns">
+
+      <p>
+        Still unsure what is your best current starting point for coaching at Hampton? Just type your date of birth into the box and click on &quot;Show me where I can fit in&quot; to get an idea where you should start.
+      </p>
+
+      <form action="mycoaching.asp" method="POST">
+
+        <div class="row">
+
+           <div id="mydateofbirth" class="large-4 medium-4 small-12 columns">
+              <h6>My date of birth is:</h6>
+            </div>
+            <div class="large-3 medium-3 small-12 columns"> 
+              <input type="text" name="dob" id="dob" size="12" maxlength="10" onBlur="javascript:checkdate(this)" placeholder="dd/mm/yyyy" />
+            </div>
+            <div id="submitblock" class="large-5 medium-5 small-12 columns">
+              <p>
+                <input type="submit" class="small button" value="Show me where I can fit in">
+              </p>
+            </div>
+
+          </div>   <!--   /row   -->
+
+      </form>
+
+    </div>   <!--  /large-8   -->
+
+  </div>   <!--   /row   -->
+
+
+
+    </div>  <!-- end of large-8   -->
+
+    <div class="large-4 medium-4 small-12 coachlist columns">
+
+      <div id="coachlist">
+      <h4>Contact a Coach</h4>
+      <script id="coachlist-template" type="x-handlebars-template">
+      <ul>
+          {{#each allCoaches}}
+          <li>
+            <a href="{{url}}">{{forename1}} {{surname}}</a>
+            <p class="mobile">mobile: {{mobilephone}}</p>
+          </li>
+          {{/each}}
+      </ul>
+
+      <hr />
+        
+      <a href="coaching_schedule.html" class="large fullwidth info button">Coaching Schedule</a><br />
+      <a href="paying.html" class="large fullwidth info button">Paying for Coaching</a>
+
+      </script>
+
+      </div>    <!--    /coachlist    -->
+
+     </div>    <!--    /large-4    --> 
+
+  </div>    <!--    /row    -->
 
 
 
@@ -205,49 +350,6 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
-  <script id="todaysevents-template" type="x-handlebars-template">
-
-    {{#if allToday }}
-      <div class="row">
-
-        <div class="large-3 medium-3 small-12 eventstoday columns">
-          <time datetime="2014-09-20" class="icon">
-            <em></em>    <!-- day -->
-            <strong></strong>  <!-- month  -->
-            <span></span>  <!-- day -->
-          </time>
-        </div>
-
-        <div class="large-9 medium-9 small-12 columns">
-        {{#each allToday}}
-          <div class="row">
-            {{#if endtime}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}-{{endtime}}
-            </div>
-            {{else}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}
-            </div>
-            {{/if}}
-            <div class="large-9 medium-9 small-8 columns">
-              {{#if eventreport}}
-              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
-              {{else}}
-              {{eventnote}}
-              {{/if}}
-            </div>
-          </div>
-        {{/each}}
-        </div>
-    </div>
-    {{else}}
-      <p>
-        Nothing scheduled today at the club.
-      </p>
-    {{/if}}
-  </script>   
-
 
   <!--    End of area for any Handlebars templates    -->
 
@@ -331,7 +433,8 @@
 
     <!--    page-specific JS code -->
 
-    <script src="/js/whatcanisee.js"></script> 
+    <script src="js/coachlist.js"></script>
+    <script src="js/dateval.js"></script>
 
 
     <!--    Google Analytics    -->

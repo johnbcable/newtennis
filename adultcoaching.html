@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Home Page</title>
+    <title>Hampton-in-Arden Tennis Club - Adult Coaching</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
     <!-- Schema.org markup for Google+ -->
@@ -86,7 +86,105 @@
 
   <!--   Main content area       -->
 
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Coaching for Adults</h2>
+      <hr />
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns">
+      <div class="row compare">
+          <div class="large-3 columns">
+              <ul class="pricing-table">
+                  <li class="title">Monday</li>
+                  <li class="price">&pound;6</li>
+                  <li class="description">9.00am to 10.00 am</li>
+                  <li class="description">Members</li>
+              </ul>
+          </div>
+          <div class="large-3 columns">
+              <ul class="pricing-table">
+                  <li class="title">Thursday</li>
+                  <li class="price">&pound;6</li>
+                  <li class="description">9.00am to 10.00 am</li>
+                  <li class="description">Members</li>
+              </ul>
+          </div>
+          <div class="large-3 columns">
+              <ul class="pricing-table">
+                  <li class="title">Friday</li>
+                  <li class="price">&pound;6</li>
+                  <li class="description">9.00am to 10.00 am</li>
+                  <li class="description">Members</li>
+              </ul>            
+          </div>
+          <div class="large-3 columns">
+              <ul class="pricing-table">
+                  <li class="title">Tuesday (Rusty Rackets)</li>
+                  <li class="price">&pound;6</li>
+                  <li class="description">7.00pm to 8.00pm</li>
+                  <li class="description">Pay &amp; Play</li>
+              </ul>            
+          </div>
+      </div>
+
+      <p>
+        The above sessions run during school terms only
+      </p>  
+      <p>
+        Members &pound;6.00 per session;<br />
+        For non-member rates, please speak to Ian
+      </p>
+      <p>
+        Additional Saturday morning pay and play adult coaching - intermediate (Members only: &pound;6.00 per session).
+      </p>
+      <p>
+        N.B.  All sessions are open to ladies and men
+      </p>
+
+      <a href="/paying.html" class="large fullwidth info button">Paying for Coaching</a>
+
+    </div>
+    <div class="large-6 medium-6 small-12 columns">
+      <img src="./img/ianpoole.jpg" class="coachpicture" />
+      <p>
+        Coaching provision for adults ranges from group programmes through the ability spectrum up from adult beginners and improvers through intermediate game improvement sessions and tactics and cardio workouts to individual sessions which may be organised directly with Ian on an ad-hoc basis.
+      </p>
+      <p>
+        Coaching sessions for all abilities are held during school terms on Monday, Thursday and Friday morning and from March to September on Saturday morning and Thursday evening. Cardio tennis sessions are held on Thursday morning 10.00am to 11.00am.
+      </p>
+    </div>
+ 
+  </div>
+
+<!--
+  <div class="row panel">
+    <div class="large-6 medium-6 small-12 columns">
+      <img src="https://hamptontennis.org.uk/img/adultcoachingclinics.jpg" alt="Adult coaching clinics" />
+      <h4>Improve your game.</h4>
+    </div>      
+    <div class="large-6 medium-6 small-12 columns">
+      <p>
+        Performance coach Sam peace is offering coaching for adults on various aspects of your game  &ndash; from serving and volleying to topspin forehands and doubles tactics.
+      </p>
+      <p>
+        During August 2018, Sam will, be running 4 workshops, each on an individual pay &amp; play basis - &pound;6 per person per session. Please let Sam know which sessions you would like to attend (mobile: 07825 577449).
+      </p>
+      <ul>
+        <li>Wednesday August 1<sup>st</sup> &ndash; Serving Clinic</li>
+        <li>Wednesday August 15<sup>th</sup> &ndash; Volley and Smash Clinic</li>
+        <li>Wednesday August 22<sup>nd</sup> &ndash; Topspin Forehand Clinic</li>
+        <li>Wednesday August 29<sup>th</sup> &ndash; Doubles Tactics and Lob Clinic</li>
+      </ul>
+      <p>
+        Sign up now - contact Sam on 07825 577449 to let him know which sessions you wish to attend. Pay him on the day.
+      </p>
+    </div>
+
+  </div>
+-->
 
 
   <!--   end of content area     -->
@@ -205,49 +303,6 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
-  <script id="todaysevents-template" type="x-handlebars-template">
-
-    {{#if allToday }}
-      <div class="row">
-
-        <div class="large-3 medium-3 small-12 eventstoday columns">
-          <time datetime="2014-09-20" class="icon">
-            <em></em>    <!-- day -->
-            <strong></strong>  <!-- month  -->
-            <span></span>  <!-- day -->
-          </time>
-        </div>
-
-        <div class="large-9 medium-9 small-12 columns">
-        {{#each allToday}}
-          <div class="row">
-            {{#if endtime}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}-{{endtime}}
-            </div>
-            {{else}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}
-            </div>
-            {{/if}}
-            <div class="large-9 medium-9 small-8 columns">
-              {{#if eventreport}}
-              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
-              {{else}}
-              {{eventnote}}
-              {{/if}}
-            </div>
-          </div>
-        {{/each}}
-        </div>
-    </div>
-    {{else}}
-      <p>
-        Nothing scheduled today at the club.
-      </p>
-    {{/if}}
-  </script>   
-
 
   <!--    End of area for any Handlebars templates    -->
 
@@ -331,7 +386,7 @@
 
     <!--    page-specific JS code -->
 
-    <script src="/js/whatcanisee.js"></script> 
+    <script src="/js/coachlist.js"></script>
 
 
     <!--    Google Analytics    -->
