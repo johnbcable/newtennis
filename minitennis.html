@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Home Page</title>
+    <title>Hampton-in-Arden Tennis Club - MiniTennis Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
     <!-- Schema.org markup for Google+ -->
@@ -70,10 +70,10 @@
       <!-- Right Nav Section -->
       <!--  Need to indicate which of the top-menu choices is currently active -->
       <ul class="right">
-        <li class="active"><a href="/index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="javascript: routeMember()">Members</a></li>
         <li><a href="/playing.html">Playing</a>
-        <li><a href="/coaching.html">Coaching</a>
+        <li class="active"><a href="/coaching.html">Coaching</a>
         <li><a href="/holidaycamps.html">Holiday Clubs</a></li>
         <li><a href="javascript: routeMember()">News and Events</a></li>
         <li><a href="/ourclub.html">About Us</a></li>
@@ -88,46 +88,141 @@
 
   <!--   Banner heading area     -->
 
-   <header class="myhead">
-    <div class ="row">
-      <div class="large-12 medium-12 small-12 columns row--banner">
-        <div class="container-wide hide-for-small">
-          <div class="header__logo">
-            <a href="/index.html">
-              <img src="/img/logo.gif" alt="Hampton Tennis Club logo">
-            </a>
-          </div>
-        <section class="row container-medium banner-content snowfall">
-          <h1 class="banner-content__heading">
-            Welcome to Hampton in Arden Tennis Club
-          </h1>
-          <p class="banner-content__strapline">
-            Your family-friendly tennis club
-          </p>
-        </section>
-
-      </div>
-    </div>
-  </header> 
-
 
   <!--   Promotional box    -->
 
-   <div class="row promobox row--padding-medium row--beige">
-      <div class="large-9 medium-9 small-12 columns">
-        <h4>New box leagues have been published.</h4>
-        <p>
-          New box leagues for the period 1<sup>st</sup> November through to 31<sup>st</sup> December are now under way. Make sure you get your matches in during this busy time of year!.
-        </p>
-      </div>
-      <div class="large-3 medium-3 small-12 columns">
-        <a href="/boxleagues.html" class="large fullwidth info button">Current box leagues and rules</a>
-      </div>
-    </div>
-
   <!--   end of promotional box   ->
 
- 
+  <!--    Main contant area.   -->
+
+    <!-- Header -->
+ <header class="myhead">
+  <div class ="row">
+    <div class="large-12 medium-12 small-12 columns">
+      <img name="MiniTennisImageMap" src="/img/MiniTennisImageMap.jpg" width="980" height="296" id="MiniTennisImageMap" usemap="#m_MiniTennisImageMap" alt="" />
+      <map name="m_MiniTennisImageMap" id="m_MiniTennisImageMap">
+        <area shape="poly" coords="788,11,729,139,736,288,972,287,973,6,788,11" href="minigreen.html" title="More information about Mini-Tennis Green" alt="More information about Mini-Tennis Green" />
+        <area shape="poly" coords="493,10,497,287,669,285,729,108,719,7,493,10" href="miniorange.html" title="More information about Mini-Tennis Orange" alt="More information about Mini-Tennis Orange" />
+        <area shape="poly" coords="245,90,254,287,481,286,476,10,333,12,245,90" href="minired.html" title="More information about Mini-Tennis Red" alt="More information about Mini-Tennis Red" />
+        <area shape="poly" coords="9,19,10,289,233,291,240,18,168,6,9,19" href="minitots.html" title="More information on Mini-Tots" alt="More information on Mini-Tots" />
+      </map>     
+        <!-- <img src="./img/MiniTennisHeader.jpg" />   -->
+    </div>
+  </div>
+ </header>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Mini-Tennis at Hampton in Arden Tennis Club</h2>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 medium-12 small-12 columns">
+      <p>
+        Mini-Tennis is an initiative from the Lawn Tennis Association (LTA). Children between 3 and 10 years old can now get stuck into the world of tennis with an exciting programme from the LTA to develop young talent in appropriate learning environments.
+      </p>
+      <p>
+        With smaller courts, nets and rackets and lower bouncing balls, LTA Mini Tennis offers the perfect introduction to the sport, with all the fun and energy of the real thing.
+      </p>
+      <p>
+        There are four stages of LTA Mini Tennis; Tots, Red, Orange and Green, each with their own court size and type of ball. This tailored approach enables players to develop vital skills and techniques at an early age.
+      </p>
+<!--
+      <p class="panel">
+        There is also the LTA Mini Tennis Rally Awards scheme, designed to help mini players learn in stages and take part in exciting exercises with regular rewards which encourage them to develop their tennis skills at a pace that suits them.
+        <br />
+        <a href="rallyawards.html">Read more &raquo;</a>
+      </p>
+-->
+    </div>
+
+    <div id="coachlist" class="large-4 medium-4 small-12 coachlist columns">
+    <h4>Contact a Coach</h4>
+    <script id="coachlist-template" type="x-handlebars-template">
+    <ul>
+        {{#each allCoaches}}
+        <li>
+          <a href="{{url}}">{{forename1}} {{surname}}</a>
+          <p class="mobile">mobile: {{mobilephone}}</p>
+        </li>
+        {{/each}}
+    </ul>
+
+    <hr />
+      
+    <a href="coaching_schedule.html" class="large fullwidth info button">Coaching Schedule</a><br />
+    <a href="paying.html" class="large fullwidth info button">Paying for Coaching</a>
+
+    </script>
+
+    </div>    <!--    /coachlist    -->
+
+  </div>    <!--    /row    -->
+
+  <div class="row">
+
+    <h3>The Stages of Mini-Tennis</h3>
+
+    <div class="large-3 medium-3 small-12 columns">
+      <div class="row">
+        <div class="large-4 medium-4 small-6 columns">
+          <img src="./img/totsavatar.jpg" />
+        </div>
+        <div class="large-8 medium-8 small-6 columns">
+          <h4><a href="minitots.html" class="minitots">Mini-Tennis Tots</a></h4>
+          <p>Ages 3-5 years old</p>
+          <a href="minitots.html" class="small fullwidth info button">Read More &raquo;</a>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="large-3 medium-3 small-12 columns">
+      <div class="row">
+        <div class="large-4 medium-4 small-6 columns">
+          <img src="./img/redavatar.jpg" />
+        </div>
+        <div class="large-8 medium-8 small-6 columns">
+          <h4><a href="minired.html" class="minired">Mini-Tennis Red</a></h4>
+          <p>Ages 5-8 years old</p>
+          <a href="minired.html" class="small fullwidth info button">Read More &raquo;</a>
+         </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="large-3 medium-3 small-12 columns">
+      <div class="row">
+        <div class="large-4 medium-4 small-6 columns">
+          <img src="./img/orangeavatar.jpg" />
+        </div>
+        <div class="large-8 medium-8 small-6 columns">
+          <h4><a href="miniorange.html" class="miniorange">Mini-Tennis Orange</a></h4>
+          <p>Ages 8-9 years old</p>
+          <a href="miniorange.html" class="small fullwidth info button">Read More &raquo;</a>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="large-3 medium-3 small-12 columns">
+      <div class="row">
+        <div class="large-4 medium-4 small-6 columns">
+          <img src="./img/greenavatar.jpg" />
+        </div>
+        <div class="large-8 medium-8 small-6 columns">
+          <h4><a href="minigreen.html" class="minigreen">Mini-Tennis Green</a></h4>
+          <p>Age 10 years old</p>
+          <a href="minigreen.html" class="small fullwidth info button">Read More &raquo;</a>
+         </div>
+      </div>
+      <hr />
+    </div>
+
+  </div>
+
 
 
   <!--   end of content area     -->
@@ -246,48 +341,6 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
-  <script id="todaysevents-template" type="x-handlebars-template">
-
-    {{#if allToday }}
-      <div class="row">
-
-        <div class="large-3 medium-3 small-12 eventstoday columns">
-          <time datetime="2014-09-20" class="icon">
-            <em></em>    <!-- day -->
-            <strong></strong>  <!-- month  -->
-            <span></span>  <!-- day -->
-          </time>
-        </div>
-
-        <div class="large-9 medium-9 small-12 columns">
-        {{#each allToday}}
-          <div class="row">
-            {{#if endtime}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}-{{endtime}}
-            </div>
-            {{else}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}
-            </div>
-            {{/if}}
-            <div class="large-9 medium-9 small-8 columns">
-              {{#if eventreport}}
-              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
-              {{else}}
-              {{eventnote}}
-              {{/if}}
-            </div>
-          </div>
-        {{/each}}
-        </div>
-    </div>
-    {{else}}
-      <p>
-        Nothing scheduled today at the club.
-      </p>
-    {{/if}}
-  </script>   
 
 
   <!--    End of area for any Handlebars templates    -->
@@ -372,8 +425,7 @@
 
     <!--    page-specific JS code -->
 
-    <script src="/js/whatcanisee.js"></script> 
-
+    <script src="/js/coachlist.js"></script>
 
     <!--    Google Analytics    -->
 

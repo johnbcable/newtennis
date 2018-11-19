@@ -1,9 +1,127 @@
+<%@language="JScript"%>
+<!--#include file="functions.asp" -->
+<!--#include file="strings.asp" -->
+<!--#include file="emailfuncs.asp" -->
+<%
+// First variables that need to be set for each page
+var strtime, strdate;
+var clubname = new String("Hampton-In-Arden Tennis Club");
+var pagetitle = new String("<<pagetitle >>");
+// Now for any variables local to this page
+var debugging=false;
+var ConnObj, RS, RS2, SQL1, SQL2, SQL3;
+var myname, displaydate;
+// Set up default greeting strings
+strdate = datestring();
+strtime = timestring();
+myname = new String("").toString();
+if (signedin())
+	myname = getUserName();
+var displaydate = dateasstring(Date());
+var debugging=current_debug_status();
+//
+// Now get the dob from the form (or query string) and
+// calculate which bit of the competition framework to 
+// redirect to
+//
+var mydob = new String(Request.Form("dob")).toString();
+if (mydob == "" || mydob == "null" || mydob == "undefined")
+{
+  mydob = new String(Request.QueryString("dob")).toString();
+  if (mydob == "" || mydob == "null" || mydob == "undefined")
+    mydob = new String("");
+}
+var debug = new String(Request.Form("debug")).toString();
+if (debug == "" || debug == "null" || debug == "undefined")
+{
+  debug = new String(Request.QueryString("debug")).toString();
+  if (debug == "" || debug == "null" || debug == "undefined")
+    debug = new String("N");
+}
+debugging = false;
+// if (mydob == "")
+//  Response.Redirect("framework.asp");
+var dobday, dobmonth, dobyear;
+var dobparts = mydob.split("/");
+if (dobparts.length != 3)
+  Response.Redirect("framework.asp");
+dobday = new Number(dobparts[0]).toString();
+dobmonth = new Number(dobparts[1]).toString();
+dobyear = new Number(dobparts[2]).toString();
+var dobdate = new Date(dobparts[2],(dobparts[1]-1),dobparts[0]);
+var today = new Date();
+var todayday = today.getDate();
+var todaymonth = today.getMonth()+1;
+var todayYear = today.getFullYear();
+var yearage = todayYear - dobyear;
+var myageinmonths; 
+if ( todaymonth > dobmonth)
+{
+  myageinyears = yearage;
+  myageinmonths = (myageinyears * 12) + (todaymonth-dobmonth);
+}
+else
+{
+  if ( todaymonth < dobmonth)
+  {
+    myageinyears = yearage - 1;
+    myageinmonths = (myageinyears * 12) + (todaymonth);
+  }
+  else   // todays month = my dob month
+  {
+    if (todayday < dobday)
+    {
+      myageinyears = yearage -1;
+      myageinmonths = (myageinyears * 12) + (todaymonth);
+    }
+    else
+    {
+      if (todayday == dobday)
+      {
+        myageinyears = yearage;
+        myageinmonths = (myageinyears * 12);
+      }
+     else
+     {
+        myageinyears = yearage;
+        myageinmonths = (myageinyears * 12) + (todaymonth - 1);
+     }
+    }
+  }
+}
+var myageinms = today-dobdate;
+var oneMinute = 60 * 1000  // milliseconds in a minute
+var oneHour = oneMinute * 60
+var oneDay = oneHour * 24
+var oneWeek = oneDay * 7
+var myageinweeks = Math.round((myageinms/oneWeek));
+var ydummy = Math.round(myageinweeks % 52);
+mydob = dateasstring(dobdate);
+// if (ydummy > 0)
+//  myageinyears = myageinyears - 1;
+//
+// Age calculation done - now reroute to required cf page
+//
+// if (myageinyears < 8)
+//  Response.Redirect("minired.asp?dob="+mydob);
+// if (myageinyears > 18)
+//  Response.Redirect("nomini.asp?zz="+myageinyears+"&dob="+mydob);
+// if (myageinyears > 10)
+//  Response.Redirect("miniyellow.asp?dob="+mydob);
+// if (myageinyears > 9)
+//  Response.Redirect("minigreen.asp?dob="+mydob);
+// if (myageinyears > 8)
+//  Response.Redirect("miniorange.asp?dob="+mydob);
+// if (myageinyears == 8)
+//  Response.Redirect("minired.asp?dob="+mydob+"&transition=Y");
+// End of page start up coding
+%>
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Home Page</title>
+    <title>Hampton-in-Arden Tennis Club - Where Do I Fit In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
     <!-- Schema.org markup for Google+ -->
@@ -70,10 +188,10 @@
       <!-- Right Nav Section -->
       <!--  Need to indicate which of the top-menu choices is currently active -->
       <ul class="right">
-        <li class="active"><a href="/index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="javascript: routeMember()">Members</a></li>
         <li><a href="/playing.html">Playing</a>
-        <li><a href="/coaching.html">Coaching</a>
+        <li class="active"><a href="/coaching.html">Coaching</a>
         <li><a href="/holidaycamps.html">Holiday Clubs</a></li>
         <li><a href="javascript: routeMember()">News and Events</a></li>
         <li><a href="/ourclub.html">About Us</a></li>
@@ -82,55 +200,89 @@
 
   </nav>
 
-  <!--   End of topbar area (small devices only)   -->
+  <!-- Header -->
 
-  <!--   Main content area       -->
-
-  <!--   Banner heading area     -->
-
-   <header class="myhead">
-    <div class ="row">
-      <div class="large-12 medium-12 small-12 columns row--banner">
-        <div class="container-wide hide-for-small">
-          <div class="header__logo">
-            <a href="/index.html">
-              <img src="/img/logo.gif" alt="Hampton Tennis Club logo">
-            </a>
-          </div>
-        <section class="row container-medium banner-content snowfall">
-          <h1 class="banner-content__heading">
-            Welcome to Hampton in Arden Tennis Club
-          </h1>
-          <p class="banner-content__strapline">
-            Your family-friendly tennis club
-          </p>
-        </section>
-
-      </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>My coaching plan at Hampton in Arden Tennis Club</h2>
+      <hr />
     </div>
-  </header> 
+  </div>
 
+<%
+if (debugging)
+{
+%>
 
-  <!--   Promotional box    -->
-
-   <div class="row promobox row--padding-medium row--beige">
-      <div class="large-9 medium-9 small-12 columns">
-        <h4>New box leagues have been published.</h4>
-        <p>
-          New box leagues for the period 1<sup>st</sup> November through to 31<sup>st</sup> December are now under way. Make sure you get your matches in during this busy time of year!.
-        </p>
-      </div>
-      <div class="large-3 medium-3 small-12 columns">
-        <a href="/boxleagues.html" class="large fullwidth info button">Current box leagues and rules</a>
-      </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <p>
+        My dob = <%= mydob %><br />
+        today is <%= today %>; <br />
+        todayYear is <%= todayYear %><br />
+        todaymonth is <%= todaymonth %><br />
+        todayday is <%= todayday %><br />
+        my age today is <%= myageinms %>; <br />
+        my age in weeks is <%= myageinweeks %>; <br />
+        Birthdate:  day = <%= dobday %>, month = <%= dobmonth %>, year = <%= dobyear %><br />
+        Today:      day = <%= todayday %>, month = <%= todaymonth %>, year = <%= todayYear %><br />
+        my age in years is <%= myageinyears %><br />
+        my age in months is <%= myageinmonths %>
+      </p>
     </div>
+  </div>
 
-  <!--   end of promotional box   ->
+<%
+}
 
- 
+ // Age calculation done - now reroute to include required page
 
+if (myageinyears < 5) {
+ %>
+ <!--#include file="templates/minitots.handlebars" -->
+<% 
+ }
+if (myageinyears == 5) {
+ %>
+ <!--#include file="templates/minitots-transition.handlebars" -->
+<% 
+ }
+if (myageinyears > 5 && myageinyears < 8) {
+ %>
+ <!--#include file="templates/minired.handlebars" -->
+<% 
+ }
+   if (myageinyears == 8) {
+ %>
+ <!--#include file="templates/minired-transition.handlebars" -->
+<% 
+ }
+  if (myageinyears > 17) {
+ %>
+ <!--#include file="templates/nomini.handlebars" -->
+<% 
+ }
+ if (myageinyears > 10 && myageinyears < 18) {
+ %>
+ <!--#include file="templates/miniyellow.handlebars" -->
+<% 
+ }
+ if (myageinyears == 10) {
+ %>
+ <!--#include file="templates/minigreen.handlebars" -->
+<% 
+ }
+ if (myageinyears == 9) {
+ %>
+ <!--#include file="templates/miniorange.handlebars" -->
+<% 
+ }
 
-  <!--   end of content area     -->
+%>
+
+  <!--   Define the footer area  -->
+  
+  <!-- First row contains big footer menu and social mdeia stuff -->
 
   <!--   Define the footer area  -->
 
@@ -246,48 +398,6 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
-  <script id="todaysevents-template" type="x-handlebars-template">
-
-    {{#if allToday }}
-      <div class="row">
-
-        <div class="large-3 medium-3 small-12 eventstoday columns">
-          <time datetime="2014-09-20" class="icon">
-            <em></em>    <!-- day -->
-            <strong></strong>  <!-- month  -->
-            <span></span>  <!-- day -->
-          </time>
-        </div>
-
-        <div class="large-9 medium-9 small-12 columns">
-        {{#each allToday}}
-          <div class="row">
-            {{#if endtime}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}-{{endtime}}
-            </div>
-            {{else}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}
-            </div>
-            {{/if}}
-            <div class="large-9 medium-9 small-8 columns">
-              {{#if eventreport}}
-              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
-              {{else}}
-              {{eventnote}}
-              {{/if}}
-            </div>
-          </div>
-        {{/each}}
-        </div>
-    </div>
-    {{else}}
-      <p>
-        Nothing scheduled today at the club.
-      </p>
-    {{/if}}
-  </script>   
 
 
   <!--    End of area for any Handlebars templates    -->
@@ -390,3 +500,5 @@
     
 </body>
 </html>
+<%
+%>

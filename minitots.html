@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hampton-in-Arden Tennis Club - Home Page</title>
+    <title>Hampton-in-Arden Tennis Club - Tots Tennis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="Hampton in Arden Tennis Club web site">
     <!-- Schema.org markup for Google+ -->
@@ -70,10 +70,10 @@
       <!-- Right Nav Section -->
       <!--  Need to indicate which of the top-menu choices is currently active -->
       <ul class="right">
-        <li class="active"><a href="/index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="javascript: routeMember()">Members</a></li>
         <li><a href="/playing.html">Playing</a>
-        <li><a href="/coaching.html">Coaching</a>
+        <li class="active"><a href="/coaching.html">Coaching</a>
         <li><a href="/holidaycamps.html">Holiday Clubs</a></li>
         <li><a href="javascript: routeMember()">News and Events</a></li>
         <li><a href="/ourclub.html">About Us</a></li>
@@ -86,48 +86,70 @@
 
   <!--   Main content area       -->
 
-  <!--   Banner heading area     -->
 
-   <header class="myhead">
-    <div class ="row">
-      <div class="large-12 medium-12 small-12 columns row--banner">
-        <div class="container-wide hide-for-small">
-          <div class="header__logo">
-            <a href="/index.html">
-              <img src="/img/logo.gif" alt="Hampton Tennis Club logo">
-            </a>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Mini-Tennis for Tots at Hampton in Arden Tennis Club</h2>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 medium-12 small-12 columns">
+      <img src="/img/totsheader.jpg" />
+      <p>
+        Tots is for children aged 3 to 5 years old and enables them to learn the basics and how to enjoy the game through a series of fun activities, based on the fundamental areas of balance, co-ordination, agility, movement and racket and ball skills.
+      </p>
+      <p>
+        Our coaching staff currently provide coaching sessions for each age group in the National Competition Framework, starting with the Tots Tennis (3-5 years old) age group. Check out the current coaching schedule for details of what courses are being run, when and what the charges are.
+      </p>
+      <hr />
+      <a href="http://www.lta.org.uk/LTA-Mini-Tennis/Tots/What-is-Tots/" class="large fullwidth info button">Further LTA Mini-Tennis for Tots Info</a>
+
+
+    </div>
+
+    <div class="large-4 medium-4 small-12 columns">
+      <div id="coachlist">
+      <h4>Contact a Coach</h4>
+      <script id="coachlist-template" type="x-handlebars-template">
+      <ul>
+          {{#each allCoaches}}
+          <li>
+            <a href="{{url}}">{{forename1}} {{surname}}</a>
+            <p class="mobile">mobile: {{mobilephone}}</p>
+          </li>
+          {{/each}}
+      </ul>
+
+      <hr />
+        
+      <a href="coaching_schedule.html" class="large fullwidth info button">Coaching Schedule</a><br />
+      <a href="paying.html" class="large fullwidth info button">Paying for Coaching</a>
+
+      </script>
+
+      </div>    <!--    /coachlist    -->
+
+
+      <div class="panel">
+        <div class="row">
+          <div class="large-6 medium-6 small-12 columns">
+            <h4>Next<br />Steps</h4>
+            <p>
+              Mini-Tennis Red<br />
+              Ages 5-8
+            </p>
           </div>
-        <section class="row container-medium banner-content snowfall">
-          <h1 class="banner-content__heading">
-            Welcome to Hampton in Arden Tennis Club
-          </h1>
-          <p class="banner-content__strapline">
-            Your family-friendly tennis club
-          </p>
-        </section>
-
+          <div class="large-6 medium-6 small-12 columns">
+            <a href="minired.html"><img src="/img/redavatar.jpg" /></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </header> 
 
-
-  <!--   Promotional box    -->
-
-   <div class="row promobox row--padding-medium row--beige">
-      <div class="large-9 medium-9 small-12 columns">
-        <h4>New box leagues have been published.</h4>
-        <p>
-          New box leagues for the period 1<sup>st</sup> November through to 31<sup>st</sup> December are now under way. Make sure you get your matches in during this busy time of year!.
-        </p>
-      </div>
-      <div class="large-3 medium-3 small-12 columns">
-        <a href="/boxleagues.html" class="large fullwidth info button">Current box leagues and rules</a>
-      </div>
     </div>
 
-  <!--   end of promotional box   ->
-
- 
+  </div>
 
 
   <!--   end of content area     -->
@@ -246,48 +268,6 @@
 
   <!--    Start of area for any Handlebars templates    -->
 
-  <script id="todaysevents-template" type="x-handlebars-template">
-
-    {{#if allToday }}
-      <div class="row">
-
-        <div class="large-3 medium-3 small-12 eventstoday columns">
-          <time datetime="2014-09-20" class="icon">
-            <em></em>    <!-- day -->
-            <strong></strong>  <!-- month  -->
-            <span></span>  <!-- day -->
-          </time>
-        </div>
-
-        <div class="large-9 medium-9 small-12 columns">
-        {{#each allToday}}
-          <div class="row">
-            {{#if endtime}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}-{{endtime}}
-            </div>
-            {{else}}
-            <div class="large-3 medium-3 small-4 columns">
-                {{eventtime}}
-            </div>
-            {{/if}}
-            <div class="large-9 medium-9 small-8 columns">
-              {{#if eventreport}}
-              {{eventnote}}<span class="rhs"><a href="{{eventreport}}">More &raquo;</a></span>
-              {{else}}
-              {{eventnote}}
-              {{/if}}
-            </div>
-          </div>
-        {{/each}}
-        </div>
-    </div>
-    {{else}}
-      <p>
-        Nothing scheduled today at the club.
-      </p>
-    {{/if}}
-  </script>   
 
 
   <!--    End of area for any Handlebars templates    -->
@@ -372,7 +352,7 @@
 
     <!--    page-specific JS code -->
 
-    <script src="/js/whatcanisee.js"></script> 
+    <script src="/js/coachlist.js"></script> 
 
 
     <!--    Google Analytics    -->
