@@ -39,12 +39,10 @@ if (debug == "" || debug == "null" || debug == "undefined")
     debug = new String("N");
 }
 debugging = false;
-// if (mydob == "")
-//  Response.Redirect("framework.asp");
 var dobday, dobmonth, dobyear;
 var dobparts = mydob.split("/");
 if (dobparts.length != 3)
-  Response.Redirect("framework.asp");
+  Response.Redirect("/minitennis.html");
 dobday = new Number(dobparts[0]).toString();
 dobmonth = new Number(dobparts[1]).toString();
 dobyear = new Number(dobparts[2]).toString();
