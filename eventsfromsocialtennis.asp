@@ -62,8 +62,8 @@ Conn.Open(dbconnect);
 // Initial implementation - hard-code start and end date
 // new Date(year, month, day, hours, minutes, seconds, milliseconds)
 
-start_date = new Date("January 1, 2018 01:15:00");
-end_date = new Date("December 31, 2018 23:15:00");
+start_date = new Date("January 1, 2019 01:15:00");
+end_date = new Date("December 31, 2019 23:15:00");
 
 if (debugging) {
 	Response.Write("<h4>Period for Social Tennis Events</h4>");
