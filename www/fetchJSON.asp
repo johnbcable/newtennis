@@ -111,7 +111,7 @@ If queryref > -1 Then
 	querylist(3) = "SELECT * FROM coaches WHERE surname = ""POOLE"";"
 	querylist(4) = "SELECT * FROM coaches WHERE surname NOT LIKE ""POOLE"";"
 	querylist(5) = "SELECT * FROM coaches ORDER BY surname ASC;"
-	querylist(6) = "SELECT * FROM tennisfixtures where fixtureyear = {{1}} and homeoraway in ({{2}}) {{3}} ORDER BY teamname,fixturedate;"
+	querylist(6) = "SELECT * FROM tennisfixtures where fixtureyear = {{p1}} ORDER BY teamname,fixturedate;"
 	querylist(7) = "SELECT memberid FROM User_Sessions where remoteaddress = '{{p1}}'"
 	querylist(8) = "SELECT * FROM tennisfixtures where fixtureyear = {{p1}} and homeoraway in ({{p2}}) {{p3}} ORDER BY teamname,fixturedate;"
 	querylist(9) = "SELECT memberid FROM User_Sessions where remoteaddress = '{{p1}}' ORDER BY [loggedindate] ASC, [loggedintime] ASC"

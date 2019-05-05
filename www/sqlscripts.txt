@@ -1,0 +1,67 @@
+
+tennisfixtures
+
+
+{
+fixturedate: "13/06/2006",
+homeoraway: "A",
+opponents: "Kenilworth 4 (Ladies)",
+hamptonresult: 0,
+opponentresult: 0,
+fixtureyear: 2006,
+teamname: "Ladies 2nd Team",
+fixturenote: " ",
+fixtureid: 352,
+matchreport: null,
+pair1: "",
+pair2: ""
+},
+
+fixturesetup
+
+
+{
+"fixturedate": "29/04/2019",
+"homeoraway": "H",
+"opponents": "Beechwood 1",
+"hamptonresult": 0,
+"opponentresult": 0,
+"fixtureyear": 2018,
+"teamname": "Mens 1st Team",
+"fixturenote": "NONE",
+"fixtureid": 1001,
+"matchreport": null,
+"pair1": "",
+"pair2": ""
+},
+
+INSERT INTO tennisfixtures (fixturedate,homeoraway,opponents,fixtureyear,teamname) 
+SELECT  fixturedate,homeoraway,opponents,fixtureyear,teamname 
+FROM fixturesetup
+
+
+	
+0	
+scriptid	1
+description	"Turns a years home fixtures into entries on the events calendar. Need to manually change the year to reflect which year you are doing. Only run  after augmenting Ladies opponents team names."
+script	"INSERT INTO events ( eventdate, eventtime, eventyear, eventtype, eventnote )\r\nSELECT fixturedate, '18:15', 2014, 'MATCH', teamname+' at home to '+opponents\r\nFROM tennisfixtures\r\nWHERE fixtureyear=2014 And homeoraway='H'"
+1	
+scriptid	2
+description	"Update a years Ladies opponents team names (on the tennisfixtures table) by augmenting their names with (Ladies) on the end. Run BEFORE you set a years fixtures into the events calendar."
+script	"UPDATE tennisfixtures SET tennisfixtures.opponents = tennisfixtures.opponents+' (Ladies)' \r\nWHERE tennisfixtures.teamname Like 'Ladies*' And fixtureyear=2014;"
+2	
+scriptid	3
+description	"Update tennisfixtures with new seasons fixtures from NewSeasonFixtures"
+script	"INSERT INTO tennisfixtures (fixturedate,homeoraway,opponents,fixtureyear,teamname) SELECT fixturedate,homeoraway,opponents,fixtureyear,teamname FROM NewSeasonFixtures;"
+3	
+scriptid	4
+description	"Delete a years fixtures"
+script	"DELETE FROM tennisfixtures where fixtureyear = 2010;"
+4	
+scriptid	5
+description	"Update race day comment for Arden 9"
+script	"update arden9races set race_comment = 'Warm, dry and sunny but with a cooling breeze' where race_year = 2010;"
+5	
+scriptid	6
+description	"Insert new race heading into arden9races"
+script	"insert into arden9races(race_year,race_date,photo_link,childrens1,childrens2, adult1, results, hampton_link, childrens_results, race_date_text, race_comment, photo_provider) values (2011,'19/06/2010','','N','N','Y','9mileresults.asp?year=2011', '9milehina.asp?year=2011','','Sunday 19th June, 2011','','')"
