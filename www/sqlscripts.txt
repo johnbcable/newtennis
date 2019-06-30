@@ -35,9 +35,7 @@ fixturesetup
 "pair2": ""
 },
 
-INSERT INTO tennisfixtures (fixturedate,homeoraway,opponents,fixtureyear,teamname) 
-SELECT  fixturedate,homeoraway,opponents,fixtureyear,teamname 
-FROM fixturesetup
+
 
 
 	
@@ -48,11 +46,14 @@ script	"INSERT INTO events ( eventdate, eventtime, eventyear, eventtype, eventno
 1	
 scriptid	2
 description	"Update a years Ladies opponents team names (on the tennisfixtures table) by augmenting their names with (Ladies) on the end. Run BEFORE you set a years fixtures into the events calendar."
-script	"UPDATE tennisfixtures SET tennisfixtures.opponents = tennisfixtures.opponents+' (Ladies)' \r\nWHERE tennisfixtures.teamname Like 'Ladies*' And fixtureyear=2014;"
+script	"UPDATE tennisfixtures SET opponents = opponents+' (Ladies)' 
+WHERE teamname Like 'Ladies%' And fixtureyear=2019;"
 2	
 scriptid	3
 description	"Update tennisfixtures with new seasons fixtures from NewSeasonFixtures"
-script	"INSERT INTO tennisfixtures (fixturedate,homeoraway,opponents,fixtureyear,teamname) SELECT fixturedate,homeoraway,opponents,fixtureyear,teamname FROM NewSeasonFixtures;"
+script	"INSERT INTO tennisfixtures (fixturedate,homeoraway,opponents,fixtureyear,teamname) 
+SELECT  fixturedate,homeoraway,opponents,fixtureyear,teamname 
+FROM fixturesetup;"
 3	
 scriptid	4
 description	"Delete a years fixtures"
