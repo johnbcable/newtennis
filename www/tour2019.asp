@@ -89,12 +89,12 @@ td {
 		</div>
 -->
 		<p>
-			In 2019, there are two finals days - the Challenger Tournament finals are being held on 28<sup>th</sup> June (coinciding with the Hampton Festival) and the Open tournament finals will be held in the autumn.  
+			In 2019, there are two finals days - the Challenger Tournament finals are being held on 28<sup>th</sup> June (coinciding with the Hampton Festival) and the Open tournament finals will be held in the autumn.  <br />
 			Please make sure you all arrange and play your matches promptly to allow the draw to progress.
 		</p>
 		<h2>Challenger Tournament</h2>
 		<p>
-			The order of play for the Challenger Tournament finals will be show below. Any updates will be posted here as and when they occur.
+			The order of play for the Challenger Tournament finals will be shown below. Any updates will be posted here as and when they occur.
 		</p>
 
 <!--

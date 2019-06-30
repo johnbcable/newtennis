@@ -77,7 +77,7 @@ if (debugging)
 		<h2>Challenger Finals Day - Saturday 29<sup>th</sup> June, 2019</h2>
 
 		<p class="matchreport">
-			We will publish an initial draw sheet available here when the draw is made.
+			We will publish an initial order of play sheet for Finals Day here when the draw is made.
 		</p>
 
 		<p class="matchreport">
