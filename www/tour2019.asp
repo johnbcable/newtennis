@@ -94,34 +94,32 @@ td {
 		</p>
 		<h2>Challenger Tournament</h2>
 		<p>
-			The order of play for the Challenger Tournament finals will be shown below. Any updates will be posted here as and when they occur.
+			The order of play for the Challenger Tournament finals is shown below. Any updates will be posted here as and when they occur.
 		</p>
 
-<!--
-		<div>
-			<img src="img/challengerorderofplay2018.png" alt="Challenger tournament finals otrder of play" />
-			<ol>
-				<li>
-					Players should arrive in good time for play to commence promptly (1/2 hour early)
-				</li>
-				<li>
-					Trophy presentations to take place throughout the afternoon
-				</li>
-				<li>
-					After the start of the first matches, subsequent timings are approximate
-				</li>
-				<li>
-					On scoreboard, first named player/pair is the “Home” team
-				</li>
-				<li>
-					5.All  finals - best of two full Sets with  normal tie break at 6-6, if one set all Championship tiebreak to be played with first player to reach 10 with two clear points wins
-				</li>
-				<li>
-					6.Any queries please speak to Sav Gaspar tournament director on 07786872011 or Ruth Fennell 07790 854430
-				</li>
-			</ol>
-		</div>
--->
+
+		<img src="img/challengerorderofplay2019.png" alt="Challenger tournament finals order of play" width="100%"/>
+		<ol>
+			<li>
+				Players should arrive in good time for play to commence promptly (1/2 hour early)
+			</li>
+			<li>
+				Trophy presentations to take place throughout the afternoon
+			</li>
+			<li>
+				After the start of the first matches, subsequent timings are approximate
+			</li>
+			<li>
+				On scoreboard, first named player/pair is the “Home” team
+			</li>
+			<li>
+				All  finals - best of two full Sets with  normal tie break at 6-6, if one set all Championship tiebreak to be played with first player to reach 10 with two clear points wins
+			</li>
+			<li>
+				6.Any queries please speak to Sav Gaspar tournament director on 07786872011 or Ruth Fennell 07790 854430
+			</li>
+		</ol>
+
 		<div class="borderboth">
 			<h2><span class="blueheading">General Tournament Rules</span></h2>
 			<ol type="disc">
