@@ -1,4 +1,5 @@
 
+/*
 function Upload() {
 
 var fileUpload = document.getElementById("fileUpload");
@@ -56,6 +57,26 @@ alert("Please upload a valid CSV file.");
 }
 
 }
+*/
+function GetEveryThing(thefile)
+{
+  var fso, f;
+  var ForReading = 1, ForWriting = 2;
+  var fcontents;
+  fso = new ActiveXObject("Scripting.FileSystemObject");
+  myfilename = Server.MapPath(thefile);
+  if (fso.FileExists(myfilename))
+  {
+     f = fso.OpenTextFile(myfilename, ForReading);
+     fcontents = new String(f.ReadAll()).toString();
+     f.Close();
+  }
+  else
+  {
+      fcontents = new String("File not found");
+  }
+  return(fcontents);
+}
 
 function csvJSON(csv){
 
@@ -81,4 +102,12 @@ function csvJSON(csv){
   //return result; //JavaScript object
   return JSON.stringify(result); //JSON
 }
-</script>
+
+
+
+$(document).ready(function() {
+  
+  showTodaysMatches("#whatcanisee");
+
+})  // end of document.ready
+
