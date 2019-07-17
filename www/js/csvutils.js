@@ -58,6 +58,7 @@ alert("Please upload a valid CSV file.");
 
 }
 */
+
 function GetEveryThing(thefile)
 {
   var fso, f;
@@ -77,6 +78,22 @@ function GetEveryThing(thefile)
   }
   return(fcontents);
 }
+
+// ------------------------------------------------
+function loadDoc(thefile) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      return ( this.responseText );
+      // document.getElementById("demo").innerHTML =
+      // this.responseText;
+    }
+  };
+  xhttp.open("GET", thefile, true);
+  xhttp.send();
+}
+
+// ----------------------------------------------
 
 function csvJSON(csv){
 
@@ -103,11 +120,31 @@ function csvJSON(csv){
   return JSON.stringify(result); //JSON
 }
 
-
+// ----------------------------------------------------
+// jQuery bits
+// ----------------------------------------------------
 
 $(document).ready(function() {
   
-  showTodaysMatches("#whatcanisee");
+  var myfiletext = new String('');
+  var myjsontext = new String('');
+  var csvfile = "https://testcsv.csv"
+
+  // myfiletext = "UserID,FirstName,LastName,Password,PrivLevel,EmailAddress,Active,ReceiveEmails,ReceiveRichText,MembershipTypeID\n5083,Emily,CABLE,1210,0,emilycable@btinternet.com,1,1,1,8\n104,John,CABLE,2548,0,johncable@talk21.com,1,1,1,8\n1013,Lesley,CABLE,1043,0,lesleycable@btinternet.com,1,1,1,8\n5084,Sophie,CABLE,4025,0,sophiecable@btinternet.com,1,1,1,8";
+  // Read in contents of file
+
+  myfiletext = loadDoc(csvfile);
+
+  console.log(csvfile);
+  console.log(myfiletext);
+
+  document.getElementById("filetext").innerHTML = myfiletext;
+
+  // Now convert file text into JSON
+  myjsontext = csvJSON(myfiletext);
+
+  document.getElementById("jsontext").innerHTML = myjsontext;
+
 
 })  // end of document.ready
 
