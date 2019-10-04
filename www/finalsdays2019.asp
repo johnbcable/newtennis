@@ -71,7 +71,7 @@ if (debugging)
 			 <img alt="Finals Days 2019" src="Images/finalsday2012_collage.jpg" width="700" height="200">
 		</div>
 		<p class="leader">
-			 In 2019, we have two finals days. The first (the Challenger Tournament) is on Saturday 29<sup>th</sup> June; the second (the Open tournament) will take place in the early autumn. 
+			 In 2019, we have two finals days. The first (the Challenger Tournament) is on Saturday 29<sup>th</sup> June; the second (the Open tournament) will take place on Saturday 5<sup>th</sup> October. 
 		</p>
 
 		<h2>Challenger Finals Day - Saturday 29<sup>th</sup> June, 2019</h2>
@@ -84,10 +84,10 @@ if (debugging)
 			Summary results will be able to be displayed using the links below. 
 		</p>
 
-		<h2>Autumn Finals Day - date TBA</h2>
+		<h2>Autumn Finals Day - Saturday 5<sup>th</sup> October.</h2>
 
 		<p class="matchreport">
-			Lets see what the weather can do for us ... Well, it was a mixed bag &ndash; weather&ndash;wise &ndash; starting off cool but cloudy, graduating to rain for most of the matches at the end of the schedule.
+			Lets see what the weather can do for us ... 
 		</p>
 
 
