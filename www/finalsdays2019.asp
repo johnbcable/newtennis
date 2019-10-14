@@ -90,6 +90,12 @@ if (debugging)
 			Lets see what the weather can do for us ... 
 		</p>
 
+		<div id="finalsday2019resukts">
+			 <img alt="Finals Days 2019" src="/img/opentournamentresults2019.png" width="700" >
+		</div>
+
+
+
 
 <!--		<div id="main2017orderofplay">
 			<p>
