@@ -42,6 +42,9 @@
     <meta name="msapplication-wide310x150logo" content="/img/logos/tile-wide.png">
     <meta name="msapplication-square150x150logo" content="/img/logos/icon150.png">
     <meta name="msapplication-square70x70logo" content="/img/logos/icon70.png">
+
+    <!-- Font links  -->
+    
     <!-- CSS links -->
 
     <link rel="stylesheet" href="/bower_components/foundation/css/normalize.css" />
@@ -75,6 +78,49 @@
           -o-border-image: url(img/hollyborder.png)  38 1 0 repeat; /* Opera 11-12.1 */
           border-image: url(img/hollyborder.png)  38 1 0 repeat;
       }
+
+.snow {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.trees {
+  display: grid;
+  grid-template-rows: 50% 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/trees.svg) repeat-x;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.merry {
+  color: #c84257;
+  font-family: 'Mountains of Christmas', cursive;
+  text-align: center;
+  grid-row: 1;
+  grid-column: 1/4;
+  align-self: center;
+  justify-self: center;
+  font-size: 6rem;
+}
+
+.fox {
+  grid-column: 3;
+  grid-row: 3;
+  align-self: end;
+  justify-self: start;
+  position: relative;
+}
+
+.tree {
+  align-self: end;
+  justify-self: end;
+  grid-column: 1;
+  grid-row: 3;
+}
 
     </style>    
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -113,11 +159,28 @@
 
   <!--   Main content area       -->
 
+<!--   Xmas start
 
+
+<div class ="row">
+<div id="particles-js" class="snow"></div>
+<div class="trees">
+  <div class="merry">
+    <h1>Merry Christmas<br />and a Happy New Year</h1>
+  </div>
+<div class="fox">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/critters.svg" width="300px">
+</div>
+<div class="tree">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/tree.svg" width="200px">
+</div>
+</div>
+
+-->
   <!--   Banner heading area     -->
 
    <header>
-    <div class ="row">
+    <div class ="row row--padding-medium">
       <div class="large-12 medium-12 small-12 columns row--banner">
         <div class="container-wide hide-for-small">
           <div class="header__logo">
@@ -129,7 +192,6 @@
           <div class="header__logo">
             <img src="./img/small_logo.gif" alt="tennis club logo">
           </div>
-          
           <nav class="header__nav" role="navigation">
             <ul>
               <li class="signedin noshow header__nav-members"><a id="memberslink" href="javascript: routeMember()">Members</a></li>
@@ -166,6 +228,7 @@
           <a href="/annualdinner.html" class="large fullwidth info button" style="width:100%;">Tennis Club Annual Dinner &raquo;</a>
           <hr />
           <p>
+
             <span style="color:red;font-weight:bold;font-size:110%;">MENU UPDATE</span>&nbsp;&nbsp;The annual tennis club dinner will now be held on <span style="color:blue;font-weight:bold;">Friday 31<sup>st</sup> January, 2020</span> at Hampton Manor. If you would like to come, please watch out for subsequent notifications. 
           </p>
           <p>
@@ -552,10 +615,16 @@
     <script src="/bower_components/handlebars/handlebars.js"></script>
     <script src="/bower_components/sammy/lib/sammy.js"></script>
 
+    <script src="/js/particles.min.js"></script>
+
     <script src="/js/app.js"></script>
 
     <script src="/js/sessions.js"></script> 
     <script src="/js/whatcanisee.js"></script> 
+
+    <!-- Xmas JS  -->
+    <script src="/js/xmasparticles.js"></script>
+
     <!--    <script src="/js/main.js"></script>     -->
 
     <!--    Google Analytics    -->
